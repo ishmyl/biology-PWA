@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#4c1d95">
+    
+    <!-- CORE FIREBASE INTERNET LIBS LINK -->
+    <script src="https://gstatic.com"></script>
+    <script src="https://gstatic.com"></script>
 </head>
 <body>
 
@@ -21,9 +25,32 @@
         <section id="registration-section" class="card gamified-card">
             <div class="card-badge">🎮 ENTER ARENA</div>
             <h2>Classroom Sign-In</h2>
-            <p class="instruction">Students: Enter your player tag below to step into the live interactive challenge arena!</p>
-            <input type="text" id="student-name-input" placeholder="Type your Player Name..." autocomplete="off">
-            <button id="start-app-btn" class="btn btn-action">Join Arena 🚀</button>
+            <p class="instruction">Select your class Form, input your class seat number, and type your first name to enter the arena session.</p>
+            
+            <!-- Form Dropdown -->
+            <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">SELECT YOUR CLASS FORM:</label>
+            <select id="form-select" style="width: 100%; background-color: rgba(12, 10, 28, 0.6); border: 2px solid var(--border-color); border-radius: var(--border-radius); padding: 15px; font-size: 1rem; color: white; margin-bottom: 15px;">
+                <option value="F1">Form 1 (F1)</option>
+                <option value="F2">Form 2 (F2)</option>
+                <option value="F3">Form 3 (F3)</option>
+                <option value="F4">Form 4 (F4)</option>
+                <option value="F5" selected>Form 5 (F5)</option>
+                <option value="F6">Form 6 (F6)</option>
+            </select>
+
+            <!-- Class Section Letters (e.g., A, B, C) -->
+            <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">CLASS SECTION (LETTER):</label>
+            <input type="text" id="class-letter-input" placeholder="e.g. A" maxlength="2" autocomplete="off" style="text-transform: uppercase; width: 100%; background-color: rgba(12, 10, 28, 0.6); border: 2px solid var(--border-color); border-radius: var(--border-radius); padding: 15px; font-size: 1rem; color: white; margin-bottom: 15px;">
+
+            <!-- Class Seat Number -->
+            <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">CLASS SEAT NUMBER:</label>
+            <input type="number" id="class-num-input" placeholder="e.g. 11" min="1" max="99" autocomplete="off" style="width: 100%; background-color: rgba(12, 10, 28, 0.6); border: 2px solid var(--border-color); border-radius: var(--border-radius); padding: 15px; font-size: 1rem; color: white; margin-bottom: 15px;">
+
+            <!-- Student First Name -->
+            <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">STUDENT FIRST NAME:</label>
+            <input type="text" id="student-name-input" placeholder="Type your Name... (e.g. Tina)" autocomplete="off">
+            
+            <button id="start-app-btn" class="btn btn-action" style="margin-top:10px;">Join Arena 🚀</button>
         </section>
 
         <!-- STEP 2: MATERIAL SELECTION HUB -->
