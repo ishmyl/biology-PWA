@@ -1,0 +1,278 @@
+css
+/* ==========================================================================
+   1. RESET & CORE VARIABLES
+   ========================================================================== */
+:root {
+    --primary-color: #2e7d32;       /* Bio Green */
+    --primary-light: #e8f5e9;       /* Light Green Background */
+    --secondary-color: #37474f;     /* Slate Dark Gray */
+    --accent-color: #1565c0;        /* Deep Blue for Next buttons */
+    --correct-color: #4caf50;       /* Success Green */
+    --incorrect-color: #f44336;     /* Error Red */
+    --bg-color: #f5f7f8;            /* Soft off-white app background */
+    --card-bg: #ffffff;             /* Pure white for containers */
+    --text-main: #212121;           /* Near black text */
+    --text-muted: #616161;          /* Medium gray text */
+    --border-radius: 12px;          /* Smooth rounded mobile edges */
+    --transition: all 0.25s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-tap-highlight-color: transparent; /* Removes blue tap flashing on mobile */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.5;
+    padding-bottom: 30px;
+}
+
+/* ==========================================================================
+   2. APP HEADER
+   ========================================================================== */
+.app-header {
+    background: linear-gradient(135deg, var(--primary-color), #1b5e20);
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* ==========================================================================
+   3. LAYOUT & CONTAINERS
+   ========================================================================== */
+.app-container {
+    max-width: 500px; /* Perfect sizing for mobile screens & center desktop */
+    margin: 20px auto;
+    padding: 0 16px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 24px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: var(--secondary-color);
+}
+
+.instruction {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+}
+
+/* Helper to hide steps until JavaScript triggers them */
+.hidden {
+    display: none !important;
+}
+
+/* ==========================================================================
+   4. BUTTONS & INTERACTIVE ELEMENTS
+   ========================================================================== */
+.upload-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Custom styling for file triggers masquerading as buttons */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    border-radius: var(--border-radius);
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn input[type="file"] {
+    display: none; /* Hide real boring ugly browser files inputs */
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:active {
+    background-color: #1b5e20;
+    transform: scale(0.98);
+}
+
+.btn-secondary {
+    background-color: var(--primary-light);
+    color: var(--primary-color);
+}
+
+.btn-secondary:active {
+    background-color: #c8e6c9;
+}
+
+.btn-next {
+    background-color: var(--accent-color);
+    color: white;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(21, 101, 192, 0.2);
+}
+
+/* ==========================================================================
+   5. LOADING SPINNER ANIMATION
+   ========================================================================== */
+#loading-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid var(--primary-light);
+    border-top: 5px solid var(--primary-color);
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ==========================================================================
+   6. QUIZ SCREEN ELEMENTS
+   ========================================================================== */
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 6px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 100%;
+    background-color: var(--primary-color);
+    transition: width 0.4s ease;
+}
+
+#question-text {
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    color: var(--text-main);
+}
+
+.options-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option-btn {
+    background-color: #fafafa;
+    border: 2px solid #e0e0e0;
+    border-radius: var(--border-radius);
+    padding: 14px 16px;
+    font-size: 0.95rem;
+    text-align: left;
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: var(--transition);
+    width: 100%;
+}
+
+/* Action Styles for options when answered */
+.option-btn.correct {
+    background-color: #e8f5e9 !important;
+    border-color: var(--correct-color) !important;
+    color: #2e7d32 !important;
+    font-weight: 700;
+}
+
+.option-btn.incorrect {
+    background-color: #ffebee !important;
+    border-color: var(--incorrect-color) !important;
+    color: #c62828 !important;
+}
+
+.option-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.option-btn.correct:disabled, .option-btn.incorrect:disabled {
+    opacity: 1; /* Keep answered options highly readable */
+}
+
+/* ==========================================================================
+   7. RESULTS SCOREBOARD SCREEN
+   ========================================================================== */
+#results-section {
+    text-align: center;
+    padding: 40px 24px;
+}
+
+.results-badge {
+    font-size: 4rem;
+    margin-bottom: 12px;
+}
+
+.final-score-label {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+}
+
+#final-score {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    margin: 10px 0 16px 0;
+}
+
+#results-feedback {
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}

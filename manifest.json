@@ -1,0 +1,25 @@
+json
+{
+  "name": "BioQuiz AI Generator",
+  "short_name": "BioQuiz",
+  "description": "Turn your biology notes and photos into instant practice quizzes.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f5f7f8",
+  "theme_color": "#2e7d32",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://icons8.com",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://icons8.com",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
