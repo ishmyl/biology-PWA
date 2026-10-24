@@ -1,4 +1,3 @@
-javascript
 // Basic offline service worker
 const CACHE_NAME = 'bioquiz-v1';
 const ASSETS = [
