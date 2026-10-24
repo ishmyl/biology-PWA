@@ -1,56 +1,54 @@
-alert("🚀 BioQuiz App Loaded Successfully!");
-/* ==========================================================================
-   1. APP STATE VARIABLES & MULTI-TYPE QUESTIONS
-   ========================================================================== */
 let quizQuestions = [];
 let currentQuestionIndex = 0;
 let userScore = 0;
+let answerStreak = 0;
+let currentPlayerName = "Player";
 
-// Upgraded Bank supporting Multiple Choice, True/False, and Fill-in-the-Blank
-const classroomQuestionBank = [
+const dynamicClassroomBank = [
     {
         type: "multiple-choice",
-        question: "Which organelle is referred to as the powerhouse of the cell due to its production of ATP?",
-        options: ["Golgi Apparatus", "Mitochondria", "Lysosome", "Ribosome"],
+        question: "Which cellular organelle possesses its own DNA matrix and runs the cellular respiration pathway to produce ATP?",
+        options: ["Golgi Complex", "Mitochondria", "Lysosome", "Centrosome"],
         answer: 1
     },
     {
         type: "true-false",
-        question: "Plant cells contain both chloroplasts and mitochondria.",
+        question: "Eukaryotic cells keep genetic material protected inside a double-membraned cell nucleus, whereas prokaryotic cells lack a true nucleus.",
         options: ["True", "False"],
-        answer: 0 // Index 0 is True
+        answer: 0
     },
     {
         type: "fill-blank",
-        question: "The green pigment in plants that absorbs light energy for photosynthesis is called _________.",
-        answer: "chlorophyll" 
+        question: "The fluid chemical process that occurs outside the mitochondria to break down one glucose molecule into pyruvic acid is called _________.",
+        answer: "glycolysis"
     },
     {
-        type: "multiple-choice",
-        question: "What are the structural building blocks or monomers that link together to synthesize complex proteins?",
-        options: ["Monosaccharides", "Amino Acids", "Nucleotides", "Fatty Acids"],
-        answer: 1
+        type: "structured",
+        question: "Structured Analysis: Explain how active transport differs from passive transport, citing an example of a structural cell mechanism.",
+        rubric: "Score yourself a point! A perfect answer must mention: 1) Active requires energy/ATP, 2) Moves against concentration gradient, 3) Example like the Sodium-Potassium pump."
     },
     {
         type: "true-false",
-        question: "Anaerobic respiration requires the presence of oxygen gas to produce energy.",
+        question: "Photosynthesis is an energy-releasing pathway that animal cells perform inside their cytoplasm during daylight hours.",
         options: ["True", "False"],
-        answer: 1 // Index 1 is False
+        answer: 1
     },
     {
         type: "fill-blank",
-        question: "During mitosis, the stage where chromosomes line up perfectly in the middle of the cell is called _________.",
-        answer: "metaphase"
+        question: "The basic structural building blocks or protein monomers that assemble chain links into cell tissues are called _________ acids.",
+        answer: "amino"
     }
 ];
 
-/* ==========================================================================
-   2. DOM ELEMENT SELECTORS
-   ========================================================================== */
+const registrationSection = document.getElementById('registration-section');
 const uploadSection = document.getElementById('upload-section');
 const loadingSection = document.getElementById('loading-section');
 const quizSection = document.getElementById('quiz-section');
 const resultsSection = document.getElementById('results-section');
+
+const studentNameInput = document.getElementById('student-name-input');
+const startAppBtn = document.getElementById('start-app-btn');
+const displayStudentName = document.getElementById('display-student-name');
 
 const cameraInput = document.getElementById('camera-input');
 const fileInput = document.getElementById('file-input');
@@ -61,193 +59,176 @@ const questionText = document.getElementById('question-text');
 const optionsContainer = document.getElementById('options-container');
 const progressText = document.getElementById('progress-text');
 const scoreText = document.getElementById('score-text');
+const streakCounter = document.getElementById('streak-counter');
 const progressBar = document.getElementById('progress-bar');
 const nextButton = document.getElementById('next-btn');
 
 const finalScoreElement = document.getElementById('final-score');
-const resultsFeedback = document.getElementById('results-feedback');
 const restartButton = document.getElementById('restart-btn');
 
-/* ==========================================================================
-   3. EVENT LISTENERS
-   ========================================================================== */
-cameraInput.addEventListener('change', (e) => handleFileSelection(e.target.files[0]));
-fileInput.addEventListener('change', (e) => handleFileSelection(e.target.files[0]));
-nextButton.addEventListener('click', navigateToNextQuestion);
-restartButton.addEventListener('click', resetAppToStart);
+startAppBtn.addEventListener('click', handleStudentSignIn);
+cameraInput.addEventListener('change', (e) => triggerArenaLoad(e.target.files[0]));
+fileInput.addEventListener('change', (e) => triggerArenaLoad(e.target.files[0]));
+nextButton.addEventListener('click', advanceArenaChallenge);
+restartButton.addEventListener('click', resetArenaSession);
 
-/* ==========================================================================
-   4. FILE HANDLING & SYSTEM GENERATION
-   ========================================================================== */
-function handleFileSelection(file) {
+function handleStudentSignIn() {
+    const rawName = studentNameInput.value.trim();
+    if (!rawName) {
+        alert("Please enter a player tag/name to join the quiz session!");
+        return;
+    }
+    currentPlayerName = rawName;
+    displayStudentName.textContent = currentPlayerName;
+    
+    registrationSection.classList.add('hidden');
+    uploadSection.classList.remove('hidden');
+}
+
+function triggerArenaLoad(file) {
     if (!file) return;
-
     fileNameSpan.textContent = file.name;
     filePreview.classList.remove('hidden');
 
     uploadSection.classList.add('hidden');
     loadingSection.classList.remove('hidden');
 
-    // Simulate sorting a mixed test for students
     setTimeout(() => {
-        generateQuizQuestions();
-    }, 2000);
+        quizQuestions = [...dynamicClassroomBank].sort(() => Math.random() - 0.5);
+        loadingSection.classList.add('hidden');
+        quizSection.classList.remove('hidden');
+        currentQuestionIndex = 0;
+        userScore = 0;
+        answerStreak = 0;
+        renderActiveChallenge();
+    }, 1800);
 }
 
-function generateQuizQuestions() {
-    // Shuffle the question types randomly so students don't get the same test order
-    quizQuestions = [...classroomQuestionBank].sort(() => Math.random() - 0.5);
-    
-    loadingSection.classList.add('hidden');
-    quizSection.classList.remove('hidden');
-    
-    currentQuestionIndex = 0;
-    userScore = 0;
-    renderCurrentQuestion();
-}
-
-/* ==========================================================================
-   5. DYNAMIC QUIZ RENDER ENGINE (Handles Multiple Choice, T/F, & Text Fill)
-   ========================================================================== */
-function renderCurrentQuestion() {
-    const activeQuestion = quizQuestions[currentQuestionIndex];
+function renderActiveChallenge() {
+    const activeQ = quizQuestions[currentQuestionIndex];
     nextButton.classList.add('hidden');
+    optionsContainer.innerHTML = '';
 
-    // Update Text Trackers
-    progressText.textContent = `Question ${currentQuestionIndex + 1} of ${quizQuestions.length}`;
-    scoreText.textContent = `Score: ${userScore}`;
-    
-    const progressPercent = ((currentQuestionIndex + 1) / quizQuestions.length) * 100;
-    progressBar.style.width = `${progressPercent}%`;
+    progressText.textContent = `Question ${currentQuestionIndex + 1}/${quizQuestions.length}`;
+    scoreText.textContent = `${userScore} pts`;
+    streakCounter.textContent = answerStreak;
+    progressBar.style.width = `${((currentQuestionIndex) / quizQuestions.length) * 100}%`;
+    questionText.textContent = activeQ.question;
 
-    questionText.textContent = activeQuestion.question;
-    optionsContainer.innerHTML = ''; // Wipe old containers clear
-
-    // CONDITIONAL LAYOUT GENERATION BASED ON QUESTION TYPE
-    if (activeQuestion.type === "multiple-choice" || activeQuestion.type === "true-false") {
-        // Draw standard buttons for multiple choice or True/False options
-        activeQuestion.options.forEach((option, index) => {
-            const optionBtn = document.createElement('button');
-            optionBtn.className = 'option-btn';
-            optionBtn.textContent = option;
-            optionBtn.addEventListener('click', () => evaluateButtonAnswer(index, optionBtn));
-            optionsContainer.appendChild(optionBtn);
+    if (activeQ.type === "multiple-choice" || activeQ.type === "true-false") {
+        activeQ.options.forEach((opt, idx) => {
+            const btn = document.createElement('button');
+            btn.className = 'option-btn';
+            btn.textContent = opt;
+            btn.addEventListener('click', () => scoreButtonChallenge(idx, btn));
+            optionsContainer.appendChild(btn);
         });
-    } 
-    else if (activeQuestion.type === "fill-blank") {
-        // Create a text box and submit layout dynamically for Fill-in-the-blanks
-        const inputField = document.createElement('input');
-        inputField.type = 'text';
-        inputField.placeholder = 'Type your answer here...';
-        inputField.id = 'blank-input';
-        inputField.style.width = '100%';
-        inputField.style.padding = '14px';
-        inputField.style.fontSize = '1rem';
-        inputField.style.borderRadius = '12px';
-        inputField.style.border = '2px solid #e0e0e0';
-        inputField.style.marginBottom = '12px';
+    }
+    else if (activeQ.type === "fill-blank") {
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.placeholder = 'Type missing term here...';
+        input.id = 'arena-text-input';
         
-        const submitBtn = document.createElement('button');
-        submitBtn.className = 'btn btn-primary';
-        submitBtn.textContent = 'Submit Answer';
-        submitBtn.addEventListener('click', () => evaluateTextAnswer(inputField, submitBtn));
+        const subBtn = document.createElement('button');
+        subBtn.className = 'btn btn-action';
+        subBtn.textContent = 'Lock In Term';
+        subBtn.addEventListener('click', () => scoreTextChallenge(input, subBtn));
         
-        optionsContainer.appendChild(inputField);
-        optionsContainer.appendChild(submitBtn);
+        optionsContainer.appendChild(input);
+        optionsContainer.appendChild(subBtn);
+    }
+    else if (activeQ.type === "structured") {
+        const area = document.createElement('textarea');
+        area.placeholder = 'Write your explanation narrative details here...';
+        area.rows = 4;
+        
+        const subBtn = document.createElement('button');
+        subBtn.className = 'btn btn-action';
+        subBtn.textContent = 'Submit Analysis';
+        subBtn.addEventListener('click', () => revealStructuredRubric(area, subBtn, activeQ.rubric));
+        
+        optionsContainer.appendChild(area);
+        optionsContainer.appendChild(subBtn);
     }
 }
 
-/* ==========================================================================
-   6. ANSWER EVALUATION LOGIC
-   ========================================================================== */
-function evaluateButtonAnswer(selectedIndex, clickedBtn) {
-    const correctAnswerIndex = quizQuestions[currentQuestionIndex].answer;
-    const allOptionButtons = optionsContainer.querySelectorAll('.option-btn');
+function scoreButtonChallenge(idx, selectedBtn) {
+    const correctIdx = quizQuestions[currentQuestionIndex].answer;
+    const items = optionsContainer.querySelectorAll('.option-btn');
 
-    if (selectedIndex === correctAnswerIndex) {
-        clickedBtn.classList.add('correct');
-        userScore++;
-        scoreText.textContent = `Score: ${userScore}`;
+    if (idx === correctIdx) {
+        selectedBtn.classList.add('correct');
+        answerStreak++;
+        userScore += 100 + (answerStreak * 20); 
     } else {
-        clickedBtn.classList.add('incorrect');
-        allOptionButtons[correctAnswerIndex].classList.add('correct');
+        selectedBtn.classList.add('incorrect');
+        items[correctIdx].classList.add('correct');
+        answerStreak = 0;
     }
-
-    allOptionButtons.forEach(btn => btn.disabled = true);
+    items.forEach(b => b.disabled = true);
     nextButton.classList.remove('hidden');
 }
 
-function evaluateTextAnswer(inputField, submitBtn) {
-    const studentAnswer = inputField.value.trim().toLowerCase();
-    const correctAnswer = quizQuestions[currentQuestionIndex].answer.toLowerCase();
+function scoreTextChallenge(input, subBtn) {
+    const guess = input.value.trim().toLowerCase();
+    const target = quizQuestions[currentQuestionIndex].answer.toLowerCase();
+    input.disabled = true;
+    subBtn.disabled = true;
 
-    inputField.disabled = true;
-    submitBtn.disabled = true;
-
-    // Direct text equality comparison
-    if (studentAnswer === correctAnswer) {
-        inputField.style.borderColor = '#4caf50';
-        inputField.style.backgroundColor = '#e8f5e9';
-        userScore++;
-        scoreText.textContent = `Score: ${userScore}`;
+    if (guess === target) {
+        input.style.borderColor = '#10b981';
+        answerStreak++;
+        userScore += 100 + (answerStreak * 20);
     } else {
-        inputField.style.borderColor = '#f44336';
-        inputField.style.backgroundColor = '#ffebee';
-        
-        // Show correct answer indicator below input
-        const correctLabel = document.createElement('p');
-        correctLabel.style.color = '#4caf50';
-        correctLabel.style.fontWeight = '700';
-        correctLabel.style.marginTop = '8px';
-        correctLabel.textContent = `Correct Answer: ${quizQuestions[currentQuestionIndex].answer}`;
-        optionsContainer.appendChild(correctLabel);
+        input.style.borderColor = '#ef4444';
+        answerStreak = 0;
+        const keyLabel = document.createElement('p');
+        keyLabel.className = 'neon-text';
+        keyLabel.style.marginTop = '10px';
+        keyLabel.textContent = `Target Keyword: ${quizQuestions[currentQuestionIndex].answer}`;
+        optionsContainer.appendChild(keyLabel);
     }
-
     nextButton.classList.remove('hidden');
 }
 
-function navigateToNextQuestion() {
+function revealStructuredRubric(area, subBtn, rubricText) {
+    area.disabled = true;
+    subBtn.disabled = true;
+    answerStreak++;
+    userScore += 150;
+
+    const wrap = document.createElement('div');
+    wrap.className = 'structured-feedback';
+    wrap.innerHTML = `<h4>💡 Grading Rubric Guide:</h4><p style="font-size:0.85rem; color:#9ca3af; margin-top:5px; line-height:1.4;">${rubricText}</p>`;
+    optionsContainer.appendChild(wrap);
+    
+    nextButton.classList.remove('hidden');
+}
+
+function advanceArenaChallenge() {
     currentQuestionIndex++;
     if (currentQuestionIndex < quizQuestions.length) {
-        renderCurrentQuestion();
+        renderActiveChallenge();
     } else {
-        displayFinalResults();
+        progressBar.style.width = "100%";
+        quizSection.classList.add('hidden');
+        resultsSection.classList.remove('hidden');
+        finalScoreElement.textContent = `${userScore} PTS`;
     }
 }
 
-/* ==========================================================================
-   7. RESULTS SCOREBOARD & RESET
-   ========================================================================== */
-function displayFinalResults() {
-    quizSection.classList.add('hidden');
-    resultsSection.classList.remove('hidden');
-    finalScoreElement.textContent = `${userScore} / ${quizQuestions.length}`;
-
-    const scorePercentage = (userScore / quizQuestions.length) * 100;
-    if (scorePercentage === 100) {
-        resultsFeedback.textContent = "Excellent! Perfect understanding of classroom concepts!";
-    } else if (scorePercentage >= 70) {
-        resultsFeedback.textContent = "Nice work! You passed your biological concepts check.";
-    } else {
-        resultsFeedback.textContent = "Keep practicing! Review your notes and try the questions again.";
-    }
-}
-
-function resetAppToStart() {
+function resetArenaSession() {
     resultsSection.classList.add('hidden');
     filePreview.classList.add('hidden');
     cameraInput.value = '';
     fileInput.value = '';
-Use code with caution.
-uploadSection.classList.remove('hidden');
+    studentNameInput.value = '';
+    uploadSection.classList.remove('hidden');
 }
-/* ==========================================================================
-8. REGISTER PWA SERVICE WORKER
-========================================================================== */
+
 if ('serviceWorker' in navigator) {
-window.addEventListener('load', () => {
-navigator.serviceWorker.register('sw.js')
-.then(reg => console.log('Service Worker registered!'))
-.catch(err => console.log('Worker crashed:', err));
-});
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch(err => console.log(err));
+    });
 }

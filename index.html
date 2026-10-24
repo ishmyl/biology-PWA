@@ -2,94 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BioQuiz AI Generator</title>
-    <!-- Link to our styling sheet -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Wayground BioArena AI</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Link to our Web App Manifest (Makes it an installable app later) -->
     <link rel="manifest" href="manifest.json">
-    <!-- Theme color for mobile browser bars -->
-    <meta name="theme-color" content="#2e7d32">
+    <meta name="theme-color" content="#4c1d95">
 </head>
 <body>
 
-    <!-- App Header -->
     <header class="app-header">
-        <div class="logo">🧬 BioQuiz AI</div>
-        <p class="subtitle">Turn photos & files into instant study quizzes</p>
+        <div class="logo">⚡ Wayground BioArena</div>
+        <p class="subtitle">Live Student AI Interactive Challenge</p>
     </header>
 
     <main class="app-container">
         
-        <!-- SECTION 1: Upload & Capture Options -->
-        <section id="upload-section" class="card">
-            <h2>Step 1: Provide Material</h2>
-            <p class="instruction">Upload a biology document or take a picture of your textbook page.</p>
-            
+        <!-- STEP 1: STUDENT HUB LOGIN -->
+        <section id="registration-section" class="card gamified-card">
+            <div class="card-badge">🎮 ENTER ARENA</div>
+            <h2>Classroom Sign-In</h2>
+            <p class="instruction">Students: Enter your player tag below to step into the live interactive challenge arena!</p>
+            <input type="text" id="student-name-input" placeholder="Type your Player Name..." autocomplete="off">
+            <button id="start-app-btn" class="btn btn-action">Join Arena 🚀</button>
+        </section>
+
+        <!-- STEP 2: MATERIAL SELECTION HUB -->
+        <section id="upload-section" class="card gamified-card hidden">
+            <div class="card-badge">📁 SOURCE FEED</div>
+            <h2>Player: <span id="display-student-name" class="neon-text">Guest</span></h2>
+            <p class="instruction">Take a picture of your textbook page or notes to dynamically parse your classroom challenge questions.</p>
             <div class="upload-buttons">
-                <!-- 'capture="environment"' forces mobile devices to open the rear camera directly -->
-                <label for="camera-input" class="btn btn-primary">
-                    📸 Take Photo of Page
+                <label for="camera-input" class="btn btn-action">
+                    📸 Launch Device Camera
                     <input type="file" id="camera-input" accept="image/*" capture="environment">
                 </label>
-
-                <!-- Standard file picker for images or PDFs already saved on the device -->
                 <label for="file-input" class="btn btn-secondary">
-                    📁 Upload Image or File
+                    📁 Load Notes or Files
                     <input type="file" id="file-input" accept="image/*,.pdf,.txt">
                 </label>
             </div>
-            
-            <!-- Small preview area to show the user what image they just selected -->
-            <div id="file-preview" class="hidden">
-                <p>Selected: <span id="file-name"></span></p>
-            </div>
+            <div id="file-preview" class="hidden"><p>Asset Loaded: <span id="file-name"></span></p></div>
         </section>
 
-        <!-- SECTION 2: Loading State (Hidden by default) -->
-        <section id="loading-section" class="card hidden">
-            <div class="spinner"></div>
-            <h3>AI is generating your quiz...</h3>
-            <p>Reading your text and designing customized biology questions.</p>
+        <!-- STEP 3: LOADING SPINNER IN PROGRESS -->
+        <section id="loading-section" class="card gamified-card hidden">
+            <div class="spinner-glow">
+                <div class="spinner"></div>
+            </div>
+            <h3>Wayground AI is engineering your questions...</h3>
+            <p>Compiling True/False, Multiple-Choice, Fill-Blanks, and Structured Rubrics.</p>
         </section>
 
-        <!-- SECTION 3: The Active Quiz (Hidden by default until quiz is generated) -->
-        <section id="quiz-section" class="card hidden">
-            <div class="quiz-header">
-                <span id="progress-text">Question 1 of 5</span>
-                <span id="score-text">Score: 0</span>
+        <!-- STEP 4: INTERACTIVE QUIZ HUB -->
+        <section id="quiz-section" class="card gamified-card hidden">
+            <div class="stats-ribbon">
+                <span id="progress-text">Q: 1/6</span>
+                <div class="streak-badge">🔥 Streak: <span id="streak-counter">0</span></div>
+                <span id="score-text" class="score-glow">0 pts</span>
             </div>
+            <div class="progress-bar-container"><div id="progress-bar"></div></div>
             
-            <!-- Progress bar visual indicator -->
-            <div class="progress-bar-container">
-                <div id="progress-bar" style="width: 20%;"></div>
-            </div>
-
-            <!-- The Question Text -->
-            <h2 id="question-text">Loading question text here...</h2>
-
-            <!-- The Multiple Choice Options Container -->
-            <div id="options-container" class="options-grid">
-                <!-- Options buttons will be dynamically generated by JavaScript here -->
-            </div>
-
-            <button id="next-btn" class="btn btn-next hidden">Next Question ➡️</button>
+            <h2 id="question-text">Analyzing concept question...</h2>
+            <div id="options-container" class="options-grid"></div>
+            
+            <button id="next-btn" class="btn btn-next hidden">Next Challenge ➡️</button>
         </section>
 
-        <!-- SECTION 4: Quiz Results Scoreboard (Hidden by default) -->
-        <section id="results-section" class="card hidden">
-            <div class="results-badge">🎉</div>
-            <h2>Quiz Completed!</h2>
-            <p class="final-score-label">Your Final Score</p>
-            <h1 id="final-score">0 / 0</h1>
-            <p id="results-feedback">Great effort! Keep studying to master this topic.</p>
-            
-            <button id="restart-btn" class="btn btn-primary">Try Another Page</button>
+        <!-- STEP 5: STUDENT SCOREBOARD REPORT -->
+        <section id="results-section" class="card gamified-card hidden">
+            <div class="results-badge">🏆</div>
+            <h2>Arena Completed!</h2>
+            <p class="final-score-label">Final Player Record</p>
+            <h1 id="final-score" class="neon-text-green">0 pts</h1>
+            <p id="results-feedback">Your performance scorecard has been locked in for your teacher's session verification.</p>
+            <button id="restart-btn" class="btn btn-action">Play New Session</button>
         </section>
 
     </main>
 
-    <!-- Link to our JavaScript logic file -->
     <script src="app.js"></script>
 </body>
 </html>
