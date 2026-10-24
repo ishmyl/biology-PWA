@@ -1,5 +1,5 @@
 // Basic offline service worker
-const CACHE_NAME = 'bioquiz-v1';
+const CACHE_NAME = 'bioquiz-v2';
 const ASSETS = [
   './',
   './index.html',
