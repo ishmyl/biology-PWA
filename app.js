@@ -1,37 +1,45 @@
 /* ==========================================================================
-   1. APP STATE VARIABLES
+   1. APP STATE VARIABLES & MULTI-TYPE QUESTIONS
    ========================================================================== */
 let quizQuestions = [];
 let currentQuestionIndex = 0;
 let userScore = 0;
-let selectedAnswerIndex = null;
 
-// Mock Data Generator to let you test the app immediately without a live server
-const mockBiologyQuestions = [
+// Upgraded Bank supporting Multiple Choice, True/False, and Fill-in-the-Blank
+const classroomQuestionBank = [
     {
-        question: "Which organelle is universally referred to as the powerhouse of the cell due to its production of ATP?",
+        type: "multiple-choice",
+        question: "Which organelle is referred to as the powerhouse of the cell due to its production of ATP?",
         options: ["Golgi Apparatus", "Mitochondria", "Lysosome", "Ribosome"],
-        answer: 1 // Corresponds to Index 1 (Mitochondria)
+        answer: 1
     },
     {
-        question: "What is the primary green pigment responsible for absorbing light during the process of photosynthesis?",
-        options: ["Carotenoid", "Anthocyanin", "Chlorophyll", "Hemoglobin"],
-        answer: 2
+        type: "true-false",
+        question: "Plant cells contain both chloroplasts and mitochondria.",
+        options: ["True", "False"],
+        answer: 0 // Index 0 is True
     },
     {
-        question: "Which type of cellular transport requires metabolic energy input (ATP) to move molecules against a concentration gradient?",
-        options: ["Active Transport", "Simple Diffusion", "Osmosis", "Facilitated Diffusion"],
-        answer: 0
+        type: "fill-blank",
+        question: "The green pigment in plants that absorbs light energy for photosynthesis is called _________.",
+        answer: "chlorophyll" 
     },
     {
-        question: "During which stage of mitosis do sister chromatids split apart and migrate toward opposite poles of the cell?",
-        options: ["Prophase", "Metaphase", "Anaphase", "Telophase"],
-        answer: 2
-    },
-    {
+        type: "multiple-choice",
         question: "What are the structural building blocks or monomers that link together to synthesize complex proteins?",
         options: ["Monosaccharides", "Amino Acids", "Nucleotides", "Fatty Acids"],
         answer: 1
+    },
+    {
+        type: "true-false",
+        question: "Anaerobic respiration requires the presence of oxygen gas to produce energy.",
+        options: ["True", "False"],
+        answer: 1 // Index 1 is False
+    },
+    {
+        type: "fill-blank",
+        question: "During mitosis, the stage where chromosomes line up perfectly in the middle of the cell is called _________.",
+        answer: "metaphase"
     }
 ];
 
@@ -68,31 +76,27 @@ nextButton.addEventListener('click', navigateToNextQuestion);
 restartButton.addEventListener('click', resetAppToStart);
 
 /* ==========================================================================
-   4. FILE HANDLING & SIMULATED AI GENERATION
+   4. FILE HANDLING & SYSTEM GENERATION
    ========================================================================== */
 function handleFileSelection(file) {
     if (!file) return;
 
-    // Show small confirmation preview message
     fileNameSpan.textContent = file.name;
     filePreview.classList.remove('hidden');
 
-    // Smoothly step from Upload Screen into Loading Screen
     uploadSection.classList.add('hidden');
     loadingSection.classList.remove('hidden');
 
-    // Simulate sending data to an AI model server (takes 2.5 seconds)
+    // Simulate sorting a mixed test for students
     setTimeout(() => {
-        generateQuizQuestions(file);
-    }, 2500);
+        generateQuizQuestions();
+    }, 2000);
 }
 
-function generateQuizQuestions(file) {
-    // NOTE: This is where you will add your future API fetch call.
-    // For now, it dynamically shuffles and loads our mock data structure.
-    quizQuestions = [...mockBiologyQuestions].sort(() => Math.random() - 0.5);
+function generateQuizQuestions() {
+    // Shuffle the question types randomly so students don't get the same test order
+    quizQuestions = [...classroomQuestionBank].sort(() => Math.random() - 0.5);
     
-    // Hide loading screen and prepare first quiz layout
     loadingSection.classList.add('hidden');
     quizSection.classList.remove('hidden');
     
@@ -102,42 +106,60 @@ function generateQuizQuestions(file) {
 }
 
 /* ==========================================================================
-   5. QUIZ ENGINE CONTROLLERS
+   5. DYNAMIC QUIZ RENDER ENGINE (Handles Multiple Choice, T/F, & Text Fill)
    ========================================================================== */
 function renderCurrentQuestion() {
     const activeQuestion = quizQuestions[currentQuestionIndex];
-    selectedAnswerIndex = null;
     nextButton.classList.add('hidden');
 
-    // Update Header Indicators
+    // Update Text Trackers
     progressText.textContent = `Question ${currentQuestionIndex + 1} of ${quizQuestions.length}`;
     scoreText.textContent = `Score: ${userScore}`;
     
-    // Calculate and apply visual progress percentage bar
     const progressPercent = ((currentQuestionIndex + 1) / quizQuestions.length) * 100;
     progressBar.style.width = `${progressPercent}%`;
 
-    // Inject active question title
     questionText.textContent = activeQuestion.question;
+    optionsContainer.innerHTML = ''; // Wipe old containers clear
 
-    // Clear old options inside the button wrapper
-    optionsContainer.innerHTML = '';
-
-    // Create buttons for each array item option dynamically
-    activeQuestion.options.forEach((option, index) => {
-        const optionBtn = document.createElement('button');
-        optionBtn.className = 'option-btn';
-        optionBtn.textContent = option;
-        optionBtn.addEventListener('click', () => evaluateSelectedAnswer(index, optionBtn));
-        optionsContainer.appendChild(optionBtn);
-    });
+    // CONDITIONAL LAYOUT GENERATION BASED ON QUESTION TYPE
+    if (activeQuestion.type === "multiple-choice" || activeQuestion.type === "true-false") {
+        // Draw standard buttons for multiple choice or True/False options
+        activeQuestion.options.forEach((option, index) => {
+            const optionBtn = document.createElement('button');
+            optionBtn.className = 'option-btn';
+            optionBtn.textContent = option;
+            optionBtn.addEventListener('click', () => evaluateButtonAnswer(index, optionBtn));
+            optionsContainer.appendChild(optionBtn);
+        });
+    } 
+    else if (activeQuestion.type === "fill-blank") {
+        // Create a text box and submit layout dynamically for Fill-in-the-blanks
+        const inputField = document.createElement('input');
+        inputField.type = 'text';
+        inputField.placeholder = 'Type your answer here...';
+        inputField.id = 'blank-input';
+        inputField.style.width = '100%';
+        inputField.style.padding = '14px';
+        inputField.style.fontSize = '1rem';
+        inputField.style.borderRadius = '12px';
+        inputField.style.border = '2px solid #e0e0e0';
+        inputField.style.marginBottom = '12px';
+        
+        const submitBtn = document.createElement('button');
+        submitBtn.className = 'btn btn-primary';
+        submitBtn.textContent = 'Submit Answer';
+        submitBtn.addEventListener('click', () => evaluateTextAnswer(inputField, submitBtn));
+        
+        optionsContainer.appendChild(inputField);
+        optionsContainer.appendChild(submitBtn);
+    }
 }
 
-function evaluateSelectedAnswer(selectedIndex, clickedBtn) {
-    // Lock additional clicking actions on alternate options once clicked
-    if (selectedAnswerIndex !== null) return;
-    
-    selectedAnswerIndex = selectedIndex;
+/* ==========================================================================
+   6. ANSWER EVALUATION LOGIC
+   ========================================================================== */
+function evaluateButtonAnswer(selectedIndex, clickedBtn) {
     const correctAnswerIndex = quizQuestions[currentQuestionIndex].answer;
     const allOptionButtons = optionsContainer.querySelectorAll('.option-btn');
 
@@ -147,20 +169,44 @@ function evaluateSelectedAnswer(selectedIndex, clickedBtn) {
         scoreText.textContent = `Score: ${userScore}`;
     } else {
         clickedBtn.classList.add('incorrect');
-        // Highlight correct choice for teaching reference
         allOptionButtons[correctAnswerIndex].classList.add('correct');
     }
 
-    // Freeze all option elements from being pressed again
     allOptionButtons.forEach(btn => btn.disabled = true);
-    
-    // Reveal button to step forward
+    nextButton.classList.remove('hidden');
+}
+
+function evaluateTextAnswer(inputField, submitBtn) {
+    const studentAnswer = inputField.value.trim().toLowerCase();
+    const correctAnswer = quizQuestions[currentQuestionIndex].answer.toLowerCase();
+
+    inputField.disabled = true;
+    submitBtn.disabled = true;
+
+    // Direct text equality comparison
+    if (studentAnswer === correctAnswer) {
+        inputField.style.borderColor = '#4caf50';
+        inputField.style.backgroundColor = '#e8f5e9';
+        userScore++;
+        scoreText.textContent = `Score: ${userScore}`;
+    } else {
+        inputField.style.borderColor = '#f44336';
+        inputField.style.backgroundColor = '#ffebee';
+        
+        // Show correct answer indicator below input
+        const correctLabel = document.createElement('p');
+        correctLabel.style.color = '#4caf50';
+        correctLabel.style.fontWeight = '700';
+        correctLabel.style.marginTop = '8px';
+        correctLabel.textContent = `Correct Answer: ${quizQuestions[currentQuestionIndex].answer}`;
+        optionsContainer.appendChild(correctLabel);
+    }
+
     nextButton.classList.remove('hidden');
 }
 
 function navigateToNextQuestion() {
     currentQuestionIndex++;
-
     if (currentQuestionIndex < quizQuestions.length) {
         renderCurrentQuestion();
     } else {
@@ -169,43 +215,38 @@ function navigateToNextQuestion() {
 }
 
 /* ==========================================================================
-   6. SCOREBOARD DISPLAY & RESET
+   7. RESULTS SCOREBOARD & RESET
    ========================================================================== */
 function displayFinalResults() {
     quizSection.classList.add('hidden');
     resultsSection.classList.remove('hidden');
-
     finalScoreElement.textContent = `${userScore} / ${quizQuestions.length}`;
 
-    // Conditional custom feedback depending on efficiency
     const scorePercentage = (userScore / quizQuestions.length) * 100;
     if (scorePercentage === 100) {
-        resultsFeedback.textContent = "Flawless score! You have thoroughly mastered this topic's concepts!";
+        resultsFeedback.textContent = "Excellent! Perfect understanding of classroom concepts!";
     } else if (scorePercentage >= 70) {
-        resultsFeedback.textContent = "Great job! You have a solid grasp on these biology fundamentals.";
+        resultsFeedback.textContent = "Nice work! You passed your biological concepts check.";
     } else {
-        resultsFeedback.textContent = "Good effort! Review your material page options once more to improve scores.";
+        resultsFeedback.textContent = "Keep practicing! Review your notes and try the questions again.";
     }
 }
 
 function resetAppToStart() {
     resultsSection.classList.add('hidden');
     filePreview.classList.add('hidden');
-    
-    // Reset file selection fields so the change actions can re-fire properly
     cameraInput.value = '';
     fileInput.value = '';
-    
-    uploadSection.classList.remove('hidden');
+Use code with caution.
+uploadSection.classList.remove('hidden');
 }
-
 /* ==========================================================================
-   7. REGISTER PROGRESSIVE WEB APP SERVICE WORKER
-   ========================================================================== */
+8. REGISTER PWA SERVICE WORKER
+========================================================================== */
 if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js')
-            .then(reg => console.log('PWA Service Worker registered successfully!', reg.scope))
-            .catch(err => console.log('Service Worker failed registration:', err));
-    });
+window.addEventListener('load', () => {
+navigator.serviceWorker.register('sw.js')
+.then(reg => console.log('Service Worker registered!'))
+.catch(err => console.log('Worker crashed:', err));
+});
 }
