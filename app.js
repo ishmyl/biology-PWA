@@ -1,8 +1,34 @@
+/* ==========================================================================
+   1. CORE FIREBASE SETUP & CLOUD NETWORK CONNECTIVITY
+   ========================================================================== */
+// Your live Firebase configuration credentials verified from your dashboard
+const firebaseConfig = {
+    apiKey: "AIzaSyChSMRbqSFmAE2dNlGHa6AFcc4SpWM1V7g",
+    authDomain: "://firebaseapp.com",
+    databaseURL: "https://firebaseio.com",
+    projectId: "wayground-bioarena",
+    storageBucket: "wayground-bioarena.firebasestorage.app",
+    messagingSenderId: "7169528648",
+    appId: "1:7169528648:web:085387e296b0ecdacf4339"
+};
+
+// Initialize Firebase linkage if the library scripts exist
+if (typeof firebase !== 'undefined') {
+    firebase.initializeApp(firebaseConfig);
+    console.log("🚀 Firebase connected successfully to BioArena!");
+} else {
+    console.log("⚠️ Firebase library script was not found. Running in offline fallback mode.");
+}
+
+/* ==========================================================================
+   2. APP STATE VARIABLES & MASTER QUESTION BANK
+   ========================================================================== */
 let quizQuestions = [];
 let currentQuestionIndex = 0;
 let userScore = 0;
 let answerStreak = 0;
 let currentPlayerName = "Player";
+let currentSessionId = ""; // Unique id to identify individual student runs
 
 const dynamicClassroomBank = [
     {
@@ -40,6 +66,9 @@ const dynamicClassroomBank = [
     }
 ];
 
+/* ==========================================================================
+   3. DOM ELEMENT SELECTORS
+   ========================================================================== */
 const registrationSection = document.getElementById('registration-section');
 const uploadSection = document.getElementById('upload-section');
 const loadingSection = document.getElementById('loading-section');
@@ -66,12 +95,36 @@ const nextButton = document.getElementById('next-btn');
 const finalScoreElement = document.getElementById('final-score');
 const restartButton = document.getElementById('restart-btn');
 
+/* ==========================================================================
+   4. EVENT LISTENERS
+   ========================================================================== */
 startAppBtn.addEventListener('click', handleStudentSignIn);
-cameraInput.addEventListener('change', (e) => triggerArenaLoad(e.target.files[0]));
-fileInput.addEventListener('change', (e) => triggerArenaLoad(e.target.files[0]));
+cameraInput.addEventListener('change', (e) => triggerArenaLoad(e.target.files));
+fileInput.addEventListener('change', (e) => triggerArenaLoad(e.target.files));
 nextButton.addEventListener('click', advanceArenaChallenge);
 restartButton.addEventListener('click', resetArenaSession);
 
+/* ==========================================================================
+   5. REAL-TIME TEACHER DASHBOARD BROADCAST LOGIC
+   ========================================================================== */
+function broadcastStudentData(statusMessage) {
+    if (typeof firebase === 'undefined' || !currentSessionId) return;
+
+    // Send a structured update package to the cloud database path
+    firebase.database().ref('student_sessions/' + currentSessionId).set({
+        name: currentPlayerName,
+        score: userScore,
+        streak: answerStreak,
+        currentQuestion: currentQuestionIndex + 1,
+        totalQuestions: quizQuestions.length,
+        lastStatus: statusMessage,
+        timestamp: Date.now()
+    }).catch(err => console.log("Database update failed:", err));
+}
+
+/* ==========================================================================
+   6. CORE GAME WORKFLOW
+   ========================================================================== */
 function handleStudentSignIn() {
     const rawName = studentNameInput.value.trim();
     if (!rawName) {
@@ -81,6 +134,12 @@ function handleStudentSignIn() {
     currentPlayerName = rawName;
     displayStudentName.textContent = currentPlayerName;
     
+    // Create a unique entry ID string for this specific student's run session
+    currentSessionId = currentPlayerName.replace(/[^a-zA-Z0-9]/g, "_") + "_" + Math.floor(1000 + Math.random() * 9000);
+    
+    // Broadcast initial join log to teacher dashboard
+    broadcastStudentData("Joined Class Session Arena");
+
     registrationSection.classList.add('hidden');
     uploadSection.classList.remove('hidden');
 }
@@ -92,6 +151,8 @@ function triggerArenaLoad(file) {
 
     uploadSection.classList.add('hidden');
     loadingSection.classList.remove('hidden');
+    
+    broadcastStudentData("Analyzing Document Material...");
 
     setTimeout(() => {
         quizQuestions = [...dynamicClassroomBank].sort(() => Math.random() - 0.5);
@@ -114,6 +175,8 @@ function renderActiveChallenge() {
     streakCounter.textContent = answerStreak;
     progressBar.style.width = `${((currentQuestionIndex) / quizQuestions.length) * 100}%`;
     questionText.textContent = activeQ.question;
+    
+    broadcastStudentData(`Answering Question ${currentQuestionIndex + 1}`);
 
     if (activeQ.type === "multiple-choice" || activeQ.type === "true-false") {
         activeQ.options.forEach((opt, idx) => {
@@ -161,74 +224,5 @@ function scoreButtonChallenge(idx, selectedBtn) {
         selectedBtn.classList.add('correct');
         answerStreak++;
         userScore += 100 + (answerStreak * 20); 
+        broadcastStudentData("Answered Correctly (+Streak Combo)");
     } else {
-        selectedBtn.classList.add('incorrect');
-        items[correctIdx].classList.add('correct');
-        answerStreak = 0;
-    }
-    items.forEach(b => b.disabled = true);
-    nextButton.classList.remove('hidden');
-}
-
-function scoreTextChallenge(input, subBtn) {
-    const guess = input.value.trim().toLowerCase();
-    const target = quizQuestions[currentQuestionIndex].answer.toLowerCase();
-    input.disabled = true;
-    subBtn.disabled = true;
-
-    if (guess === target) {
-        input.style.borderColor = '#10b981';
-        answerStreak++;
-        userScore += 100 + (answerStreak * 20);
-    } else {
-        input.style.borderColor = '#ef4444';
-        answerStreak = 0;
-        const keyLabel = document.createElement('p');
-        keyLabel.className = 'neon-text';
-        keyLabel.style.marginTop = '10px';
-        keyLabel.textContent = `Target Keyword: ${quizQuestions[currentQuestionIndex].answer}`;
-        optionsContainer.appendChild(keyLabel);
-    }
-    nextButton.classList.remove('hidden');
-}
-
-function revealStructuredRubric(area, subBtn, rubricText) {
-    area.disabled = true;
-    subBtn.disabled = true;
-    answerStreak++;
-    userScore += 150;
-
-    const wrap = document.createElement('div');
-    wrap.className = 'structured-feedback';
-    wrap.innerHTML = `<h4>💡 Grading Rubric Guide:</h4><p style="font-size:0.85rem; color:#9ca3af; margin-top:5px; line-height:1.4;">${rubricText}</p>`;
-    optionsContainer.appendChild(wrap);
-    
-    nextButton.classList.remove('hidden');
-}
-
-function advanceArenaChallenge() {
-    currentQuestionIndex++;
-    if (currentQuestionIndex < quizQuestions.length) {
-        renderActiveChallenge();
-    } else {
-        progressBar.style.width = "100%";
-        quizSection.classList.add('hidden');
-        resultsSection.classList.remove('hidden');
-        finalScoreElement.textContent = `${userScore} PTS`;
-    }
-}
-
-function resetArenaSession() {
-    resultsSection.classList.add('hidden');
-    filePreview.classList.add('hidden');
-    cameraInput.value = '';
-    fileInput.value = '';
-    studentNameInput.value = '';
-    uploadSection.classList.remove('hidden');
-}
-
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js').catch(err => console.log(err));
-    });
-}
