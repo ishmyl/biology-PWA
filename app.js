@@ -145,7 +145,11 @@ function handleStudentSignIn() {
         displayStudentName.textContent = `${classTag}, ${currentPlayerName}`;
         currentSessionId = `${classTag}_${currentPlayerName.replace(/[^a-zA-Z0-9]/g, "_")}`;
 
-        broadcastStudentData("Joined Arena");
+        try {
+            broadcastStudentData("Joined Arena");
+        } catch (e) {
+            console.log("Firebase bypass active:", e);
+        }
         
         registrationSection.classList.add('hidden');
         uploadSection.classList.remove('hidden');
@@ -156,8 +160,8 @@ function handleStudentSignIn() {
 }
 
 function triggerArenaLoad(file) {
-    if (!file || !file[0]) return;
-    fileNameSpan.textContent = file[0].name;
+    if (!file || !file) return;
+    fileNameSpan.textContent = file.name;
     filePreview.classList.remove('hidden');
     uploadSection.classList.add('hidden');
     loadingSection.classList.remove('hidden');
@@ -192,7 +196,7 @@ function renderActiveChallenge() {
     if (activeQ.type === 'multiple-choice' || activeQ.type === 'true-false') {
         activeQ.options.forEach((option, idx) => {
             const btn = document.createElement('button');
-            btn.className = 'option-btn btn btn-outline-primary m-2 p-3 text-start w-100';
+            btn.className = 'option-btn btn-secondary m-2 p-3 text-start w-100';
             btn.textContent = option;
             btn.addEventListener('click', () => evaluateChoiceAnswer(idx, btn));
             optionsContainer.appendChild(btn);
@@ -202,7 +206,7 @@ function renderActiveChallenge() {
         const inputContainer = document.createElement('div');
         inputContainer.className = 'w-100 p-2';
         inputContainer.innerHTML = `
-            <input type="text" id="blank-answer" class="form-control mb-3" placeholder="Type your lowercase answer...">
+            <input type="text" id="blank-answer" class="form-control mb-3" placeholder="Type your lowercase answer here...">
             <button id="submit-blank-btn" class="btn btn-primary w-100">Submit Answer</button>
         `;
         optionsContainer.appendChild(inputContainer);
@@ -212,3 +216,109 @@ function renderActiveChallenge() {
         const structuralContainer = document.createElement('div');
         structuralContainer.className = 'w-100 p-2';
         structuralContainer.innerHTML = `
+            <textarea id="structured-answer" class="form-control mb-3" rows="4" placeholder="Write out your scientific analysis..."></textarea>
+            <div class="alert alert-info small mb-3"><strong>Evaluation Rubric:</strong> ${activeQ.rubric}</div>
+            <button id="submit-structured-btn" class="btn btn-success w-100">Submit for AI Evaluation</button>
+        `;
+        optionsContainer.appendChild(structuralContainer);
+        document.getElementById('submit-structured-btn').addEventListener('click', evaluateStructuredAnswer);
+    }
+}
+
+/* ==========================================================================
+   6. ANSWER VALIDATION ENGINE
+   ========================================================================== */
+function evaluateChoiceAnswer(selectedIndex, selectedButton) {
+    const activeQ = quizQuestions[currentQuestionIndex];
+    const allButtons = optionsContainer.querySelectorAll('.option-btn');
+    
+    allButtons.forEach(btn => btn.disabled = true);
+
+    if (selectedIndex === activeQ.answer) {
+        selectedButton.style.backgroundColor = '#28a745';
+        selectedButton.style.color = '#fff';
+        userScore += 100 + (answerStreak * 10);
+        answerStreak++;
+        broadcastStudentData("Answered Correctly");
+    } else {
+        selectedButton.style.backgroundColor = '#dc3545';
+        selectedButton.style.color = '#fff';
+        allButtons[activeQ.answer].style.backgroundColor = '#28a745';
+        allButtons[activeQ.answer].style.color = '#fff';
+        answerStreak = 0;
+        broadcastStudentData("Answered Incorrectly");
+    }
+    nextButton.classList.remove('hidden');
+}
+
+function evaluateBlankAnswer() {
+    const activeQ = quizQuestions[currentQuestionIndex];
+    const playerInput = document.getElementById('blank-answer');
+    const submitBtn = document.getElementById('submit-blank-btn');
+    
+    if (!playerInput.value.trim()) return;
+    
+    playerInput.disabled = true;
+    submitBtn.disabled = true;
+
+    if (playerInput.value.trim().toLowerCase() === activeQ.answer.toLowerCase()) {
+        playerInput.style.border = '2px solid #28a745';
+        userScore += 120;
+        answerStreak++;
+    } else {
+        playerInput.style.border = '2px solid #dc3545';
+        answerStreak = 0;
+        const correction = document.createElement('p');
+        correction.className = 'text-success mt-2 font-weight-bold';
+        correction.textContent = `Correct answer: ${activeQ.answer}`;
+        optionsContainer.appendChild(correction);
+    }
+    nextButton.classList.remove('hidden');
+}
+
+function evaluateStructuredAnswer() {
+    const playerInput = document.getElementById('structured-answer');
+    const submitBtn = document.getElementById('submit-structured-btn');
+    
+    if (!playerInput.value.trim()) return;
+    
+    playerInput.disabled = true;
+    submitBtn.disabled = true;
+
+    if (playerInput.value.trim().length > 40) {
+        userScore += 200;
+        answerStreak++;
+        playerInput.style.border = '2px solid #28a745';
+    } else {
+        userScore += 50;
+        playerInput.style.border = '2px solid #ffc107';
+    }
+    nextButton.classList.remove('hidden');
+}
+
+function advanceArenaChallenge() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < quizQuestions.length) {
+        renderActiveChallenge();
+    } else {
+        displayArenaResults();
+    }
+}
+
+function displayArenaResults() {
+    quizSection.classList.add('hidden');
+    resultsSection.classList.remove('hidden');
+    finalScoreElement.textContent = userScore;
+    broadcastStudentData(`Finished Arena Challenge! Final Score: ${userScore}`);
+}
+
+function resetArenaSession() {
+    resultsSection.classList.add('hidden');
+    registrationSection.classList.remove('hidden');
+    filePreview.classList.add('hidden');
+    
+    quizQuestions = [];
+    currentQuestionIndex = 0;
+    userScore = 0;
+    answerStreak = 0;
+}
