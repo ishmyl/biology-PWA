@@ -1,0 +1,53 @@
+[
+  {
+    "type": "multiple-choice",
+    "question": "Scientists study the natural world using the _________ (科學方法).",
+    "options": [
+      "scientific method / 科學方法",
+      "statistical analysis / 統計分析",
+      "experimental logic / 實驗邏輯",
+      "historical review / 歷史審查"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is the correct sequence of the first three steps in the scientific method chart?",
+    "options": [
+      "Asking a question → Proposing a hypothesis → Making observations",
+      "Proposing a hypothesis → Making a prediction → Testing the hypothesis",
+      "Making observations → Asking a question → Proposing a hypothesis",
+      "Making observations → Proposing a hypothesis → Testing the hypothesis"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "true-false",
+    "question": "According to the scientific method, if a hypothesis is falsified (證偽), the next step is to draw a conclusion immediately.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "A hypothesis (假設) is a reasonable answer which tries to explain what is observed. It must be _________.",
+    "options": [
+      "proven / 已證實的",
+      "testable / 可驗證的",
+      "complex / 複雜的",
+      "unchangeable / 不可改變的"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Hypotheses are not needed in investigations which do not require explanations of observations.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  }
+]
