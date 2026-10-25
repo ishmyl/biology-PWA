@@ -8,7 +8,7 @@
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#4c1d95">
     
-    <!-- STABLE FIREBASE PLUGINS -->
+    <!-- CORE FIREBASE TRACKER LIBRARIES (REQUIRED TO PREVENT FREEZING) -->
     <script src="https://gstatic.com"></script>
     <script src="https://gstatic.com"></script>
 </head>
@@ -21,12 +21,13 @@
 
     <main class="app-container">
         
-        <!-- STEP 1: STUDENT REGISTRATION -->
+        <!-- STEP 1: UPGRADED STUDENT HUB LOGIN -->
         <section id="registration-section" class="card gamified-card">
             <div class="card-badge">🎮 ENTER ARENA</div>
             <h2>Classroom Sign-In</h2>
             <p class="instruction">Select your class Form, input your class seat number, and type your first name to enter the arena session.</p>
             
+            <!-- Form Dropdown -->
             <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">SELECT YOUR CLASS FORM:</label>
             <select id="form-select" style="width: 100%; background-color: rgba(12, 10, 28, 0.6); border: 2px solid var(--border-color); border-radius: var(--border-radius); padding: 15px; font-size: 1rem; color: white; margin-bottom: 15px;">
                 <option value="F1">Form 1 (F1)</option>
@@ -37,19 +38,22 @@
                 <option value="F6">Form 6 (F6)</option>
             </select>
 
+            <!-- Class Section Letters -->
             <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">CLASS SECTION (LETTER):</label>
             <input type="text" id="class-letter-input" placeholder="e.g. A" maxlength="2" autocomplete="off" style="text-transform: uppercase; width: 100%; background-color: rgba(12, 10, 28, 0.6); border: 2px solid var(--border-color); border-radius: var(--border-radius); padding: 15px; font-size: 1rem; color: white; margin-bottom: 15px;">
 
+            <!-- Class Seat Number -->
             <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">CLASS SEAT NUMBER:</label>
             <input type="number" id="class-num-input" placeholder="e.g. 11" min="1" max="99" autocomplete="off" style="width: 100%; background-color: rgba(12, 10, 28, 0.6); border: 2px solid var(--border-color); border-radius: var(--border-radius); padding: 15px; font-size: 1rem; color: white; margin-bottom: 15px;">
 
+            <!-- Student First Name -->
             <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">STUDENT FIRST NAME:</label>
             <input type="text" id="student-name-input" placeholder="Type your Name... (e.g. Tina)" autocomplete="off" style="width: 100%; background-color: rgba(12, 10, 28, 0.6); border: 2px solid var(--border-color); border-radius: var(--border-radius); padding: 15px; font-size: 1rem; color: white; margin-bottom: 15px;">
             
             <button id="start-app-btn" class="btn btn-action" style="margin-top:10px;">Join Arena 🚀</button>
         </section>
 
-        <!-- STEP 2: CAMERA DECK -->
+        <!-- STEP 2: MATERIAL SELECTION HUB -->
         <section id="upload-section" class="card gamified-card hidden">
             <div class="card-badge">📁 SOURCE FEED</div>
             <h2>Player: <span id="display-student-name" class="neon-text">Guest</span></h2>
@@ -67,13 +71,14 @@
             <div id="file-preview" class="hidden"><p>Asset Loaded: <span id="file-name"></span></p></div>
         </section>
 
-        <!-- STEP 3: LOADING ENGINE -->
+        <!-- STEP 3: LOADING SPINNER IN PROGRESS -->
         <section id="loading-section" class="card gamified-card hidden">
             <div class="spinner"></div>
             <h3>Wayground AI is engineering your questions...</h3>
+            <p>Compiling True/False, Multiple-Choice, Fill-Blanks, and Structured Rubrics.</p>
         </section>
 
-        <!-- STEP 4: QUIZ INTERFACE -->
+        <!-- STEP 4: INTERACTIVE QUIZ HUB -->
         <section id="quiz-section" class="card gamified-card hidden">
             <div class="stats-ribbon">
                 <span id="progress-text">Q: 1/6</span>
@@ -81,15 +86,18 @@
                 <span id="score-text" class="score-glow">0 pts</span>
             </div>
             <div class="progress-bar-container"><div id="progress-bar" style="width: 0%;"></div></div>
+            
             <h2 id="question-text">Analyzing concept question...</h2>
             <div id="options-container" class="options-grid"></div>
+            
             <button id="next-btn" class="btn btn-next hidden">Next Challenge ➡️</button>
         </section>
 
-        <!-- STEP 5: FINAL SCOREBOARD -->
+        <!-- STEP 5: STUDENT SCOREBOARD REPORT -->
         <section id="results-section" class="card gamified-card hidden">
             <div class="results-badge">🏆</div>
             <h2>Arena Completed!</h2>
+            <p class="final-score-label">Final Player Record</p>
             <h1 id="final-score" class="neon-text-green">0 pts</h1>
             <button id="restart-btn" class="btn btn-action">Play New Session</button>
         </section>

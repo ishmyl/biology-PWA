@@ -1,4 +1,4 @@
-const CACHE_NAME = 'bioarena-v5';
+const CACHE_NAME = 'bioarena-v6';
 const ASSETS = [
   './',
   './index.html',

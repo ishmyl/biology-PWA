@@ -140,7 +140,6 @@ function handleStudentSignIn() {
             return;
         }
 
-        // Create clean classroom organization IDs (e.g., F5A_11_Tina)
         const classTag = `${formVal}${letterVal}_${numVal}`;
         currentPlayerName = nameVal;
         displayStudentName.textContent = `${classTag}, ${currentPlayerName}`;
@@ -151,7 +150,6 @@ function handleStudentSignIn() {
         registrationSection.classList.add('hidden');
         uploadSection.classList.remove('hidden');
     } catch (err) {
-        // Ultimate safety valve: bypass freeze even if database fails
         registrationSection.classList.add('hidden');
         uploadSection.classList.remove('hidden');
     }
@@ -214,3 +212,6 @@ function renderActiveChallenge() {
     } else if (activeQ.type === "structured") {
         const area = document.createElement('textarea');
         area.placeholder = 'Write explanation narrative details...';
+        area.rows = 4;
+        
+        const subBtn = document.createElement('button');
