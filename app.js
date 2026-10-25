@@ -3,8 +3,8 @@
    ========================================================================== */
 const firebaseConfig = {
     apiKey: "AIzaSyChSMRbqSFmAE2dNlGHa6AFcc4SpWM1V7g",
-    authDomain: "://firebaseapp.com",
-    databaseURL: "https://firebaseio.com",
+    authDomain: "wayground-bioarena.firebaseapp.com",
+    databaseURL: "https://wayground-bioarena-default-rtdb.firebaseio.com",
     projectId: "wayground-bioarena",
     storageBucket: "wayground-bioarena.firebasestorage.app",
     messagingSenderId: "7169528648",
@@ -177,41 +177,38 @@ function triggerArenaLoad(file) {
 
 function renderActiveChallenge() {
     const activeQ = quizQuestions[currentQuestionIndex];
-    nextButton.classList.add('hidden');
+    nextButton.classList.add('hidden'); 
     optionsContainer.innerHTML = '';
-
-    progressText.textContent = `Q: ${currentQuestionIndex + 1}/${quizQuestions.length}`;
-    scoreText.textContent = `${userScore} pts`;
-    streakCounter.textContent = answerStreak;
-    progressBar.style.width = `${((currentQuestionIndex) / quizQuestions.length) * 100}%`;
-    questionText.textContent = activeQ.question;
     
-    broadcastStudentData(`Answering Question ${currentQuestionIndex + 1}`);
+    progressText.textContent = `Question ${currentQuestionIndex + 1} of ${quizQuestions.length}`;
+    scoreText.textContent = `Score: ${userScore}`;
+    streakCounter.textContent = `🔥 Streak: ${answerStreak}`;
+    
+    const progressPercent = (currentQuestionIndex / quizQuestions.length) * 100;
+    progressBar.style.width = `${progressPercent}%`;
 
-    if (activeQ.type === "multiple-choice" || activeQ.type === "true-false") {
-        activeQ.options.forEach((opt, idx) => {
+    questionText.textContent = activeQ.question;
+
+    if (activeQ.type === 'multiple-choice' || activeQ.type === 'true-false') {
+        activeQ.options.forEach((option, idx) => {
             const btn = document.createElement('button');
-            btn.className = 'option-btn';
-            btn.textContent = opt;
-            btn.addEventListener('click', () => scoreButtonChallenge(idx, btn));
+            btn.className = 'option-btn btn btn-outline-primary m-2 p-3 text-start w-100';
+            btn.textContent = option;
+            btn.addEventListener('click', () => evaluateChoiceAnswer(idx, btn));
             optionsContainer.appendChild(btn);
         });
-    } else if (activeQ.type === "fill-blank") {
-        const input = document.createElement('input');
-        input.type = 'text';
-        input.placeholder = 'Type missing term...';
-        input.id = 'arena-text-input';
-        
-        const subBtn = document.createElement('button');
-        subBtn.className = 'btn btn-action';
-        subBtn.textContent = 'Lock In Term';
-        subBtn.addEventListener('click', () => scoreTextChallenge(input, subBtn));
-        
-        optionsContainer.appendChild(input);
-        optionsContainer.appendChild(subBtn);
-    } else if (activeQ.type === "structured") {
-        const area = document.createElement('textarea');
-        area.placeholder = 'Write explanation narrative details...';
-        area.rows = 4;
-        
-        const subBtn = document.createElement('button');
+    } 
+    else if (activeQ.type === 'fill-blank') {
+        const inputContainer = document.createElement('div');
+        inputContainer.className = 'w-100 p-2';
+        inputContainer.innerHTML = `
+            <input type="text" id="blank-answer" class="form-control mb-3" placeholder="Type your lowercase answer...">
+            <button id="submit-blank-btn" class="btn btn-primary w-100">Submit Answer</button>
+        `;
+        optionsContainer.appendChild(inputContainer);
+        document.getElementById('submit-blank-btn').addEventListener('click', evaluateBlankAnswer);
+    } 
+    else if (activeQ.type === 'structured') {
+        const structuralContainer = document.createElement('div');
+        structuralContainer.className = 'w-100 p-2';
+        structuralContainer.innerHTML = `
