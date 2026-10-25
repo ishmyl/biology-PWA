@@ -1,7 +1,6 @@
 /* ==========================================================================
    1. CORE FIREBASE SETUP & CLOUD NETWORK CONNECTIVITY
    ========================================================================== */
-// Your live Firebase configuration credentials verified from your dashboard
 const firebaseConfig = {
     apiKey: "AIzaSyChSMRbqSFmAE2dNlGHa6AFcc4SpWM1V7g",
     authDomain: "://firebaseapp.com",
@@ -12,57 +11,58 @@ const firebaseConfig = {
     appId: "1:7169528648:web:085387e296b0ecdacf4339"
 };
 
-// Initialize Firebase linkage if the library scripts exist
-if (typeof firebase !== 'undefined') {
-    firebase.initializeApp(firebaseConfig);
-    console.log("🚀 Firebase connected successfully to BioArena!");
-} else {
-    console.log("⚠️ Firebase library script was not found. Running in offline fallback mode.");
+try {
+    if (typeof firebase !== 'undefined') {
+        firebase.initializeApp(firebaseConfig);
+        console.log("🚀 Firebase connected successfully!");
+    }
+} catch (e) {
+    console.log("Network shielded:", e);
 }
 
 /* ==========================================================================
-   2. APP STATE VARIABLES & MASTER QUESTION BANK
+   2. APP STATE VARIABLES & MASTER QUESTION BANK (MACAO BAA COMPLIANT)
    ========================================================================== */
 let quizQuestions = [];
 let currentQuestionIndex = 0;
 let userScore = 0;
 let answerStreak = 0;
 let currentPlayerName = "Player";
-let currentSessionId = ""; // Unique id to identify individual student runs
+let currentSessionId = "";
 
 const dynamicClassroomBank = [
     {
         type: "multiple-choice",
-        question: "Which cellular organelle possesses its own DNA matrix and runs the cellular respiration pathway to produce ATP?",
-        options: ["Golgi Complex", "Mitochondria", "Lysosome", "Centrosome"],
+        question: "[Macao BAA Core] Which organelle contains its own unique metabolic DNA matrix and acts as the site for the Krebs cycle and electron transport chain?",
+        options: ["Endoplasmic Reticulum", "Mitochondria", "Lysosome", "Ribosome"],
         answer: 1
     },
     {
         type: "true-false",
-        question: "Eukaryotic cells keep genetic material protected inside a double-membraned cell nucleus, whereas prokaryotic cells lack a true nucleus.",
+        question: "[Macao BAA Core] Eukaryotic cells segregate genetic materials inside a true double-membraned nucleus, whereas prokaryotic cells completely lack an enclosed nuclear envelope.",
         options: ["True", "False"],
         answer: 0
     },
     {
         type: "fill-blank",
-        question: "The fluid chemical process that occurs outside the mitochondria to break down one glucose molecule into pyruvic acid is called _________.",
+        question: "[Macao BAA Intermediate] The initial anaerobic process occurring in the cellular cytoplasm that fractures one glucose molecule into two molecules of pyruvate is _________.",
         answer: "glycolysis"
     },
     {
-        type: "structured",
-        question: "Structured Analysis: Explain how active transport differs from passive transport, citing an example of a structural cell mechanism.",
-        rubric: "Score yourself a point! A perfect answer must mention: 1) Active requires energy/ATP, 2) Moves against concentration gradient, 3) Example like the Sodium-Potassium pump."
-    },
-    {
         type: "true-false",
-        question: "Photosynthesis is an energy-releasing pathway that animal cells perform inside their cytoplasm during daylight hours.",
+        question: "[Macao BAA Intermediate] Photosynthesis is a catabolic, exergonic pathway that releases chemical energy for plant cells during nighttime hours.",
         options: ["True", "False"],
         answer: 1
     },
     {
         type: "fill-blank",
-        question: "The basic structural building blocks or protein monomers that assemble chain links into cell tissues are called _________ acids.",
+        question: "[Macao BAA Intermediate] The fundamental peptide monomers linked via peptide bonds to assemble complex structural protein chains are called _________ acids.",
         answer: "amino"
+    },
+    {
+        type: "structured",
+        question: "[BEYOND MACAO BAA - CRITICAL THINKING] A cell is exposed to a metabolic inhibitor that completely prevents the synthesis of Adenosine Triphosphate (ATP). Predict and analyze the immediate impact on both active transport mechanisms (like the Sodium-Potassium pump) and passive diffusion across the plasma membrane.",
+        rubric: "Excellent analysis! To score a full point, your answer must demonstrate beyond-baseline mastery: 1) Active transport will immediately halt because it depends on direct ATP phosphorylation. 2) Passive diffusion or osmosis will continue unaffected because they rely solely on kinetic concentration gradients. 3) The Sodium-Potassium pump will freeze, causing an accumulation of sodium ions inside the cell matrix."
     }
 ];
 
@@ -75,6 +75,9 @@ const loadingSection = document.getElementById('loading-section');
 const quizSection = document.getElementById('quiz-section');
 const resultsSection = document.getElementById('results-section');
 
+const formSelect = document.getElementById('form-select');
+const classLetterInput = document.getElementById('class-letter-input');
+const classNumInput = document.getElementById('class-num-input');
 const studentNameInput = document.getElementById('student-name-input');
 const startAppBtn = document.getElementById('start-app-btn');
 const displayStudentName = document.getElementById('display-student-name');
@@ -96,7 +99,7 @@ const finalScoreElement = document.getElementById('final-score');
 const restartButton = document.getElementById('restart-btn');
 
 /* ==========================================================================
-   4. EVENT LISTENERS
+   4. EVENT LISTENERS & NETWORK SYNC
    ========================================================================== */
 startAppBtn.addEventListener('click', handleStudentSignIn);
 cameraInput.addEventListener('change', (e) => triggerArenaLoad(e.target.files));
@@ -104,55 +107,64 @@ fileInput.addEventListener('change', (e) => triggerArenaLoad(e.target.files));
 nextButton.addEventListener('click', advanceArenaChallenge);
 restartButton.addEventListener('click', resetArenaSession);
 
-/* ==========================================================================
-   5. REAL-TIME TEACHER DASHBOARD BROADCAST LOGIC
-   ========================================================================== */
 function broadcastStudentData(statusMessage) {
-    if (typeof firebase === 'undefined' || !currentSessionId) return;
-
-    // Send a structured update package to the cloud database path
-    firebase.database().ref('student_sessions/' + currentSessionId).set({
-        name: currentPlayerName,
-        score: userScore,
-        streak: answerStreak,
-        currentQuestion: currentQuestionIndex + 1,
-        totalQuestions: quizQuestions.length,
-        lastStatus: statusMessage,
-        timestamp: Date.now()
-    }).catch(err => console.log("Database update failed:", err));
+    try {
+        if (typeof firebase !== 'undefined' && currentSessionId) {
+            firebase.database().ref('student_sessions/' + currentSessionId).set({
+                name: currentPlayerName,
+                score: userScore,
+                streak: answerStreak,
+                currentQuestion: currentQuestionIndex + 1,
+                totalQuestions: quizQuestions.length,
+                lastStatus: statusMessage,
+                timestamp: Date.now()
+            });
+        }
+    } catch (e) {
+        console.log("Broadcast network shielded:", e);
+    }
 }
 
 /* ==========================================================================
-   6. CORE GAME WORKFLOW
+   5. CORE GAME WORKFLOW
    ========================================================================== */
 function handleStudentSignIn() {
-    const rawName = studentNameInput.value.trim();
-    if (!rawName) {
-        alert("Please enter a player tag/name to join the quiz session!");
-        return;
-    }
-    currentPlayerName = rawName;
-    displayStudentName.textContent = currentPlayerName;
-    
-    // Create a unique entry ID string for this specific student's run session
-    currentSessionId = currentPlayerName.replace(/[^a-zA-Z0-9]/g, "_") + "_" + Math.floor(1000 + Math.random() * 9000);
-    
-    // Broadcast initial join log to teacher dashboard
-    broadcastStudentData("Joined Class Session Arena");
+    try {
+        const formVal = formSelect.value;
+        const letterVal = classLetterInput.value.trim().toUpperCase() || "X";
+        const numVal = classNumInput.value.trim() || "00";
+        const nameVal = studentNameInput.value.trim();
 
-    registrationSection.classList.add('hidden');
-    uploadSection.classList.remove('hidden');
+        if (!nameVal) {
+            alert("Please type your name to enter the arena!");
+            return;
+        }
+
+        // Create clean classroom organization IDs (e.g., F5A_11_Tina)
+        const classTag = `${formVal}${letterVal}_${numVal}`;
+        currentPlayerName = nameVal;
+        displayStudentName.textContent = `${classTag}, ${currentPlayerName}`;
+        currentSessionId = `${classTag}_${currentPlayerName.replace(/[^a-zA-Z0-9]/g, "_")}`;
+
+        broadcastStudentData("Joined Arena");
+        
+        registrationSection.classList.add('hidden');
+        uploadSection.classList.remove('hidden');
+    } catch (err) {
+        // Ultimate safety valve: bypass freeze even if database fails
+        registrationSection.classList.add('hidden');
+        uploadSection.classList.remove('hidden');
+    }
 }
 
 function triggerArenaLoad(file) {
-    if (!file) return;
-    fileNameSpan.textContent = file.name;
+    if (!file || !file[0]) return;
+    fileNameSpan.textContent = file[0].name;
     filePreview.classList.remove('hidden');
-
     uploadSection.classList.add('hidden');
     loadingSection.classList.remove('hidden');
     
-    broadcastStudentData("Analyzing Document Material...");
+    broadcastStudentData("Analyzing Material...");
 
     setTimeout(() => {
         quizQuestions = [...dynamicClassroomBank].sort(() => Math.random() - 0.5);
@@ -170,7 +182,7 @@ function renderActiveChallenge() {
     nextButton.classList.add('hidden');
     optionsContainer.innerHTML = '';
 
-    progressText.textContent = `Question ${currentQuestionIndex + 1}/${quizQuestions.length}`;
+    progressText.textContent = `Q: ${currentQuestionIndex + 1}/${quizQuestions.length}`;
     scoreText.textContent = `${userScore} pts`;
     streakCounter.textContent = answerStreak;
     progressBar.style.width = `${((currentQuestionIndex) / quizQuestions.length) * 100}%`;
@@ -186,11 +198,10 @@ function renderActiveChallenge() {
             btn.addEventListener('click', () => scoreButtonChallenge(idx, btn));
             optionsContainer.appendChild(btn);
         });
-    }
-    else if (activeQ.type === "fill-blank") {
+    } else if (activeQ.type === "fill-blank") {
         const input = document.createElement('input');
         input.type = 'text';
-        input.placeholder = 'Type missing term here...';
+        input.placeholder = 'Type missing term...';
         input.id = 'arena-text-input';
         
         const subBtn = document.createElement('button');
@@ -200,29 +211,6 @@ function renderActiveChallenge() {
         
         optionsContainer.appendChild(input);
         optionsContainer.appendChild(subBtn);
-    }
-    else if (activeQ.type === "structured") {
+    } else if (activeQ.type === "structured") {
         const area = document.createElement('textarea');
-        area.placeholder = 'Write your explanation narrative details here...';
-        area.rows = 4;
-        
-        const subBtn = document.createElement('button');
-        subBtn.className = 'btn btn-action';
-        subBtn.textContent = 'Submit Analysis';
-        subBtn.addEventListener('click', () => revealStructuredRubric(area, subBtn, activeQ.rubric));
-        
-        optionsContainer.appendChild(area);
-        optionsContainer.appendChild(subBtn);
-    }
-}
-
-function scoreButtonChallenge(idx, selectedBtn) {
-    const correctIdx = quizQuestions[currentQuestionIndex].answer;
-    const items = optionsContainer.querySelectorAll('.option-btn');
-
-    if (idx === correctIdx) {
-        selectedBtn.classList.add('correct');
-        answerStreak++;
-        userScore += 100 + (answerStreak * 20); 
-        broadcastStudentData("Answered Correctly (+Streak Combo)");
-    } else {
+        area.placeholder = 'Write explanation narrative details...';
