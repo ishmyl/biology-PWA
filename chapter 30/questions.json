@@ -1,0 +1,98 @@
+[
+  {
+    "type": "multiple-choice",
+    "question": "Jean-Baptiste Lamarck's evolutionary theory (Lamarckism) was eventually disproved by scientists primarily because of which underlying limitation?",
+    "options": [
+      "Environmental changes do not exert any selection pressures on living autotrophs.",
+      "Acquired characteristics cannot be passed on genetically to subsequent offspring.",
+      "Variations already exist inside populations before the environment shifts.",
+      "Mutations in somatic cells are the only source of structural degeneration."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "According to Charles Darwin's theory of natural selection, what is the primary role of environmental changes in the process of evolution?",
+    "options": [
+      "They force individual organisms to intentionally modify their body structures to meet new needs.",
+      "They act as selection pressures that select better-adapted individuals to survive and reproduce.",
+      "They trigger immediate, non-heritable mutations inside the gametes of a population.",
+      "They fully eliminate genetic variations to maintain a stable, uniform phenotype layout."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "A fundamental difference between Lamarckism and Darwinism is that Lamarckism suggests evolution occurs in individuals, whereas Darwinism establishes that evolution occurs in populations.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "In areas where malaria is common, individuals who are heterozygous for the sickle-cell allele do not suffer from severe anemia symptoms and are less likely to contract malaria. This phenomenon is an example of:",
+    "options": [
+      "Speciation due to geographical isolation barriers",
+      "A selection advantage that maintains the mutant allele frequency",
+      "An acquired characteristic caused by an infectious pathogen lifestyle",
+      "Spontaneous chromosome non-disjunction during meiotic division"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "In the case of peppered moths and antibiotic-resistant bacteria, the selection pressure creates new favorable genetic variations that did not exist before.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is the critical first step required for the process of speciation to take place within a single interbreeding population?",
+    "options": [
+      "The rapid accumulation of spontaneous non-functional structural mutations",
+      "Groups of a population become isolated from one another, stopping gene flow",
+      "A complete shift from heterotrophic nutrition to autotrophic photosynthesis",
+      "The sudden appearance of an extra copy of chromosome 21 in the gametes"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Two isolated populations are considered distinct species when their genetic compositions become so different that they can no longer interbreed to produce fertile offspring.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How does the refinement of Darwinism into 'neo-Darwinism' enhance our modern understanding of how species evolve over time?",
+    "options": [
+      "It incorporates genetic principles, explaining that heritable traits are determined by genes and variation is driven by mutations.",
+      "It proves that environmental changes directly create chemical solutions inside cellular cytoplasm.",
+      "It supports the original concept that structures repeatedly used become progressively larger over generations.",
+      "It establishes that speciation only happens when identical twins isolate across macrohabitats."
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "Over-production of offspring within a population leads to a struggle for survival because environmental resources like food and space are typically limited.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "structured",
+    "question": "[EVOLUTIONARY MECHANISM ANALYSIS] A population of insects is exposed to a chemical insecticide. Over several years, the insecticide becomes ineffective as the majority of the insect population develops resistance. 1) Contrast how a Lamarckian versus a Darwinian framework would explain the development of this resistance. 2) Explain how this resistance leads to microevolution within the population.",
+    "rubric": "To score full points, the comparative analysis must outline: 1) Lamarckism would argue that exposure to the insecticide created a need for the individual insects to change, causing them to develop resistance characters during their lifetime and pass them on. Darwinism argues that genetic variations for resistance already existed in the population before exposure; the insecticide acted as a selection pressure, killing non-resistant insects and selecting resistant ones to survive. 2) Because the better-adapted (resistant) individuals survive and reproduce, they pass on their favorable heritable alleles, increasing the proportion of resistant individuals in subsequent generations."
+  }
+]
