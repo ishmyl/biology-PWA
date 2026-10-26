@@ -1,0 +1,98 @@
+[
+  {
+    "type": "multiple-choice",
+    "question": "The genetic code is described as 'degenerate'. What does this feature mean during the process of gene expression?",
+    "options": [
+      "There are no gaps in the code and it is read in a overlapping frame layout.",
+      "The exact same triplet code specifies the same amino acid across all living organisms.",
+      "Some individual amino acids can be coded for by more than one distinct triplet code.",
+      "Each triplet code is capable of specifying multiple different types of amino acids."
+    ],
+    "answer": 2
+  },
+  {
+    "type": "multiple-choice",
+    "question": "During transcription, if the base sequence on the DNA coding strand is ... A G T A G G ..., what will be the base sequence on the newly produced mRNA strand?",
+    "options": [
+      "... T C A T C C ...",
+      "... A G U A G G ...",
+      "... U C A U C C ...",
+      "... A G T A G G ..."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Transcription takes place inside the nucleus using the template strand of DNA, whereas translation occurs in the cytoplasm mediated by ribosomes.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which type of RNA molecule is responsible for carrying a specific amino acid from the cytoplasm and pairing its anticodon with a codon on the mRNA strand?",
+    "options": [
+      "Messenger RNA (mRNA)",
+      "Ribosomal RNA (rRNA)",
+      "Transfer RNA (tRNA)",
+      "RNA polymerase"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "true-false",
+    "question": "A gene mutation caused by a single base substitution always shifts the entire reading frame, completely altering the amino acid sequence after the mutation point.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Down syndrome is a human chromosomal disorder resulting from non-disjunction during meiotic cell division. What abnormality is present in the cells of affected individuals?",
+    "options": [
+      "A missing copy of an autosome chromosome",
+      "An extra copy of chromosome 21",
+      "A structural inversion error on chromosome 21",
+      "A structural translocation between non-homologous chromosomes"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Mutations that occur inside somatic cells are passed on to the next generation and serve as a source of variation for natural selection.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following is classified as a physical radiation mutagen that creates free radicals capable of damaging the molecular structure of DNA?",
+    "options": [
+      "Nitrous acid",
+      "Asbestos fibres",
+      "Mustard gas",
+      "X-rays"
+    ],
+    "answer": 3
+  },
+  {
+    "type": "true-false",
+    "question": "Many mutations have no physical effect on an organism because alleles exist in pairs in cells, and a recessive mutation can be masked by a normal dominant allele.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "structured",
+    "question": "[MUTATION ANALYSIS] A gene undergoes a single base deletion near the beginning of its coding sequence. 1) Predict the likely consequence of this deletion on the structure and function of the resulting protein. 2) Compare this outcome with a single base substitution mutation occurring at the exact same position.",
+    "rubric": "To score full points, the structural analysis must state: 1) The single base deletion causes a frame shift mutation. This shifts the reading frame of all subsequent triplet codes, completely altering the downstream amino acid sequence and usually resulting in a non-functional protein. 2) A base substitution only changes a single triplet code at that position. It might change just one amino acid, create an early stop signal, or have no effect at all due to the degenerate nature of the genetic code, making a substitution generally less disruptive to the overall protein structure than a deletion frame shift."
+  }
+]
