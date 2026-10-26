@@ -1,0 +1,98 @@
+[
+  {
+    "type": "multiple-choice",
+    "question": "When examining undisturbed layers of sedimentary rock, where would you expect to find the oldest and structurally simplest fossils?",
+    "options": [
+      "In the uppermost rock layer",
+      "In the middle rock layers only",
+      "In the lowest rock layer",
+      "Scattered evenly across all layers"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following is classified as a trace fossil that provides direct evidence about the behavioral movements or feeding habits of ancient organisms?",
+    "options": [
+      "A preserved dinosaur skeleton",
+      "A fossilized footprint pathway",
+      "An ancient petrified tooth",
+      "A frozen mammoth shell body"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "The absolute age of ancient fossils or the rock layers immediately surrounding them can be estimated using radioisotope dating methods.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "The pentadactyl limb found in humans, bats, and whales is an example of a homologous structure. What does the presence of this structure primarily suggest?",
+    "options": [
+      "The organisms independently evolved identical features to live in the same habitat.",
+      "The organisms are completely unrelated but share identical environmental behaviors.",
+      "The organisms all descended from a shared common ancestor with modifications.",
+      "The structural layout was induced by modern chemical mutagens in the cytoplasm."
+    ],
+    "answer": 2
+  },
+  {
+    "type": "true-false",
+    "question": "The fossil record is a complete and flawless historical narrative because every organism that has ever died on Earth was safely preserved in sedimentary rock.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "When comparing the amino acid sequences of an essential protein across multiple modern species, what is the primary underlying scientific assumption?",
+    "options": [
+      "Species with more similarities in their sequences have a closer phylogenetic relationship.",
+      "Species with more differences in their sequences have a closer phylogenetic relationship.",
+      "The mutations that alter protein sequences occur only in human somatic cells.",
+      "Proteins from ancient species are completely unaffected by random mutations over time."
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "Scientists generally believe that life on Earth originally began with the complex formation of organic molecules from inorganic materials.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following describes a structural limitation that contributes to 'missing links' within our current fossil record data?",
+    "options": [
+      "All soft-bodied organisms decompose or get consumed before fossilization can occur.",
+      "Radioisotope dating is completely unable to measure the absolute age of autotrophs.",
+      "Sedimentary rock layers only ever build up in shallow marine ocean environments.",
+      "Homologous structures cannot be preserved due to phosphate layer breakdown."
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "The chronological progression found within global fossil records suggests that life forms over time have generally become more simple in structure and less diverse.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "structured",
+    "question": "[EVOLUTIONARY EVIDENCE ANALYSIS] A student analyzes the anatomical wing of a bat and the flipper of a whale. 1) Identify the structural classification of these limbs and explain what they reveal about evolutionary history. 2) State two specific reasons why the fossil record alone cannot provide a perfectly continuous line of evidence for this relationship.",
+    "rubric": "To score full points, the structural analysis must state: 1) These are homologous structures (specifically pentadactyl limbs). Even though they serve different functions (flying vs. swimming), their underlying anatomical similarities reveal that bats and whales descended from a shared common ancestor. 2) The fossil record has limitations due to missing links because: first, many ancient organisms were soft-bodied, decomposed, or were eaten before they could be fossilized; second, many fossils are buried in completely inaccessible areas or suffer physical damage over time, reducing the probability of discovery."
+  }
+]
