@@ -1,0 +1,98 @@
+[
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following describes an advantage of producing human insulin using recombinant DNA technology over extracting it from the pancreas of cattle or sheep?",
+    "options": [
+      "The insulin produced can be easily stored at room temperature without denaturation.",
+      "The product yield is much lower but the chemical extraction process is faster.",
+      "The insulin is structurally identical to human insulin, minimizing immune system rejection.",
+      "It completely eliminates the need for using any host bacterial cells during synthesis."
+    ],
+    "answer": 2
+  },
+  {
+    "type": "multiple-choice",
+    "question": "During gel electrophoresis, DNA fragments migrate toward the positive terminal because of the negative charge present on which of their molecular components?",
+    "options": [
+      "Deoxyribose sugars",
+      "Nitrogenous bases",
+      "Phosphate groups",
+      "Hydrogen bonds"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "true-false",
+    "question": "In gel electrophoresis, longer DNA fragments move faster than shorter ones through the gel slab because the pores provide less resistance to large structures.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is a major advantage of utilizing recombinant DNA technology over traditional selective breeding to obtain organisms with desirable characteristics?",
+    "options": [
+      "It allows genes to be successfully transferred between completely unrelated biological species.",
+      "It requires breeding the target animals across many generations to lock down the traits.",
+      "It involves manipulating thousands of unknown genes at the same time to create variations.",
+      "The results are completely unpredictable, introducing highly diverse phenotypes."
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "DNA fingerprinting is highly effective for identifying individuals because the number of repetitive base sequence repeats in highly variable regions is identical across all human populations.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following is an explicit core goal outlined by the Human Genome Project (HGP)?",
+    "options": [
+      "To completely clone the first human being using somatic cell nuclear transfer.",
+      "To sequence the complete human genome and map all the individual genes within it.",
+      "To rewrite the genetic code of human cells to make them completely immune to viruses.",
+      "To replace all traditional Chinese medicines with synthetic pharmaceutical alternatives."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Recombinant DNA technology allows scientists to isolate a fragment of DNA from a donor cell and insert it into another organism to introduce a new characteristic.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which application of DNA fingerprinting is specifically used in environmental conservation or supply chain verification?",
+    "options": [
+      "Performing parentage tests to establish family relationships in court.",
+      "Tracing the origin of ivory products to help conserve endangered species.",
+      "Diagnosing the base substitutions responsible for sickle-cell anaemia.",
+      "Storing full genomic data inside public international medical databases."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "A current limitation of the Human Genome Project is that the biological functions of many identified genes are still unknown to scientists.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "structured",
+    "question": "[BIOTECHNOLOGY COMPARISON] A research team wants to produce a strain of rice that contains high levels of beta-carotene. 1) Contrast how this would be achieved using selective breeding versus recombinant DNA technology. 2) Explain why the recombinant DNA approach yields more predictable results.",
+    "rubric": "To score full points, the comparative analysis must outline: 1) Selective breeding involves choosing parent rice plants with slightly higher nutrient levels and crossing them over many generations. Recombinant DNA technology isolates the specific gene for beta-carotene production from a donor organism and directly inserts it into the rice genome (creating Golden Rice). 2) The recombinant DNA approach is more predictable because only one or a few known genes are targeted and transferred at the same time, whereas selective breeding mixes thousands of maternal and paternal genes randomly."
+  }
+]
