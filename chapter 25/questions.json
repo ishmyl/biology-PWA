@@ -1,0 +1,98 @@
+[
+  {
+    "type": "multiple-choice",
+    "question": "According to Mendel’s Law of Segregation, when do the alleles of a gene pair separate from each other?",
+    "options": [
+      "During mitosis",
+      "During gamete formation in meiosis",
+      "During random combinations in fertilization",
+      "During DNA replication in somatic cells"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "A student crosses two pea plants that are heterozygous for tallness (Tt x Tt). What is the expected phenotypic ratio of tall to short plants in the F2 generation?",
+    "options": [
+      "1 : 1",
+      "1 : 2 : 1",
+      "3 : 1",
+      "9 : 3 : 3 : 1"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "true-false",
+    "question": "Mendel’s Law of Independent Assortment applies only to genes that are located on different pairs of homologous chromosomes.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "A man with blood group A (genotype IAi) and a woman with blood group B (genotype IBi) have a child. Which of the following blood groups could their child possibly inherit?",
+    "options": [
+      "Only blood group AB",
+      "Only blood groups A and B",
+      "Only blood groups A, B, and AB",
+      "Blood groups A, B, AB, and O"
+    ],
+    "answer": 3
+  },
+  {
+    "type": "true-false",
+    "question": "In the ABO blood group inheritance system, alleles IA and IB are co-dominant, while allele i is recessive.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why is red-green colour blindness, which is caused by a recessive allele on the X chromosome, significantly more common in males than in females?",
+    "options": [
+      "Males have two Y chromosomes that suppress the normal dominant allele.",
+      "The Y chromosome carries a dominant modifier gene for colour blindness.",
+      "Males have only one X chromosome, so a single recessive allele will express the characteristic.",
+      "Females produce specialized anti-B antibodies in plasma that neutralize the allele."
+    ],
+    "answer": 2
+  },
+  {
+    "type": "true-false",
+    "question": "In humans, the sex of a baby is determined by the type of ovum produced by the female carrier during fertilization.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following biological characteristics is an example of continuous variation and is typically controlled by many genes?",
+    "options": [
+      "ABO blood groups",
+      "Human height",
+      "Ability to roll the tongue",
+      "Shape of the hairline"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Discontinuous variations, such as hand span and foot length, are represented using a bar chart showing a normal distribution curve with a characteristic bell shape.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "structured",
+    "question": "[PEDIGREE & GENETIC ANALYSIS] In a family pedigree tracing hair patterns, two parents with curly hair have an offspring with straight hair. 1) Deduce which allele is dominant and explain your reasoning. 2) If these curly-haired parents have another child, calculate the theoretical probability that the child will have straight hair.",
+    "rubric": "To score full points, the response must demonstrate structural mastery: 1) The allele for curly hair is dominant. Because both parents exhibit curly hair but produce a straight-haired child, the parents must be heterozygous. Under heterozygous conditions, only the dominant allele expresses itself physically, while the recessive allele is masked. 2) The theoretical probability of having a straight-haired child (homozygous recessive) from a standard heterozygous monohybrid cross (Aa x Aa) is 1/4 or 25%."
+  }
+]
