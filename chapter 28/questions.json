@@ -1,0 +1,98 @@
+[
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following correct taxonomic sequences ranks the classification groups from the highest, most inclusive level down to the lowest, most specific level?",
+    "options": [
+      "Domain -> Kingdom -> Class -> Phylum -> Family -> Order -> Genus -> Species",
+      "Domain -> Kingdom -> Phylum -> Class -> Order -> Family -> Genus -> Species",
+      "Kingdom -> Domain -> Phylum -> Order -> Class -> Family -> Genus -> Species",
+      "Domain -> Kingdom -> Phylum -> Class -> Family -> Order -> Genus -> Species"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Based on phylogenetics and the modern evolutionary tree of life, which statement accurately describes the relationships between domains?",
+    "options": [
+      "Archaea are more closely related to Eubacteria than to Eukaryotes.",
+      "Plants are more closely related to Eubacteria than to Fungi.",
+      "Archaea are more closely related to Eukaryotes than to Eubacteria.",
+      "Fungi are more closely related to Plants than to Animals."
+    ],
+    "answer": 2
+  },
+  {
+    "type": "true-false",
+    "question": "Kingdom Eubacteria possesses cell walls composed of peptidoglycan, whereas Kingdom Archaebacteria features cell walls completely lacking peptidoglycan.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "A student finds a multicellular organism growing on damp soil. Microscopic analysis confirms it has cellular walls made of cellulose and contains specialized vascular tissue, but never produces flowers or seeds. Instead, it reproduces via spores. Which group does it belong to?",
+    "options": [
+      "Mosses",
+      "Ferns",
+      "Conifers",
+      "Flowering plants"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Fungi are classified as autotrophs because they possess thin thread-like hyphae that capture atmospheric carbon to synthesize organic food matrices.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "You observe a terrestrial vertebrate covered in dry, hard scales that reproduces via internal fertilization and lays eggs wrapped in shells on land. It is a poikilotherm. Which class does this animal belong to?",
+    "options": [
+      "Amphibians",
+      "Reptiles",
+      "Birds",
+      "Mammals"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Monocotyledonous plants typically display parallel leaf venation and flower petals in multiples of three, whereas dicotyledonous plants exhibit net venation and petals in multiples of four or five.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "According to the provided fish dichotomous key, what are the specific diagnostic features of the Common Carp?",
+    "options": [
+      "Body length more than 10 times width with a graying green back surface.",
+      "Body length less than 10 times width, has barbels, and clearly observable scales.",
+      "Body length less than 10 times width, lacks barbels, and displays black spots.",
+      "Body length less than 10 times width, has barbels, and scales are not clearly observable."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Organisms that reproduce strictly via asexual mechanisms are defined as a single biological species if they share similar structural features and genetic materials.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "structured",
+    "question": "[TAXONOMIC ANALYSIS] Explain how phylogenetics differs from old classification approaches. Given that Organism X and Organism Y belong to the same Order, while Organism X and Organism Z belong to the same Class but different Orders, deduce which pair shares a more recent common ancestor.",
+    "rubric": "To score full points, the comparative deduction must state: 1) Old classification systems were based on similarities in observable physical structural features. Modern phylogenetics relies on gene sequencing, assuming that greater similarities in genetic materials reflect closer evolutionary history. 2) Organism X and Organism Y share a more recent common ancestor because organisms belonging to the same lower taxonomic level (Order) are more closely related than those sharing only a higher level (Class)."
+  }
+]
