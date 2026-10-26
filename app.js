@@ -47,6 +47,17 @@ const dynamicClassroomBank = [
         type: "fill-blank",
         question: "[Macao BAA Intermediate] The initial anaerobic process occurring in the cellular cytoplasm that fractures one glucose molecule into two molecules of pyruvate is _________.",
         answer: "glycolysis"
+    },
+    {
+        type: "true-false",
+        question: "[Macao BAA Intermediate] Photosynthesis is a catabolic, exergonic pathway that releases chemical energy for plant cells during nighttime hours.",
+        options: ["True", "False"],
+        answer: 1
+    },
+    {
+        type: "fill-blank",
+        question: "[Macao BAA Intermediate] The fundamental peptide monomers linked via peptide bonds to assemble complex structural protein chains are called _________ acids.",
+        answer: "amino"
     }
 ];
 
@@ -108,12 +119,6 @@ function broadcastStudentData(statusMessage) {
    5. CORE GAME WORKFLOW
    ========================================================================== */
 function handleStudentSignIn() {
-    // Prompt the teacher for the key once so it stays completely private and secure
-    if (!localStorage.getItem('gemini_api_key')) {
-        const key = prompt("Please enter your Google Gemini API Key to activate the AI Camera scanner:");
-        if (key) localStorage.setItem('gemini_api_key', key);
-    }
-
     try {
         const formVal = formSelect.value;
         const letterVal = classLetterInput.value.trim().toUpperCase() || "X";
@@ -140,61 +145,26 @@ function handleStudentSignIn() {
     }
 }
 
-// 🟢 LIVE FIX: Directly calling Google's official Gemini AI Flash Endpoint
-async function triggerArenaLoad(files) {
+// 🟢 SAFE OVERRIDE: Instant local randomized rotation bank
+function triggerArenaLoad(files) {
     if (!files || !files[0]) return;
-    const targetFile = files[0];
-    fileNameSpan.textContent = targetFile.name;
+    fileNameSpan.textContent = files[0].name;
     filePreview.classList.remove('hidden');
     uploadSection.classList.add('hidden');
     loadingSection.classList.remove('hidden');
     
-    broadcastStudentData("AI Reading Textbook Matrix... 🧬");
+    broadcastStudentData("Reading Textbook Matrix... 🧬");
 
-    const apiKey = localStorage.getItem('gemini_api_key') || "NO_KEY";
-
-    try {
-        const base64Raw = await parseImageToBase64(targetFile);
-        // Clean out the meta prefix (e.g. data:image/jpeg;base64,) to leave just the pure image text data
-        const pureBase64 = base64Raw.split(',')[1];
-
-        // Official Google Gemini API Endpoint url
-        const url = `https://googleapis.com{apiKey}`;
-
-        const response = await fetch(url, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                contents: [{
-                    parts: [
-                        { inlineData: { mimeType: targetFile.type || "image/jpeg", data: pureBase64 } },
-                        { text: "Analyze this biology textbook worksheet camera scan. Generate ONE single question matching the Macao Basic Academic Attainments (BAA) guidelines for Senior Secondary Biology. Return your response strictly as a single clean JSON object string with no markdown formatting tags. The JSON must contain these exact keys: 'type' (set to 'multiple-choice'), 'question' (starting with the tag '[Macao BAA Dynamic]'), 'options' (an array of 4 distinct answers), and 'answer' (the zero-based index integer of the correct option)." }
-                    ]
-                }]
-            })
-        });
-
-        if (!response.ok) throw new Error("Google Gemini API rejected request");
-        const jsonResult = await response.json();
-        
-        // Extract out text and parse it into our quiz array layout
-        const aiTextRaw = jsonResult.candidates[0].content.parts[0].text.trim();
-        const cleanJsonString = aiTextRaw.replace(/^```json|```$/g, '');
-        const aiQuestion = JSON.parse(cleanJsonString);
-        
-        quizQuestions = [aiQuestion];
-        
-    } catch (error) {
-        console.log("Falling back to local matrix bank:", error);
+    setTimeout(() => {
         quizQuestions = [...dynamicClassroomBank].sort(() => Math.random() - 0.5);
-    } finally {
+        
         loadingSection.classList.add('hidden');
         quizSection.classList.remove('hidden');
         currentQuestionIndex = 0;
         userScore = 0;
         answerStreak = 0;
         renderActiveChallenge();
-    }
+    }, 1200);
 }
 
 function renderActiveChallenge() {
@@ -219,3 +189,31 @@ function renderActiveChallenge() {
         } else {
             const inputBox = document.createElement('input');
             inputBox.type = "text";
+            inputBox.className = "input-box-style";
+            inputBox.placeholder = "Type your answer here...";
+            optionsContainer.appendChild(inputBox);
+        }
+    }
+}
+
+function verifyUserAnswer(selectedIdx) {
+    broadcastStudentData("Answered Question");
+}
+
+function advanceArenaChallenge() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < quizQuestions.length) {
+        renderActiveChallenge();
+    } else {
+        quizSection.classList.add('hidden');
+        resultsSection.classList.remove('hidden');
+        if (finalScoreElement) finalScoreElement.innerText = userScore;
+        broadcastStudentData("Completed Round");
+    }
+}
+
+function resetArenaSession() {
+    resultsSection.classList.add('hidden');
+    uploadSection.classList.remove('hidden');
+    filePreview.classList.add('hidden');
+}
