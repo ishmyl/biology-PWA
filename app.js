@@ -1,219 +1,275 @@
-/* ==========================================================================
-   1. CORE FIREBASE SETUP & CLOUD NETWORK CONNECTIVITY
-   ========================================================================== */
-const firebaseConfig = {
-    apiKey: "AIzaSyChSMRbqSFmAE2dNlGHa6AFcc4SpWM1V7g",
-    authDomain: "://firebaseapp.com",
-    databaseURL: "https://firebaseio.com",
-    projectId: "wayground-bioarena",
-    storageBucket: "wayground-bioarena.firebasestorage.app",
-    messagingSenderId: "7169528648",
-    appId: "1:7169528648:web:085387e296b0ecdacf4339"
+/**
+ * Wayground BioArena - Core Application Script (app.js)
+ * Handles quiz state, dynamic data fetching, and camera-based routing.
+ */
+
+// Global Application State
+const state = {
+    currentChapter: null,
+    questions: [],
+    currentQuestionIndex: 0,
+    score: 0,
+    answersLog: [], // Tracks student performance
+    isScannerActive: false,
+    stream: null
 };
 
-try {
-    if (typeof firebase !== 'undefined') {
-        firebase.initializeApp(firebaseConfig);
-        console.log("🚀 Firebase connected successfully!");
+// UI Elements Configuration
+const elements = {
+    chapterSelector: document.getElementById('chapter-selector'),
+    quizContainer: document.getElementById('quiz-container'),
+    questionArea: document.getElementById('question-area'),
+    optionsArea: document.getElementById('options-area'),
+    feedbackArea: document.getElementById('feedback-area'),
+    nextBtn: document.getElementById('next-btn'),
+    scoreDisplay: document.getElementById('score-display'),
+    cameraBtn: document.getElementById('camera-btn'),
+    scannerVideo: document.getElementById('scanner-video'),
+    scannerContainer: document.getElementById('scanner-container')
+};
+
+// Initialize Application
+document.addEventListener('DOMContentLoaded', () => {
+    setupEventListeners();
+    checkUrlParams();
+});
+
+// Setup Core Event Listeners
+function setupEventListeners() {
+    if (elements.chapterSelector) {
+        elements.chapterSelector.addEventListener('change', (e) => {
+            if (e.target.value) loadChapter(e.target.value);
+        });
     }
-} catch (e) {
-    console.log("Network shielded:", e);
+
+    if (elements.nextBtn) {
+        elements.nextBtn.addEventListener('click', handleNextQuestion);
+    }
+
+    if (elements.cameraBtn) {
+        elements.cameraBtn.addEventListener('click', toggleCameraScanner);
+    }
 }
 
-/* ==========================================================================
-   2. APP STATE VARIABLES & MASTER QUESTION BANK (MACAO BAA COMPLIANT)
-   ========================================================================== */
-let quizQuestions = [];
-let currentQuestionIndex = 0;
-let userScore = 0;
-let answerStreak = 0;
-let currentPlayerName = "Player";
-let currentSessionId = "";
-
-const dynamicClassroomBank = [
-    {
-        type: "multiple-choice",
-        question: "[Macao BAA Core] Which organelle contains its own unique metabolic DNA matrix and acts as the site for the Krebs cycle and electron transport chain?",
-        options: ["Endoplasmic Reticulum", "Mitochondria", "Lysosome", "Ribosome"],
-        answer: 1
-    },
-    {
-        type: "true-false",
-        question: "[Macao BAA Core] Eukaryotic cells segregate genetic materials inside a true double-membraned nucleus, whereas prokaryotic cells completely lack an enclosed nuclear envelope.",
-        options: ["True", "False"],
-        answer: 0
-    },
-    {
-        type: "fill-blank",
-        question: "[Macao BAA Intermediate] The initial anaerobic process occurring in the cellular cytoplasm that fractures one glucose molecule into two molecules of pyruvate is _________.",
-        answer: "glycolysis"
-    },
-    {
-        type: "true-false",
-        question: "[Macao BAA Intermediate] Photosynthesis is a catabolic, exergonic pathway that releases chemical energy for plant cells during nighttime hours.",
-        options: ["True", "False"],
-        answer: 1
-    },
-    {
-        type: "fill-blank",
-        question: "[Macao BAA Intermediate] The fundamental peptide monomers linked via peptide bonds to assemble complex structural protein chains are called _________ acids.",
-        answer: "amino"
+// Check for deep links or QR code route payloads (e.g., ?chapter=25)
+function checkUrlParams() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const chapterParam = urlParams.get('chapter');
+    if (chapterParam) {
+        loadChapter(chapterParam);
+        if (elements.chapterSelector) elements.chapterSelector.value = chapterParam;
     }
-];
+}
 
-/* ==========================================================================
-   3. DOM ELEMENT SELECTORS
-   ========================================================================== */
-const registrationSection = document.getElementById('registration-section');
-const uploadSection = document.getElementById('upload-section');
-const loadingSection = document.getElementById('loading-section');
-const quizSection = document.getElementById('quiz-section');
-const resultsSection = document.getElementById('results-section');
-
-const formSelect = document.getElementById('form-select');
-const classLetterInput = document.getElementById('class-letter-input');
-const classNumInput = document.getElementById('class-num-input');
-const studentNameInput = document.getElementById('student-name-input');
-const startAppBtn = document.getElementById('start-app-btn');
-const displayStudentName = document.getElementById('display-student-name');
-
-const cameraInput = document.getElementById('camera-input');
-const fileInput = document.getElementById('file-input');
-const filePreview = document.getElementById('file-preview');
-const fileNameSpan = document.getElementById('file-name');
-
-const questionText = document.getElementById('question-text');
-const optionsContainer = document.getElementById('options-container');
-const nextButton = document.getElementById('next-btn');
-const finalScoreElement = document.getElementById('final-score');
-const restartButton = document.getElementById('restart-btn');
-
-/* ==========================================================================
-   4. EVENT LISTENERS & NETWORK SYNC
-   ========================================================================== */
-if (startAppBtn) startAppBtn.addEventListener('click', handleStudentSignIn);
-if (cameraInput) cameraInput.addEventListener('change', (e) => triggerArenaLoad(e.target.files));
-if (fileInput) fileInput.addEventListener('change', (e) => triggerArenaLoad(e.target.files));
-if (nextButton) nextButton.addEventListener('click', advanceArenaChallenge);
-if (restartButton) restartButton.addEventListener('click', resetArenaSession);
-
-function broadcastStudentData(statusMessage) {
+/**
+ * Core Data Fetcher
+ * Dynamically loads the corresponding chapter's JSON file.
+ */
+async function loadChapter(chapterNumber) {
     try {
-        if (typeof firebase !== 'undefined' && currentSessionId) {
-            firebase.database().ref('student_sessions/' + currentSessionId).set({
-                name: currentPlayerName,
-                score: userScore,
-                streak: answerStreak,
-                currentQuestion: currentQuestionIndex + 1,
-                totalQuestions: quizQuestions.length,
-                lastStatus: statusMessage,
-                timestamp: Date.now()
-            });
+        showLoadingState();
+        state.currentChapter = chapterNumber;
+        
+        // Formulate target folder path exactly as deployed on your GitHub repository
+        const targetPath = `chapter ${chapterNumber}/questions.json`;
+        const response = await fetch(targetPath);
+        
+        if (!response.ok) {
+            throw new Error(`Could not find question matrix at ${targetPath}`);
         }
-    } catch (e) {
-        console.log("Broadcast network shielded:", e);
+        
+        state.questions = await response.json();
+        resetQuizState();
+        renderQuestion();
+    } catch (error) {
+        console.error("Error updating module context:", error);
+        alert(`Failed to load Chapter ${chapterNumber}. Please ensure questions.json exists in that folder layout.`);
     }
 }
 
-/* ==========================================================================
-   5. CORE GAME WORKFLOW
-   ========================================================================== */
-function handleStudentSignIn() {
-    try {
-        const formVal = formSelect.value;
-        const letterVal = classLetterInput.value.trim().toUpperCase() || "X";
-        const numVal = classNumInput.value.trim() || "00";
-        const nameVal = studentNameInput.value.trim();
+function resetQuizState() {
+    state.currentQuestionIndex = 0;
+    state.score = 0;
+    state.answersLog = [];
+    if (elements.scoreDisplay) elements.scoreDisplay.textContent = "";
+    if (elements.nextBtn) elements.nextBtn.style.display = "none";
+}
 
-        if (!nameVal) {
-            alert("Please type your name to enter the arena!");
+function showLoadingState() {
+    if (elements.quizContainer) {
+        elements.quizContainer.innerHTML = `<div class="loading-spinner">Loading English biology modules...</div>`;
+    }
+}
+
+/**
+ * Question Renderer Matrix
+ * Distributes rendering tasks based on the custom JSON schema fields.
+ */
+function renderQuestion() {
+    if (!elements.quizContainer) return;
+    
+    // Clear old visual context
+    elements.feedbackArea.innerHTML = "";
+    elements.nextBtn.style.display = "none";
+
+    // End of quiz check
+    if (state.currentQuestionIndex >= state.questions.length) {
+        renderQuizCompletion();
+        return;
+    }
+
+    const currentQuestion = state.questions[state.currentQuestionIndex];
+    
+    // Inject clean text header and metadata markers
+    elements.questionArea.innerHTML = `
+        <div class="question-header">
+            <span class="badge">Question ${state.currentQuestionIndex + 1} of ${state.questions.length}</span>
+        </div>
+        <p class="question-text">${currentQuestion.question}</p>
+    `;
+
+    elements.optionsArea.innerHTML = "";
+
+    // Structural Router for custom object schemas
+    if (currentQuestion.type === 'multiple-choice' || currentQuestion.type === 'true-false') {
+        renderSelectionOptions(currentQuestion.options);
+    } else if (currentQuestion.type === 'structured') {
+        renderStructuredInput(currentQuestion.rubric);
+    }
+}
+
+// Renders Multiple Choice and True/False option configurations
+function renderSelectionOptions(options) {
+    options.forEach((optionText, index) => {
+        const button = document.createElement('button');
+        button.className = 'option-btn';
+        button.innerHTML = optionText;
+        button.addEventListener('click', () => handleSelectionAnswer(index));
+        elements.optionsArea.appendChild(button);
+    });
+}
+
+// Renders Written Long Answer / Structured questions with dynamic rubric verification toggle
+function renderStructuredInput(rubricText) {
+    const container = document.createElement('div');
+    container.className = 'structured-container';
+    
+    const textarea = document.createElement('textarea');
+    textarea.placeholder = "Type your comprehensive answer here...";
+    textarea.className = 'structured-input';
+    
+    const submitBtn = document.createElement('button');
+    submitBtn.textContent = "Reveal Grading Rubric";
+    submitBtn.className = 'submit-structured-btn';
+    
+    submitBtn.addEventListener('click', () => {
+        if (!textarea.value.trim()) {
+            alert("Please type a response before checking the system rubric markers.");
             return;
         }
-
-        const classTag = `${formVal}${letterVal}_${numVal}`;
-        currentPlayerName = nameVal;
-        displayStudentName.textContent = `${classTag}, ${currentPlayerName}`;
-        currentSessionId = `${classTag}_${currentPlayerName.replace(/[^a-zA-Z0-9]/g, "_")}`;
-
-        broadcastStudentData("Joined Arena");
+        textarea.disabled = true;
+        submitBtn.disabled = true;
         
-        registrationSection.classList.add('hidden');
-        uploadSection.classList.remove('hidden');
-    } catch (err) {
-        registrationSection.classList.add('hidden');
-        uploadSection.classList.remove('hidden');
-    }
+        // Display official evaluation rubric guidelines
+        elements.feedbackArea.innerHTML = `
+            <div class="rubric-box">
+                <h4>Official Grading Criteria (Rubric Verification Required):</h4>
+                <p>${rubricText}</p>
+                <div class="self-assess-actions">
+                    <p>Did your answer hit the required benchmarks?</p>
+                    <button class="score-choice-btn correct" onclick="logStructuredResult(true)">Yes, Full Points</button>
+                    <button class="score-choice-btn incorrect" onclick="logStructuredResult(false)">No, Needs Revision</button>
+                </div>
+            </div>
+        `;
+    });
+
+    container.appendChild(textarea);
+    container.appendChild(submitBtn);
+    elements.optionsArea.appendChild(container);
 }
 
-// 🟢 SAFE OVERRIDE: Instant local randomized rotation bank
-function triggerArenaLoad(files) {
-    if (!files || !files[0]) return;
-    fileNameSpan.textContent = files[0].name;
-    filePreview.classList.remove('hidden');
-    uploadSection.classList.add('hidden');
-    loadingSection.classList.remove('hidden');
+/**
+ * Evaluation and Grading Logic
+ */
+function handleSelectionAnswer(selectedIndex) {
+    const currentQuestion = state.questions[state.currentQuestionIndex];
+    const optionButtons = elements.optionsArea.querySelectorAll('.option-btn');
     
-    broadcastStudentData("Reading Textbook Matrix... 🧬");
-
-    setTimeout(() => {
-        quizQuestions = [...dynamicClassroomBank].sort(() => Math.random() - 0.5);
-        
-        loadingSection.classList.add('hidden');
-        quizSection.classList.remove('hidden');
-        currentQuestionIndex = 0;
-        userScore = 0;
-        answerStreak = 0;
-        renderActiveChallenge();
-    }, 1200);
-}
-
-function renderActiveChallenge() {
-    if (nextButton) nextButton.classList.remove('hidden');
-    if (!quizQuestions || quizQuestions.length === 0) return;
+    // Freeze layout selections
+    optionButtons.forEach(btn => btn.disabled = true);
     
-    const activeQ = quizQuestions[currentQuestionIndex];
-    if (questionText) {
-        questionText.innerText = activeQ.question;
-    }
-    
-    if (optionsContainer) {
-        optionsContainer.innerHTML = "";
-        if (activeQ.type === "multiple-choice" || activeQ.type === "true-false") {
-            activeQ.options.forEach((opt, idx) => {
-                const btn = document.createElement('button');
-                btn.className = "option-btn-style";
-                btn.innerText = opt;
-                btn.onclick = () => verifyUserAnswer(idx);
-                optionsContainer.appendChild(btn);
-            });
-        } else {
-            const inputBox = document.createElement('input');
-            inputBox.type = "text";
-            inputBox.className = "input-box-style";
-            inputBox.placeholder = "Type your answer here...";
-            optionsContainer.appendChild(inputBox);
-        }
-    }
-}
-
-function verifyUserAnswer(selectedIdx) {
-    broadcastStudentData("Answered Question");
-}
-
-function advanceArenaChallenge() {
-    currentQuestionIndex++;
-    if (currentQuestionIndex < quizQuestions.length) {
-        renderActiveChallenge();
+    const isCorrect = (selectedIndex === currentQuestion.answer);
+    if (isCorrect) {
+        state.score++;
+        optionButtons[selectedIndex].classList.add('correct');
+        elements.feedbackArea.innerHTML = `<div class="feedback-msg alert-success">✅ Correct answer! Excellent work.</div>`;
     } else {
-        quizSection.classList.add('hidden');
-        resultsSection.classList.remove('hidden');
-        if (finalScoreElement) finalScoreElement.innerText = userScore;
-        broadcastStudentData("Completed Round");
+        optionButtons[selectedIndex].classList.add('incorrect');
+        optionButtons[currentQuestion.answer].classList.add('correct');
+        elements.feedbackArea.innerHTML = `<div class="feedback-msg alert-danger">❌ Incorrect. The correct configuration is marked above.</div>`;
     }
+    
+    state.answersLog.push({ question: currentQuestion.question, correct: isCorrect });
+    elements.nextBtn.style.display = "block";
 }
 
-function resetArenaSession() {
-    resultsSection.classList.add('hidden');
-    uploadSection.classList.remove('hidden');
-    filePreview.classList.add('hidden');
+window.logStructuredResult = function(isCorrect) {
+    if (isCorrect) state.score++;
+    state.answersLog.push({ question: state.questions[state.currentQuestionIndex].question, correct: isCorrect });
+    elements.nextBtn.style.display = "block";
+};
+
+function handleNextQuestion() {
+    state.currentQuestionIndex++;
+    renderQuestion();
 }
+
+function renderQuizCompletion() {
+    elements.questionArea.innerHTML = `<h3>Module Completed!</h3>`;
+    elements.optionsArea.innerHTML = `
+        <div class="summary-box">
+            <p>You scored <strong>${state.score}</strong> out of <strong>${state.questions.length}</strong> available questions matrix points.</p>
+            <div class="progress-bar-container">
+                <div class="progress-bar-fill" style="width: ${(state.score / state.questions.length) * 100}%"></div>
+            </div>
+        </div>
+    `;
+    elements.nextBtn.style.display = "none";
+}
+
+/**
+ * 📷 Dynamic Camera Routing Engine
+ * Automatically interprets text payloads from QR or barcode configurations 
+ * and targets matching dynamic local folder indices.
+ */
+async function toggleCameraScanner() {
+    if (state.isScannerActive) {
+        stopCameraScanner();
+        return;
+    }
+
+    try {
+        state.isScannerActive = true;
+        elements.scannerContainer.style.display = "block";
+        elements.cameraBtn.textContent = "Close Scanner Camera";
+
+        // Access laptop or smartphone hardware camera stream
+        state.stream = await navigator.mediaDevices.getUserMedia({ 
+            video: { facingMode: "environment" } 
+        });
+        
+        elements.scannerVideo.srcObject = state.stream;
+        elements.scannerVideo.setAttribute("playsinline", true);
+        elements.scannerVideo.play();
+
+        // Initialize Native Barcode / QR Detection loop if supported by browser environment
+        if ('BarcodeDetector' in window) {
+            const detector = new BarcodeDetector({ formats: ['qr_code', 'code_128', 'ean_13'] });
+            startNativeDetectionLoop(detector);
+        } else {
+            // Polyfill / Simulated scanner fallback mode for local staging environments
+            setupFallbackScannerSimulation();
+        }
+
+    } catch (err) {
