@@ -1,5 +1,5 @@
 /* ==========================================================================
-   1. CORE FIREBASE SETUP & CLOUD NETWORK CONNECTIVITY
+   1. FIREBASE & APP STATE
    ========================================================================== */
 const firebaseConfig = {
     apiKey: "AIzaSyChSMRbqSFmAE2dNlGHa6AFcc4SpWM1V7g",
@@ -12,17 +12,9 @@ const firebaseConfig = {
 };
 
 try {
-    if (typeof firebase !== 'undefined') {
-        firebase.initializeApp(firebaseConfig);
-        console.log("🚀 Firebase connected successfully!");
-    }
-} catch (e) {
-    console.log("Network shielded:", e);
-}
+    if (typeof firebase !== 'undefined') firebase.initializeApp(firebaseConfig);
+} catch (e) { console.log("Network shielded:", e); }
 
-/* ==========================================================================
-   2. APP STATE VARIABLES & FALLBACK BANK
-   ========================================================================== */
 let quizQuestions = [];
 let currentQuestionIndex = 0;
 let userScore = 0;
@@ -33,27 +25,13 @@ let currentTopicTitle = "General Biology";
 let questionAnswered = false;
 
 const fallbackBank = [
-    {
-        type: "multiple-choice",
-        question: "[Macao BAA Core] Which organelle contains its own unique metabolic DNA matrix and acts as the site for the Krebs cycle and electron transport chain?",
-        options: ["Endoplasmic Reticulum", "Mitochondria", "Lysosome", "Ribosome"],
-        answer: 1
-    },
-    {
-        type: "true-false",
-        question: "[Macao BAA Core] Eukaryotic cells segregate genetic materials inside a true double-membraned nucleus, whereas prokaryotic cells completely lack an enclosed nuclear envelope.",
-        options: ["True", "False"],
-        answer: 0
-    },
-    {
-        type: "fill-blank",
-        question: "[Macao BAA Intermediate] The initial anaerobic process occurring in the cellular cytoplasm that fractures one glucose molecule into two molecules of pyruvate is _________.",
-        answer: "glycolysis"
-    }
+    { type: "multiple-choice", question: "[Macao BAA] Which organelle is the site for the Krebs cycle and aerobic ATP production?", options: ["Endoplasmic Reticulum", "Mitochondria", "Lysosome", "Ribosome"], answer: 1 },
+    { type: "true-false", question: "[Macao BAA] Eukaryotic cells have a double-membraned nucleus, while prokaryotic cells lack an enclosed nucleus.", options: ["True", "False"], answer: 0 },
+    { type: "fill-blank", question: "[Macao BAA] The anaerobic breakdown of glucose into pyruvate in the cytoplasm is called _________.", answer: "glycolysis" }
 ];
 
 /* ==========================================================================
-   3. DOM ELEMENT SELECTORS
+   2. DOM SELECTORS & LISTENERS
    ========================================================================== */
 const registrationSection = document.getElementById('registration-section');
 const uploadSection = document.getElementById('upload-section');
@@ -80,16 +58,12 @@ const progressText = document.getElementById('progress-text');
 const streakCounter = document.getElementById('streak-counter');
 const scoreText = document.getElementById('score-text');
 const progressBar = document.getElementById('progress-bar');
-
 const questionText = document.getElementById('question-text');
 const optionsContainer = document.getElementById('options-container');
 const nextButton = document.getElementById('next-btn');
 const finalScoreElement = document.getElementById('final-score');
 const restartButton = document.getElementById('restart-btn');
 
-/* ==========================================================================
-   4. EVENT LISTENERS
-   ========================================================================== */
 if (startAppBtn) startAppBtn.addEventListener('click', handleStudentSignIn);
 if (startChapterBtn) startChapterBtn.addEventListener('click', handleChapterStart);
 if (cameraInput) cameraInput.addEventListener('change', (e) => triggerFileLoad(e.target.files));
@@ -101,23 +75,16 @@ function broadcastStudentData(statusMessage) {
     try {
         if (typeof firebase !== 'undefined' && firebase.apps.length && currentSessionId) {
             firebase.database().ref('student_sessions/' + currentSessionId).set({
-                name: currentPlayerName,
-                topic: currentTopicTitle,
-                score: userScore,
-                streak: answerStreak,
-                currentQuestion: currentQuestionIndex + 1,
-                totalQuestions: quizQuestions.length,
-                lastStatus: statusMessage,
-                timestamp: Date.now()
+                name: currentPlayerName, topic: currentTopicTitle, score: userScore,
+                streak: answerStreak, currentQuestion: currentQuestionIndex + 1,
+                totalQuestions: quizQuestions.length, lastStatus: statusMessage, timestamp: Date.now()
             });
         }
-    } catch (e) {
-        console.log("Broadcast network shielded:", e);
-    }
+    } catch (e) { console.log("Sync shielded:", e); }
 }
 
 /* ==========================================================================
-   5. SIGN-IN & CHAPTER LOADER
+   3. SIGN-IN & CHAPTER LOADER
    ========================================================================== */
 function handleStudentSignIn() {
     const formVal = formSelect ? formSelect.value : "F5";
@@ -125,16 +92,11 @@ function handleStudentSignIn() {
     const numVal = classNumInput ? (classNumInput.value.trim() || "00") : "00";
     const nameVal = studentNameInput ? studentNameInput.value.trim() : "";
 
-    if (!nameVal) {
-        alert("Please type your name to enter the arena!");
-        return;
-    }
+    if (!nameVal) { alert("Please type your name to enter the arena!"); return; }
 
     const classTag = `${formVal}${letterVal}_${numVal}`;
     currentPlayerName = nameVal;
-    if (displayStudentName) {
-        displayStudentName.textContent = `${classTag}, ${currentPlayerName}`;
-    }
+    if (displayStudentName) displayStudentName.textContent = `${classTag}, ${currentPlayerName}`;
     currentSessionId = `${classTag}_${currentPlayerName.replace(/[^a-zA-Z0-9]/g, "_")}`;
 
     broadcastStudentData("Joined Arena");
@@ -145,84 +107,98 @@ function handleStudentSignIn() {
 async function handleChapterStart() {
     const selectedPath = chapterSelect ? chapterSelect.value : "";
     const chapterLabel = chapterSelect && chapterSelect.selectedOptions.length > 0
-        ? chapterSelect.selectedOptions[0].textContent
-        : "Biology Chapter";
+        ? chapterSelect.selectedOptions[0].textContent : "Biology Chapter";
 
     currentTopicTitle = chapterLabel;
     uploadSection.classList.add('hidden');
     loadingSection.classList.remove('hidden');
     if (loadingTitle) loadingTitle.textContent = `Loading ${chapterLabel}...`;
-
     broadcastStudentData(`Studying: ${chapterLabel}`);
 
     try {
-        if (!selectedPath) throw new Error("No chapter selected");
-
+        if (!selectedPath) throw new Error("No chapter");
         const safeUrl = selectedPath.split('/').map(encodeURIComponent).join('/') + `?t=${Date.now()}`;
         const response = await fetch(safeUrl);
-        if (!response.ok) throw new Error("Chapter file not found");
-
+        if (!response.ok) throw new Error("File missing");
         const rawText = await response.text();
-        let parsedQuestions = [];
 
+        let parsed = [];
         try {
             const jsonData = JSON.parse(rawText);
-            if (Array.isArray(jsonData) && jsonData.length > 0) {
-                parsedQuestions = jsonData;
-            }
-        } catch (jsonErr) {
-            parsedQuestions = parsePlainTextQuestions(rawText, chapterLabel);
+            if (Array.isArray(jsonData) && jsonData.length > 0) parsed = jsonData;
+        } catch (err) {
+            parsed = parsePlainTextQuestions(rawText, chapterLabel);
         }
-
-        if (!parsedQuestions || parsedQuestions.length === 0) {
-            throw new Error("Empty question list");
-        }
-
-        quizQuestions = [...parsedQuestions].sort(() => Math.random() - 0.5);
+        quizQuestions = (parsed.length > 0 ? parsed : fallbackBank).slice().sort(() => Math.random() - 0.5);
     } catch (err) {
-        console.warn("Using fallback bank:", err);
-        quizQuestions = [...fallbackBank].sort(() => Math.random() - 0.5);
+        quizQuestions = fallbackBank.slice().sort(() => Math.random() - 0.5);
     }
 
     setTimeout(() => {
         loadingSection.classList.add('hidden');
         quizSection.classList.remove('hidden');
-        currentQuestionIndex = 0;
-        userScore = 0;
-        answerStreak = 0;
-        updateHUD();
-        renderActiveChallenge();
-    }, 800);
+        currentQuestionIndex = 0; userScore = 0; answerStreak = 0;
+        updateHUD(); renderActiveChallenge();
+    }, 700);
 }
 
 function parsePlainTextQuestions(rawText, topicLabel) {
-    const sentences = rawText
-        .replace(/\s+/g, ' ')
-        .split(/(?<=[.!?])\s+/)
-        .map(s => s.trim())
-        .filter(s => s.split(' ').length >= 6 && s.split(' ').length <= 35);
+    const sentences = rawText.replace(/\s+/g, ' ').split(/(?<=[.!?])\s+/)
+        .map(s => s.trim()).filter(s => s.split(' ').length >= 6 && s.split(' ').length <= 35);
+    if (sentences.length < 2) return fallbackBank;
 
-    if (sentences.length < 2) return [...fallbackBank];
-
-    const stopWords = new Set(["which", "their", "there", "these", "those", "where", "while", "during", "through", "between", "because", "before", "after", "about", "into", "from", "with", "that", "this", "have"]);
-    const keywordPool = [];
-
+    const stop = new Set(["which","their","there","these","those","where","while","during","through","between","because","before","after","about","into","from","with","that","this","have"]);
     const items = sentences.map(sentence => {
-        const words = sentence.match(/\b[A-Za-z]{5,}\b/g) || [];
-        const candidates = words.filter(w => !stopWords.has(w.toLowerCase()));
-        const targetWord = candidates.length > 0
-            ? candidates.sort((a, b) => b.length - a.length)[0]
-            : (words[0] || "biology");
-        if (targetWord) keywordPool.push(targetWord);
-        return { sentence, targetWord };
+        const words = (sentence.match(/\b[A-Za-z]{5,}\b/g) || []).filter(w => !stop.has(w.toLowerCase()));
+        const target = words.sort((a, b) => b.length - a.length)[0] || "biology";
+        return { sentence, target };
     });
 
-    const uniqueKeywords = [...new Set(keywordPool.map(w => w.toLowerCase()))];
+    return items.slice(0, 10).map(item => ({
+        type: "fill-blank",
+        question: `[${topicLabel}] Fill in the missing term:\n"${item.sentence.replace(new RegExp(`\\b${item.target}\\b`, 'i'), '_________')}"`,
+        answer: item.target
+    }));
+}
 
-    return items.slice(0, 10).map((item, idx) => {
-        const blanked = item.sentence.replace(new RegExp(`\\b${item.targetWord}\\b`, 'i'), '_________');
-        if (idx % 2 === 0 && uniqueKeywords.length >= 4) {
-            const distractors = uniqueKeywords
-                .filter(w => w !== item.targetWord.toLowerCase())
-                .sort(() => Math.random() - 0.5)
-                .slice(0, 3);
+function triggerFileLoad(files) {
+    if (!files || !files[0]) return;
+    if (fileNameSpan) fileNameSpan.textContent = files[0].name;
+    if (filePreview) filePreview.classList.remove('hidden');
+    uploadSection.classList.add('hidden');
+    loadingSection.classList.remove('hidden');
+
+    setTimeout(() => {
+        quizQuestions = fallbackBank.slice().sort(() => Math.random() - 0.5);
+        loadingSection.classList.add('hidden');
+        quizSection.classList.remove('hidden');
+        currentQuestionIndex = 0; userScore = 0; answerStreak = 0;
+        updateHUD(); renderActiveChallenge();
+    }, 800);
+}
+
+/* ==========================================================================
+   4. QUIZ ENGINE & SCORING
+   ========================================================================== */
+function updateHUD() {
+    const total = quizQuestions.length || 1;
+    if (progressText) progressText.textContent = `Q: ${currentQuestionIndex + 1}/${total}`;
+    if (streakCounter) streakCounter.textContent = answerStreak;
+    if (scoreText) scoreText.textContent = `${userScore} pts`;
+    if (progressBar) progressBar.style.width = `${(currentQuestionIndex / total) * 100}%`;
+}
+
+function renderActiveChallenge() {
+    questionAnswered = false;
+    if (nextButton) nextButton.classList.add('hidden');
+    if (!quizQuestions.length) return;
+    updateHUD();
+
+    const q = quizQuestions[currentQuestionIndex];
+    if (questionText) questionText.innerText = q.question;
+    if (!optionsContainer) return;
+    optionsContainer.innerHTML = "";
+
+    if (q.type === "multiple-choice" || q.type === "true-false") {
+        q.options.forEach((opt, idx) => {
+            const btn = document.createElement('button');
