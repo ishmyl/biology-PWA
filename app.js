@@ -202,3 +202,66 @@ function renderActiveChallenge() {
     if (q.type === "multiple-choice" || q.type === "true-false") {
         q.options.forEach((opt, idx) => {
             const btn = document.createElement('button');
+            btn.type = "button"; btn.className = "option-btn"; btn.innerText = opt;
+            btn.onclick = () => verifyUserAnswer(idx, btn);
+            optionsContainer.appendChild(btn);
+        });
+    } else {
+        const input = document.createElement('input');
+        input.type = "text"; input.id = "fill-blank-input"; input.placeholder = "Type your answer here...";
+        const submit = document.createElement('button');
+        submit.type = "button"; submit.className = "btn btn-action"; submit.innerText = "Submit Answer ✅";
+        submit.onclick = () => verifyUserAnswer(input.value.trim(), submit);
+        optionsContainer.appendChild(input); optionsContainer.appendChild(submit);
+    }
+}
+
+function verifyUserAnswer(choice, el) {
+    if (questionAnswered) return;
+    questionAnswered = true;
+    const q = quizQuestions[currentQuestionIndex];
+    let correct = false;
+
+    if (q.type === "multiple-choice" || q.type === "true-false") {
+        correct = (choice === q.answer);
+        optionsContainer.querySelectorAll('.option-btn').forEach((b, i) => {
+            b.disabled = true;
+            if (i === q.answer) b.classList.add('correct');
+            else if (i === choice && !correct) b.classList.add('incorrect');
+        });
+    } else {
+        correct = (String(choice).toLowerCase() === String(q.answer).toLowerCase());
+        const inputEl = document.getElementById('fill-blank-input');
+        if (inputEl) {
+            inputEl.disabled = true;
+            inputEl.style.borderColor = correct ? "var(--correct-glow)" : "var(--incorrect-glow)";
+            if (!correct) inputEl.value = `${choice} (Correct: ${q.answer})`;
+        }
+        if (el) {
+            el.disabled = true; el.innerText = correct ? "Correct! 🎉" : `Answer: ${q.answer}`;
+            el.style.backgroundColor = correct ? "var(--correct-glow)" : "var(--incorrect-glow)";
+        }
+    }
+
+    if (correct) { answerStreak++; userScore += 100 + (answerStreak * 10); broadcastStudentData("Correct 🔥"); }
+    else { answerStreak = 0; broadcastStudentData("Missed"); }
+    updateHUD();
+    if (nextButton) nextButton.classList.remove('hidden');
+}
+
+function advanceArenaChallenge() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < quizQuestions.length) renderActiveChallenge();
+    else {
+        if (progressBar) progressBar.style.width = "100%";
+        quizSection.classList.add('hidden'); resultsSection.classList.remove('hidden');
+        if (finalScoreElement) finalScoreElement.textContent = `${userScore} pts`;
+        broadcastStudentData("Completed 🏆");
+    }
+}
+
+function resetArenaSession() {
+    currentQuestionIndex = 0; userScore = 0; answerStreak = 0;
+    resultsSection.classList.add('hidden'); uploadSection.classList.remove('hidden');
+    broadcastStudentData("Choosing Chapter");
+}
