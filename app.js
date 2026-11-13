@@ -165,14 +165,12 @@ async function handleChapterStart() {
         const rawText = await response.text();
         let parsedQuestions = [];
 
-        // Try parsing as JSON first (works for both .json and JSON inside .txt)
         try {
             const jsonData = JSON.parse(rawText);
             if (Array.isArray(jsonData) && jsonData.length > 0) {
                 parsedQuestions = jsonData;
             }
         } catch (jsonErr) {
-            // If chapter 27/questions.txt is plain text, parse sentences into questions
             parsedQuestions = parsePlainTextQuestions(rawText, chapterLabel);
         }
 
@@ -180,7 +178,6 @@ async function handleChapterStart() {
             throw new Error("Empty question list");
         }
 
-        // Shuffle questions for variety
         quizQuestions = [...parsedQuestions].sort(() => Math.random() - 0.5);
     } catch (err) {
         console.warn("Using fallback bank:", err);
@@ -226,3 +223,6 @@ function parsePlainTextQuestions(rawText, topicLabel) {
         const blanked = item.sentence.replace(new RegExp(`\\b${item.targetWord}\\b`, 'i'), '_________');
         if (idx % 2 === 0 && uniqueKeywords.length >= 4) {
             const distractors = uniqueKeywords
+                .filter(w => w !== item.targetWord.toLowerCase())
+                .sort(() => Math.random() - 0.5)
+                .slice(0, 3);
