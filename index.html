@@ -38,61 +38,56 @@
             </select>
 
             <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">CLASS SECTION (LETTER):</label>
-            <input type="text" id="class-letter-input" placeholder="e.g. A" maxlength="2" autocomplete="off" style="text-transform: uppercase; width: 100%; background-color: rgba(12, 10, 28, 0.6); border: 2px solid var(--border-color); border-radius: var(--border-radius); padding: 15px; font-size: 1rem; color: white; margin-bottom: 15px;">
+            <input type="text" id="class-letter-input" placeholder="e.g. A" maxlength="2" autocomplete="off" style="text-transform: uppercase;">
 
             <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">CLASS SEAT NUMBER:</label>
             <input type="number" id="class-num-input" placeholder="e.g. 11" min="1" max="99" autocomplete="off" style="width: 100%; background-color: rgba(12, 10, 28, 0.6); border: 2px solid var(--border-color); border-radius: var(--border-radius); padding: 15px; font-size: 1rem; color: white; margin-bottom: 15px;">
 
             <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">STUDENT FIRST NAME:</label>
-            <input type="text" id="student-name-input" placeholder="Type your Name... (e.g. Tina)" autocomplete="off" style="width: 100%; background-color: rgba(12, 10, 28, 0.6); border: 2px solid var(--border-color); border-radius: var(--border-radius); padding: 15px; font-size: 1rem; color: white; margin-bottom: 15px;">
+            <input type="text" id="student-name-input" placeholder="Type your Name... (e.g. Tina)" autocomplete="off">
             
-            <button id="start-app-btn" class="btn btn-action" style="margin-top:10px;">Join Arena 🚀</button>
+            <button id="start-app-btn" type="button" class="btn btn-action" style="margin-top:10px;">Join Arena 🚀</button>
         </section>
 
-        <!-- STEP 2: CHAPTER FOLDER & TOPIC SELECTION HUB -->
+        <!-- STEP 2: CHAPTER SELECTION HUB -->
         <section id="upload-section" class="card gamified-card hidden">
             <div class="card-badge">📚 CLASSROOM CHAPTERS</div>
             <h2>Player: <span id="display-student-name" class="neon-text">Guest</span></h2>
-            <p class="instruction">Choose a Chapter folder and select a Topic to generate your arena challenge.</p>
+            <p class="instruction">Choose your assigned Biology chapter below to start your arena challenge.</p>
             
-            <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">1. SELECT CHAPTER FOLDER:</label>
+            <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">SELECT CHAPTER:</label>
             <select id="chapter-select" style="width: 100%; background-color: rgba(12, 10, 28, 0.6); border: 2px solid var(--border-color); border-radius: var(--border-radius); padding: 15px; font-size: 1rem; color: white; margin-bottom: 15px;">
-                <option value="Chapter 1">Chapter 1</option>
-                <option value="chapter 25">Chapter 25</option>
-                <option value="chapter 26">Chapter 26</option>
-                <option value="chapter 27">Chapter 27</option>
-                <option value="chapter 28">Chapter 28</option>
-                <option value="chapter 29">Chapter 29</option>
-                <option value="chapter 30">Chapter 30</option>
+                <option value="Chapter 1/questions.json">Chapter 1</option>
+                <option value="chapter 25/questions.json">Chapter 25</option>
+                <option value="chapter 26/questions.json">Chapter 26</option>
+                <option value="chapter 27/questions.txt">Chapter 27</option>
+                <option value="chapter 28/questions.json">Chapter 28</option>
+                <option value="chapter 29/questions.json">Chapter 29</option>
+                <option value="chapter 30/questions.json">Chapter 30</option>
             </select>
 
-            <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">2. SELECT TOPIC IN FOLDER:</label>
-            <select id="topic-select" style="width: 100%; background-color: rgba(12, 10, 28, 0.6); border: 2px solid var(--border-color); border-radius: var(--border-radius); padding: 15px; font-size: 1rem; color: white; margin-bottom: 15px;">
-                <option value="">Loading topics from folder...</option>
-            </select>
-
-            <button id="start-chapter-btn" class="btn btn-action" style="margin-bottom: 20px;">⚡ Generate Topic Challenge</button>
+            <button id="start-chapter-btn" type="button" class="btn btn-action" style="margin-bottom: 20px;">⚡ Start Chapter Challenge</button>
 
             <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 15px 0;">
             <p class="instruction" style="font-size: 0.85rem;">Or scan your own textbook page:</p>
-            <div class="upload-buttons">
+            <div class="upload-buttons" style="display: flex; gap: 10px;">
                 <label for="camera-input" class="btn btn-secondary">
                     📸 Scan Page
                     <input type="file" id="camera-input" accept="image/*" capture="environment">
                 </label>
                 <label for="file-input" class="btn btn-secondary">
                     📁 Load File
-                    <input type="file" id="file-input" accept="image/*,.pdf,.txt">
+                    <input type="file" id="file-input" accept="image/*,.pdf,.txt,.json">
                 </label>
             </div>
-            <div id="file-preview" class="hidden"><p>Asset Loaded: <span id="file-name"></span></p></div>
+            <div id="file-preview" class="hidden" style="margin-top: 10px;"><p>Asset Loaded: <span id="file-name"></span></p></div>
         </section>
 
         <!-- STEP 3: LOADING SPINNER IN PROGRESS -->
         <section id="loading-section" class="card gamified-card hidden">
             <div class="spinner"></div>
-            <h3 id="loading-title">Wayground AI is engineering your questions...</h3>
-            <p>Compiling True/False, Multiple-Choice, and Fill-in-the-Blank challenges.</p>
+            <h3 id="loading-title">Wayground AI is loading your questions...</h3>
+            <p>Preparing your classroom challenge.</p>
         </section>
 
         <!-- STEP 4: INTERACTIVE QUIZ HUB -->
@@ -104,19 +99,19 @@
             </div>
             <div class="progress-bar-container"><div id="progress-bar" style="width: 0%;"></div></div>
             
-            <h2 id="question-text">Analyzing concept question...</h2>
+            <h2 id="question-text">Loading question...</h2>
             <div id="options-container" class="options-grid"></div>
             
-            <button id="next-btn" class="btn btn-next hidden">Next Challenge ➡️</button>
+            <button id="next-btn" type="button" class="btn btn-next hidden">Next Challenge ➡️</button>
         </section>
 
         <!-- STEP 5: STUDENT SCOREBOARD REPORT -->
         <section id="results-section" class="card gamified-card hidden">
-            <div class="results-badge">🏆</div>
-            <h2>Arena Completed!</h2>
-            <p class="final-score-label">Final Player Record</p>
-            <h1 id="final-score" class="neon-text-green">0 pts</h1>
-            <button id="restart-btn" class="btn btn-action">Choose Another Topic</button>
+            <div class="results-badge" style="font-size: 3rem; text-align: center;">🏆</div>
+            <h2 style="text-align: center;">Arena Completed!</h2>
+            <p class="final-score-label" style="text-align: center; color: var(--text-muted);">Final Player Record</p>
+            <h1 id="final-score" class="neon-text-green" style="text-align: center;">0 pts</h1>
+            <button id="restart-btn" type="button" class="btn btn-action">Choose Another Chapter</button>
         </section>
 
     </main>
