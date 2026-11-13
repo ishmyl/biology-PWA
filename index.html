@@ -1,121 +1,228 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Wayground BioArena AI</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#4c1d95">
-    
-    <!-- CORE FIREBASE TRACKER LIBRARIES -->
-    <script src="https://gstatic.com"></script>
-    <script src="https://gstatic.com"></script>
-</head>
-<body>
+/* ==========================================================================
+   1. CORE FIREBASE SETUP & CLOUD NETWORK CONNECTIVITY
+   ========================================================================== */
+const firebaseConfig = {
+    apiKey: "AIzaSyChSMRbqSFmAE2dNlGHa6AFcc4SpWM1V7g",
+    authDomain: "://firebaseapp.com",
+    databaseURL: "https://firebaseio.com",
+    projectId: "wayground-bioarena",
+    storageBucket: "wayground-bioarena.firebasestorage.app",
+    messagingSenderId: "7169528648",
+    appId: "1:7169528648:web:085387e296b0ecdacf4339"
+};
 
-    <header class="app-header">
-        <div class="logo">⚡ Wayground BioArena</div>
-        <p class="subtitle">Live Student AI Interactive Challenge</p>
-    </header>
+try {
+    if (typeof firebase !== 'undefined') {
+        firebase.initializeApp(firebaseConfig);
+        console.log("🚀 Firebase connected successfully!");
+    }
+} catch (e) {
+    console.log("Network shielded:", e);
+}
 
-    <main class="app-container">
-        
-        <!-- STEP 1: STUDENT HUB LOGIN -->
-        <section id="registration-section" class="card gamified-card">
-            <div class="card-badge">🎮 ENTER ARENA</div>
-            <h2>Classroom Sign-In</h2>
-            <p class="instruction">Select your class Form, input your class seat number, and type your first name to enter the arena session.</p>
-            
-            <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">SELECT YOUR CLASS FORM:</label>
-            <select id="form-select" style="width: 100%; background-color: rgba(12, 10, 28, 0.6); border: 2px solid var(--border-color); border-radius: var(--border-radius); padding: 15px; font-size: 1rem; color: white; margin-bottom: 15px;">
-                <option value="F1">Form 1 (F1)</option>
-                <option value="F2">Form 2 (F2)</option>
-                <option value="F3">Form 3 (F3)</option>
-                <option value="F4">Form 4 (F4)</option>
-                <option value="F5" selected>Form 5 (F5)</option>
-                <option value="F6">Form 6 (F6)</option>
-            </select>
+/* ==========================================================================
+   2. APP STATE VARIABLES & FALLBACK BANK
+   ========================================================================== */
+let quizQuestions = [];
+let currentQuestionIndex = 0;
+let userScore = 0;
+let answerStreak = 0;
+let currentPlayerName = "Player";
+let currentSessionId = "";
+let currentTopicTitle = "General Biology";
+let questionAnswered = false;
 
-            <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">CLASS SECTION (LETTER):</label>
-            <input type="text" id="class-letter-input" placeholder="e.g. A" maxlength="2" autocomplete="off" style="text-transform: uppercase;">
+const fallbackBank = [
+    {
+        type: "multiple-choice",
+        question: "[Macao BAA Core] Which organelle contains its own unique metabolic DNA matrix and acts as the site for the Krebs cycle and electron transport chain?",
+        options: ["Endoplasmic Reticulum", "Mitochondria", "Lysosome", "Ribosome"],
+        answer: 1
+    },
+    {
+        type: "true-false",
+        question: "[Macao BAA Core] Eukaryotic cells segregate genetic materials inside a true double-membraned nucleus, whereas prokaryotic cells completely lack an enclosed nuclear envelope.",
+        options: ["True", "False"],
+        answer: 0
+    },
+    {
+        type: "fill-blank",
+        question: "[Macao BAA Intermediate] The initial anaerobic process occurring in the cellular cytoplasm that fractures one glucose molecule into two molecules of pyruvate is _________.",
+        answer: "glycolysis"
+    }
+];
 
-            <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">CLASS SEAT NUMBER:</label>
-            <input type="number" id="class-num-input" placeholder="e.g. 11" min="1" max="99" autocomplete="off" style="width: 100%; background-color: rgba(12, 10, 28, 0.6); border: 2px solid var(--border-color); border-radius: var(--border-radius); padding: 15px; font-size: 1rem; color: white; margin-bottom: 15px;">
+/* ==========================================================================
+   3. DOM ELEMENT SELECTORS
+   ========================================================================== */
+const registrationSection = document.getElementById('registration-section');
+const uploadSection = document.getElementById('upload-section');
+const loadingSection = document.getElementById('loading-section');
+const quizSection = document.getElementById('quiz-section');
+const resultsSection = document.getElementById('results-section');
 
-            <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">STUDENT FIRST NAME:</label>
-            <input type="text" id="student-name-input" placeholder="Type your Name... (e.g. Tina)" autocomplete="off">
-            
-            <button id="start-app-btn" type="button" class="btn btn-action" style="margin-top:10px;">Join Arena 🚀</button>
-        </section>
+const formSelect = document.getElementById('form-select');
+const classLetterInput = document.getElementById('class-letter-input');
+const classNumInput = document.getElementById('class-num-input');
+const studentNameInput = document.getElementById('student-name-input');
+const startAppBtn = document.getElementById('start-app-btn');
+const displayStudentName = document.getElementById('display-student-name');
 
-        <!-- STEP 2: CHAPTER SELECTION HUB -->
-        <section id="upload-section" class="card gamified-card hidden">
-            <div class="card-badge">📚 CLASSROOM CHAPTERS</div>
-            <h2>Player: <span id="display-student-name" class="neon-text">Guest</span></h2>
-            <p class="instruction">Choose your assigned Biology chapter below to start your arena challenge.</p>
-            
-            <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">SELECT CHAPTER:</label>
-            <select id="chapter-select" style="width: 100%; background-color: rgba(12, 10, 28, 0.6); border: 2px solid var(--border-color); border-radius: var(--border-radius); padding: 15px; font-size: 1rem; color: white; margin-bottom: 15px;">
-                <option value="Chapter 1/questions.json">Chapter 1</option>
-                <option value="chapter 25/questions.json">Chapter 25</option>
-                <option value="chapter 26/questions.json">Chapter 26</option>
-                <option value="chapter 27/questions.txt">Chapter 27</option>
-                <option value="chapter 28/questions.json">Chapter 28</option>
-                <option value="chapter 29/questions.json">Chapter 29</option>
-                <option value="chapter 30/questions.json">Chapter 30</option>
-            </select>
+const chapterSelect = document.getElementById('chapter-select');
+const startChapterBtn = document.getElementById('start-chapter-btn');
+const cameraInput = document.getElementById('camera-input');
+const fileInput = document.getElementById('file-input');
+const filePreview = document.getElementById('file-preview');
+const fileNameSpan = document.getElementById('file-name');
+const loadingTitle = document.getElementById('loading-title');
 
-            <button id="start-chapter-btn" type="button" class="btn btn-action" style="margin-bottom: 20px;">⚡ Start Chapter Challenge</button>
+const progressText = document.getElementById('progress-text');
+const streakCounter = document.getElementById('streak-counter');
+const scoreText = document.getElementById('score-text');
+const progressBar = document.getElementById('progress-bar');
 
-            <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 15px 0;">
-            <p class="instruction" style="font-size: 0.85rem;">Or scan your own textbook page:</p>
-            <div class="upload-buttons" style="display: flex; gap: 10px;">
-                <label for="camera-input" class="btn btn-secondary">
-                    📸 Scan Page
-                    <input type="file" id="camera-input" accept="image/*" capture="environment">
-                </label>
-                <label for="file-input" class="btn btn-secondary">
-                    📁 Load File
-                    <input type="file" id="file-input" accept="image/*,.pdf,.txt,.json">
-                </label>
-            </div>
-            <div id="file-preview" class="hidden" style="margin-top: 10px;"><p>Asset Loaded: <span id="file-name"></span></p></div>
-        </section>
+const questionText = document.getElementById('question-text');
+const optionsContainer = document.getElementById('options-container');
+const nextButton = document.getElementById('next-btn');
+const finalScoreElement = document.getElementById('final-score');
+const restartButton = document.getElementById('restart-btn');
 
-        <!-- STEP 3: LOADING SPINNER IN PROGRESS -->
-        <section id="loading-section" class="card gamified-card hidden">
-            <div class="spinner"></div>
-            <h3 id="loading-title">Wayground AI is loading your questions...</h3>
-            <p>Preparing your classroom challenge.</p>
-        </section>
+/* ==========================================================================
+   4. EVENT LISTENERS
+   ========================================================================== */
+if (startAppBtn) startAppBtn.addEventListener('click', handleStudentSignIn);
+if (startChapterBtn) startChapterBtn.addEventListener('click', handleChapterStart);
+if (cameraInput) cameraInput.addEventListener('change', (e) => triggerFileLoad(e.target.files));
+if (fileInput) fileInput.addEventListener('change', (e) => triggerFileLoad(e.target.files));
+if (nextButton) nextButton.addEventListener('click', advanceArenaChallenge);
+if (restartButton) restartButton.addEventListener('click', resetArenaSession);
 
-        <!-- STEP 4: INTERACTIVE QUIZ HUB -->
-        <section id="quiz-section" class="card gamified-card hidden">
-            <div class="stats-ribbon">
-                <span id="progress-text">Q: 1/5</span>
-                <div class="streak-badge">🔥 Streak: <span id="streak-counter">0</span></div>
-                <span id="score-text" class="score-glow">0 pts</span>
-            </div>
-            <div class="progress-bar-container"><div id="progress-bar" style="width: 0%;"></div></div>
-            
-            <h2 id="question-text">Loading question...</h2>
-            <div id="options-container" class="options-grid"></div>
-            
-            <button id="next-btn" type="button" class="btn btn-next hidden">Next Challenge ➡️</button>
-        </section>
+function broadcastStudentData(statusMessage) {
+    try {
+        if (typeof firebase !== 'undefined' && firebase.apps.length && currentSessionId) {
+            firebase.database().ref('student_sessions/' + currentSessionId).set({
+                name: currentPlayerName,
+                topic: currentTopicTitle,
+                score: userScore,
+                streak: answerStreak,
+                currentQuestion: currentQuestionIndex + 1,
+                totalQuestions: quizQuestions.length,
+                lastStatus: statusMessage,
+                timestamp: Date.now()
+            });
+        }
+    } catch (e) {
+        console.log("Broadcast network shielded:", e);
+    }
+}
 
-        <!-- STEP 5: STUDENT SCOREBOARD REPORT -->
-        <section id="results-section" class="card gamified-card hidden">
-            <div class="results-badge" style="font-size: 3rem; text-align: center;">🏆</div>
-            <h2 style="text-align: center;">Arena Completed!</h2>
-            <p class="final-score-label" style="text-align: center; color: var(--text-muted);">Final Player Record</p>
-            <h1 id="final-score" class="neon-text-green" style="text-align: center;">0 pts</h1>
-            <button id="restart-btn" type="button" class="btn btn-action">Choose Another Chapter</button>
-        </section>
+/* ==========================================================================
+   5. SIGN-IN & CHAPTER LOADER
+   ========================================================================== */
+function handleStudentSignIn() {
+    const formVal = formSelect ? formSelect.value : "F5";
+    const letterVal = classLetterInput ? (classLetterInput.value.trim().toUpperCase() || "X") : "X";
+    const numVal = classNumInput ? (classNumInput.value.trim() || "00") : "00";
+    const nameVal = studentNameInput ? studentNameInput.value.trim() : "";
 
-    </main>
+    if (!nameVal) {
+        alert("Please type your name to enter the arena!");
+        return;
+    }
 
-    <script src="app.js"></script>
-</body>
-</html>
+    const classTag = `${formVal}${letterVal}_${numVal}`;
+    currentPlayerName = nameVal;
+    if (displayStudentName) {
+        displayStudentName.textContent = `${classTag}, ${currentPlayerName}`;
+    }
+    currentSessionId = `${classTag}_${currentPlayerName.replace(/[^a-zA-Z0-9]/g, "_")}`;
+
+    broadcastStudentData("Joined Arena");
+    registrationSection.classList.add('hidden');
+    uploadSection.classList.remove('hidden');
+}
+
+async function handleChapterStart() {
+    const selectedPath = chapterSelect ? chapterSelect.value : "";
+    const chapterLabel = chapterSelect && chapterSelect.selectedOptions.length > 0
+        ? chapterSelect.selectedOptions[0].textContent
+        : "Biology Chapter";
+
+    currentTopicTitle = chapterLabel;
+    uploadSection.classList.add('hidden');
+    loadingSection.classList.remove('hidden');
+    if (loadingTitle) loadingTitle.textContent = `Loading ${chapterLabel}...`;
+
+    broadcastStudentData(`Studying: ${chapterLabel}`);
+
+    try {
+        if (!selectedPath) throw new Error("No chapter selected");
+
+        const safeUrl = selectedPath.split('/').map(encodeURIComponent).join('/') + `?t=${Date.now()}`;
+        const response = await fetch(safeUrl);
+        if (!response.ok) throw new Error("Chapter file not found");
+
+        const rawText = await response.text();
+        let parsedQuestions = [];
+
+        try {
+            const jsonData = JSON.parse(rawText);
+            if (Array.isArray(jsonData) && jsonData.length > 0) {
+                parsedQuestions = jsonData;
+            }
+        } catch (jsonErr) {
+            parsedQuestions = parsePlainTextQuestions(rawText, chapterLabel);
+        }
+
+        if (!parsedQuestions || parsedQuestions.length === 0) {
+            throw new Error("Empty question list");
+        }
+
+        quizQuestions = [...parsedQuestions].sort(() => Math.random() - 0.5);
+    } catch (err) {
+        console.warn("Using fallback bank:", err);
+        quizQuestions = [...fallbackBank].sort(() => Math.random() - 0.5);
+    }
+
+    setTimeout(() => {
+        loadingSection.classList.add('hidden');
+        quizSection.classList.remove('hidden');
+        currentQuestionIndex = 0;
+        userScore = 0;
+        answerStreak = 0;
+        updateHUD();
+        renderActiveChallenge();
+    }, 800);
+}
+
+function parsePlainTextQuestions(rawText, topicLabel) {
+    const sentences = rawText
+        .replace(/\s+/g, ' ')
+        .split(/(?<=[.!?])\s+/)
+        .map(s => s.trim())
+        .filter(s => s.split(' ').length >= 6 && s.split(' ').length <= 35);
+
+    if (sentences.length < 2) return [...fallbackBank];
+
+    const stopWords = new Set(["which", "their", "there", "these", "those", "where", "while", "during", "through", "between", "because", "before", "after", "about", "into", "from", "with", "that", "this", "have"]);
+    const keywordPool = [];
+
+    const items = sentences.map(sentence => {
+        const words = sentence.match(/\b[A-Za-z]{5,}\b/g) || [];
+        const candidates = words.filter(w => !stopWords.has(w.toLowerCase()));
+        const targetWord = candidates.length > 0
+            ? candidates.sort((a, b) => b.length - a.length)[0]
+            : (words[0] || "biology");
+        if (targetWord) keywordPool.push(targetWord);
+        return { sentence, targetWord };
+    });
+
+    const uniqueKeywords = [...new Set(keywordPool.map(w => w.toLowerCase()))];
+
+    return items.slice(0, 10).map((item, idx) => {
+        const blanked = item.sentence.replace(new RegExp(`\\b${item.targetWord}\\b`, 'i'), '_________');
+        if (idx % 2 === 0 && uniqueKeywords.length >= 4) {
+            const distractors = uniqueKeywords
+                .filter(w => w !== item.targetWord.toLowerCase())
+                .sort(() => Math.random() - 0.5)
+                .slice(0, 3);
