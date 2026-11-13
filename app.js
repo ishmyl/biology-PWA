@@ -1,9 +1,6 @@
 /* ==========================================================================
-   1. CORE FIREBASE & GITHUB REPOSITORY SETUP
+   1. CORE FIREBASE SETUP & CLOUD NETWORK CONNECTIVITY
    ========================================================================== */
-const GITHUB_OWNER = "ishmyl";
-const GITHUB_REPO = "biology-PWA";
-
 const firebaseConfig = {
     apiKey: "AIzaSyChSMRbqSFmAE2dNlGHa6AFcc4SpWM1V7g",
     authDomain: "://firebaseapp.com",
@@ -72,7 +69,6 @@ const startAppBtn = document.getElementById('start-app-btn');
 const displayStudentName = document.getElementById('display-student-name');
 
 const chapterSelect = document.getElementById('chapter-select');
-const topicSelect = document.getElementById('topic-select');
 const startChapterBtn = document.getElementById('start-chapter-btn');
 const cameraInput = document.getElementById('camera-input');
 const fileInput = document.getElementById('file-input');
@@ -92,56 +88,14 @@ const finalScoreElement = document.getElementById('final-score');
 const restartButton = document.getElementById('restart-btn');
 
 /* ==========================================================================
-   4. EVENT LISTENERS & GITHUB FOLDER TOPIC SCANNER
+   4. EVENT LISTENERS
    ========================================================================== */
 if (startAppBtn) startAppBtn.addEventListener('click', handleStudentSignIn);
-if (chapterSelect) chapterSelect.addEventListener('change', () => loadTopicsInFolder(chapterSelect.value));
-if (startChapterBtn) startChapterBtn.addEventListener('click', handleTopicStart);
+if (startChapterBtn) startChapterBtn.addEventListener('click', handleChapterStart);
 if (cameraInput) cameraInput.addEventListener('change', (e) => triggerFileLoad(e.target.files));
 if (fileInput) fileInput.addEventListener('change', (e) => triggerFileLoad(e.target.files));
 if (nextButton) nextButton.addEventListener('click', advanceArenaChallenge);
 if (restartButton) restartButton.addEventListener('click', resetArenaSession);
-
-// Automatically scans the chosen GitHub folder (e.g., "Chapter 1", "chapter 25") for topic files
-async function loadTopicsInFolder(folderName) {
-    if (!topicSelect) return;
-    topicSelect.innerHTML = `<option value="">Scanning ${folderName}...</option>`;
-
-    try {
-        const encodedFolder = encodeURIComponent(folderName);
-        const apiUrl = `https://github.com{GITHUB_OWNER}/${GITHUB_REPO}/contents/${encodedFolder}`;
-        const response = await fetch(apiUrl);
-
-        if (!response.ok) throw new Error("Could not read folder");
-        const items = await response.json();
-
-        // Filter for files (ignores hidden files like .DS_Store)
-        const files = items.filter(item => item.type === "file" && !item.name.startsWith("."));
-
-        if (files.length === 0) {
-            topicSelect.innerHTML = `<option value="fallback">No topic files yet (Use Practice Set)</option>`;
-            return;
-        }
-
-        topicSelect.innerHTML = "";
-        files.forEach(file => {
-            const opt = document.createElement('option');
-            // Use relative path for GitHub Pages (e.g., "Chapter 1/topic1.txt")
-            opt.value = `${folderName}/${file.name}`;
-            // Clean display title by removing file extension
-            opt.textContent = file.name.replace(/\.[^/.]+$/, "");
-            topicSelect.appendChild(opt);
-        });
-    } catch (err) {
-        console.warn("GitHub API fallback triggered:", err);
-        topicSelect.innerHTML = `<option value="fallback">Macao BAA Core Biology Practice</option>`;
-    }
-}
-
-// Pre-load Chapter 1 topics on startup
-if (chapterSelect) {
-    loadTopicsInFolder(chapterSelect.value);
-}
 
 function broadcastStudentData(statusMessage) {
     try {
@@ -163,7 +117,7 @@ function broadcastStudentData(statusMessage) {
 }
 
 /* ==========================================================================
-   5. SIGN-IN & SMART TOPIC QUESTION GENERATOR ENGINE
+   5. SIGN-IN & CHAPTER LOADER
    ========================================================================== */
 function handleStudentSignIn() {
     const formVal = formSelect ? formSelect.value : "F5";
@@ -188,35 +142,87 @@ function handleStudentSignIn() {
     uploadSection.classList.remove('hidden');
 }
 
-async function handleTopicStart() {
-    const selectedChapter = chapterSelect ? chapterSelect.value : "Biology";
-    const selectedPath = topicSelect ? topicSelect.value : "fallback";
-    const topicName = topicSelect && topicSelect.selectedOptions
-        ? topicSelect.selectedOptions.textContent
-        : "Topic";
+async function handleChapterStart() {
+    const selectedPath = chapterSelect ? chapterSelect.value : "";
+    const chapterLabel = chapterSelect && chapterSelect.selectedOptions.length > 0
+        ? chapterSelect.selectedOptions[0].textContent
+        : "Biology Chapter";
 
-    currentTopicTitle = `${selectedChapter} — ${topicName}`;
-
+    currentTopicTitle = chapterLabel;
     uploadSection.classList.add('hidden');
     loadingSection.classList.remove('hidden');
-    if (loadingTitle) loadingTitle.textContent = `Generating questions for ${currentTopicTitle}...`;
+    if (loadingTitle) loadingTitle.textContent = `Loading ${chapterLabel}...`;
 
-    broadcastStudentData(`Studying: ${currentTopicTitle}`);
+    broadcastStudentData(`Studying: ${chapterLabel}`);
 
     try {
-        if (!selectedPath || selectedPath === "fallback") {
-            throw new Error("Using fallback bank");
-        }
-        // Encode path segments safely (handles spaces like "Chapter 1/My Topic.txt")
+        if (!selectedPath) throw new Error("No chapter selected");
+
         const safeUrl = selectedPath.split('/').map(encodeURIComponent).join('/') + `?t=${Date.now()}`;
         const response = await fetch(safeUrl);
-        if (!response.ok) throw new Error("Topic file could not be loaded");
+        if (!response.ok) throw new Error("Chapter file not found");
+
         const rawText = await response.text();
-        quizQuestions = generateQuestionsFromContent(rawText, topicName);
+        let parsedQuestions = [];
+
+        // Try parsing as JSON first (works for both .json and JSON inside .txt)
+        try {
+            const jsonData = JSON.parse(rawText);
+            if (Array.isArray(jsonData) && jsonData.length > 0) {
+                parsedQuestions = jsonData;
+            }
+        } catch (jsonErr) {
+            // If chapter 27/questions.txt is plain text, parse sentences into questions
+            parsedQuestions = parsePlainTextQuestions(rawText, chapterLabel);
+        }
+
+        if (!parsedQuestions || parsedQuestions.length === 0) {
+            throw new Error("Empty question list");
+        }
+
+        // Shuffle questions for variety
+        quizQuestions = [...parsedQuestions].sort(() => Math.random() - 0.5);
     } catch (err) {
-        console.warn("Falling back to default bank:", err);
+        console.warn("Using fallback bank:", err);
         quizQuestions = [...fallbackBank].sort(() => Math.random() - 0.5);
     }
 
     setTimeout(() => {
         loadingSection.classList.add('hidden');
+        quizSection.classList.remove('hidden');
+        currentQuestionIndex = 0;
+        userScore = 0;
+        answerStreak = 0;
+        updateHUD();
+        renderActiveChallenge();
+    }, 800);
+}
+
+function parsePlainTextQuestions(rawText, topicLabel) {
+    const sentences = rawText
+        .replace(/\s+/g, ' ')
+        .split(/(?<=[.!?])\s+/)
+        .map(s => s.trim())
+        .filter(s => s.split(' ').length >= 6 && s.split(' ').length <= 35);
+
+    if (sentences.length < 2) return [...fallbackBank];
+
+    const stopWords = new Set(["which", "their", "there", "these", "those", "where", "while", "during", "through", "between", "because", "before", "after", "about", "into", "from", "with", "that", "this", "have"]);
+    const keywordPool = [];
+
+    const items = sentences.map(sentence => {
+        const words = sentence.match(/\b[A-Za-z]{5,}\b/g) || [];
+        const candidates = words.filter(w => !stopWords.has(w.toLowerCase()));
+        const targetWord = candidates.length > 0
+            ? candidates.sort((a, b) => b.length - a.length)[0]
+            : (words[0] || "biology");
+        if (targetWord) keywordPool.push(targetWord);
+        return { sentence, targetWord };
+    });
+
+    const uniqueKeywords = [...new Set(keywordPool.map(w => w.toLowerCase()))];
+
+    return items.slice(0, 10).map((item, idx) => {
+        const blanked = item.sentence.replace(new RegExp(`\\b${item.targetWord}\\b`, 'i'), '_________');
+        if (idx % 2 === 0 && uniqueKeywords.length >= 4) {
+            const distractors = uniqueKeywords
