@@ -8,10 +8,9 @@
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#4c1d95">
     
-    <!-- CORE FIREBASE TRACKER LIBRARIES (REQUIRED TO PREVENT FREEZING) -->
-<script src="https://gstatic.com"></script>
-<script src="https://gstatic.com"></script>
-    
+    <!-- CORE FIREBASE TRACKER LIBRARIES -->
+    <script src="https://gstatic.com"></script>
+    <script src="https://gstatic.com"></script>
 </head>
 <body>
 
@@ -22,13 +21,12 @@
 
     <main class="app-container">
         
-        <!-- STEP 1: UPGRADED STUDENT HUB LOGIN -->
+        <!-- STEP 1: STUDENT HUB LOGIN -->
         <section id="registration-section" class="card gamified-card">
             <div class="card-badge">🎮 ENTER ARENA</div>
             <h2>Classroom Sign-In</h2>
             <p class="instruction">Select your class Form, input your class seat number, and type your first name to enter the arena session.</p>
             
-            <!-- Form Dropdown -->
             <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">SELECT YOUR CLASS FORM:</label>
             <select id="form-select" style="width: 100%; background-color: rgba(12, 10, 28, 0.6); border: 2px solid var(--border-color); border-radius: var(--border-radius); padding: 15px; font-size: 1rem; color: white; margin-bottom: 15px;">
                 <option value="F1">Form 1 (F1)</option>
@@ -39,33 +37,51 @@
                 <option value="F6">Form 6 (F6)</option>
             </select>
 
-            <!-- Class Section Letters -->
             <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">CLASS SECTION (LETTER):</label>
             <input type="text" id="class-letter-input" placeholder="e.g. A" maxlength="2" autocomplete="off" style="text-transform: uppercase; width: 100%; background-color: rgba(12, 10, 28, 0.6); border: 2px solid var(--border-color); border-radius: var(--border-radius); padding: 15px; font-size: 1rem; color: white; margin-bottom: 15px;">
 
-            <!-- Class Seat Number -->
             <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">CLASS SEAT NUMBER:</label>
             <input type="number" id="class-num-input" placeholder="e.g. 11" min="1" max="99" autocomplete="off" style="width: 100%; background-color: rgba(12, 10, 28, 0.6); border: 2px solid var(--border-color); border-radius: var(--border-radius); padding: 15px; font-size: 1rem; color: white; margin-bottom: 15px;">
 
-            <!-- Student First Name -->
             <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">STUDENT FIRST NAME:</label>
             <input type="text" id="student-name-input" placeholder="Type your Name... (e.g. Tina)" autocomplete="off" style="width: 100%; background-color: rgba(12, 10, 28, 0.6); border: 2px solid var(--border-color); border-radius: var(--border-radius); padding: 15px; font-size: 1rem; color: white; margin-bottom: 15px;">
             
             <button id="start-app-btn" class="btn btn-action" style="margin-top:10px;">Join Arena 🚀</button>
         </section>
 
-        <!-- STEP 2: MATERIAL SELECTION HUB -->
+        <!-- STEP 2: CHAPTER FOLDER & TOPIC SELECTION HUB -->
         <section id="upload-section" class="card gamified-card hidden">
-            <div class="card-badge">📁 SOURCE FEED</div>
+            <div class="card-badge">📚 CLASSROOM CHAPTERS</div>
             <h2>Player: <span id="display-student-name" class="neon-text">Guest</span></h2>
-            <p class="instruction">Take a picture of your textbook page or notes to dynamically parse your classroom challenge questions.</p>
+            <p class="instruction">Choose a Chapter folder and select a Topic to generate your arena challenge.</p>
+            
+            <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">1. SELECT CHAPTER FOLDER:</label>
+            <select id="chapter-select" style="width: 100%; background-color: rgba(12, 10, 28, 0.6); border: 2px solid var(--border-color); border-radius: var(--border-radius); padding: 15px; font-size: 1rem; color: white; margin-bottom: 15px;">
+                <option value="Chapter 1">Chapter 1</option>
+                <option value="chapter 25">Chapter 25</option>
+                <option value="chapter 26">Chapter 26</option>
+                <option value="chapter 27">Chapter 27</option>
+                <option value="chapter 28">Chapter 28</option>
+                <option value="chapter 29">Chapter 29</option>
+                <option value="chapter 30">Chapter 30</option>
+            </select>
+
+            <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">2. SELECT TOPIC IN FOLDER:</label>
+            <select id="topic-select" style="width: 100%; background-color: rgba(12, 10, 28, 0.6); border: 2px solid var(--border-color); border-radius: var(--border-radius); padding: 15px; font-size: 1rem; color: white; margin-bottom: 15px;">
+                <option value="">Loading topics from folder...</option>
+            </select>
+
+            <button id="start-chapter-btn" class="btn btn-action" style="margin-bottom: 20px;">⚡ Generate Topic Challenge</button>
+
+            <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 15px 0;">
+            <p class="instruction" style="font-size: 0.85rem;">Or scan your own textbook page:</p>
             <div class="upload-buttons">
-                <label for="camera-input" class="btn btn-action">
-                    📸 Launch Device Camera
+                <label for="camera-input" class="btn btn-secondary">
+                    📸 Scan Page
                     <input type="file" id="camera-input" accept="image/*" capture="environment">
                 </label>
                 <label for="file-input" class="btn btn-secondary">
-                    📁 Load Notes or Files
+                    📁 Load File
                     <input type="file" id="file-input" accept="image/*,.pdf,.txt">
                 </label>
             </div>
@@ -75,14 +91,14 @@
         <!-- STEP 3: LOADING SPINNER IN PROGRESS -->
         <section id="loading-section" class="card gamified-card hidden">
             <div class="spinner"></div>
-            <h3>Wayground AI is engineering your questions...</h3>
-            <p>Compiling True/False, Multiple-Choice, Fill-Blanks, and Structured Rubrics.</p>
+            <h3 id="loading-title">Wayground AI is engineering your questions...</h3>
+            <p>Compiling True/False, Multiple-Choice, and Fill-in-the-Blank challenges.</p>
         </section>
 
         <!-- STEP 4: INTERACTIVE QUIZ HUB -->
         <section id="quiz-section" class="card gamified-card hidden">
             <div class="stats-ribbon">
-                <span id="progress-text">Q: 1/6</span>
+                <span id="progress-text">Q: 1/5</span>
                 <div class="streak-badge">🔥 Streak: <span id="streak-counter">0</span></div>
                 <span id="score-text" class="score-glow">0 pts</span>
             </div>
@@ -100,7 +116,7 @@
             <h2>Arena Completed!</h2>
             <p class="final-score-label">Final Player Record</p>
             <h1 id="final-score" class="neon-text-green">0 pts</h1>
-            <button id="restart-btn" class="btn btn-action">Play New Session</button>
+            <button id="restart-btn" class="btn btn-action">Choose Another Topic</button>
         </section>
 
     </main>
