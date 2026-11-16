@@ -14,32 +14,10 @@
 </head>
 <body>
 
-    <header class="app-header" style="display: flex; justify-content: space-between; align-items: center; text-align: left; padding: 16px 20px;">
-        <div>
-            <div class="logo">⚡ Wayground BioArena</div>
-            <p class="subtitle">Live Student AI Interactive Challenge</p>
-        </div>
-        <button id="open-qr-btn" type="button" onclick="toggleQRModal(true)" style="background: rgba(139, 92, 246, 0.2); border: 1.5px solid #8b5cf6; color: #f3f4f6; padding: 8px 14px; border-radius: 12px; font-weight: 800; font-size: 0.85rem; cursor: pointer;">
-            📲 Class QR
-        </button>
+    <header class="app-header">
+        <div class="logo">⚡ Wayground BioArena</div>
+        <p class="subtitle">Live Student AI Interactive Challenge</p>
     </header>
-
-    <!-- QR CODE SHARE MODAL -->
-    <div id="qr-modal" class="hidden" style="position: fixed; inset: 0; background: rgba(12, 10, 28, 0.88); backdrop-filter: blur(8px); z-index: 999; display: flex; align-items: center; justify-content: center; padding: 20px;">
-        <div class="card" style="max-width: 360px; width: 100%; text-align: center; margin: 0;">
-            <div class="card-badge">📲 SCAN TO JOIN</div>
-            <h2 style="margin-top: 8px;">Join BioArena</h2>
-            <p class="instruction" style="margin-bottom: 16px;">Students: scan this QR code with your phone camera to enter the classroom session.</p>
-            <div style="background: #ffffff; padding: 14px; border-radius: 16px; display: inline-block; margin-bottom: 14px;">
-                <img id="qr-code-img" src="https://qrserver.com" alt="Class QR Code" style="width: 200px; height: 200px; display: block;">
-            </div>
-            <p style="font-size: 0.8rem; color: #a78bfa; word-break: break-all; margin-bottom: 16px;">https://github.io</p>
-            <div style="display: flex; gap: 10px;">
-                <button type="button" onclick="copyArenaLink(this)" class="btn btn-action" style="padding: 12px;">📋 Copy Link</button>
-                <button type="button" onclick="toggleQRModal(false)" class="btn btn-secondary" style="padding: 12px;">Close ✕</button>
-            </div>
-        </div>
-    </div>
 
     <main class="app-container">
         
@@ -71,74 +49,74 @@
             <button id="start-app-btn" type="button" class="btn btn-action" style="margin-top:10px;">Join Arena 🚀</button>
         </section>
 
-        <!-- STEP 2: CHAPTER SELECTION HUB -->
+        <!-- STEP 2: 30-CHAPTER SELECTION HUB -->
         <section id="upload-section" class="card gamified-card hidden">
             <div class="card-badge">📚 CLASSROOM CHAPTERS</div>
             <h2>Player: <span id="display-student-name" class="neon-text">Guest</span></h2>
-            <p class="instruction">Choose your assigned Biology chapter below to start your arena challenge.</p>
+            <p class="instruction">Choose any Biology chapter below to start your 25-question arena challenge.</p>
             
-            <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">SELECT CHAPTER:</label>
+            <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">SELECT CHAPTER (25 QUESTIONS):</label>
             <select id="chapter-select" style="width: 100%; background-color: rgba(12, 10, 28, 0.6); border: 2px solid var(--border-color); border-radius: var(--border-radius); padding: 15px; font-size: 1rem; color: white; margin-bottom: 15px;">
-                <option value="Chapter 1/questions.json">Chapter 1</option>
-                <option value="chapter 2/questions.json">Chapter 2</option>
-                <option value="chapter 3/questions.json">Chapter 3</option>
-                <option value="chapter 4/questions.json">Chapter 4</option>
-                <option value="chapter 5/questions.json">Chapter 5</option>
-                <option value="chapter 6/questions.json">Chapter 6</option>
-                <option value="chapter 7/questions.json">Chapter 7</option>
-                <option value="chapter 8/questions.json">Chapter 8</option>
-                <option value="chapter 9/questions.json">Chapter 9</option>
-                <option value="chapter 10/questions.json">Chapter 10</option>
-                <option value="chapter 11/questions.json">Chapter 11</option>
-                <option value="chapter 12/questions.json">Chapter 12</option>
-                <option value="chapter 13/questions.json">Chapter 13</option>
-                <option value="chapter 14/questions.json">Chapter 14</option>
-                <option value="chapter 15/questions.json">Chapter 15</option>
-                <option value="chapter 16/questions.json">Chapter 16</option>
-                <option value="chapter 17/questions.json">Chapter 17</option>
-                <option value="chapter 18/questions.json">Chapter 18</option>
-                <option value="chapter 19/questions.json">Chapter 19</option>
-                <option value="chapter 20/questions.json">Chapter 20</option>
-                <option value="chapter 21/questions.json">Chapter 21</option>
-                <option value="chapter 22/questions.json">Chapter 22</option>
-                <option value="chapter 23/questions.json">Chapter 23</option>
-                <option value="chapter 24/questions.json">Chapter 24</option>
-                <option value="chapter 25/questions.json">Chapter 25</option>
-                <option value="chapter 26/questions.json">Chapter 26</option>
-                <option value="chapter 27/questions.txt">Chapter 27</option>
-                <option value="chapter 28/questions.json">Chapter 28</option>
-                <option value="chapter 29/questions.json">Chapter 29</option>
-                <option value="chapter 30/questions.json">Chapter 30</option>
+                <option value="Chapter 1">Chapter 1</option>
+                <option value="chapter 2">Chapter 2</option>
+                <option value="chapter 3">Chapter 3</option>
+                <option value="chapter 4">Chapter 4</option>
+                <option value="chapter 5">Chapter 5</option>
+                <option value="chapter 6">Chapter 6</option>
+                <option value="chapter 7">Chapter 7</option>
+                <option value="chapter 8">Chapter 8</option>
+                <option value="chapter 9">Chapter 9</option>
+                <option value="chapter 10">Chapter 10</option>
+                <option value="chapter 11">Chapter 11</option>
+                <option value="chapter 12">Chapter 12</option>
+                <option value="chapter 13">Chapter 13</option>
+                <option value="chapter 14">Chapter 14</option>
+                <option value="chapter 15">Chapter 15</option>
+                <option value="chapter 16">Chapter 16</option>
+                <option value="chapter 17">Chapter 17</option>
+                <option value="chapter 18">Chapter 18</option>
+                <option value="chapter 19">Chapter 19</option>
+                <option value="chapter 20">Chapter 20</option>
+                <option value="chapter 21">Chapter 21</option>
+                <option value="chapter 22">Chapter 22</option>
+                <option value="chapter 23">Chapter 23</option>
+                <option value="chapter 24">Chapter 24</option>
+                <option value="chapter 25">Chapter 25</option>
+                <option value="chapter 26">Chapter 26</option>
+                <option value="chapter 27">Chapter 27</option>
+                <option value="chapter 28">Chapter 28</option>
+                <option value="chapter 29">Chapter 29</option>
+                <option value="chapter 30">Chapter 30</option>
             </select>
 
-            <button id="start-chapter-btn" type="button" class="btn btn-action" style="margin-bottom: 20px;">⚡ Start Chapter Challenge</button>
+            <button id="start-chapter-btn" type="button" class="btn btn-action" style="margin-bottom: 20px;">⚡ Start 25-Question Challenge</button>
 
             <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 15px 0;">
             <p class="instruction" style="font-size: 0.85rem;">Or scan your own textbook page:</p>
-            <div class="upload-buttons" style="display: flex; gap: 10px;">
+            <div class="upload-buttons">
                 <label for="camera-input" class="btn btn-secondary">
                     📸 Scan Page
                     <input type="file" id="camera-input" accept="image/*" capture="environment">
                 </label>
                 <label for="file-input" class="btn btn-secondary">
                     📁 Load File
-                    <input type="file" id="file-input" accept="image/*,.pdf,.txt,.json">
+                    <input type="file" id="file-input" accept="image/*,.pdf,.txt">
                 </label>
             </div>
-            <div id="file-preview" class="hidden" style="margin-top: 10px;"><p>Asset Loaded: <span id="file-name"></span></p></div>
+            <div id="file-preview" class="hidden"><p>Asset Loaded: <span id="file-name"></span></p></div>
         </section>
 
-        <!-- STEP 3: LOADING SPINNER IN PROGRESS -->
+        <!-- STEP 3: LOADING SPINNER -->
         <section id="loading-section" class="card gamified-card hidden">
             <div class="spinner"></div>
-            <h3 id="loading-title">Wayground AI is loading your questions...</h3>
-            <p>Preparing your classroom challenge.</p>
+            <h3 id="loading-title">Loading 25 questions...</h3>
+            <p>Preparing Multiple-Choice, True/False, and Fill-in-the-Blank challenges.</p>
         </section>
 
         <!-- STEP 4: INTERACTIVE QUIZ HUB -->
         <section id="quiz-section" class="card gamified-card hidden">
             <div class="stats-ribbon">
-                <span id="progress-text">Q: 1/5</span>
+                <span id="progress-text">Q: 1/25</span>
                 <div class="streak-badge">🔥 Streak: <span id="streak-counter">0</span></div>
                 <span id="score-text" class="score-glow">0 pts</span>
             </div>
@@ -152,27 +130,15 @@
 
         <!-- STEP 5: STUDENT SCOREBOARD REPORT -->
         <section id="results-section" class="card gamified-card hidden">
-            <div class="results-badge" style="font-size: 3rem; text-align: center;">🏆</div>
-            <h2 style="text-align: center;">Arena Completed!</h2>
-            <p class="final-score-label" style="text-align: center; color: var(--text-muted);">Final Player Record</p>
-            <h1 id="final-score" class="neon-text-green" style="text-align: center;">0 pts</h1>
+            <div class="results-badge">🏆</div>
+            <h2>Arena Completed!</h2>
+            <p class="final-score-label">Final Player Record</p>
+            <h1 id="final-score" class="neon-text-green">0 pts</h1>
             <button id="restart-btn" type="button" class="btn btn-action">Choose Another Chapter</button>
         </section>
 
     </main>
 
-    <script>
-        function toggleQRModal(show) {
-            const modal = document.getElementById('qr-modal');
-            if (modal) modal.classList.toggle('hidden', !show);
-        }
-        function copyArenaLink(btn) {
-            navigator.clipboard.writeText('https://github.io').then(() => {
-                btn.textContent = 'Copied! ✅';
-                setTimeout(() => { btn.textContent = '📋 Copy Link'; }, 2000);
-            });
-        }
-    </script>
-    <script src="app.js"></script>
+    <script src="app.js?v=10"></script>
 </body>
 </html>
