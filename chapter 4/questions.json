@@ -1,29 +1,80 @@
 [
   {
     "type": "multiple-choice",
-    "question": "What is the chemical nature of most enzymes (酶) in living organisms?",
+    "question": "What is the chemical nature of most enzymes in living organisms? / 生物體內大多數酶的化學本質是什麼？",
     "options": [
+      "Proteins / 蛋白質",
       "Carbohydrates / 碳水化合物",
       "Lipids / 脂質",
-      "Proteins / 蛋白質",
       "Nucleic acids / 核酸"
     ],
-    "answer": 2
+    "answer": 0
   },
   {
-    "type": "multiple-choice",
-    "question": "How do enzymes speed up biochemical reactions inside living cells?",
+    "type": "true-false",
+    "question": "Enzymes speed up metabolic reactions by increasing the activation energy required. / 酶透過增加所需的活化能來加快代謝反應。",
     "options": [
-      "By raising the temperature of the cell",
-      "By lowering the activation energy (活化能) of the reaction",
-      "By increasing the total amount of product formed at equilibrium",
-      "By being consumed during the reaction"
+      "True / 正確",
+      "False / 錯誤"
     ],
     "answer": 1
   },
   {
+    "type": "multiple-choice",
+    "question": "Which region of an enzyme molecule binds specifically to its substrate? / 酶分子的哪個區域與其受質特異性結合？",
+    "options": [
+      "Active site / 活性部位",
+      "Allosteric site / 變構部位",
+      "Cell membrane / 細胞膜",
+      "Prosthetic group / 輔基"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which hypothesis explains that the shape of an enzyme's active site is complementary to a specific substrate? / 哪種假說解釋了酶的活性部位形狀與特定受質互補？",
+    "options": [
+      "Lock-and-key hypothesis / 鎖鑰假說",
+      "Fluid mosaic model / 流動鑲嵌模型",
+      "Cell theory / 細胞學說",
+      "Sliding filament theory / 滑動肌絲學說"
+    ],
+    "answer": 0
+  },
+  {
     "type": "true-false",
-    "question": "Catabolic reactions (分解代謝) break down complex molecules into simpler ones and generally release energy.",
+    "question": "Enzymes are permanently used up during chemical reactions and cannot be reused. / 酶在化學反應過程中會被永久消耗，不能重複使用。",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What happens to most human enzymes when the temperature rises above 60 °C? / 當溫度升至 60 °C 以上時，大多數人體酶會發生什麼變化？",
+    "options": [
+      "They become denatured and lose their active site shape / 它們會變性並失去活性部位的形狀",
+      "They become inactive temporarily and regain activity upon cooling / 它們暫時失去活性，冷卻後恢復活性",
+      "Their reaction rate reaches its maximum / 它們的反應速率達到最高",
+      "They convert into carbohydrates / 它們轉化為碳水化合物"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why does an enzyme-catalyzed reaction proceed very slowly at 0 °C? / 為什麼酶催化反應在 0 °C 時進行得非常緩慢？",
+    "options": [
+      "Enzyme and substrate molecules have low kinetic energy and collide less frequently / 酶和受質分子動能低，碰撞頻率減少",
+      "The enzyme molecules are permanently denatured / 酶分子已永久變性",
+      "The substrate molecules break down into atoms / 受質分子分解成原子",
+      "The pH becomes strongly acidic / pH 值變成強酸性"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "An enzyme that is inactivated at 0 °C can regain its catalytic activity when warmed back to 37 °C. / 在 0 °C 下失去活性的酶，當回溫至 37 °C 時可以恢復催化活性。",
     "options": [
       "True / 正確",
       "False / 錯誤"
@@ -32,69 +83,7 @@
   },
   {
     "type": "multiple-choice",
-    "question": "Which of the following is an example of an anabolic reaction (合成代謝)?",
-    "options": [
-      "Digestion of starch into maltose by amylase",
-      "Breakdown of hydrogen peroxide into water and oxygen by catalase",
-      "Synthesis of proteins from amino acids at ribosomes",
-      "Oxidation of glucose during aerobic respiration"
-    ],
-    "answer": 2
-  },
-  {
-    "type": "multiple-choice",
-    "question": "According to the lock-and-key hypothesis (鎖鑰假說), why is an enzyme specific in its action?",
-    "options": [
-      "Each enzyme can only function at pH 7.",
-      "The active site (活性部位) has a specific three-dimensional shape complementary only to a particular substrate.",
-      "Enzymes are permanently altered after binding to one substrate molecule.",
-      "Enzymes only bind to substrates of the exact same molecular mass."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Enzymes are reusable because they remain chemically unchanged at the end of a reaction, so they are required only in small amounts.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What happens to an enzyme when the temperature is lowered to 0 °C?",
-    "options": [
-      "The enzyme is permanently denatured.",
-      "The peptide bonds in the enzyme are broken.",
-      "The enzyme becomes inactive because molecules have very low kinetic energy, resulting in few enzyme-substrate collisions.",
-      "The active site changes shape permanently."
-    ],
-    "answer": 2
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Why does the rate of an enzyme-catalysed reaction drop sharply above its optimum temperature (最適溫度)?",
-    "options": [
-      "All substrate molecules are used up instantly.",
-      "High heat breaks weak bonds maintaining the 3D conformation of the enzyme, denaturing (變性) the active site.",
-      "The enzyme turns into a competitive inhibitor.",
-      "The activation energy of the reaction increases."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Denaturation of an enzyme by extreme heat or extreme pH is usually irreversible because the conformation of the active site is permanently lost.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Pepsin (胃蛋白酶) in the human stomach has an optimum pH of approximately:",
+    "question": "What is the approximate optimum pH for pepsin (胃蛋白酶) in the human stomach? / 人體胃部中胃蛋白酶的最適 pH 值大約是多少？",
     "options": [
       "pH 2",
       "pH 7",
@@ -105,18 +94,29 @@
   },
   {
     "type": "multiple-choice",
-    "question": "If pancreatic amylase (optimum pH ~7.5) is placed in a solution at pH 2, what happens to its enzymatic activity?",
+    "question": "What is the approximate optimum pH for salivary amylase (唾液澱粉酶)? / 唾液澱粉酶的最適 pH 值大約是多少？",
     "options": [
-      "Activity reaches its maximum rate.",
-      "Activity drops to zero because extreme acidity denatures the enzyme.",
-      "Activity slows slightly but recovers when heated to 60 °C.",
-      "Activity doubles due to excess hydrogen ions."
+      "pH 2",
+      "pH 7",
+      "pH 9",
+      "pH 12"
     ],
     "answer": 1
   },
   {
+    "type": "multiple-choice",
+    "question": "Which type of metabolic reaction builds up complex molecules from simpler ones and requires energy? / 哪種類型的代謝反應由較簡單的分子合成複雜分子並需要能量？",
+    "options": [
+      "Anabolism / 合成代謝",
+      "Catabolism / 分解代謝",
+      "Hydrolysis / 水解作用",
+      "Digestion / 消化作用"
+    ],
+    "answer": 0
+  },
+  {
     "type": "true-false",
-    "question": "When substrate concentration is increased while enzyme concentration is kept constant, the reaction rate increases until all active sites are saturated (飽和).",
+    "question": "Respiration is an example of catabolism because it breaks down glucose to release energy. / 呼吸作用是分解代謝的例子，因為它分解葡萄糖以釋放能量。",
     "options": [
       "True / 正確",
       "False / 錯誤"
@@ -125,29 +125,29 @@
   },
   {
     "type": "multiple-choice",
-    "question": "At very high substrate concentrations, what becomes the limiting factor (限制因素) determining the maximum rate of an enzyme-catalysed reaction?",
+    "question": "How does a competitive inhibitor (競爭性抑制劑) reduce the rate of an enzyme reaction? / 競爭性抑制劑如何降低酶反應的速率？",
     "options": [
-      "Substrate concentration",
-      "Enzyme concentration",
-      "Product concentration",
-      "Light intensity"
+      "By competing with the substrate for the enzyme's active site / 與受質競爭酶的活性部位",
+      "By permanently destroying peptide bonds at high temperature / 在高溫下永久破壞肽鍵",
+      "By increasing the substrate concentration / 透過增加受質濃度",
+      "By lowering the pH of the solution / 透過降低溶液的 pH 值"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "type": "multiple-choice",
-    "question": "How does a competitive inhibitor (競爭性抑制劑) reduce the rate of an enzyme-catalysed reaction?",
+    "question": "How can the effect of a competitive inhibitor be overcome? / 如何克服競爭性抑制劑的影響？",
     "options": [
-      "By binding permanently to an allosteric site away from the active site",
-      "By having a similar shape to the substrate and competing for the active site",
-      "By lowering the pH of the reaction mixture",
-      "By breaking down the substrate before the enzyme can bind"
+      "By increasing the substrate concentration / 透過增加受質濃度",
+      "By boiling the enzyme mixture / 透過煮沸酶混合物",
+      "By adding heavy metal ions / 透過添加重金屬離子",
+      "By lowering the temperature to 0 °C / 透過將溫度降至 0 °C"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "type": "true-false",
-    "question": "The effect of a competitive inhibitor can be reduced by increasing the concentration of the substrate.",
+    "question": "Heavy metal ions such as mercury (Hg²⁺) and lead (Pb²⁺) act as non-competitive inhibitors that denature enzymes. / 重金屬離子如汞離子（Hg²⁺）和鉛離子（Pb²⁺）作為非競爭性抑制劑使酶變性。",
     "options": [
       "True / 正確",
       "False / 錯誤"
@@ -156,60 +156,29 @@
   },
   {
     "type": "multiple-choice",
-    "question": "Heavy metal ions such as mercury (Hg2+) and lead (Pb2+) act as non-competitive inhibitors because they:",
+    "question": "Which enzyme breaks down starch into maltose? / 哪種酶將澱粉分解為麥芽糖？",
     "options": [
-      "Have the exact same shape as glucose molecules",
-      "Bind to the enzyme away from the active site and alter the shape of the active site",
-      "Increase the optimum temperature of the enzyme",
-      "Act as cofactors that speed up side reactions"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What are cofactors (輔因子) such as certain vitamins and metal ions required for?",
-    "options": [
-      "To denature unwanted enzymes in the digestive tract",
-      "To assist certain enzymes in carrying out their catalytic activity",
-      "To act as structural proteins in the cell wall",
-      "To store excess chemical energy in adipose tissue"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Biological washing powders often contain proteases and lipases to break down insoluble protein and fat stains into soluble small molecules at lower washing temperatures.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Why should biological washing powder NOT be used with boiling water (100 °C)?",
-    "options": [
-      "Boiling water precipitates the detergent salts.",
-      "High temperatures denature the enzymes in the washing powder, making them ineffective.",
-      "Enzymes work too quickly at 100 °C and damage cotton fibres.",
-      "Substrates evaporate at 100 °C."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "In fruit juice production, which enzyme is added to break down plant cell walls so that more juice can be extracted and clarified?",
-    "options": [
-      "Pepsin / 胃蛋白酶",
-      "Pectinase (and cellulase) / 果膠酶",
+      "Amylase / 澱粉酶",
+      "Protease / 蛋白酶",
       "Lipase / 脂肪酶",
       "Catalase / 過氧化氫酶"
     ],
-    "answer": 1
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which enzyme catalyzes the breakdown of hydrogen peroxide into water and oxygen in living tissues? / 哪種酶催化活組織中的過氧化氫分解為水和氧？",
+    "options": [
+      "Catalase / 過氧化氫酶",
+      "Lipase / 脂肪酶",
+      "Maltase / 麥芽糖酶",
+      "Pepsin / 胃蛋白酶"
+    ],
+    "answer": 0
   },
   {
     "type": "true-false",
-    "question": "In a reaction mixture with fixed enzyme and substrate amounts, the total amount of product formed eventually levels off because all substrate has been converted into product.",
+    "question": "Each type of enzyme usually catalyzes only one specific type of chemical reaction. / 每種酶通常只催化一種特定類型的化學反應。",
     "options": [
       "True / 正確",
       "False / 錯誤"
@@ -218,18 +187,29 @@
   },
   {
     "type": "multiple-choice",
-    "question": "A student investigates the effect of temperature on amylase activity using starch-agar plates. After incubating at 37 °C and flooding with iodine solution, clear zones appear around wells containing amylase because:",
+    "question": "Why are biological washing powders effective at removing egg and blood stains at 40 °C? / 為什麼生物洗衣粉在 40 °C 下能有效去除蛋漬和血漬？",
     "options": [
-      "Amylase turns iodine solution colourless directly.",
-      "Amylase digests starch into maltose, which does not give a blue-black colour with iodine.",
-      "Agar melts at 37 °C and washes the iodine away.",
-      "Amylase absorbs all the iodine molecules."
+      "They contain proteases that digest insoluble proteins into soluble amino acids / 它們含有蛋白酶，能將不溶性蛋白質消化成可溶性氨基酸",
+      "They contain amylase that dissolves cellulose fibres / 它們含有澱粉酶，能溶解纖維素纖維",
+      "They boil the stains off the fabric / 它們將污漬從織物上煮沸脫落",
+      "They turn lipids into insoluble starch / 它們將脂質轉化為不溶性澱粉"
     ],
-    "answer": 1
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why should biological washing powders NOT be used with boiling water (100 °C)? / 為什麼生物洗衣粉不應與沸水（100 °C）一起使用？",
+    "options": [
+      "High temperature denatures the enzymes in the washing powder / 高溫會使洗衣粉中的酶變性",
+      "Boiling water freezes the active site / 沸水會凍結活性部位",
+      "Enzymes evaporate into steam / 酶會蒸發成水蒸氣",
+      "Substrates become too small to bind / 受質變得太小而無法結合"
+    ],
+    "answer": 0
   },
   {
     "type": "true-false",
-    "question": "Meat tenderizers commonly contain papain (a protease extracted from papaya) to partially break down tough muscle proteins before cooking.",
+    "question": "When enzyme concentration is constant and substrate concentration is very high, all active sites are saturated and the reaction rate levels off. / 當酶濃度恆定且受質濃度非常高時，所有活性部位都飽和，反應速率趨於平穩。",
     "options": [
       "True / 正確",
       "False / 錯誤"
@@ -237,10 +217,45 @@
     "answer": 0
   },
   {
-    "type": "structured",
-    "question": "[TEMPERATURE & ENZYME KINETICS] A student investigates the effect of temperature (10 °C to 70 °C) on the rate at which catalase breaks down hydrogen peroxide into water and oxygen. 1) Explain why the rate of oxygen production increases from 10 °C to 37 °C. 2) Explain why almost no oxygen is produced when the catalase solution is pre-heated to 70 °C before adding hydrogen peroxide.",
-    "rubric": "To score full points, the response must demonstrate structural mastery: 1) As temperature rises from 10 °C to 37 °C, enzyme and substrate molecules gain more kinetic energy and move faster, increasing the frequency of effective collisions to form enzyme-substrate complexes. 2) At 70 °C, excessive heat breaks the weak bonds maintaining the 3D shape of catalase, denaturing the enzyme and altering the conformation of its active site so hydrogen peroxide can no longer bind."
+    "type": "multiple-choice",
+    "question": "Which enzyme is used in fruit juice production to break down plant cell walls and clarify cloudy juice? / 在果汁生產中，使用哪種酶來分解植物細胞壁並澄清混濁的果汁？",
+    "options": [
+      "Pectinase / 果膠酶",
+      "Lipase / 脂肪酶",
+      "Pepsin / 胃蛋白酶",
+      "Catalase / 過氧化氫酶"
+    ],
+    "answer": 0
   },
   {
-    "type": "structured",
-    "question": "[ENZYME INHIBITION] Methanol poisoning in humans occurs when alcohol dehydrogenase converts methanol into toxic formaldehyde. Doctors treat methanol poisoning by administering controlled amounts of ethanol, which binds to the same active site on alcohol dehydrogenase. 1) Identify the type of enzyme inhibition demonstrated by ethanol and explain how it reduces formaldehyde production. 2) Explain why maintaining a high concentration of ethanol during treatment is necessary.",
+    "type": "multiple-choice",
+    "question": "What are the end products when lipase digests a triglyceride molecule? / 當脂肪酶消化甘油三酯分子時，最終產物是什麼？",
+    "options": [
+      "Fatty acids and glycerol / 脂肪酸和甘油",
+      "Amino acids / 氨基酸",
+      "Glucose molecules / 葡萄糖分子",
+      "Nucleotides / 核苷酸"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "Extreme pH values change the ionic charges on an enzyme molecule, altering the shape of its active site and causing denaturation. / 極端 pH 值會改變酶分子上的離子電荷，從而改變其活性部位的形狀並導致變性。",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is a cofactor (輔因子) required by some enzymes to function properly? / 某些酶正常運作所需的輔因子是什麼？",
+    "options": [
+      "A non-protein component such as metal ions or vitamins / 非蛋白質成分，例如金屬離子或維生素",
+      "A cellulose cell wall / 纖維素細胞壁",
+      "A competitive inhibitor / 競爭性抑制劑",
+      "A denatured polypeptide / 變性的多肽"
+    ],
+    "answer": 0
+  }
+]
