@@ -3,8 +3,8 @@
    ========================================================================== */
 const firebaseConfig = {
     apiKey: "AIzaSyChSMRbqSFmAE2dNlGHa6AFcc4SpWM1V7g",
-    authDomain: "wayground-bioarena.firebaseapp.com",
-    databaseURL: "https://wayground-bioarena-default-rtdb.firebaseio.com",
+    authDomain: "://firebaseapp.com",
+    databaseURL: "https://firebaseio.com",
     projectId: "wayground-bioarena",
     storageBucket: "wayground-bioarena.firebasestorage.app",
     messagingSenderId: "7169528648",
@@ -162,11 +162,14 @@ async function handleChapterStart() {
 function triggerFileLoad(files) {
     const firstFile = files ? files.item(0) : null;
     if (!firstFile) return;
+
+    currentTopicTitle = firstFile.name;
     if (fileNameSpan) fileNameSpan.textContent = firstFile.name;
     if (filePreview) filePreview.classList.remove('hidden');
 
     if (uploadSection) uploadSection.classList.add('hidden');
     if (loadingSection) loadingSection.classList.remove('hidden');
+    if (loadingTitle) loadingTitle.textContent = `Analyzing ${firstFile.name}...`;
 
     setTimeout(() => {
         quizQuestions = fallbackBank.slice().sort(() => Math.random() - 0.5);
@@ -194,10 +197,5 @@ function renderActiveChallenge() {
     if (!quizQuestions || quizQuestions.length === 0) return;
 
     updateHUD();
-    const activeQ = quizQuestions.at(currentQuestionIndex);
+    const activeQ = quizQuestions[currentQuestionIndex];
     if (!activeQ) return;
-    if (questionText) questionText.innerText = activeQ.question;
-
-    if (optionsContainer) {
-        optionsContainer.innerHTML = "";
-        if (activeQ.type === "multiple-choice" || activeQ.type === "true-false") {
