@@ -3,8 +3,8 @@
    ========================================================================== */
 const firebaseConfig = {
     apiKey: "AIzaSyChSMRbqSFmAE2dNlGHa6AFcc4SpWM1V7g",
-    authDomain: "wayground-bioarena.firebaseapp.com",
-    databaseURL: "https://wayground-bioarena-default-rtdb.firebaseio.com",
+    authDomain: "://firebaseapp.com",
+    databaseURL: "https://firebaseio.com",
     projectId: "wayground-bioarena",
     storageBucket: "wayground-bioarena.firebasestorage.app",
     messagingSenderId: "7169528648",
@@ -199,3 +199,116 @@ function renderActiveChallenge() {
     updateHUD();
     const activeQ = quizQuestions[currentQuestionIndex];
     if (!activeQ) return;
+    if (questionText) questionText.innerText = activeQ.question;
+
+    if (optionsContainer) {
+        optionsContainer.innerHTML = "";
+
+        if (activeQ.type === "multiple-choice" || activeQ.type === "true-false") {
+            activeQ.options.forEach((optText, idx) => {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'option-btn';
+                btn.innerText = optText;
+                btn.addEventListener('click', () => handleChoiceAnswer(idx));
+                optionsContainer.appendChild(btn);
+            });
+        } else {
+            const input = document.createElement('input');
+            input.type = 'text';
+            input.className = 'fill-input';
+            input.placeholder = 'Type your answer...';
+
+            const submitBtn = document.createElement('button');
+            submitBtn.type = 'button';
+            submitBtn.className = 'btn btn-action';
+            submitBtn.innerText = 'Submit Answer';
+            submitBtn.addEventListener('click', () => handleFillAnswer(input, submitBtn));
+
+            optionsContainer.appendChild(input);
+            optionsContainer.appendChild(submitBtn);
+        }
+    }
+}
+
+function handleChoiceAnswer(selectedIndex) {
+    if (questionAnswered) return;
+    questionAnswered = true;
+
+    const activeQ = quizQuestions[currentQuestionIndex];
+    const allBtns = optionsContainer ? optionsContainer.querySelectorAll('.option-btn') : [];
+    const isCorrect = selectedIndex === activeQ.answer;
+
+    allBtns.forEach((btn, idx) => {
+        btn.disabled = true;
+        if (idx === activeQ.answer) btn.classList.add('correct');
+        else if (idx === selectedIndex && !isCorrect) btn.classList.add('incorrect');
+    });
+
+    applyScoreUpdate(isCorrect);
+}
+
+function handleFillAnswer(inputEl, submitBtn) {
+    if (questionAnswered) return;
+    const userVal = inputEl.value.trim().toLowerCase();
+    if (!userVal) return;
+
+    questionAnswered = true;
+    inputEl.disabled = true;
+    submitBtn.disabled = true;
+
+    const activeQ = quizQuestions[currentQuestionIndex];
+    const correctVal = String(activeQ.answer).trim().toLowerCase();
+    const isCorrect = userVal === correctVal;
+
+    inputEl.classList.add(isCorrect ? 'correct' : 'incorrect');
+    if (!isCorrect) {
+        const hint = document.createElement('p');
+        hint.className = 'answer-feedback';
+        hint.innerText = `Correct answer: ${activeQ.answer}`;
+        optionsContainer.appendChild(hint);
+    }
+
+    applyScoreUpdate(isCorrect);
+}
+
+function applyScoreUpdate(isCorrect) {
+    if (isCorrect) {
+        answerStreak += 1;
+        userScore += 100 + (answerStreak * 10);
+        broadcastStudentData("Answered Correctly");
+    } else {
+        answerStreak = 0;
+        broadcastStudentData("Answered Incorrectly");
+    }
+
+    updateHUD();
+    if (nextButton) nextButton.classList.remove('hidden');
+}
+
+function advanceArenaChallenge() {
+    currentQuestionIndex += 1;
+    if (currentQuestionIndex < quizQuestions.length) {
+        renderActiveChallenge();
+    } else {
+        if (progressBar) progressBar.style.width = '100%';
+        if (quizSection) quizSection.classList.add('hidden');
+        if (resultsSection) resultsSection.classList.remove('hidden');
+        if (finalScoreElement) finalScoreElement.textContent = `${userScore} pts`;
+        broadcastStudentData("Completed Arena Challenge");
+    }
+}
+
+function resetArenaSession() {
+    quizQuestions = [];
+    currentQuestionIndex = 0;
+    userScore = 0;
+    answerStreak = 0;
+    questionAnswered = false;
+
+    if (resultsSection) resultsSection.classList.add('hidden');
+    if (quizSection) quizSection.classList.add('hidden');
+    if (loadingSection) loadingSection.classList.add('hidden');
+    if (uploadSection) uploadSection.classList.remove('hidden');
+    broadcastStudentData("Returned to Topic Select");
+}
