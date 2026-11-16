@@ -1,0 +1,249 @@
+[
+  {
+    "type": "multiple-choice",
+    "question": "According to the fluid mosaic model (流動鑲嵌模型), what are the two main chemical components of a cell membrane?",
+    "options": [
+      "Cellulose and proteins / 纖維素和蛋白質",
+      "Phospholipids and proteins / 磷脂和蛋白質",
+      "Starch and phospholipids / 澱粉和磷脂",
+      "Glycogen and cholesterol / 糖原和膽固醇"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How are phospholipid molecules arranged in the cell membrane?",
+    "options": [
+      "A single layer with hydrophilic heads facing the cytoplasm",
+      "A bilayer with hydrophobic tails pointing inwards towards each other",
+      "A bilayer with hydrophilic heads pointing inwards towards each other",
+      "A random network embedded in cellulose fibres"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "The hydrophobic core of the phospholipid bilayer prevents polar and charged ions from passing freely through the membrane.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which component of the cell membrane helps maintain membrane fluidity (流動性) and stability at varying temperatures?",
+    "options": [
+      "Cholesterol / 膽固醇",
+      "Glycoproteins / 糖蛋白",
+      "Channel proteins / 通道蛋白",
+      "Cellulose / 纖維素"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is the primary role of glycoproteins (糖蛋白) on the outer surface of the cell membrane?",
+    "options": [
+      "Generating ATP during respiration",
+      "Cell recognition and cell-to-cell communication / 細胞識別",
+      "Synthesizing polypeptide chains",
+      "Storing water and mineral ions"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Diffusion (擴散) is an active process that requires energy from ATP to move molecules down a concentration gradient.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following substances crosses the phospholipid bilayer directly by simple diffusion?",
+    "options": [
+      "Glucose molecules / 葡萄糖分子",
+      "Sodium ions (Na+) / 鈉離子",
+      "Oxygen molecules (O2) / 氧分子",
+      "Amino acids / 氨基酸"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which factor would DECREASE the rate of diffusion across a cell membrane?",
+    "options": [
+      "Increasing the temperature",
+      "Increasing the surface area of the membrane",
+      "Increasing the thickness (diffusion distance) of the membrane",
+      "Increasing the steepness of the concentration gradient"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "true-false",
+    "question": "Facilitated diffusion (促進擴散) uses carrier proteins or channel proteins to transport substances down a concentration gradient without using ATP.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Osmosis (滲透) is defined as the net movement of water molecules across a differentially permeable membrane from a region of _________ to a region of _________.",
+    "options": [
+      "lower water potential; higher water potential",
+      "higher water potential; lower water potential",
+      "higher solute concentration; lower solute concentration",
+      "lower water concentration; higher water concentration"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is the water potential (水勢) of pure distilled water at atmospheric pressure?",
+    "options": [
+      "0 kPa (the highest possible value)",
+      "+100 kPa",
+      "-100 kPa",
+      "1.0 kPa"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "Dissolving more solute in water increases its water potential.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What happens to human red blood cells when placed in a hypotonic solution (低滲溶液) such as distilled water?",
+    "options": [
+      "They shrink and become wrinkled (crenated).",
+      "They swell and eventually burst (haemolysis / 溶血).",
+      "They become turgid without bursting.",
+      "They undergo plasmolysis (質壁分離)."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why does a plant cell NOT burst when placed in pure water?",
+    "options": [
+      "Water stops entering the cell immediately.",
+      "The strong, rigid cellulose cell wall resists further expansion.",
+      "The cell membrane becomes impermeable to water.",
+      "Active transport pumps water out at the same rate."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Plasmolysis (質壁分離) occurs when a plant cell is placed in a hypertonic solution (高滲溶液) and the cell membrane pulls away from the cell wall.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which process moves mineral ions into root hair cells against a concentration gradient?",
+    "options": [
+      "Osmosis / 滲透",
+      "Simple diffusion / 簡單擴散",
+      "Active transport / 主動轉運",
+      "Phagocytosis / 吞噬作用"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which metabolic inhibitor would directly stop active transport (主動轉運) in root hair cells?",
+    "options": [
+      "A chemical that inhibits aerobic respiration and ATP production",
+      "A chemical that increases membrane fluidity",
+      "A dye that stains cellulose cell walls",
+      "An enzyme that breaks down extracellular starch"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "Carrier proteins (載體蛋白) involved in active transport change shape using energy from ATP to move specific molecules across the membrane.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How do white blood cells engulf bacteria into the cell?",
+    "options": [
+      "By facilitated diffusion through channel proteins",
+      "By phagocytosis (吞噬作用), a form of endocytosis",
+      "By osmosis through aquaporins",
+      "By exocytosis (胞吐作用)"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "In an investigation using potato strips immersed in sucrose solutions of different concentrations, one strip shows no change in mass. What does this indicate?",
+    "options": [
+      "The sucrose solution is pure distilled water.",
+      "The water potential of the sucrose solution equals the water potential of the potato cells.",
+      "The potato cells have died and lost differential permeability.",
+      "No water molecules are moving in or out of the cells."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "When a plant cell is flaccid (軟縮), it loses turgidity, causing herbaceous plants to wilt (凋謝).",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following processes requires membrane fusion and ATP to transport large proteins out of a secretory cell?",
+    "options": [
+      "Exocytosis / 胞吐作用",
+      "Simple diffusion / 簡單擴散",
+      "Osmosis / 滲透",
+      "Facilitated diffusion / 促進擴散"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "Boiling beetroot tissue damages the cell membrane proteins and phospholipid bilayer, causing red pigment to leak out into surrounding water.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "structured",
+    "question": "[OSMOSIS & WATER POTENTIAL] Strips of raw potato tissue of equal initial mass were placed in two different sucrose solutions: Solution X (0.1 M) and Solution Y (0.8 M). After 1 hour, the potato strip in Solution X increased in mass and felt firm, whereas the strip in Solution Y decreased in mass and felt soft. 1) Explain the change in mass and texture of the potato strip in Solution Y in terms of water potential. 2) State the condition of the potato cells in Solution X.",
+    "rubric": "To score full points, the response must demonstrate structural mastery: 1) Solution Y (0.8 M sucrose) has a lower water potential than the potato cell sap, so water moves out of the potato cells into Solution Y by osmosis across the differentially permeable cell membrane; as cells lose water, they lose turgidity and become flaccid (or plasmolysed), making the strip soft and lighter. 2) The potato cells in Solution X are turgid."
+  },
+  {
+    "type": "structured",
+    "question": "[ACTIVE TRANSPORT & RESPIRATION] A student investigates the uptake of nitrate ions (NO3-) by young barley roots under two conditions: Set-up A is bubbled with air (oxygen), while Set-up B is bubbled with nitrogen gas (no oxygen). The rate of nitrate uptake is much higher in Set-up A than in Set-up B. 1) Identify the main mechanism responsible for nitrate uptake in Set-up A. 2) Explain why bubbling with nitrogen gas in Set-up B greatly reduces nitrate uptake.",
+    "rubric": "To score full points, the response must demonstrate structural mastery: 1) Active transport. 2) Nitrogen gas creates anaerobic conditions (lack of oxygen), which prevents aerobic respiration in root hair cells; as a result, insufficient ATP is generated to power the carrier proteins required for active transport of nitrate ions against a concentration gradient."
+  }
+]
