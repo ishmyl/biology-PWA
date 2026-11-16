@@ -1,231 +1,27 @@
 [
-  {
-    "type": "multiple-choice",
-    "question": "What is cellular respiration (細胞呼吸) in living organisms?",
-    "options": [
-      "The physical inhalation and exhalation of air through the lungs",
-      "The controlled enzymatic breakdown of organic food molecules (such as glucose) inside living cells to release chemical energy in the form of ATP",
-      "The synthesis of glucose from carbon dioxide and water using light energy",
-      "The passive diffusion of oxygen across alveolar walls"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Why is ATP (adenosine triphosphate / 三磷酸腺苷) often called the universal 'energy currency' of the cell?",
-    "options": [
-      "It can be stored indefinitely in large crystals inside the cell nucleus.",
-      "It transfers small, manageable packets of chemical energy directly to energy-requiring cellular processes (such as active transport and muscle contraction) upon hydrolysis to ADP and Pi.",
-      "It is absorbed directly from food in the small intestine without digestion.",
-      "It carries oxygen from the lungs to respiring tissues."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "During cellular respiration, a significant portion of the chemical energy released from glucose is lost as heat energy, which helps birds and mammals maintain a constant body temperature.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which overall chemical equation correctly summarizes aerobic respiration (需氧呼吸)?",
-    "options": [
-      "C6H12O6 + 6O2 → 6CO2 + 6H2O + energy (ATP and heat)",
-      "6CO2 + 6H2O → C6H12O6 + 6O2",
-      "C6H12O6 → 2C2H5OH + 2CO2 + energy",
-      "C6H12O6 → 2CH3CH(OH)COOH + energy"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Where inside a eukaryotic cell does glycolysis (糖酵解) take place?",
-    "options": [
-      "In the mitochondrial matrix / 線粒體基質",
-      "On the inner mitochondrial membrane (cristae) / 線粒體內膜（嵴）",
-      "In the cytoplasm (cytosol) / 細胞質",
-      "Inside the chloroplast stroma / 葉綠體基質"
-    ],
-    "answer": 2
-  },
-  {
-    "type": "true-false",
-    "question": "Glycolysis does NOT require oxygen and splits one 6-carbon glucose molecule into two 3-carbon pyruvate (丙酮酸) molecules, yielding a net gain of 2 ATP and 2 NADH.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "In the presence of oxygen, where do the link reaction and the Krebs cycle (克雷伯氏循環) occur inside a eukaryotic cell?",
-    "options": [
-      "In the cytoplasm / 細胞質",
-      "In the mitochondrial matrix / 線粒體基質",
-      "In the nucleus / 細胞核",
-      "On the rough endoplasmic reticulum / 粗糙內質網"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What happens to pyruvate during the link reaction (連接反應) before entering the Krebs cycle?",
-    "options": [
-      "It is converted directly into lactic acid.",
-      "It is decarboxylated (loses CO2) and oxidized to form a 2-carbon acetyl group combined with coenzyme A (acetyl-CoA), producing NADH.",
-      "It is polymerized into glycogen.",
-      "It is reduced to ethanol and carbon dioxide."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "During the Krebs cycle, acetyl-CoA is completely oxidized to carbon dioxide, generating small amounts of ATP along with reduced coenzymes (NADH and FADH2).",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is the specific role of oxygen (O2) in aerobic respiration during oxidative phosphorylation (氧化磷酸化) on the inner mitochondrial membrane?",
-    "options": [
-      "It reacts directly with glucose in the cytoplasm.",
-      "It acts as the final electron and hydrogen acceptor at the end of the electron transport chain, combining with H+ and electrons to form water.",
-      "It breaks down carbon dioxide into carbon and oxygen.",
-      "It converts lactic acid into ethanol."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How is a mitochondrion (線粒體) structurally adapted for producing large amounts of ATP during aerobic respiration?",
-    "options": [
-      "Its inner membrane is extensively folded into cristae (嵴) to provide a large surface area for holding electron carriers and ATP synthase enzymes.",
-      "It has a thick cellulose cell wall to prevent oxygen from escaping.",
-      "It contains chlorophyll molecules to trap light energy.",
-      "It lacks ribosomes and DNA so it divides faster."
-    ],
-    "answer": 0
-  },
-  {
-    "type": "true-false",
-    "question": "Complete oxidation of one glucose molecule in aerobic respiration yields far more ATP (about 30–32 ATP) than anaerobic respiration (only 2 ATP) because glucose is completely broken down into CO2 and H2O.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What are the end products of alcoholic fermentation (酒精發酵) in yeast cells under anaerobic conditions?",
-    "options": [
-      "Lactic acid only / 只有乳酸",
-      "Ethanol and carbon dioxide / 乙醇和二氧化碳",
-      "Carbon dioxide and water / 二氧化碳和水",
-      "Pyruvate and oxygen / 丙酮酸和氧"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Why does yeast produce carbon dioxide during bread-making (baking)?",
-    "options": [
-      "Carbon dioxide kills harmful bacteria in the flour.",
-      "Trapped carbon dioxide gas bubbles expand when heated, causing the dough to rise and giving bread a light, spongy texture.",
-      "Carbon dioxide turns starch directly into sucrose.",
-      "Carbon dioxide prevents yeast from respiring aerobically."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "In brewing beer or wine, fermentation eventually stops when the ethanol concentration rises to about 12–15% because high concentrations of ethanol become toxic and kill the yeast cells.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What happens in human skeletal muscle cells during vigorous sprinting when oxygen supply cannot meet the high energy demand?",
-    "options": [
-      "Muscle cells carry out lactic acid fermentation (乳酸發酵), converting pyruvate into lactic acid to regenerate NAD+ so glycolysis can continue producing small amounts of ATP.",
-      "Muscle cells produce ethanol and carbon dioxide.",
-      "Muscle cells stop producing ATP completely.",
-      "Muscle cells absorb carbon dioxide to make glucose."
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is oxygen debt (氧債) after vigorous exercise?",
-    "options": [
-      "The total volume of oxygen stored in the lungs at rest",
-      "The extra amount of oxygen required after exercise to oxidize accumulated lactic acid (or convert it back into glucose/glycogen in the liver) and restore normal ATP/creatine phosphate levels",
-      "The carbon dioxide trapped inside red blood cells",
-      "The decrease in heart rate immediately after stopping exercise"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "A person continues to breathe heavily and maintain an elevated heart rate for several minutes after stopping a 400-metre sprint in order to supply extra oxygen to repay the oxygen debt.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "In a respirometer (呼吸計) containing germinating seeds and potassium hydroxide (KOH) pellets, why does the coloured liquid drop in the capillary tube move towards the boiling tube?",
-    "options": [
-      "The seeds release oxygen gas during respiration.",
-      "The seeds consume oxygen for aerobic respiration, while KOH absorbs the carbon dioxide released, causing a net decrease in gas volume and pressure inside the tube.",
-      "The seeds absorb nitrogen gas from the air.",
-      "Water evaporates rapidly from the KOH pellets."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "In an experiment investigating anaerobic respiration in yeast, why is a thin layer of liquid paraffin (oil) poured over the surface of the yeast-glucose suspension?",
-    "options": [
-      "To supply extra nutrients to the yeast cells",
-      "To prevent atmospheric oxygen from dissolving into the glucose solution, ensuring anaerobic conditions",
-      "To absorb carbon dioxide bubbles produced by yeast",
-      "To keep the yeast cells warm"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Boiled and cooled germinating seeds are often used as a control setup in respiration experiments to show that oxygen uptake or heat release is due to living metabolic activity rather than physical changes.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which comparison between aerobic respiration and lactic acid fermentation in human muscle cells is CORRECT?",
-    "options": [
-      "Aerobic respiration occurs only in the cytoplasm, whereas lactic acid fermentation occurs inside mitochondria.",
-      "Aerobic respiration completely oxidizes glucose to CO2 and H2O, whereas lactic acid fermentation partially breaks down glucose into lactic acid without producing CO2.",
-      "Lactic acid fermentation produces 32 ATP per glucose molecule, whereas aerobic respiration produces 2 ATP.",
-      "Both processes require oxygen as the final electron acceptor."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
+  {"type":"multiple-choice","question":"What is the overall balanced chemical equation for photosynthesis in green plants?","options":["C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O","6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ (in the presence of light and chlorophyll)","6CO₂ + 12O₂ → C₆H₁₂O₆ + 6H₂O","C₆H₁₂O₆ + 6H₂O → 6CO₂ + 12O₂"],"answer":1},
+  {"type":"multiple-choice","question":"Where inside a chloroplast do the photochemical reactions (light-dependent stage) take place?","options":["Stroma / 基質","Thylakoid membranes (grana) / 類囊體膜（基粒）","Outer chloroplast membrane / 葉綠體外膜","Starch grains / 澱粉粒"],"answer":1},
+  {"type":"true-false","question":"During the photochemical reactions of photosynthesis, light energy absorbed by chlorophyll excites electrons, leading to the photolysis of water and the synthesis of ATP and NADPH.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What is the source of the oxygen gas (O₂) released by green plants during photosynthesis?","options":["Carbon dioxide molecules split in the stroma","Photolysis (light-splitting) of water molecules on the thylakoid membranes","Breakdown of glucose during respiration","Reduction of nitrate ions in the roots"],"answer":1},
+  {"type":"multiple-choice","question":"Where does the Calvin cycle (carbon fixation / light-independent stage) occur inside a chloroplast?","options":["Thylakoid lumen / 類囊體腔","Stroma / 基質","Cell wall / 細胞壁","Mitochondrial matrix / 線粒體基質"],"answer":1},
+  {"type":"true-false","question":"Although the Calvin cycle does not require light directly, it stops soon in darkness because it depends on continuous supplies of ATP and NADPH generated by the photochemical reactions.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"In the Calvin cycle, what happens immediately after carbon dioxide combines with a 5-carbon compound (RuBP)?","options":["It forms a stable 6-carbon glucose molecule directly.","It forms an unstable 6-carbon compound that splits into two molecules of a 3-carbon compound (glycerate-3-phosphate / 3-PGA).","It releases oxygen gas into the air spaces.","It is converted directly into cellulose."],"answer":1},
+  {"type":"multiple-choice","question":"How are ATP and NADPH from the photochemical reactions used in the Calvin cycle?","options":["To split water molecules into hydrogen and oxygen","To reduce the 3-carbon compound (3-PGA) into triose phosphate (3-carbon sugar), some of which forms glucose while the rest regenerates the 5-carbon CO₂ acceptor","To pump potassium ions into guard cells","To break down starch into maltose"],"answer":1},
+  {"type":"true-false","question":"Triose phosphate (3-carbon sugar) produced in the Calvin cycle can be used to synthesize glucose, sucrose, starch, lipids, and amino acids (when combined with mineral ions such as nitrates).","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Why is glucose usually converted into starch for temporary storage inside leaf mesophyll cells during bright daylight?","options":["Starch is more soluble in water than glucose.","Starch is insoluble and osmotically inactive, so storing it does not lower the water potential of mesophyll cells or cause excess water uptake.","Starch diffuses faster through phloem sieve tubes than glucose.","Starch contains nitrogen atoms needed for growth."],"answer":1},
+  {"type":"multiple-choice","question":"In what carbohydrate form are photosynthetic products mainly translocated from leaves to other parts of the plant via the phloem?","options":["Starch / 澱粉","Sucrose / 蔗糖","Cellulose / 纖維素","Glycogen / 糖原"],"answer":1},
+  {"type":"true-false","question":"Before testing a leaf for starch with iodine solution, the leaf is boiled in ethanol (alcohol) in a hot water bath to decolorize it by dissolving chlorophyll so colour changes can be seen clearly.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Why must a potted plant be destarched in darkness for 24–48 hours before conducting experiments on factors required for photosynthesis?","options":["To kill all bacteria on the leaf surface","To ensure any starch detected at the end of the experiment was newly synthesized during the investigation rather than pre-existing starch","To increase the chlorophyll content of the leaves","To force all stomata to remain permanently open"],"answer":1},
+  {"type":"multiple-choice","question":"In an experiment testing whether carbon dioxide is needed for photosynthesis, what chemical is placed inside a sealed flask with a destarched leaf to absorb carbon dioxide?","options":["Sodium hydrogencarbonate solution / 碳酸氫鈉溶液","Potassium hydroxide (KOH) or soda lime / 氫氧化鉀或鹼石灰","Dilute hydrochloric acid / 稀鹽酸","Iodine solution / 碘液"],"answer":1},
+  {"type":"true-false","question":"When testing a variegated leaf (斑葉) exposed to bright light with iodine solution, only the green parts containing chlorophyll turn blue-black, proving chlorophyll is necessary for photosynthesis.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What is a limiting factor (限制因子) in photosynthesis?","options":["The factor present in the highest concentration","The factor in shortest supply that restricts the overall rate of photosynthesis even if other factors are increased","Any mineral ion absent from the soil","The maximum temperature a plant can survive"],"answer":1},
+  {"type":"multiple-choice","question":"On a graph of photosynthetic rate against light intensity, why does the curve level off into a plateau at high light intensities?","options":["Chlorophyll is completely destroyed at moderate light.","Light intensity is no longer the limiting factor; another factor such as carbon dioxide concentration or temperature has become limiting.","Stomata close completely whenever light is bright.","Respiration stops at high light intensities."],"answer":1},
+  {"type":"true-false","question":"Increasing temperature above the optimum (around 35–40 °C in many plants) causes the rate of photosynthesis to drop sharply because enzymes catalyzing the Calvin cycle become denatured.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Why does temperature have little effect on the rate of photosynthesis at very low light intensities?","options":["Enzymes do not work at low light.","At very low light intensity, light is the limiting factor restricting the photochemical reactions, so speeding up temperature-sensitive enzyme reactions in the Calvin cycle cannot increase the overall rate.","Stomata freeze shut in dim light.","Water stops moving up the xylem."],"answer":1},
+  {"type":"multiple-choice","question":"How does an increase in carbon dioxide concentration affect the rate of photosynthesis when light intensity and temperature are optimal?","options":["The rate decreases due to acid toxicity.","The rate increases proportionally until another factor (such as light intensity, temperature, or enzyme saturation) becomes limiting.","It has no effect because plants get carbon from soil.","It stops the photolysis of water."],"answer":1},
+  {"type":"true-false","question":"In a submerged water plant (such as Hydrilla) experiment, counting the number of oxygen bubbles released per minute provides an estimate of the apparent (net) rate of photosynthesis.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How can greenhouse growers artificially maximize crop yield during winter using knowledge of limiting factors?","options":["By painting the glass green and lowering CO₂ levels","By installing artificial lighting, heaters, and burning fuel or releasing CO₂ gas to raise carbon dioxide concentration","By keeping the greenhouse completely dark at night with zero ventilation","By removing all soil nitrates"],"answer":1},
+  {"type":"multiple-choice","question":"How are thylakoids arranged inside a chloroplast to maximize the efficiency of the photochemical reactions?","options":["Scattered randomly as single vesicles in the cytoplasm","Stacked into coin-like piles called grana (基粒) interconnected by lamellae, providing a large surface area to hold chlorophyll molecules and electron carriers","Coiled into a single spiral tube along the cell wall","Embedded inside the central vacuole"],"answer":1},
+  {"type":"true-false","question":"Chlorophyll absorbs mainly red and blue-violet wavelengths of visible light and reflects green light, which is why most leaves appear green.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Why is photosynthesis ecologically essential for almost all heterotrophic organisms on Earth?","options":["It converts thermal energy into nitrogen gas.","It converts light energy into chemical energy stored in organic food molecules and releases oxygen required for aerobic respiration.","It breaks down dead organic waste into soil minerals.","It increases atmospheric carbon dioxide levels."],"answer":1}
+]
