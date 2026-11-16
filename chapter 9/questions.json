@@ -1,0 +1,245 @@
+[
+  {
+    "type": "multiple-choice",
+    "question": "Plants are autotrophic organisms (自養生物) because they can:",
+    "options": [
+      "Absorb complex organic food directly from soil humus",
+      "Synthesize complex organic molecules (such as carbohydrates) from simple inorganic substances (CO2 and H2O) using light energy",
+      "Feed on insects and small soil invertebrates",
+      "Obtain chemical energy solely by breaking down mineral ions"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which mineral ion is needed by plants to synthesize amino acids and proteins, and whose deficiency causes stunted growth and yellowing (chlorosis) of older leaves?",
+    "options": [
+      "Nitrate ion (NO3-) / 硝酸鹽離子",
+      "Magnesium ion (Mg2+) / 鎂離子",
+      "Calcium ion (Ca2+) / 鈣離子",
+      "Potassium ion (K+) / 鉀離子"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "Magnesium ions (Mg2+) are an essential structural component of chlorophyll molecules; magnesium deficiency leads to yellowing of leaves (chlorosis).",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which mineral element is required for the synthesis of nucleic acids (DNA and RNA), ATP, and cell membrane phospholipids in plants?",
+    "options": [
+      "Phosphorus (as phosphate ions) / 磷（磷酸鹽離子）",
+      "Iron / 鐵",
+      "Sodium / 鈉",
+      "Chlorine / 氯"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How is a typical dicotyledonous leaf blade (葉片) adapted to maximize light absorption for photosynthesis?",
+    "options": [
+      "It is thick and cylindrical with a small surface area",
+      "It is broad and flat, providing a large surface area to trap maximum sunlight and a short distance for light and gases to reach inner cells",
+      "It is covered with a thick opaque bark layer",
+      "Its upper epidermis contains numerous chloroplasts and stomata"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "The waxy cuticle (角質層) covering the upper and lower epidermis of a leaf is waterproof to reduce excessive water loss by evaporation while remaining transparent to allow light to pass through.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which tissue in a leaf contains tightly packed, cylindrical cells rich in chloroplasts near the upper surface to absorb maximum light?",
+    "options": [
+      "Upper epidermis / 上表皮",
+      "Palisade mesophyll / 柵狀葉肉",
+      "Spongy mesophyll / 海綿葉肉",
+      "Xylem vessel / 木質導管"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How is the spongy mesophyll (海綿葉肉) adapted for efficient gas exchange inside a leaf?",
+    "options": [
+      "Its cells are tightly packed with no air spaces between them",
+      "Its cells are loosely packed with numerous large air spaces that allow rapid diffusion of gases throughout the leaf",
+      "Its cells are dead and hollow with lignified walls",
+      "It secretes a thick waxy cuticle on its cell walls"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Epidermal cells of a leaf generally lack chloroplasts, except for the guard cells (保衛細胞) surrounding the stomata.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why are stomata (氣孔) usually much more abundant on the lower epidermis than on the upper epidermis of terrestrial dicotyledonous leaves?",
+    "options": [
+      "Because carbon dioxide only exists below the leaf",
+      "Because the lower surface is cooler and shaded from direct sunlight, reducing excessive water loss by transpiration",
+      "Because the upper epidermis has no air spaces beneath it",
+      "Because guard cells cannot survive in bright light"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How do guard cells cause a stoma (氣孔) to open in the presence of light?",
+    "options": [
+      "Guard cells lose water by osmosis, become flaccid, and collapse together",
+      "Guard cells absorb water by osmosis, become turgid, and bend outwards due to their unevenly thickened inner cell walls",
+      "Guard cells actively pump oxygen out through the pore",
+      "Guard cells undergo plasmolysis and shrink away from epidermal cells"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "The inner cell wall of a guard cell facing the stomatal pore is thicker and less elastic than the outer wall, causing the cell to curve when turgid.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "In darkness, what is the net gas exchange of a green leaf?",
+    "options": [
+      "Net uptake of carbon dioxide and net release of oxygen",
+      "Net uptake of oxygen and net release of carbon dioxide (because only respiration occurs)",
+      "No gas exchange occurs at all in darkness",
+      "Net uptake of both oxygen and carbon dioxide"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is the compensation point (補償點) of a plant?",
+    "options": [
+      "The light intensity at which the rate of photosynthesis equals the rate of respiration, resulting in zero net gas exchange",
+      "The maximum light intensity at which chloroplasts become damaged",
+      "The temperature at which all leaf enzymes denature",
+      "The soil water concentration at which stomata close permanently"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "At high light intensity during the daytime, the rate of photosynthesis exceeds the rate of respiration, so a green leaf shows a net uptake of carbon dioxide and net release of oxygen.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "In an experiment using hydrogencarbonate indicator (碳酸氫鹽指示劑), a green leaf is sealed inside a boiling tube placed in bright light. What colour change occurs in the indicator after 2 hours?",
+    "options": [
+      "Red to yellow (increased CO2)",
+      "Red to purple (decreased CO2)",
+      "Red to colourless",
+      "No colour change occurs"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "If the same boiling tube containing a green leaf and red hydrogencarbonate indicator is wrapped completely in aluminium foil (darkness) for 2 hours, what colour does the indicator turn?",
+    "options": [
+      "Purple (decreased CO2)",
+      "Yellow (increased CO2 due to respiration without photosynthesis)",
+      "Blue-black",
+      "Brick-red"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "In woody stems and roots, gas exchange occurs through small openings in the cork layer called lenticels (皮孔).",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How does gas exchange take place in young root hair cells in well-aerated soil?",
+    "options": [
+      "Through stomata on the root epidermis",
+      "By simple diffusion directly across the thin, moist cell walls and cell membranes of root hair cells",
+      "Through lenticels in the root cap",
+      "By active transport of oxygen into xylem vessels"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is the role of the vascular bundles (veins / 葉脈) in a leaf?",
+    "options": [
+      "Xylem transports water and mineral ions to leaf cells, while phloem transports manufactured sugars away from the leaf",
+      "Xylem transports sugars away, while phloem transports water to the leaf",
+      "Both xylem and phloem carry out photosynthesis",
+      "Vascular bundles open and close the stomata"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "The moist surfaces of mesophyll cells allow gases such as carbon dioxide to dissolve before diffusing into the cells.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why does waterlogging of soil often kill terrestrial crop plants?",
+    "options": [
+      "Roots absorb too much oxygen and burst",
+      "Water displaces air in soil spaces, depriving root cells of oxygen for aerobic respiration and reducing active uptake of mineral ions",
+      "Excess water dissolves the cellulose cell walls of roots",
+      "Stomata on roots become permanently blocked by mud"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Submerged aquatic plants often have very thin leaves without a cuticle so that dissolved gases and mineral ions can diffuse directly across the entire leaf surface.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "structured",
+    "question": "[LEAF ADAPTATIONS FOR GAS EXCHANGE] Explain how each of the following structures in a dicotyledonous leaf contributes to efficient gas exchange: 1) Stomata and guard cells on the epidermis; 2) Intercellular air spaces in the spongy mesophyll.",
+    "rubric": "To score full points, the response must demonstrate structural mastery: 1) Stomata act as pores allowing gases (CO2 and O2) to diffuse directly between the external atmosphere and the interior of the leaf, while guard cells regulate stomatal opening according to light and water availability. 2) Large, interconnected air spaces in the spongy mesophyll allow gases to diffuse rapidly throughout the leaf and reach all mesophyll cells with minimal resistance."
+  },
+  {
+    "type": "structured",
