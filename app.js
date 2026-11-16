@@ -3,8 +3,8 @@
    ========================================================================== */
 const firebaseConfig = {
     apiKey: "AIzaSyChSMRbqSFmAE2dNlGHa6AFcc4SpWM1V7g",
-    authDomain: "://firebaseapp.com",
-    databaseURL: "https://firebaseio.com",
+    authDomain: "wayground-bioarena.firebaseapp.com",
+    databaseURL: "https://wayground-bioarena-default-rtdb.firebaseio.com",
     projectId: "wayground-bioarena",
     storageBucket: "wayground-bioarena.firebasestorage.app",
     messagingSenderId: "7169528648",
@@ -119,7 +119,7 @@ async function handleChapterStart() {
     broadcastStudentData(`Studying: ${chapterLabel}`);
 
     try {
-        const safeUrl = `${encodeURIComponent(selectedFolder)}/questions.json?t=${Date.now()}`;
+        const safeUrl = `./${encodeURIComponent(selectedFolder)}/questions.json?t=${Date.now()}`;
         const response = await fetch(safeUrl);
         if (!response.ok) throw new Error(`HTTP ${response.status} for ${safeUrl}`);
 
@@ -156,7 +156,7 @@ async function handleChapterStart() {
         if (quizSection) quizSection.classList.remove('hidden');
         currentQuestionIndex = 0; userScore = 0; answerStreak = 0;
         updateHUD(); renderActiveChallenge();
-    }, 600);
+    }, 500);
 }
 
 function triggerFileLoad(files) {
@@ -177,7 +177,7 @@ function triggerFileLoad(files) {
         if (quizSection) quizSection.classList.remove('hidden');
         currentQuestionIndex = 0; userScore = 0; answerStreak = 0;
         updateHUD(); renderActiveChallenge();
-    }, 800);
+    }, 600);
 }
 
 /* ==========================================================================
