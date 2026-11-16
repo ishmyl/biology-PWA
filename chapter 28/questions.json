@@ -1,98 +1,220 @@
 [
   {
     "type": "multiple-choice",
-    "question": "Which of the following correct taxonomic sequences ranks the classification groups from the highest, most inclusive level down to the lowest, most specific level?",
+    "question": "What are the three main levels of biodiversity (生物多樣性) studied by biologists?",
     "options": [
-      "Domain -> Kingdom -> Class -> Phylum -> Family -> Order -> Genus -> Species",
-      "Domain -> Kingdom -> Phylum -> Class -> Order -> Family -> Genus -> Species",
-      "Kingdom -> Domain -> Phylum -> Order -> Class -> Family -> Genus -> Species",
-      "Domain -> Kingdom -> Phylum -> Class -> Family -> Order -> Genus -> Species"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Based on phylogenetics and the modern evolutionary tree of life, which statement accurately describes the relationships between domains?",
-    "options": [
-      "Archaea are more closely related to Eubacteria than to Eukaryotes.",
-      "Plants are more closely related to Eubacteria than to Fungi.",
-      "Archaea are more closely related to Eukaryotes than to Eubacteria.",
-      "Fungi are more closely related to Plants than to Animals."
-    ],
-    "answer": 2
-  },
-  {
-    "type": "true-false",
-    "question": "Kingdom Eubacteria possesses cell walls composed of peptidoglycan, whereas Kingdom Archaebacteria features cell walls completely lacking peptidoglycan.",
-    "options": [
-      "True",
-      "False"
+      "Genetic diversity, species diversity, and ecosystem diversity / 遺傳多樣性、物種多樣性和生態系多樣性",
+      "Population diversity, trophic diversity, and climatic diversity / 種群多樣性、營養多樣性和氣候多樣性",
+      "Cellular diversity, organ diversity, and kingdom diversity / 細胞多樣性、器官多樣性和界別多樣性",
+      "Fossil diversity, anatomical diversity, and molecular diversity / 化石多樣性、解剖多樣性和分子多樣性"
     ],
     "answer": 0
   },
   {
     "type": "multiple-choice",
-    "question": "A student finds a multicellular organism growing on damp soil. Microscopic analysis confirms it has cellular walls made of cellulose and contains specialized vascular tissue, but never produces flowers or seeds. Instead, it reproduces via spores. Which group does it belong to?",
+    "question": "How do fossils (化石) provide evidence for biological evolution?",
     "options": [
-      "Mosses",
-      "Ferns",
-      "Conifers",
-      "Flowering plants"
+      "Fossils prove that all modern species have remained completely unchanged for billions of years.",
+      "Fossils preserved in sedimentary rock strata show a chronological progression from simpler, ancient organisms to more complex modern forms, including transitional forms.",
+      "Fossils show that organisms only ever lived in deep oceans.",
+      "Fossils contain living cells that can be cloned into dinosaurs."
     ],
     "answer": 1
   },
   {
     "type": "true-false",
-    "question": "Fungi are classified as autotrophs because they possess thin thread-like hyphae that capture atmospheric carbon to synthesize organic food matrices.",
+    "question": "The fossil record is incomplete because most dead organisms decompose rapidly or are eaten by scavengers, and soft-bodied organisms rarely fossilize.",
     "options": [
-      "True",
-      "False"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "You observe a terrestrial vertebrate covered in dry, hard scales that reproduces via internal fertilization and lays eggs wrapped in shells on land. It is a poikilotherm. Which class does this animal belong to?",
-    "options": [
-      "Amphibians",
-      "Reptiles",
-      "Birds",
-      "Mammals"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Monocotyledonous plants typically display parallel leaf venation and flower petals in multiples of three, whereas dicotyledonous plants exhibit net venation and petals in multiples of four or five.",
-    "options": [
-      "True",
-      "False"
+      "True / 正確",
+      "False / 錯誤"
     ],
     "answer": 0
   },
   {
     "type": "multiple-choice",
-    "question": "According to the provided fish dichotomous key, what are the specific diagnostic features of the Common Carp?",
+    "question": "What are homologous structures (同源構造), such as the pentadactyl limb (五趾肢) in humans, whales, bats, and birds?",
     "options": [
-      "Body length more than 10 times width with a graying green back surface.",
-      "Body length less than 10 times width, has barbels, and clearly observable scales.",
-      "Body length less than 10 times width, lacks barbels, and displays black spots.",
-      "Body length less than 10 times width, has barbels, and scales are not clearly observable."
+      "Structures with completely different internal bone arrangements that perform the exact same function",
+      "Structures sharing a similar basic anatomical plan inherited from a common ancestor, which have become modified through evolution to perform different functions",
+      "Structures that appear only in embryonic stages and disappear before birth",
+      "Structures formed by convergent evolution in unrelated kingdoms"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which type of evidence for evolution compares the base sequences of DNA or amino acid sequences of shared proteins (such as cytochrome c or haemoglobin) across different species?",
+    "options": [
+      "Fossil evidence / 化石證據",
+      "Comparative biochemistry / 比較生物化學",
+      "Comparative embryology / 比較胚胎學",
+      "Biogeographical distribution / 生物地理分佈"
     ],
     "answer": 1
   },
   {
     "type": "true-false",
-    "question": "Organisms that reproduce strictly via asexual mechanisms are defined as a single biological species if they share similar structural features and genetic materials.",
+    "question": "Two species that show fewer differences in their DNA base sequences and protein amino acid sequences share a more recent common ancestor and are more closely related evolutionarily.",
     "options": [
-      "True",
-      "False"
+      "True / 正確",
+      "False / 錯誤"
     ],
     "answer": 0
   },
   {
-    "type": "structured",
-    "question": "[TAXONOMIC ANALYSIS] Explain how phylogenetics differs from old classification approaches. Given that Organism X and Organism Y belong to the same Order, while Organism X and Organism Z belong to the same Class but different Orders, deduce which pair shares a more recent common ancestor.",
-    "rubric": "To score full points, the comparative deduction must state: 1) Old classification systems were based on similarities in observable physical structural features. Modern phylogenetics relies on gene sequencing, assuming that greater similarities in genetic materials reflect closer evolutionary history. 2) Organism X and Organism Y share a more recent common ancestor because organisms belonging to the same lower taxonomic level (Order) are more closely related than those sharing only a higher level (Class)."
-  }
-]
+    "type": "multiple-choice",
+    "question": "According to Charles Darwin and Alfred Wallace's theory of evolution by natural selection (自然選擇), what is the primary driving force behind evolutionary change?",
+    "options": [
+      "Use and disuse of organs during an organism's lifetime, with acquired traits passed to offspring",
+      "Differential survival and reproduction of individuals with advantageous heritable variations in a given environment ('survival of the fittest')",
+      "Intentional mutations created by organisms when they need to adapt to a new climate",
+      "Random mating without any environmental selection pressure"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which factor is the ultimate source of new alleles and heritable genetic variation within a population?",
+    "options": [
+      "Mitosis / 有絲分裂",
+      "Mutation / 突變",
+      "Asexual vegetative propagation / 無性營養繁殖",
+      "Selective predation / 選擇性捕食"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Natural selection acts directly on the phenotypes (表型) of individuals in a population, thereby changing the allele frequencies (等位基因頻率) of the population over generations.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "During the Industrial Revolution in Britain, the frequency of dark-coloured (melanic) peppered moths (Biston betularia) increased dramatically in polluted woodlands. Why did this occur?",
+    "options": [
+      "Soot stained the wings of light-coloured moths black during their lifetime.",
+      "Dark moths were better camouflaged against soot-blackened tree trunks, suffered less predation by birds, and survived to pass on the dark allele to more offspring.",
+      "Polluted air caused light moths to mutate intentionally into dark moths.",
+      "Birds stopped eating moths altogether during the Industrial Revolution."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How does Lamarck's theory of evolution (inheritance of acquired characteristics / 用進廢退說) differ from Darwin's theory of natural selection?",
+    "options": [
+      "Lamarck proposed that traits acquired during an organism's lifetime through use or disuse are inherited by offspring, whereas Darwin emphasized selection of pre-existing heritable variations.",
+      "Lamarck proposed that species never change over time, whereas Darwin proposed sudden creation.",
+      "Lamarck discovered DNA mutations, whereas Darwin studied only bacteria.",
+      "Lamarck believed environmental changes kill all individuals in every species."
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "In a population of bacteria exposed to an antibiotic, antibiotic-resistant individuals already existed due to random mutations before the antibiotic was applied; the antibiotic acts as a selective agent rather than causing the mutation.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is speciation (物種形成)?",
+    "options": [
+      "The seasonal migration of birds between breeding and wintering grounds",
+      "The evolutionary process by which one ancestral species splits into two or more reproductively isolated species over time",
+      "The selective breeding of dogs by humans to create different breeds",
+      "The extinction of all organisms in an ecosystem"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which sequence correctly describes how allopatric speciation (異域物種形成) occurs?",
+    "options": [
+      "Geographical isolation → Different selection pressures and independent mutations/natural selection in each subpopulation → Accumulation of genetic differences → Reproductive isolation",
+      "Reproductive isolation → Geographical isolation → Identical environments → Interbreeding",
+      "Random mating → Decreased genetic variation → Immediate formation of a new kingdom",
+      "Artificial selection → Cloning → Loss of all chromosomes"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "Reproductive isolation (生殖隔離) exists when two populations can no longer interbreed to produce fertile offspring even if a physical barrier between them is removed.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Darwin's finches on the Galápagos Islands have beaks of different shapes and sizes adapted to feeding on different foods (such as hard seeds, insects, or nectar). This is a classic example of:",
+    "options": [
+      "Adaptive radiation (適應輻射) from a common ancestral finch species",
+      "Artificial selection by island farmers",
+      "Asexual cloning",
+      "Genetic drift in a single uniform habitat"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why is high genetic diversity (遺傳多樣性) important for the long-term survival of a wild species?",
+    "options": [
+      "It ensures every individual in the species is an identical clone.",
+      "It increases the chance that some individuals possess advantageous alleles enabling them to survive and reproduce if the environment changes or a new disease emerges.",
+      "It prevents natural selection from ever occurring.",
+      "It reduces the rate of sexual reproduction."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Habitat destruction and fragmentation, overexploitation, pollution, and introduction of invasive alien species are major human-driven causes of biodiversity loss.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is in-situ conservation (就地保育)?",
+    "options": [
+      "Keeping endangered animals in zoos and preserving plant seeds in seed banks",
+      "Protecting endangered species within their natural habitats, such as establishing country parks, nature reserves, and marine parks",
+      "Cloning extinct animals in biotechnology laboratories",
+      "Importing exotic predators to control native herbivores"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following is an example of ex-situ conservation (遷地保育)?",
+    "options": [
+      "Designating Mai Po Nature Reserve as a protected wetland habitat",
+      "Maintaining captive breeding programmes in zoos, botanical gardens, and seed banks",
+      "Banning bottom trawling in local marine waters",
+      "Reforesting barren hillsides with native tree species"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Seed banks (種子庫) conserve plant genetic diversity by storing seeds at low temperature and low humidity to keep them dormant and viable for long periods.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
