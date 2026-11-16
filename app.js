@@ -158,3 +158,46 @@ async function handleChapterStart() {
         updateHUD(); renderActiveChallenge();
     }, 600);
 }
+
+function triggerFileLoad(files) {
+    const firstFile = files ? files.item(0) : null;
+    if (!firstFile) return;
+    if (fileNameSpan) fileNameSpan.textContent = firstFile.name;
+    if (filePreview) filePreview.classList.remove('hidden');
+
+    if (uploadSection) uploadSection.classList.add('hidden');
+    if (loadingSection) loadingSection.classList.remove('hidden');
+
+    setTimeout(() => {
+        quizQuestions = fallbackBank.slice().sort(() => Math.random() - 0.5);
+        if (loadingSection) loadingSection.classList.add('hidden');
+        if (quizSection) quizSection.classList.remove('hidden');
+        currentQuestionIndex = 0; userScore = 0; answerStreak = 0;
+        updateHUD(); renderActiveChallenge();
+    }, 800);
+}
+
+/* ==========================================================================
+   4. QUIZ RENDERING & SCORING
+   ========================================================================== */
+function updateHUD() {
+    const total = quizQuestions.length || 1;
+    if (progressText) progressText.textContent = `Q: ${currentQuestionIndex + 1}/${total}`;
+    if (streakCounter) streakCounter.textContent = answerStreak;
+    if (scoreText) scoreText.textContent = `${userScore} pts`;
+    if (progressBar) progressBar.style.width = `${(currentQuestionIndex / total) * 100}%`;
+}
+
+function renderActiveChallenge() {
+    questionAnswered = false;
+    if (nextButton) nextButton.classList.add('hidden');
+    if (!quizQuestions || quizQuestions.length === 0) return;
+
+    updateHUD();
+    const activeQ = quizQuestions.at(currentQuestionIndex);
+    if (!activeQ) return;
+    if (questionText) questionText.innerText = activeQ.question;
+
+    if (optionsContainer) {
+        optionsContainer.innerHTML = "";
+        if (activeQ.type === "multiple-choice" || activeQ.type === "true-false") {
