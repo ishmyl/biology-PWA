@@ -3,8 +3,8 @@
    ========================================================================== */
 const firebaseConfig = {
     apiKey: "AIzaSyChSMRbqSFmAE2dNlGHa6AFcc4SpWM1V7g",
-    authDomain: "://firebaseapp.com",
-    databaseURL: "https://firebaseio.com",
+    authDomain: "wayground-bioarena.firebaseapp.com",
+    databaseURL: "https://wayground-bioarena-default-rtdb.firebaseio.com",
     projectId: "wayground-bioarena",
     storageBucket: "wayground-bioarena.firebasestorage.app",
     messagingSenderId: "7169528648",
@@ -80,7 +80,7 @@ function broadcastStudentData(statusMessage) {
                 name: currentPlayerName, topic: currentTopicTitle, score: userScore,
                 streak: answerStreak, currentQuestion: currentQuestionIndex + 1,
                 totalQuestions: quizQuestions.length, lastStatus: statusMessage, timestamp: Date.now()
-            });
+            }).catch(err => console.log("DB write skipped:", err));
         }
     } catch (e) { console.log("Sync shielded:", e); }
 }
@@ -101,13 +101,14 @@ function handleStudentSignIn() {
     if (displayStudentName) displayStudentName.textContent = `${classTag}, ${currentPlayerName}`;
     currentSessionId = `${classTag}_${currentPlayerName.replace(/[^a-zA-Z0-9]/g, "_")}`;
 
-    broadcastStudentData("Joined Arena");
     if (registrationSection) registrationSection.classList.add('hidden');
     if (uploadSection) uploadSection.classList.remove('hidden');
+
+    broadcastStudentData("Joined Arena");
 }
 
 async function handleChapterStart() {
-    const selectedFolder = chapterSelect ? chapterSelect.value : "Chapter 1";
+    const selectedFolder = (chapterSelect ? chapterSelect.value : "chapter 1").trim().toLowerCase();
     const selectedOpt = chapterSelect && chapterSelect.selectedOptions ? chapterSelect.selectedOptions.item(0) : null;
     const chapterLabel = selectedOpt ? selectedOpt.textContent : selectedFolder;
 
@@ -120,7 +121,7 @@ async function handleChapterStart() {
     try {
         const safeUrl = `${encodeURIComponent(selectedFolder)}/questions.json?t=${Date.now()}`;
         const response = await fetch(safeUrl);
-        if (!response.ok) throw new Error("questions.json not found");
+        if (!response.ok) throw new Error(`HTTP ${response.status} for ${safeUrl}`);
 
         const jsonData = await response.json();
         const rawList = Array.isArray(jsonData) ? jsonData : (jsonData.questions || []);
@@ -144,7 +145,6 @@ async function handleChapterStart() {
             };
         });
 
-        // Shuffle and take up to 25 questions
         quizQuestions = normalized.slice().sort(() => Math.random() - 0.5).slice(0, 25);
     } catch (err) {
         console.warn("Fallback triggered:", err);
@@ -158,46 +158,3 @@ async function handleChapterStart() {
         updateHUD(); renderActiveChallenge();
     }, 600);
 }
-
-function triggerFileLoad(files) {
-    const firstFile = files ? files.item(0) : null;
-    if (!firstFile) return;
-    if (fileNameSpan) fileNameSpan.textContent = firstFile.name;
-    if (filePreview) filePreview.classList.remove('hidden');
-
-    if (uploadSection) uploadSection.classList.add('hidden');
-    if (loadingSection) loadingSection.classList.remove('hidden');
-
-    setTimeout(() => {
-        quizQuestions = fallbackBank.slice().sort(() => Math.random() - 0.5);
-        if (loadingSection) loadingSection.classList.add('hidden');
-        if (quizSection) quizSection.classList.remove('hidden');
-        currentQuestionIndex = 0; userScore = 0; answerStreak = 0;
-        updateHUD(); renderActiveChallenge();
-    }, 800);
-}
-
-/* ==========================================================================
-   4. QUIZ RENDERING & SCORING
-   ========================================================================== */
-function updateHUD() {
-    const total = quizQuestions.length || 1;
-    if (progressText) progressText.textContent = `Q: ${currentQuestionIndex + 1}/${total}`;
-    if (streakCounter) streakCounter.textContent = answerStreak;
-    if (scoreText) scoreText.textContent = `${userScore} pts`;
-    if (progressBar) progressBar.style.width = `${(currentQuestionIndex / total) * 100}%`;
-}
-
-function renderActiveChallenge() {
-    questionAnswered = false;
-    if (nextButton) nextButton.classList.add('hidden');
-    if (!quizQuestions || quizQuestions.length === 0) return;
-
-    updateHUD();
-    const activeQ = quizQuestions.at(currentQuestionIndex);
-    if (!activeQ) return;
-    if (questionText) questionText.innerText = activeQ.question;
-
-    if (optionsContainer) {
-        optionsContainer.innerHTML = "";
-        if (activeQ.type === "multiple-choice" || activeQ.type === "true-false") {
