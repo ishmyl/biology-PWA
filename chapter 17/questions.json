@@ -1,0 +1,245 @@
+[
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following is NOT a function of the human skeleton (骨骼)?",
+    "options": [
+      "Supporting the weight of the body and maintaining body shape",
+      "Protecting delicate internal organs such as the brain, heart, and lungs",
+      "Producing red blood cells, white blood cells, and platelets in the red bone marrow",
+      "Secreting digestive enzymes into the alimentary canal"
+    ],
+    "answer": 3
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which bones make up the axial skeleton (中軸骨骼) in humans?",
+    "options": [
+      "Skull, vertebral column, ribs, and sternum / 頭骨、脊柱、肋骨和胸骨",
+      "Pectoral girdle, pelvic girdle, and limb bones / 肩帶、腰帶和四肢骨",
+      "Humerus, radius, ulna, and carpals / 肱骨、橈骨、尺骨和腕骨",
+      "Femur, tibia, fibula, and tarsals / 股骨、脛骨、腓骨和跗骨"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "Bone is a living tissue composed of living bone cells (osteocytes) embedded in a hard matrix of calcium salts (such as calcium phosphate) and flexible collagen fibres.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is the primary function of cartilage (軟骨) covering the ends of bones at movable joints?",
+    "options": [
+      "To produce synovial fluid",
+      "To reduce friction between moving bones and absorb mechanical shock",
+      "To attach skeletal muscles to bones",
+      "To store yellow bone marrow"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which tough, elastic fibrous bands hold bones together at a movable joint and prevent dislocation while permitting normal movement?",
+    "options": [
+      "Tendons / 肌腱",
+      "Ligaments / 韌帶",
+      "Myofibrils / 肌原纖維",
+      "Cartilage discs / 軟骨盤"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Tendons (肌腱) are inelastic cords of tough connective tissue that attach skeletal muscles to bones and transmit the pulling force of muscle contraction directly to move the bone.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why is it important that tendons are inelastic (non-stretchy)?",
+    "options": [
+      "So they can stretch and store elastic energy like a rubber band",
+      "So the pulling force generated when a muscle contracts is transmitted efficiently and immediately to the bone without being wasted on stretching the tendon",
+      "So they can lubricate the synovial cavity",
+      "So they can prevent bones from growing too long"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is the role of synovial fluid (滑液) inside a synovial joint?",
+    "options": [
+      "It supplies oxygen to cardiac muscle.",
+      "It lubricates the joint to reduce friction during movement and nourishes the articular cartilage.",
+      "It binds adjacent vertebrae rigidly together.",
+      "It converts lactic acid back into glucose."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "The elbow joint and knee joint are examples of hinge joints (鉸鏈關節) that allow movement mainly in one plane (flexion and extension).",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which type of movable joint allows movement in all planes (including rotation), such as the shoulder joint and hip joint?",
+    "options": [
+      "Hinge joint / 鉸鏈關節",
+      "Ball-and-socket joint / 球窩關節",
+      "Immovable suture joint / 不動關節",
+      "Gliding joint / 滑動關節"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why must skeletal muscles work in antagonistic pairs (拮抗肌對) to move bones across a joint?",
+    "options": [
+      "Because skeletal muscles can only pull (shorten) when they contract and cannot actively push to lengthen themselves",
+      "Because each muscle can only contract once per day",
+      "Because ligaments pull the bones back automatically",
+      "Because gravity always pulls limbs upwards"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "When bending (flexing) the forearm at the elbow joint, the biceps (二頭肌 / flexor) contracts while the triceps (三頭肌 / extensor) relaxes.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which muscle action straightens (extends) the lower leg at the knee joint when kicking a football?",
+    "options": [
+      "The flexor muscle at the back of the thigh contracts and the extensor at the front relaxes",
+      "The extensor muscle (quadriceps) at the front of the thigh contracts and the flexor muscle (hamstrings) at the back relaxes",
+      "Both flexor and extensor muscles relax completely",
+      "The calf muscle pulls the femur upwards"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What happens to a skeletal muscle fibre when it contracts?",
+    "options": [
+      "It becomes longer and thinner",
+      "It becomes shorter and thicker",
+      "It splits into two daughter cells by mitosis",
+      "Its volume doubles due to water absorption"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Skeletal muscle fibres contain numerous mitochondria to carry out aerobic respiration and supply large amounts of ATP for muscle contraction.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is a neuromuscular junction (神經肌肉接點)?",
+    "options": [
+      "The point where a tendon attaches to the periosteum of a bone",
+      "The specialized synapse between the axon terminal of a motor neurone and a skeletal muscle fibre",
+      "The cavity filled with synovial fluid between two bones",
+      "The cartilage pad between two vertebrae"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What causes a skeletal muscle fibre to initiate contraction when a nerve impulse reaches the neuromuscular junction?",
+    "options": [
+      "Direct flow of blood plasma into the muscle fibre",
+      "Release of neurotransmitter molecules across the synaptic cleft, which bind to receptors on the muscle fibre membrane and trigger an electrical impulse along the muscle fibre",
+      "Diffusion of oxygen directly from the motor neurone",
+      "Mechanical pulling by the myelin sheath"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "In the human arm, the forearm acts as a lever with the elbow joint serving as the fulcrum (支點), the contracting biceps providing the effort, and the hand/object held representing the load.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is the main advantage of the lever arrangement in the human arm, where the biceps attaches close to the elbow joint?",
+    "options": [
+      "It allows a small contraction (shortening) of the biceps to produce a large, rapid movement at the hand",
+      "It requires zero ATP to lift heavy objects",
+      "It prevents the elbow joint from ever dislocating",
+      "It allows the arm to bend backwards past 180 degrees"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which structure lines the inside of the joint capsule and secretes synovial fluid?",
+    "options": [
+      "Articular cartilage / 關節軟骨",
+      "Synovial membrane / 滑膜",
+      "Ligament / 韌帶",
+      "Red bone marrow / 紅骨髓"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Osteoporosis (骨質疏鬆症) is a condition in which bone mineral density decreases, making bones porous, brittle, and more prone to fractures.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which type of muscle is involuntary, non-striated, and found in the walls of the alimentary canal and blood vessels?",
+    "options": [
+      "Skeletal muscle / 骨骼肌",
+      "Smooth muscle / 平滑肌",
+      "Cardiac muscle / 心肌",
+      "Antagonistic muscle / 拮抗肌"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Intervertebral discs (椎間盤) made of compressible cartilage between adjacent vertebrae act as shock absorbers and allow slight flexibility of the vertebral column.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "structured",
+    "question": "[SYNOVIAL JOINT STRUCTURE & FUNCTION] Osteoarthritis in elderly patients often involves the wearing away of cartilage at the knee joint. 1) State two functions of articular cartilage in a healthy knee joint and explain the pain/stiffness experienced when it wears away. 2) Distinguish between the roles of ligaments and tendons at the knee joint.",
+    "rubric": "To score full points, the response must demonstrate structural mastery: 1) Articular cartilage reduces friction between the ends of moving bones and absorbs mechanical shock; when it wears away, bone ends rub directly against each other during movement, causing friction, inflammation, pain, and stiffness. 2) Ligaments connect bone to bone across the joint to hold the bones in position and prevent dislocation, whereas tendons attach skeletal muscles to bones to transmit the pulling force of muscle contraction."
+  },
+  {
+    "type": "structured",
