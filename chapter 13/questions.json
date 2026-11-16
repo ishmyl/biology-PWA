@@ -1,240 +1,27 @@
 [
-  {
-    "type": "multiple-choice",
-    "question": "Where are sperms produced and stored temporarily before ejaculation in the human male reproductive system?",
-    "options": [
-      "Produced in the prostate gland and stored in the urethra",
-      "Produced in the seminiferous tubules of the testes (睾丸) and stored in the epididymis (附睾)",
-      "Produced in the seminal vesicles and stored in the sperm duct",
-      "Produced in the scrotum and stored in the Cowper's gland"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Why are the testes located outside the main abdominal cavity inside the scrotum (陰囊)?",
-    "options": [
-      "To protect them from physical shock during movement",
-      "To maintain a temperature about 2–3 °C lower than core body temperature, which is optimal for sperm production (spermatogenesis)",
-      "To shorten the distance sperms travel during ejaculation",
-      "To increase blood pressure in the testicular arteries"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Semen (精液) consists of sperms suspended in alkaline, nutrient-rich fluids secreted by the seminal vesicles, prostate gland, and Cowper's glands, which nourish sperms and neutralize acidity in the female vagina.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is the function of the acrosome (頂體) at the tip of a human sperm head?",
-    "options": [
-      "It contains numerous mitochondria to generate ATP for swimming.",
-      "It contains hydrolytic enzymes that digest the protective layers surrounding the ovum during fertilization.",
-      "It carries the haploid set of 23 chromosomes.",
-      "It propels the sperm forward by whipping movements."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which structure in the female reproductive system is the normal site of fertilization (受精) in humans?",
-    "options": [
-      "Ovary / 卵巢",
-      "Oviduct (Fallopian tube) / 輸卵管",
-      "Uterus / 子宮",
-      "Vagina / 陰道"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Because human ova cannot swim on their own, they are moved along the oviduct towards the uterus by the beating of cilia lining the oviduct wall and peristaltic contractions of its smooth muscles.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "During the 28-day human menstrual cycle (月經週期), around which day does ovulation (排卵) typically occur?",
-    "options": [
-      "Day 1",
-      "Day 5",
-      "Day 14",
-      "Day 28"
-    ],
-    "answer": 2
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is the main function of progesterone (孕酮) secreted by the corpus luteum (黃體) after ovulation?",
-    "options": [
-      "To trigger the breakdown and shedding of the uterine lining",
-      "To maintain the thickness and rich blood supply of the uterine lining (endometrium) in preparation for implantation",
-      "To stimulate the maturation of multiple new follicles simultaneously",
-      "To cause contraction of the uterine wall during childbirth"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "If fertilization does NOT occur, the corpus luteum degenerates, causing oestrogen and progesterone levels to drop sharply and triggering menstruation (月經).",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What happens immediately after the nucleus of a single sperm enters an ovum during fertilization?",
-    "options": [
-      "The ovum divides immediately into four identical cells.",
-      "The fertilization membrane (受精膜) forms around the ovum to prevent other sperms from entering (preventing polyspermy).",
-      "The placenta begins secreting progesterone directly.",
-      "The ovum implants immediately into the oviduct wall."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is implantation (植入) in human reproduction?",
-    "options": [
-      "The release of a mature ovum from the ovary into the oviduct",
-      "The embedding of the developing embryo (blastocyst) into the thickened uterine lining (endometrium)",
-      "The fusion of sperm and ovum nuclei in the oviduct",
-      "The expulsion of the placenta after childbirth"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Identical twins (同卵雙生) develop from a single fertilized zygote that splits into two separate embryos at an early stage, so they share the exact same genetic makeup and are always of the same sex.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which of the following statements about the placenta (胎盤) is INCORRECT?",
-    "options": [
-      "It allows diffusion of oxygen and nutrients from maternal blood into foetal blood.",
-      "It allows diffusion of carbon dioxide and urea from foetal blood into maternal blood.",
-      "Maternal blood and foetal blood mix directly inside the chorionic villi so red blood cells can cross freely.",
-      "It secretes progesterone and oestrogen to maintain pregnancy."
-    ],
-    "answer": 2
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Why is it vital that maternal blood and foetal blood do NOT mix directly in the placenta?",
-    "options": [
-      "Foetal blood contains no haemoglobin.",
-      "The higher blood pressure of the mother could burst the delicate foetal blood capillaries, and incompatible blood groups between mother and foetus would cause agglutination.",
-      "Maternal white blood cells would digest the umbilical cord.",
-      "Oxygen can only diffuse if the two blood supplies are separated by bone."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "The umbilical artery (臍動脈) carries deoxygenated blood and metabolic wastes (such as urea and CO2) from the foetus to the placenta, whereas the umbilical vein (臍靜脈) carries oxygenated, nutrient-rich blood from the placenta to the foetus.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is the main function of the amniotic fluid (羊水) enclosed within the amnion during pregnancy?",
-    "options": [
-      "To supply dissolved glucose and amino acids to the foetus",
-      "To cushion and protect the foetus against mechanical shock, prevent desiccation, and allow free foetal movement",
-      "To filter urea out of foetal blood",
-      "To stimulate milk production in the mammary glands"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which sequence correctly describes the stages of natural childbirth (分娩)?",
-    "options": [
-      "Expulsion of placenta → Dilation of cervix → Delivery of baby",
-      "Dilation of cervix (accompanied by rupture of amnion) → Delivery of baby through vagina → Expulsion of placenta and umbilical cord (afterbirth)",
-      "Delivery of baby → Dilation of cervix → Rupture of amnion",
-      "Expulsion of placenta → Delivery of baby → Dilation of cervix"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Breastfeeding provides the newborn baby with passive natural immunity because human breast milk (especially colostrum / 初乳) contains maternal antibodies.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How do combined oral contraceptive pills (避孕丸) containing synthetic oestrogen and progesterone prevent pregnancy?",
-    "options": [
-      "They kill sperms directly inside the vagina.",
-      "They inhibit the pituitary gland from secreting FSH and LH, thereby preventing follicle development and ovulation.",
-      "They block the oviducts permanently with scar tissue.",
-      "They cause the placenta to detach from the uterus."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which contraceptive method acts as a physical barrier AND also significantly reduces the risk of transmitting sexually transmitted infections (STIs) such as HIV?",
-    "options": [
-      "Intrauterine device (IUD) / 子宮環",
-      "Male or female condom / 安全套",
-      "Contraceptive pill / 避孕丸",
-      "Rhythm method (safe period) / 安全期避孕法"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Tubal ligation (輸卵管結紮) in females and vasectomy (輸精管結紮) in males are permanent surgical sterilization methods that prevent gametes from meeting without stopping sex hormone production.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Why is the rhythm method (safe period) generally less reliable than barrier or hormonal methods of contraception?",
-    "options": [
-      "Ovulation occurs twice every week.",
-      "The exact timing of ovulation can vary due to stress or illness, and sperms can survive in the female reproductive tract for up to 2–3 days.",
-      "Hormones in the pill interfere with the rhythm method.",
-      "Menstruation lasts for 20 days in most women."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "An intrauterine device (IUD / 子宮環) placed inside the uterus prevents the implantation of an embryo into the uterine lining.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "structured",
+  {"type":"multiple-choice","question":"Where are sperms produced in the human male reproductive system?","options":["Epididymis / 附睾","Seminiferous tubules inside the testes / 睾丸內的細精管","Seminal vesicles / 精囊","Prostate gland / 前列腺"],"answer":1},
+  {"type":"multiple-choice","question":"Why are the human testes located outside the abdominal cavity inside the scrotum (陰囊)?","options":["To protect them from physical injury","To maintain a temperature about 2–3 °C lower than core body temperature, which is optimal for sperm production","To store larger volumes of seminal fluid","To allow direct exposure to sunlight for vitamin D synthesis"],"answer":1},
+  {"type":"true-false","question":"The acrosome (頂體) at the tip of a sperm head contains hydrolytic enzymes that digest the outer jelly-like layer of an ovum during fertilization.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which part of a human sperm contains numerous mitochondria to generate ATP for swimming?","options":["Head / 頭部","Middle piece / 中段","Acrosome / 頂體","Tail tip / 尾端"],"answer":1},
+  {"type":"multiple-choice","question":"What is the function of seminal fluid secreted by the seminal vesicles, prostate gland, and Cowper's glands?","options":["To produce haploid sperm cells by meiosis","To provide a liquid swimming medium, supply nutrients (such as fructose) for energy, and neutralize acidity in the female reproductive tract","To stimulate ovulation in the ovary","To prevent implantation of the embryo"],"answer":1},
+  {"type":"true-false","question":"An ovum is much larger than a sperm because its cytoplasm contains abundant food reserves to nourish the early embryo after fertilization.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Where does fertilization normally take place in the human female reproductive system?","options":["Vagina / 陰道","Uterus / 子宮","Oviduct (Fallopian tube) / 輸卵管","Ovary / 卵巢"],"answer":2},
+  {"type":"multiple-choice","question":"How is an ovum moved along the oviduct toward the uterus?","options":["By swimming with its own flagellum","By the beating of cilia lining the oviduct wall and peristaltic contractions of its muscular wall","By high blood pressure inside the oviduct","By gravity pulling it downward"],"answer":1},
+  {"type":"true-false","question":"Once a single sperm nucleus enters the ovum, the outer membrane of the ovum hardens (fertilization membrane) to prevent other sperms from entering.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What is implantation (植入) in human reproduction?","options":["The release of a mature ovum from the ovary","The embedding of the developing embryo (blastocyst) into the thickened uterine lining (endometrium)","The fusion of sperm and ovum nuclei","The shedding of the uterine lining during menstruation"],"answer":1},
+  {"type":"multiple-choice","question":"Which structure connects the foetus to the placenta and transports blood to and from the foetus?","options":["Amnion / 羊膜","Umbilical cord / 臍帶","Oviduct / 輸卵管","Cervix / 子宮頸"],"answer":1},
+  {"type":"true-false","question":"Maternal blood and foetal blood do not mix directly in the placenta, which protects the foetus from the mother's higher blood pressure and prevents immune rejection.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How is the placenta structurally adapted for efficient exchange of substances between maternal and foetal blood?","options":["It has a thick muscular wall with very few capillaries.","It has numerous finger-like chorionic villi that provide a huge surface area and a very thin barrier separating maternal and foetal blood.","It pumps maternal blood directly into the foetal heart.","It stores amniotic fluid inside large vacuoles."],"answer":1},
+  {"type":"multiple-choice","question":"Which substances diffuse from the mother's blood into the foetal blood across the placenta?","options":["Urea and carbon dioxide","Oxygen, glucose, amino acids, vitamins, and maternal antibodies","Red blood cells and platelets","Fibrinogen and digestive enzymes"],"answer":1},
+  {"type":"true-false","question":"Amniotic fluid (羊水) enclosed by the amnion cushions the foetus against mechanical shock, prevents desiccation, and allows freedom of movement.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which hormone secreted by the ovaries stimulates the repair and thickening of the uterine lining after menstruation?","options":["Testosterone / 睾酮","Oestrogen / 雌激素","Progesterone / 孕酮","Oxytocin / 催產素"],"answer":1},
+  {"type":"multiple-choice","question":"What is the main role of progesterone (孕酮) during the menstrual cycle and pregnancy?","options":["To trigger shedding of the uterine lining","To maintain the thickened, vascularized uterine lining ready for implantation and inhibit further ovulation","To stimulate sperm production in the seminiferous tubules","To cause uterine contractions during birth"],"answer":1},
+  {"type":"true-false","question":"In a typical 28-day menstrual cycle, ovulation (排卵) occurs around Day 14, releasing a mature ovum from the ovary into the oviduct.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What happens to the uterine lining if fertilization does not occur after ovulation?","options":["It continues to thicken indefinitely.","Levels of oestrogen and progesterone drop, causing the thickened uterine lining to break down and discharge during menstruation.","It turns into the placenta.","It absorbs the unfertilized ovum to form twins."],"answer":1},
+  {"type":"multiple-choice","question":"How do identical twins (同卵雙生) form?","options":["Two separate ova are fertilized by two different sperms.","A single zygote formed from one ovum and one sperm splits into two separate embryos early in development.","One ovum is fertilized simultaneously by two sperms.","Two ovaries release ova on the same day."],"answer":1},
+  {"type":"true-false","question":"Fraternal (non-identical) twins develop from two separate ova fertilized by two different sperms and may be of different sexes.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How does a male condom prevent pregnancy?","options":["It inhibits ovulation by releasing oestrogen.","It acts as a physical barrier preventing semen from entering the vagina and uterus, while also reducing the risk of sexually transmitted infections.","It kills sperms chemically inside the oviduct.","It blocks the implantation of a blastocyst in the uterus."],"answer":1},
+  {"type":"multiple-choice","question":"How do oral contraceptive pills (避孕丸) containing synthetic oestrogen and progesterone prevent pregnancy?","options":["By blocking the sperm ducts surgically","By inhibiting the secretion of pituitary hormones (FSH and LH), thereby preventing follicle development and ovulation","By neutralizing seminal fluid in the vagina","By inducing premature labour"],"answer":1},
+  {"type":"true-false","question":"Sterilization in males (vasectomy / 輸精管切除術) involves cutting and tying the sperm ducts, which prevents sperms from entering the semen without affecting testosterone production.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Why is breastfeeding strongly encouraged for newborn babies in addition to providing balanced nutrients?","options":["Breast milk contains maternal antibodies that provide passive immunity and fosters emotional bonding.","Breast milk contains red blood cells that prevent anaemia.","Breast milk eliminates the need for vaccination throughout life.","Breast milk stimulates immediate tooth eruption."],"answer":0}
+]
