@@ -1,98 +1,240 @@
 [
   {
     "type": "multiple-choice",
-    "question": "When examining undisturbed layers of sedimentary rock, where would you expect to find the oldest and structurally simplest fossils?",
+    "question": "Which structure is the functional unit of the human kidney (腎臟) responsible for filtering blood and forming urine?",
     "options": [
-      "In the uppermost rock layer",
-      "In the middle rock layers only",
-      "In the lowest rock layer",
-      "Scattered evenly across all layers"
-    ],
-    "answer": 2
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which of the following is classified as a trace fossil that provides direct evidence about the behavioral movements or feeding habits of ancient organisms?",
-    "options": [
-      "A preserved dinosaur skeleton",
-      "A fossilized footprint pathway",
-      "An ancient petrified tooth",
-      "A frozen mammoth shell body"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "The absolute age of ancient fossils or the rock layers immediately surrounding them can be estimated using radioisotope dating methods.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "The pentadactyl limb found in humans, bats, and whales is an example of a homologous structure. What does the presence of this structure primarily suggest?",
-    "options": [
-      "The organisms independently evolved identical features to live in the same habitat.",
-      "The organisms are completely unrelated but share identical environmental behaviors.",
-      "The organisms all descended from a shared common ancestor with modifications.",
-      "The structural layout was induced by modern chemical mutagens in the cytoplasm."
-    ],
-    "answer": 2
-  },
-  {
-    "type": "true-false",
-    "question": "The fossil record is a complete and flawless historical narrative because every organism that has ever died on Earth was safely preserved in sedimentary rock.",
-    "options": [
-      "True",
-      "False"
+      "Alveolus / 氣囊",
+      "Nephron / 腎單位",
+      "Villus / 絨毛",
+      "Glomerulus only / 僅腎小球"
     ],
     "answer": 1
   },
   {
     "type": "multiple-choice",
-    "question": "When comparing the amino acid sequences of an essential protein across multiple modern species, what is the primary underlying scientific assumption?",
+    "question": "What drives ultrafiltration (超濾) of blood from the glomerulus into Bowman's capsule (鮑曼氏囊)?",
     "options": [
-      "Species with more similarities in their sequences have a closer phylogenetic relationship.",
-      "Species with more differences in their sequences have a closer phylogenetic relationship.",
-      "The mutations that alter protein sequences occur only in human somatic cells.",
-      "Proteins from ancient species are completely unaffected by random mutations over time."
+      "Active transport of water molecules across podocytes using ATP",
+      "High hydrostatic blood pressure inside the glomerulus created because the afferent arteriole has a wider diameter than the efferent arteriole",
+      "Osmotic pull exerted by urea molecules inside the collecting duct",
+      "Ciliary beating of cells lining the proximal convoluted tubule"
     ],
-    "answer": 0
+    "answer": 1
   },
   {
     "type": "true-false",
-    "question": "Scientists generally believe that life on Earth originally began with the complex formation of organic molecules from inorganic materials.",
+    "question": "During ultrafiltration in a healthy human kidney, red blood cells and large plasma proteins cannot pass through the filtration membrane and remain in the blood leaving the glomerulus.",
     "options": [
-      "True",
-      "False"
+      "True / 正確",
+      "False / 錯誤"
     ],
     "answer": 0
   },
   {
     "type": "multiple-choice",
-    "question": "Which of the following describes a structural limitation that contributes to 'missing links' within our current fossil record data?",
+    "question": "Where does selective reabsorption (選擇性重吸收) of 100% of glucose and amino acids from the glomerular filtrate normally occur?",
     "options": [
-      "All soft-bodied organisms decompose or get consumed before fossilization can occur.",
-      "Radioisotope dating is completely unable to measure the absolute age of autotrophs.",
-      "Sedimentary rock layers only ever build up in shallow marine ocean environments.",
-      "Homologous structures cannot be preserved due to phosphate layer breakdown."
+      "Collecting duct / 集合管",
+      "Proximal convoluted tubule (PCT) / 近曲小管",
+      "Distal convoluted tubule (DCT) / 遠曲小管",
+      "Urinary bladder / 膀胱"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How are epithelial cells lining the proximal convoluted tubule adapted for rapid selective reabsorption?",
+    "options": [
+      "They have a thick waterproof cuticle to prevent water leakage.",
+      "They possess numerous microvilli (brush border) to increase surface area and abundant mitochondria to supply ATP for active transport.",
+      "They lack cell membranes so filtrate flows straight into capillaries.",
+      "They contain numerous chloroplasts to generate glucose."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "The loop of Henle (亨利氏套) establishes a high salt concentration (low water potential) gradient in the kidney medulla, enabling water to be reabsorbed by osmosis from the collecting duct.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How does antidiuretic hormone (ADH / 抗利尿激素) regulate osmoregulation (滲透調節) when a person is dehydrated?",
+    "options": [
+      "ADH decreases the permeability of the collecting duct wall to water, producing a large volume of dilute urine.",
+      "ADH increases the permeability of the collecting duct wall to water, allowing more water to be reabsorbed by osmosis into the blood and producing a small volume of concentrated urine.",
+      "ADH stimulates the glomerulus to stop filtering blood completely.",
+      "ADH converts urea back into amino acids in the liver."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "In a kidney dialysis machine (洗腎機 / haemodialysis), why is the dialysis fluid (透析液) formulated to contain the exact same concentration of glucose and essential mineral ions as normal blood plasma, but zero urea?",
+    "options": [
+      "To force glucose out of the patient's blood into the dialysis fluid",
+      "To prevent net loss of useful glucose and mineral ions from the blood while maintaining a steep concentration gradient for urea and excess salts to diffuse out of the blood",
+      "To clot the patient's blood inside the dialysis tubing",
+      "To stimulate the pancreas to secrete insulin"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "In a haemodialysis machine, blood and dialysis fluid flow in opposite directions (counter-current flow / 逆流) to maintain a concentration gradient along the entire length of the selectively permeable membrane.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which structure in the human heart acts as the natural pacemaker (起搏點), initiating rhythmic electrical impulses that set the heart rate?",
+    "options": [
+      "Atrioventricular node (AV node) / 房室結",
+      "Sinoatrial node (SA node) / 竇房結",
+      "Bundle of His / 希氏束",
+      "Bicuspid valve / 二尖瓣"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why is there a brief ~0.1-second delay when electrical impulses pass from the sinoatrial node (SA node) through the atrioventricular node (AV node) before spreading to the ventricles?",
+    "options": [
+      "To allow the ventricles to contract before the atria",
+      "To allow the atria to complete their contraction and empty blood fully into the ventricles before ventricular contraction begins",
+      "To prevent the semilunar valves from ever opening",
+      "To give red blood cells time to absorb oxygen in the atria"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "The sympathetic nerve (交感神經) releases noradrenaline to speed up the firing rate of the SA node and increase heart rate during exercise or stress, whereas the parasympathetic nerve (vagus nerve / 副交感神經) slows heart rate down at rest.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How is cardiac output (心輸出量) calculated?",
+    "options": [
+      "Heart rate × Stroke volume (心跳率 × 心搏量)",
+      "Heart rate ÷ Stroke volume",
+      "Blood pressure × Breathing rate",
+      "Stroke volume − Heart rate"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which factor directly stimulates the respiratory centre (呼吸中樞) in the medulla oblongata to increase the rate and depth of breathing during vigorous exercise?",
+    "options": [
+      "A slight increase in blood oxygen concentration",
+      "An increase in blood carbon dioxide concentration (which lowers blood pH), detected by chemoreceptors in the medulla and carotid/aortic bodies",
+      "A decrease in body temperature",
+      "An increase in blood glucose concentration"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Stretch receptors in the walls of the bronchioles and alveoli send inhibitory nerve impulses to the respiratory centre when the lungs are fully inflated, preventing over-inflation of the lungs.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How does progesterone (孕酮) exert negative feedback on the hypothalamus and anterior pituitary gland during the luteal phase of the menstrual cycle and during pregnancy?",
+    "options": [
+      "It stimulates massive secretion of FSH and LH to trigger daily ovulation.",
+      "It inhibits the secretion of GnRH, FSH, and LH, preventing the maturation and release of new follicles.",
+      "It causes the uterine lining to shed immediately.",
+      "It stimulates milk ejection from the mammary glands."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which hormone surge around Day 13–14 of the human menstrual cycle directly triggers ovulation (排卵)?",
+    "options": [
+      "A sharp surge in luteinizing hormone (LH / 促黃體生成素)",
+      "A sharp drop in oestrogen",
+      "A surge in antidiuretic hormone (ADH)",
+      "A surge in glucagon"
     ],
     "answer": 0
   },
   {
     "type": "true-false",
-    "question": "The chronological progression found within global fossil records suggests that life forms over time have generally become more simple in structure and less diverse.",
+    "question": "During pregnancy, the placenta secretes human chorionic gonadotrophin (hCG / 人絨毛膜促性腺激素) early on to maintain the corpus luteum so that progesterone and oestrogen continue to be produced.",
     "options": [
-      "True",
-      "False"
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How do combined oral contraceptive pills prevent ovulation?",
+    "options": [
+      "Synthetic oestrogen and progesterone inhibit the hypothalamus and pituitary gland from secreting FSH and LH via negative feedback, so ovarian follicles do not mature or ovulate.",
+      "They stimulate the ovary to release all eggs at once.",
+      "They dissolve the uterine endometrium permanently.",
+      "They block the urethra."
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is the principle behind in vitro fertilization (IVF / 體外受精)?",
+    "options": [
+      "Inserting a sperm directly into the mother's bloodstream",
+      "Stimulating multiple follicle development with FSH/LH, harvesting mature ova, fertilizing them with sperms in a laboratory dish, and transferring healthy embryos into the mother's uterus",
+      "Cloning somatic cells from the father's skin",
+      "Using antibiotics to unblock scarred oviducts"
     ],
     "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Home pregnancy test kits detect the presence of human chorionic gonadotrophin (hCG) in a woman's urine using monoclonal antibodies.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which hormone stimulates uterine smooth muscle contractions during labour (childbirth) through a positive feedback mechanism?",
+    "options": [
+      "Progesterone / 孕酮",
+      "Oxytocin / 催產素",
+      "FSH / 促卵泡激素",
+      "Insulin / 胰島素"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Compared with blood entering the kidney via the renal artery, blood leaving via the renal vein has a lower concentration of urea, oxygen, and excess mineral salts, and a higher concentration of carbon dioxide.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
   },
   {
     "type": "structured",
-    "question": "[EVOLUTIONARY EVIDENCE ANALYSIS] A student analyzes the anatomical wing of a bat and the flipper of a whale. 1) Identify the structural classification of these limbs and explain what they reveal about evolutionary history. 2) State two specific reasons why the fossil record alone cannot provide a perfectly continuous line of evidence for this relationship.",
-    "rubric": "To score full points, the structural analysis must state: 1) These are homologous structures (specifically pentadactyl limbs). Even though they serve different functions (flying vs. swimming), their underlying anatomical similarities reveal that bats and whales descended from a shared common ancestor. 2) The fossil record has limitations due to missing links because: first, many ancient organisms were soft-bodied, decomposed, or were eaten before they could be fossilized; second, many fossils are buried in completely inaccessible areas or suffer physical damage over time, reducing the probability of discovery."
-  }
-]
