@@ -1,0 +1,240 @@
+[
+  {
+    "type": "multiple-choice",
+    "question": "What is irritability (感應性) in living organisms?",
+    "options": [
+      "The ability to synthesize organic food from inorganic substances",
+      "The ability to detect changes (stimuli) in the internal or external environment and produce appropriate responses",
+      "The permanent increase in dry mass and cell number over time",
+      "The removal of metabolic waste products from the body"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which structure in the human eye is transparent, curved, and responsible for most of the refraction (bending) of light rays entering the eye?",
+    "options": [
+      "Iris / 虹膜",
+      "Cornea / 角膜",
+      "Retina / 視網膜",
+      "Sclera / 鞏膜"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "The choroid (脈絡膜) contains black pigment that absorbs excess light inside the eyeball to prevent internal reflection, and has a rich network of blood capillaries to supply oxygen and nutrients to the retina.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How does the iris regulate the amount of light entering the eye when a person walks from a dark room into bright sunlight?",
+    "options": [
+      "Circular muscles of the iris contract and radial muscles relax, constricting the pupil",
+      "Radial muscles of the iris contract and circular muscles relax, dilating the pupil",
+      "Both circular and radial muscles relax, keeping the pupil size constant",
+      "Ciliary muscles contract to pull the iris over the pupil"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which combination of changes occurs during eye accommodation (視覺調節) when focusing on a nearby object?",
+    "options": [
+      "Ciliary muscles relax → suspensory ligaments become taut → lens becomes thinner (less convex)",
+      "Ciliary muscles contract → suspensory ligaments slacken → lens becomes thicker (more convex)",
+      "Ciliary muscles contract → suspensory ligaments become taut → lens becomes thinner (less convex)",
+      "Ciliary muscles relax → suspensory ligaments slacken → lens becomes thicker (more convex)"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "When viewing a distant object, light rays reaching the eye are nearly parallel and require less refraction, so the lens becomes thinner (less convex).",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why is there no image perceived when light falls on the blind spot (盲點) of the retina?",
+    "options": [
+      "It is covered by a thick opaque layer of melanin.",
+      "It is the region where optic nerve fibres leave the eyeball and contains no photoreceptor cells (rods or cones).",
+      "It contains only rod cells, which do not function in daylight.",
+      "The lens cannot focus light onto the blind spot."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which comparison between rod cells (視桿細胞) and cone cells (視錐細胞) in the human retina is CORRECT?",
+    "options": [
+      "Rods are concentrated at the yellow spot (fovea) and provide high visual acuity, whereas cones are scattered across the periphery.",
+      "Rods are highly sensitive to dim light and provide black-and-white vision, whereas cones require bright light and provide colour vision.",
+      "Rods detect red, green, and blue wavelengths, whereas cones contain visual purple (rhodopsin).",
+      "Multiple cone cells share a single optic nerve fibre, whereas each rod cell connects to its own individual neurone."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "The yellow spot (fovea / 黃點) contains a very high density of cone cells and no rod cells, giving the sharpest and most detailed colour vision when looking directly at an object.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What causes short-sightedness (myopia / 近視), and which type of lens is used to correct it?",
+    "options": [
+      "The eyeball is too short or the lens is too thin; corrected with a convex lens",
+      "The eyeball is too long or the lens is too thick (too convex), focusing images of distant objects in front of the retina; corrected with a concave (diverging) lens",
+      "Uneven curvature of the cornea; corrected with a cylindrical lens",
+      "Loss of elasticity of the lens due to old age; corrected with a concave lens"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "In long-sightedness (hypermetropia / 遠視), where are light rays from a nearby object focused, and what lens corrects this defect?",
+    "options": [
+      "Focused behind the retina; corrected with a convex (converging) lens",
+      "Focused in front of the retina; corrected with a concave (diverging) lens",
+      "Focused directly on the blind spot; corrected with a prism",
+      "Scattered across the vitreous humour; corrected with a flat glass lens"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "Red-green colour blindness (紅綠色盲) is a hereditary condition caused by the absence or defect of one or more types of cone cells in the retina.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which structure in the human middle ear equalizes air pressure on both sides of the eardrum (tympanic membrane / 鼓膜)?",
+    "options": [
+      "Cochlea / 耳蝸",
+      "Semicircular canals / 半規管",
+      "Eustachian tube / 耳咽管",
+      "Oval window / 卵圓窗"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is the function of the three ear ossicles (malleus, incus, and stapes / 聽小骨) in the middle ear?",
+    "options": [
+      "To secrete earwax that traps dust particles",
+      "To transmit and amplify vibrations from the eardrum to the oval window of the inner ear",
+      "To convert nerve impulses into sound waves",
+      "To detect rotational movements of the head"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Sensory hair cells inside the cochlea (耳蝸) detect pressure vibrations in the cochlear fluid and generate nerve impulses that travel along the auditory nerve to the brain.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which structures in the human inner ear detect the position and movement of the head to help maintain body balance?",
+    "options": [
+      "Cochlea and round window",
+      "Semicircular canals (半規管) and vestibule (utricle and saccule)",
+      "Pinna and auditory canal",
+      "Eardrum and Eustachian tube"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is phototropism (向光性) in flowering plants?",
+    "options": [
+      "The rapid folding of leaflets when touched",
+      "The directional growth movement of a plant part in response to unilateral light",
+      "The opening and closing of stomata in response to humidity",
+      "The growth of roots towards mineral fertilizers"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Plant shoots generally exhibit positive phototropism (growing towards light) and negative gravitropism (growing upwards away from gravity), which positions leaves to receive maximum sunlight for photosynthesis.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "In classic coleoptile (胚芽鞘) experiments, what happens when a mica plate (impermeable to chemicals) is inserted horizontally just below the tip on the shaded side, and the coleoptile is illuminated from one side?",
+    "options": [
+      "The coleoptile bends strongly towards the light source.",
+      "The coleoptile fails to bend towards the light because the mica plate blocks the downward transport of auxins (生長素) on the shaded side.",
+      "The coleoptile bends away from the light source.",
+      "The tip dies immediately."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How does unilateral light cause a plant shoot to bend towards the light source?",
+    "options": [
+      "Light destroys all auxins on both sides of the shoot.",
+      "Auxins migrate from the illuminated side to the shaded side; the higher auxin concentration on the shaded side stimulates faster cell elongation than on the illuminated side.",
+      "Auxins accumulate on the illuminated side and inhibit cell division.",
+      "Cells on the shaded side undergo rapid meiosis."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Unlike shoots, high concentrations of auxins INHIBIT cell elongation in roots, causing a horizontally placed root to bend downwards (positive gravitropism / 正向地性).",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "When a potted plant is placed horizontally on a rotating clinostat (旋轉器) in darkness, how does its shoot grow?",
+    "options": [
+      "It bends sharply upwards.",
+      "It bends sharply downwards.",
+      "It grows straight horizontally because slow rotation distributes gravity and auxins evenly on all sides.",
+      "It stops growing completely."
+    ],
+    "answer": 2
+  },
+  {
+    "type": "true-false",
+    "question": "In plants, auxins are produced at the apical meristems of shoot tips and root tips and move away from the tips mainly by diffusion and active transport.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "structured",
