@@ -88,7 +88,7 @@
                 <option value="chapter 29">Chapter 29</option>
                 <option value="chapter 30">Chapter 30</option>
             </select>
-                
+
             <button id="start-chapter-btn" type="button" onclick="handleChapterStart()" class="btn btn-action" style="margin-bottom: 20px;">⚡ Start 25-Question Challenge</button>
 
             <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 15px 0;">
@@ -125,7 +125,7 @@
             <h2 id="question-text">Loading question...</h2>
             <div id="options-container" class="options-grid"></div>
             
-            <button id="next-btn" type="button" class="btn btn-next hidden">Next Challenge ➡️</button>
+            <button id="next-btn" type="button" onclick="advanceArenaChallenge()" class="btn btn-next hidden">Next Challenge ➡️</button>
         </section>
 
         <!-- STEP 5: STUDENT SCOREBOARD REPORT -->
@@ -134,11 +134,38 @@
             <h2>Arena Completed!</h2>
             <p class="final-score-label">Final Player Record</p>
             <h1 id="final-score" class="neon-text-green">0 pts</h1>
-            <button id="restart-btn" type="button" class="btn btn-action">Choose Another Chapter</button>
+            <button id="restart-btn" type="button" onclick="resetArenaSession()" class="btn btn-action">Choose Another Chapter</button>
         </section>
 
     </main>
 
-    <script src="app.js?v=10"></script>
-</body>
-</html>
+    <script>
+        /* ==========================================================================
+           1. FIREBASE & APP STATE (EMBEDDED DIRECTLY SO IT ALWAYS LOADS)
+           ========================================================================== */
+        const firebaseConfig = {
+            apiKey: "AIzaSyChSMRbqSFmAE2dNlGHa6AFcc4SpWM1V7g",
+            authDomain: "://firebaseapp.com",
+            databaseURL: "https://firebaseio.com",
+            projectId: "wayground-bioarena",
+            storageBucket: "wayground-bioarena.firebasestorage.app",
+            messagingSenderId: "7169528648",
+            appId: "1:7169528648:web:085387e296b0ecdacf4339"
+        };
+
+        try {
+            if (typeof firebase !== 'undefined' && !firebase.apps.length) {
+                firebase.initializeApp(firebaseConfig);
+            }
+        } catch (e) { console.log("Network shielded:", e); }
+
+        let quizQuestions = [];
+        let currentQuestionIndex = 0;
+        let userScore = 0;
+        let answerStreak = 0;
+        let currentPlayerName = "Player";
+        let currentSessionId = "";
+        let currentTopicTitle = "General Biology";
+        let questionAnswered = false;
+
+        const fallbackBank = [
