@@ -1,29 +1,18 @@
 [
   {
     "type": "multiple-choice",
-    "question": "Which of the following lists the five main processes of human nutrition in the correct chronological order?",
+    "question": "What is the correct order of the five main processes of holozoic nutrition in humans? / 人類全動物營養的五個主要過程的正確順序是什麼？",
     "options": [
-      "Ingestion → Digestion → Absorption → Assimilation → Egestion",
-      "Ingestion → Absorption → Digestion → Egestion → Assimilation",
-      "Digestion → Ingestion → Assimilation → Absorption → Egestion",
-      "Ingestion → Digestion → Assimilation → Absorption → Egestion"
+      "Ingestion → Digestion → Absorption → Assimilation → Egestion / 攝食 → 消化 → 吸收 → 同化 → 排遺",
+      "Ingestion → Absorption → Digestion → Egestion → Assimilation / 攝食 → 吸收 → 消化 → 排遺 → 同化",
+      "Digestion → Ingestion → Absorption → Assimilation → Egestion / 消化 → 攝食 → 吸收 → 同化 → 排遺",
+      "Ingestion → Digestion → Assimilation → Absorption → Excretion / 攝食 → 消化 → 同化 → 吸收 → 排泄"
     ],
     "answer": 0
   },
   {
-    "type": "multiple-choice",
-    "question": "What is the main function of physical digestion (物理性消化), such as chewing by teeth and churning in the stomach?",
-    "options": [
-      "To chemically break covalent bonds in food molecules",
-      "To break large pieces of food into smaller pieces, increasing the surface area for digestive enzymes to act on",
-      "To absorb digested amino acids directly into the bloodstream",
-      "To kill all beneficial bacteria in the colon"
-    ],
-    "answer": 1
-  },
-  {
     "type": "true-false",
-    "question": "Human teeth are heterodont, consisting of incisors for biting/cutting, canines for tearing, and premolars and molars for crushing and grinding.",
+    "question": "Physical digestion increases the surface area of food for digestive enzymes to act on without changing its chemical composition. / 物理消化增加了消化酶作用的food表面積，而不會改變其化學成分。",
     "options": [
       "True / 正確",
       "False / 錯誤"
@@ -32,91 +21,102 @@
   },
   {
     "type": "multiple-choice",
-    "question": "Which enzyme in human saliva begins the chemical digestion of starch in the mouth cavity?",
+    "question": "Which type of human tooth is chisel-shaped and specialized for biting and cutting food? / 哪種類型的人類牙齒呈鑿狀，專門用於咬斷和切割食物？",
     "options": [
-      "Pepsin / 胃蛋白酶",
+      "Incisor / 門齒",
+      "Canine / 犬齒",
+      "Premolar / 前臼齒",
+      "Molar / 臼齒"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which layer of a human tooth is the hardest non-living tissue covering the crown? / 人類牙齒中覆蓋牙冠的最堅硬非活組織是哪一層？",
+    "options": [
+      "Enamel / 琺瑯質",
+      "Dentine / 象牙質",
+      "Pulp cavity / 髓腔",
+      "Cementum / 牙骨質"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "Peristalsis is the wave-like contraction and relaxation of muscles along the alimentary canal that pushes food forward. / 蠕動是沿消化道肌肉的波浪狀收縮和舒張，將食物向前推進。",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which enzyme present in saliva begins the chemical digestion of starch in the mouth cavity? / 唾液中存在的哪種酶在口腔中開始對澱粉進行化學消化？",
+    "options": [
       "Salivary amylase / 唾液澱粉酶",
+      "Pepsin / 胃蛋白酶",
       "Pancreatic lipase / 胰脂肪酶",
       "Maltase / 麥芽糖酶"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "type": "multiple-choice",
-    "question": "How is food moved along the oesophagus (食道) and small intestine?",
+    "question": "What are two important functions of hydrochloric acid in gastric juice? / 胃液中鹽酸的兩個重要功能是什麼？",
     "options": [
-      "By ciliary beating of epithelial cells",
-      "By peristalsis (蠕動), the rhythmic wave-like contraction and relaxation of muscles in the alimentary canal wall",
-      "By gravity alone",
-      "By active transport across the lumen"
+      "Provide an acidic medium for pepsin and kill most bacteria in food / 為胃蛋白酶提供酸性環境並殺死食物中的大多數細菌",
+      "Emulsify lipids and neutralize chyme / 乳化脂質並中和食糜",
+      "Digest starch into maltose and absorb water / 將澱粉消化成麥芽糖並吸收水分",
+      "Stimulate bile secretion and store glycogen / 刺激膽汁分泌並儲存糖原"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "Bile contains digestive enzymes that chemically break down lipids into fatty acids and glycerol. / 膽汁含有消化酶，能以化學方式將脂質分解為脂肪酸和甘油。",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
     ],
     "answer": 1
   },
   {
-    "type": "true-false",
-    "question": "During swallowing, the epiglottis (會厭) covers the opening of the trachea (windpipe) to prevent food from entering the respiratory tract.",
+    "type": "multiple-choice",
+    "question": "Where is bile produced and where is it stored before entering the duodenum? / 膽汁在哪裡產生，在進入十二指腸之前儲存在哪裡？",
     "options": [
-      "True / 正確",
-      "False / 錯誤"
+      "Produced in the liver; stored in the gall bladder / 在肝臟產生；儲存在膽囊",
+      "Produced in the gall bladder; stored in the pancreas / 在膽囊產生；儲存在胰臟",
+      "Produced in the pancreas; stored in the liver / 在胰臟產生；儲存在肝臟",
+      "Produced in the stomach; stored in the ileum / 在胃部產生；儲存在迴腸"
     ],
     "answer": 0
   },
   {
     "type": "multiple-choice",
-    "question": "Which of the following is NOT a function of hydrochloric acid (鹽酸) in gastric juice in the stomach?",
+    "question": "How do bile salts assist in the digestion of lipids in the duodenum? / 膽鹽如何協助十二指腸中脂質的消化？",
     "options": [
-      "Providing an acidic medium (around pH 2) for pepsin to work optimally",
-      "Killing most bacteria ingested with food",
-      "Emulsifying lipids into tiny oil droplets",
-      "Denaturing proteins in food to expose peptide bonds"
+      "They emulsify large lipid droplets into small droplets, increasing surface area for lipase / 它們將大脂滴乳化成小脂滴，增加脂肪酶的作用表面積",
+      "They hydrolyze peptide bonds into amino acids / 它們將肽鍵水解成氨基酸",
+      "They convert glucose into glycogen / 它們將葡萄糖轉化為糖原",
+      "They lower the pH to pH 2 / 它們將 pH 值降至 pH 2"
     ],
-    "answer": 2
+    "answer": 0
   },
   {
     "type": "multiple-choice",
-    "question": "Why does gastric juice normally NOT digest the wall of the stomach itself?",
+    "question": "Which digestive juice contains amylase, trypsin (protease), and lipase? / 哪種消化液含有澱粉酶、胰蛋白酶和脂肪酶？",
     "options": [
-      "The stomach wall contains no proteins.",
-      "Goblet cells secrete a thick layer of alkaline mucus that coats and protects the stomach lining, and pepsin is secreted in an inactive form (pepsinogen).",
-      "Saliva neutralizes all stomach acid immediately.",
-      "The stomach temperature is too low for pepsin to act."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Bile (膽汁) is produced by the liver, stored in the gall bladder, and contains digestive enzymes that chemically break down fats into fatty acids and glycerol.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How do bile salts (膽鹽) assist in the digestion of lipids in the duodenum?",
-    "options": [
-      "They hydrolyse ester bonds in triglycerides.",
-      "They emulsify large lipid drops into tiny droplets, increasing the surface area for pancreatic lipase to act on.",
-      "They convert fatty acids into glucose.",
-      "They lower the pH of the duodenum to pH 2."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which digestive juice contains amylase, protease (trypsin), and lipase all together?",
-    "options": [
+      "Pancreatic juice / 胰液",
       "Saliva / 唾液",
       "Gastric juice / 胃液",
-      "Pancreatic juice / 胰液",
       "Bile / 膽汁"
     ],
-    "answer": 2
+    "answer": 0
   },
   {
     "type": "true-false",
-    "question": "Sodium hydrogencarbonate (碳酸氫鈉) in pancreatic juice and bile neutralizes acidic chyme from the stomach and provides an alkaline medium for intestinal enzymes.",
+    "question": "Sodium hydrogencarbonate in pancreatic juice and bile neutralizes acidic chyme from the stomach, providing an alkaline medium (around pH 8) for intestinal enzymes. / 胰液和膽汁中的碳酸氫鈉中和來自胃部的酸性食糜，為腸道酶提供鹼性環境（約 pH 8）。",
     "options": [
       "True / 正確",
       "False / 錯誤"
@@ -125,29 +125,29 @@
   },
   {
     "type": "multiple-choice",
-    "question": "Where are disaccharidases (such as maltase, sucrase, and lactase) and peptidases located in the small intestine?",
+    "question": "In which part of the human alimentary canal does most absorption of digested food take place? / 人體消化道的哪個部分進行大部分已消化食物的吸收？",
     "options": [
-      "Embedded in the cell membranes of the epithelial cells lining the villi",
-      "Secreted inside bile from the gall bladder",
-      "Produced by the salivary glands",
-      "Stored inside the lacteals of the villi"
+      "Ileum (small intestine) / 迴腸（小腸）",
+      "Stomach / 胃",
+      "Oesophagus / 食道",
+      "Colon / 結腸"
     ],
     "answer": 0
   },
   {
     "type": "multiple-choice",
-    "question": "Which of the following is a structural adaptation of a villus (絨毛) in the ileum for rapid absorption of digested food?",
+    "question": "How are villi in the small intestine adapted for rapid absorption of digested food? / 小腸中的絨毛如何適應已消化食物的快速吸收？",
     "options": [
-      "A thick, multi-layered epithelium to prevent abrasion",
-      "A one-cell-thick epithelium that provides a short diffusion distance",
-      "Absence of blood capillaries so nutrients stay in the lumen",
-      "A waterproof cuticle covering the microvilli"
+      "One-cell-thick epithelium, microvilli, and a dense network of blood capillaries and lacteals / 單層細胞厚的上皮、微絨毛以及密集的微血管和乳糜管網絡",
+      "Thick muscular walls and a layer of mucus / 厚肌肉壁和一層黏液",
+      "Absence of blood vessels to prevent backflow / 缺乏血管以防止倒流",
+      "High concentration of hydrochloric acid / 高濃度的鹽酸"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "type": "true-false",
-    "question": "Fatty acids and glycerol enter the epithelial cells of the villi, recombine into triglycerides, and are absorbed primarily into the lacteal (乳糜管).",
+    "question": "Glucose and amino acids are absorbed into the blood capillaries of villi, whereas fatty acids and glycerol recombine into lipids and enter the lacteals. / 葡萄糖和氨基酸被吸收進入絨毛的微血管，而脂肪酸和甘油重新組合成脂質並進入乳糜管。",
     "options": [
       "True / 正確",
       "False / 錯誤"
@@ -156,29 +156,29 @@
   },
   {
     "type": "multiple-choice",
-    "question": "Which blood vessel transports absorbed glucose and amino acids directly from the small intestine to the liver?",
+    "question": "Which blood vessel carries absorbed glucose and amino acids directly from the small intestine to the liver? / 哪條血管將吸收的葡萄糖和氨基酸直接從小腸輸送到肝臟？",
     "options": [
+      "Hepatic portal vein / 肝門靜脈",
       "Hepatic artery / 肝動脈",
       "Hepatic vein / 肝靜脈",
-      "Hepatic portal vein / 肝門靜脈",
-      "Pulmonary vein / 肺靜脈"
+      "Aorta / 主動脈"
     ],
-    "answer": 2
+    "answer": 0
   },
   {
     "type": "multiple-choice",
-    "question": "What happens to excess amino acids in the human liver (assimilation / 同化)?",
+    "question": "What happens to excess amino acids in the liver? / 肝臟中過量的氨基酸會發生什麼變化？",
     "options": [
-      "They are stored indefinitely as amino acid crystals in the liver.",
-      "They undergo deamination (脫氨作用), where the amino group is converted into urea for excretion and the remaining part is converted into carbohydrates or fats.",
-      "They are excreted unchanged in bile.",
-      "They are converted directly into cellulose."
+      "They undergo deamination to form urea, which is excreted by the kidneys / 它們進行脫氨作用形成尿素，由腎臟排出體外",
+      "They are stored permanently as starch in liver cells / 它們以澱粉形式永久儲存在肝細胞中",
+      "They are secreted into the duodenum via the bile duct / 它們透過膽管分泌到十二指腸",
+      "They are converted into cellulose / 它們轉化為纖維素"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "type": "true-false",
-    "question": "Most water in the alimentary canal is absorbed in the small intestine by osmosis, while the colon absorbs most of the remaining water from undigested material.",
+    "question": "The liver converts excess glucose into glycogen for storage under the action of insulin. / 在胰島素的作用下，肝臟將過量的葡萄糖轉化為糖原儲存。",
     "options": [
       "True / 正確",
       "False / 錯誤"
@@ -187,29 +187,29 @@
   },
   {
     "type": "multiple-choice",
-    "question": "Which of the following is NOT a function of the human liver?",
+    "question": "What is the main function of the colon (large intestine) in humans? / 人體結腸（大腸）的主要功能是什麼？",
     "options": [
-      "Regulation of blood glucose level by converting excess glucose into glycogen",
-      "Production of bile",
-      "Secretion of digestive enzymes into the duodenum",
-      "Detoxification of harmful substances such as alcohol"
+      "Absorption of water and mineral salts from undigested food remains / 從未消化的食物殘渣中吸收水分和礦物鹽",
+      "Chemical digestion of proteins by pepsin / 透過胃蛋白酶對蛋白質進行化學消化",
+      "Secretion of bile salts / 分泌膽鹽",
+      "Absorption of fatty acids into lacteals / 將脂肪酸吸收到乳糜管"
     ],
-    "answer": 2
+    "answer": 0
   },
   {
     "type": "multiple-choice",
-    "question": "What is egestion (排遺)?",
+    "question": "What is the elimination of undigested food remains (faeces) from the body through the anus called? / 未消化的食物殘渣（糞便）透過肛門排出體外的過程稱為什麼？",
     "options": [
-      "Removal of metabolic waste products such as urea through the kidneys",
-      "Elimination of undigested and unabsorbed food material (faeces) through the anus",
-      "Breakdown of glycogen into glucose in liver cells",
-      "Secretion of digestive juices into the stomach"
+      "Egestion / 排遺",
+      "Excretion / 排泄",
+      "Assimilation / 同化",
+      "Secretion / 分泌"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "type": "true-false",
-    "question": "The brown colour of human faeces is mainly due to bile pigments (膽色素) formed from the breakdown of haemoglobin in old red blood cells.",
+    "question": "Maltase, sucrase, and lactase are present on the cell membranes of epithelial cells lining the small intestine. / 麥芽糖酶、蔗糖酶和乳糖酶存在於小腸內壁上皮細胞的細胞膜上。",
     "options": [
       "True / 正確",
       "False / 錯誤"
@@ -218,18 +218,29 @@
   },
   {
     "type": "multiple-choice",
-    "question": "If a patient has their gall bladder surgically removed, which type of food should they avoid eating in large amounts at one time?",
+    "question": "Which enzyme converts polypeptides into dipeptides and amino acids in the small intestine? / 小腸中的哪種酶將多肽轉化為二肽和氨基酸？",
     "options": [
-      "Starchy foods such as rice and bread",
-      "Fatty and oily foods",
-      "Fresh fruits rich in vitamin C",
-      "Lean egg whites"
+      "Protease (trypsin / peptidase) / 蛋白酶（胰蛋白酶 / 肽酶）",
+      "Amylase / 澱粉酶",
+      "Lipase / 脂肪酶",
+      "Sucrase / 蔗糖酶"
     ],
-    "answer": 1
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which organ produces insulin and glucagon in addition to secreting digestive enzymes? / 哪個器官除了分泌消化酶外，還產生胰島素和胰高血糖素？",
+    "options": [
+      "Pancreas / 胰臟",
+      "Liver / 肝臟",
+      "Gall bladder / 膽囊",
+      "Stomach / 胃"
+    ],
+    "answer": 0
   },
   {
     "type": "true-false",
-    "question": "Glucose and amino acids are absorbed across the villus epithelium by both facilitated diffusion and active transport.",
+    "question": "Tooth decay occurs when bacteria in dental plaque ferment sugars to produce acids that dissolve enamel. / 當牙菌膜中的細菌發酵糖分產生酸並溶解琺瑯質時，就會發生蛀牙。",
     "options": [
       "True / 正確",
       "False / 錯誤"
@@ -237,10 +248,14 @@
     "answer": 0
   },
   {
-    "type": "structured",
-    "question": "[DIGESTION OF LIPIDS] A patient suffers from a blockage of the bile duct (膽管) caused by a gallstone, preventing bile from entering the duodenum. 1) Explain how this blockage affects the rate of lipid digestion in the small intestine. 2) Explain how the blockage affects the pH of the chyme entering the duodenum from the stomach.",
-    "rubric": "To score full points, the response must demonstrate structural mastery: 1) Without bile salts reaching the duodenum, lipids cannot be emulsified into tiny droplets; the surface area of lipids exposed to pancreatic lipase remains small, significantly slowing down lipid digestion. 2) Bile is alkaline and normally helps neutralize acidic chyme from the stomach; without bile, neutralization is less effective and the duodenal contents remain more acidic, reducing the activity of pancreatic enzymes."
-  },
-  {
-    "type": "structured",
-    "question": "[ADAPTATIONS OF THE ILEUM] Coeliac disease damages and flattens the villi lining the small intestine. 1) State two ways in which healthy villi are adapted for efficient absorption of nutrients. 2) Explain why a person with flattened villi often suffers from weight loss and fatigue even when eating a normal diet.",
+    "type": "multiple-choice",
+    "question": "Which of the following is NOT a function of the liver? / 下列哪項不是肝臟的功能？",
+    "options": [
+      "Secreting digestive enzymes into the small intestine / 向小腸分泌消化酶",
+      "Regulation of blood glucose level / 調節血糖水平",
+      "Deamination of excess amino acids / 過量氨基酸的脫氨作用",
+      "Detoxification of harmful substances such as alcohol / 解毒酒精等有害物質"
+    ],
+    "answer": 0
+  }
+]
