@@ -1,0 +1,240 @@
+[
+  {
+    "type": "multiple-choice",
+    "question": "What is a pathogen (病原體)?",
+    "options": [
+      "Any harmless bacterium living on healthy human skin",
+      "A disease-causing microorganism or infectious agent (such as a bacterium, virus, fungus, or protist) that can be transmitted from one host to another",
+      "A white blood cell that engulfs foreign particles",
+      "A chemical antibiotic produced by moulds"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How do pathogenic bacteria commonly cause disease symptoms in the human body?",
+    "options": [
+      "By carrying out photosynthesis inside red blood cells",
+      "By multiplying rapidly and producing toxins (毒素) that damage host cells or interfere with normal physiological functions",
+      "By turning human DNA into cellulose",
+      "By absorbing all antibodies from blood plasma"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Viruses reproduce inside host cells by hijacking the host cell's metabolic machinery to synthesize viral nucleic acids and proteins, eventually destroying or bursting the host cell to release new viral particles.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following infectious diseases is caused by a virus (病毒)?",
+    "options": [
+      "Cholera / 霍亂",
+      "Tuberculosis (TB) / 肺結核",
+      "Influenza and COVID-19 / 流行性感冒和新型冠狀病毒病",
+      "Athlete's foot / 足癬（香港腳）"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which infectious disease is caused by the bacterium Vibrio cholerae and is transmitted mainly through contaminated water and food?",
+    "options": [
+      "Malaria / 瘧疾",
+      "Cholera / 霍亂",
+      "Dengue fever / 登革熱",
+      "Hepatitis B / 乙型肝炎"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Cholera toxin stimulates epithelial cells lining the small intestine to secrete chloride ions into the gut lumen, lowering the water potential in the lumen so large amounts of water leave the blood by osmosis, causing severe watery diarrhoea and dehydration.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "By which mode of transmission is tuberculosis (TB / 肺結核) most commonly spread from an infected person to a healthy person?",
+    "options": [
+      "Through bites of infected female Anopheles mosquitoes",
+      "Through airborne droplets (飛沫) expelled when an infected person coughs, sneezes, or speaks",
+      "Through eating undercooked pork",
+      "Through contact with contaminated soil through bare feet"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which type of pathogen causes malaria (瘧疾), and how is it transmitted to humans?",
+    "options": [
+      "A bacterium transmitted through contaminated drinking water",
+      "A protist (Plasmodium / 瘧原蟲) transmitted by the bite of an infected female Anopheles mosquito (vector / 病媒)",
+      "A fungus transmitted by direct skin contact",
+      "A virus transmitted through respiratory droplets"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Dengue fever (登革熱) is caused by a virus transmitted through the bite of infected Aedes mosquitoes (伊蚊), so eliminating stagnant water prevents mosquito breeding and reduces disease transmission.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following is a fungal infection (真菌感染) that commonly affects the moist skin between human toes?",
+    "options": [
+      "Athlete's foot (tinea pedis) / 足癬",
+      "Influenza / 流行性感冒",
+      "Cholera / 霍亂",
+      "AIDS / 愛滋病"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which body fluids can transmit Human Immunodeficiency Virus (HIV / 愛滋病病毒) from an infected person to another individual?",
+    "options": [
+      "Sweat, tears, and saliva",
+      "Blood, semen, vaginal secretions, and breast milk",
+      "Respiratory droplets from sneezing",
+      "Urine and exhaled air"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "HIV attacks and destroys a specific type of white blood cell (helper T lymphocytes), severely weakening the immune system so the patient becomes vulnerable to opportunistic infections.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following is an effective measure to prevent the spread of droplet-transmitted respiratory diseases such as influenza?",
+    "options": [
+      "Draining stagnant water in flower pot saucers",
+      "Wearing surgical masks when symptomatic, covering mouth and nose when sneezing, washing hands frequently, and maintaining good indoor ventilation",
+      "Boiling all drinking water for 15 minutes",
+      "Applying antifungal cream to the skin daily"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How do antibiotics (抗生素), such as penicillin, treat bacterial infections?",
+    "options": [
+      "They stimulate white blood cells to produce antibodies against viruses.",
+      "They kill bacteria or inhibit their growth by targeting bacterial-specific structures or processes (such as inhibiting cell wall synthesis or bacterial protein synthesis) without harming human cells.",
+      "They dissolve viral protein coats directly.",
+      "They neutralize heavy metal poisons in the blood."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Antibiotics are completely ineffective against viral infections (such as the common cold, influenza, or dengue fever) because viruses lack cell walls, ribosomes, and their own metabolic pathways.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why must patients complete the entire prescribed course of antibiotics even after their symptoms disappear?",
+    "options": [
+      "To prevent the antibiotic from turning into a virus",
+      "To ensure all pathogenic bacteria—including slightly more resistant ones—are killed, reducing the chance of relapse and preventing the selection and spread of antibiotic-resistant bacteria",
+      "Because leftover antibiotics become explosive over time",
+      "To boost red blood cell production"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How does indiscriminate overuse of antibiotics accelerate the rise of antibiotic-resistant bacteria ('superbugs' / 超級細菌)?",
+    "options": [
+      "Antibiotics cause every bacterium to mutate intentionally to survive.",
+      "Antibiotics act as a strong selective pressure: non-resistant bacteria are killed, while pre-existing resistant mutants survive, multiply rapidly, and pass resistance genes to offspring.",
+      "Antibiotics strengthen human antibodies so bacteria grow bigger.",
+      "Antibiotics dissolve bacterial DNA into harmless amino acids."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "In an antibiotic disc diffusion test on an agar plate seeded with bacteria, a wider clear zone (zone of inhibition) around an antibiotic disc indicates that the bacteria are more sensitive to that antibiotic.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What are sulpha drugs (磺胺類藥物)?",
+    "options": [
+      "Natural antibiotics extracted from Penicillium fungi",
+      "Synthetic antimicrobial chemicals that act as competitive inhibitors of bacterial enzymes needed to synthesize folic acid, thereby stopping bacterial growth",
+      "Vaccines made from weakened viruses",
+      "Hormones secreted by the adrenal glands"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which public health practice helps prevent food-borne infectious diseases such as salmonellosis and cholera?",
+    "options": [
+      "Storing raw meat directly above cooked food in the refrigerator",
+      "Cooking food thoroughly, separating raw and cooked foods, washing hands before handling food, and ensuring clean water supplies and proper sewage treatment",
+      "Leaving cooked rice at room temperature for 24 hours before eating",
+      "Sharing towels and slippers in public swimming pools"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "A carrier (帶菌者) is an infected person who shows no obvious symptoms of a disease but still harbours the pathogen and can transmit it to others.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why is oral rehydration therapy (drinking water containing glucose and mineral salts) critical for treating patients with severe cholera?",
+    "options": [
+      "Glucose and salts directly kill Vibrio cholerae bacteria.",
+      "It rapidly replaces lost water and electrolytes (sodium and potassium ions) to prevent fatal dehydration and circulatory shock while the immune system clears the infection.",
+      "It blocks the trachea to prevent droplet spread.",
+      "It stimulates mosquito bites to stop."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Controlling vector populations (such as draining stagnant water and using mosquito nets) breaks the chain of transmission for vector-borne diseases like malaria and dengue fever.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "structured",
