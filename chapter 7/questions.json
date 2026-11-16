@@ -1,29 +1,18 @@
 [
   {
     "type": "multiple-choice",
-    "question": "Which of the following shows the correct pathway of inhaled air from the nostrils to the site of gas exchange in humans?",
+    "question": "What is the correct pathway of air entering the human respiratory tract during inhalation? / 吸氣時空氣進入人體呼吸道的正確路徑是什麼？",
     "options": [
-      "Nasal cavity → Pharynx → Larynx → Trachea → Bronchi → Bronchioles → Air sacs (alveoli)",
-      "Nasal cavity → Larynx → Pharynx → Trachea → Bronchioles → Bronchi → Air sacs (alveoli)",
-      "Nasal cavity → Pharynx → Trachea → Larynx → Bronchi → Bronchioles → Air sacs (alveoli)",
-      "Nasal cavity → Trachea → Pharynx → Larynx → Bronchioles → Bronchi → Air sacs (alveoli)"
+      "Nasal cavity → Pharynx → Larynx → Trachea → Bronchi → Bronchioles → Air sacs / 鼻腔 → 咽 → 喉 → 氣管 → 支氣管 → 小支氣管 → 氣囊",
+      "Nasal cavity → Larynx → Pharynx → Bronchi → Trachea → Air sacs → Bronchioles / 鼻腔 → 喉 → 咽 → 支氣管 → 氣管 → 氣囊 → 小支氣管",
+      "Nasal cavity → Trachea → Pharynx → Larynx → Bronchioles → Bronchi → Air sacs / 鼻腔 → 氣管 → 咽 → 喉 → 小支氣管 → 支氣管 → 氣囊",
+      "Pharynx → Nasal cavity → Trachea → Bronchi → Air sacs → Bronchioles / 咽 → 鼻腔 → 氣管 → 支氣管 → 氣囊 → 小支氣管"
     ],
     "answer": 0
   },
   {
-    "type": "multiple-choice",
-    "question": "What is the main function of the C-shaped cartilage rings (C形軟骨環) in the wall of the human trachea?",
-    "options": [
-      "To secrete mucus that traps dust and bacteria",
-      "To keep the trachea open and prevent it from collapsing when air pressure drops during inhalation",
-      "To contract rhythmically to push air into the lungs",
-      "To warm and moisten incoming air"
-    ],
-    "answer": 1
-  },
-  {
     "type": "true-false",
-    "question": "Ciliated epithelial cells (纖毛上皮細胞) lining the trachea and bronchi beat their cilia upwards to sweep mucus containing trapped dust and pathogens towards the pharynx to be swallowed or coughed out.",
+    "question": "C-shaped cartilage rings in the wall of the trachea keep the airway open and prevent it from collapsing. / 氣管壁中的 C 形軟骨環保持氣道暢通並防止其塌陷。",
     "options": [
       "True / 正確",
       "False / 錯誤"
@@ -32,29 +21,29 @@
   },
   {
     "type": "multiple-choice",
-    "question": "How is incoming air warmed and moistened as it passes through the nasal cavity (鼻腔)?",
+    "question": "How do mucus-secreting cells and ciliated epithelial cells protect the respiratory tract? / 分泌黏液的細胞和纖毛上皮細胞如何保護呼吸道？",
     "options": [
-      "By C-shaped cartilage rings and smooth muscle fibres",
-      "By heat from blood in the dense capillary network and evaporation of water from the moist mucus lining",
-      "By diffusion of water vapour from the alveoli",
-      "By friction against the nasal hairs"
+      "Mucus traps dust and bacteria, and cilia beat to sweep the mucus up to the pharynx / 黏液黏附塵埃和細菌，纖毛擺動將黏液掃向咽部",
+      "Mucus dissolves oxygen, and cilia pump blood into the lungs / 黏液溶解氧氣，纖毛將血液泵入肺部",
+      "Mucus produces antibodies, and cilia carry out gas exchange / 黏液產生抗體，纖毛進行氣體交換",
+      "Mucus cools inhaled air, and cilia close the epiglottis / 黏液冷卻吸入的空氣，纖毛關閉會厭"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "type": "multiple-choice",
-    "question": "Which of the following is NOT an adaptive feature of human air sacs (alveoli / 氣囊) for efficient gas exchange?",
+    "question": "Which structure covers the opening of the larynx during swallowing to prevent food from entering the trachea? / 吞嚥時哪個結構覆蓋喉部開口以防止食物進入氣管？",
     "options": [
-      "Numerous air sacs provide a very large total surface area",
-      "The epithelium of the air sac wall is only one cell thick, providing a short diffusion distance",
-      "A dense network of blood capillaries surrounds each air sac to maintain a steep concentration gradient",
-      "A thick layer of keratin covers the inner surface to prevent water loss"
+      "Epiglottis / 會厭",
+      "Diaphragm / 橫膈膜",
+      "Pleural membrane / 胸膜",
+      "Alveolus / 肺泡"
     ],
-    "answer": 3
+    "answer": 0
   },
   {
     "type": "true-false",
-    "question": "The inner surface of the air sacs is lined with a thin film of water so that oxygen can dissolve in it before diffusing across the alveolar wall into the blood.",
+    "question": "Air sacs (alveoli) have walls that are only one cell thick to shorten the diffusion distance for gases. / 氣囊（肺泡）的壁只有一層細胞厚，以縮短氣體的擴散距離。",
     "options": [
       "True / 正確",
       "False / 錯誤"
@@ -63,29 +52,29 @@
   },
   {
     "type": "multiple-choice",
-    "question": "How is most oxygen transported from the lungs to body tissues in human blood?",
+    "question": "Why is the inner surface of the air sacs covered with a thin film of moisture? / 為什麼氣囊的內表面覆蓋著一層薄薄的水膜？",
     "options": [
-      "Dissolved directly in blood plasma",
-      "Combined with haemoglobin in red blood cells as oxyhaemoglobin (氧合血紅蛋白)",
-      "As hydrogencarbonate ions (HCO3-) in red blood cells",
-      "Bound to white blood cells and platelets"
+      "To dissolve respiratory gases so they can diffuse across the alveolar wall / 溶解呼吸氣體，使其能擴散穿過肺泡壁",
+      "To trap dust particles entering the lungs / 黏附進入肺部的塵埃顆粒",
+      "To prevent red blood cells from bursting / 防止紅血球破裂",
+      "To neutralize carbon dioxide into glucose / 將二氧化碳中和成葡萄糖"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "type": "multiple-choice",
-    "question": "Why does oxyhaemoglobin dissociate (release oxygen) readily when red blood cells reach respiring body tissues?",
+    "question": "Which muscle actions occur during normal inhalation (breathing in) in humans? / 人體正常吸氣時會發生哪些肌肉動作？",
     "options": [
-      "The oxygen concentration (partial pressure) in respiring tissues is low, and the high carbon dioxide concentration lowers blood pH, reducing haemoglobin's affinity for oxygen",
-      "The temperature in respiring tissues is much lower than in the lungs",
-      "Blood pressure in capillaries is higher than in arteries",
-      "White blood cells secrete enzymes that break down oxyhaemoglobin"
+      "Intercostal muscles contract and diaphragm muscles contract (flattens) / 肋間肌收縮，橫膈膜肌肉收縮（變平）",
+      "Intercostal muscles relax and diaphragm muscles relax (domes upward) / 肋間肌舒張，橫膈膜肌肉舒張（向上拱起）",
+      "Intercostal muscles contract and diaphragm muscles relax / 肋間肌收縮，橫膈膜肌肉舒張",
+      "Intercostal muscles relax and diaphragm muscles contract / 肋間肌舒張，橫膈膜肌肉收縮"
     ],
     "answer": 0
   },
   {
     "type": "true-false",
-    "question": "The biconcave disc shape (雙凹圓盤狀) of mature human red blood cells increases their surface area-to-volume ratio and shortens the distance for oxygen to diffuse in and out.",
+    "question": "During inhalation, the volume of the thoracic cavity increases and air pressure inside the lungs drops below atmospheric pressure. / 吸氣時，胸腔體積增加，肺內氣壓降至低於大氣壓。",
     "options": [
       "True / 正確",
       "False / 錯誤"
@@ -94,29 +83,71 @@
   },
   {
     "type": "multiple-choice",
-    "question": "In what form is the largest proportion of carbon dioxide transported in human blood from body tissues back to the lungs?",
+    "question": "What happens to the rib cage during exhalation (breathing out)? / 呼氣時肋骨籃會發生什麼變化？",
     "options": [
-      "Dissolved as carbon dioxide gas in plasma",
-      "Combined with haemoglobin as carbaminohaemoglobin",
-      "As hydrogencarbonate ions (HCO3- / 碳酸氫鹽離子) carried mainly in blood plasma",
-      "As carbonic acid inside platelets"
+      "It moves downwards and inwards / 向下及向內移動",
+      "It moves upwards and outwards / 向上及向外移動",
+      "It remains completely stationary / 保持完全靜止",
+      "It expands sideways only / 僅向兩側擴張"
     ],
-    "answer": 2
+    "answer": 0
   },
   {
     "type": "multiple-choice",
-    "question": "Which enzyme inside red blood cells catalyses the rapid conversion of carbon dioxide and water into carbonic acid (碳酸)?",
+    "question": "By what process does oxygen move from the air inside an air sac into the surrounding blood capillaries? / 氧氣透過什麼過程從氣囊內的空氣移動到周圍的微血管中？",
     "options": [
-      "Amylase / 澱粉酶",
+      "Diffusion / 擴散作用",
+      "Active transport / 主動轉運",
+      "Osmosis / 滲透作用",
+      "Peristalsis / 蠕動"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How is most oxygen transported in human blood? / 人體血液中的大部分氧氣是如何運輸的？",
+    "options": [
+      "Combined with haemoglobin in red blood cells as oxyhaemoglobin / 與紅血球中的血紅蛋白結合形成氧合血紅蛋白",
+      "Dissolved directly in blood plasma / 直接溶解在血漿中",
+      "As hydrogencarbonate ions in white blood cells / 以碳酸氫鹽離子形式存在於白血球中",
+      "Attached to blood platelets / 附著在血小板上"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "Most carbon dioxide is carried in the blood as hydrogencarbonate ions (HCO₃⁻) dissolved in the blood plasma. / 大部分二氧化碳以溶解在血漿中的碳酸氫鹽離子（HCO₃⁻）形式在血液中運輸。",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which enzyme inside red blood cells catalyzes the reaction between carbon dioxide and water to form carbonic acid? / 紅血球內的哪種酶催化二氧化碳與水反應生成碳酸？",
+    "options": [
       "Carbonic anhydrase / 碳酸酐酶",
       "Catalase / 過氧化氫酶",
+      "Amylase / 澱粉酶",
       "Lipase / 脂肪酶"
     ],
-    "answer": 1
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Compared with inhaled air, exhaled air contains: / 與吸入的空氣相比，呼出的空氣含有：",
+    "options": [
+      "Less oxygen, more carbon dioxide, and more water vapour / 較少氧氣、較多二氧化碳和較多水蒸氣",
+      "More oxygen, less carbon dioxide, and less water vapour / 較多氧氣、較少二氧化碳和較少水蒸氣",
+      "Less oxygen, less carbon dioxide, and more nitrogen / 較少氧氣、較少二氧化碳和較多氮氣",
+      "The exact same percentages of oxygen and carbon dioxide / 完全相同百分比的氧氣和二氧化碳"
+    ],
+    "answer": 0
   },
   {
     "type": "true-false",
-    "question": "When blood reaches the lung capillaries, hydrogencarbonate ions enter red blood cells and are converted back into carbon dioxide and water, allowing carbon dioxide to diffuse into the air sacs.",
+    "question": "Exhaled air still contains about 16% oxygen, which is higher than its carbon dioxide content (about 4%). / 呼出的空氣仍含有約 16% 的氧氣，高於其二氧化碳含量（約 4%）。",
     "options": [
       "True / 正確",
       "False / 錯誤"
@@ -125,29 +156,29 @@
   },
   {
     "type": "multiple-choice",
-    "question": "Which combination of muscle actions occurs during inhalation (吸氣) in humans?",
+    "question": "Which chemical reagent turns from red to yellow when carbon dioxide concentration increases? / 當二氧化碳濃度增加時，哪種化學試劑會由紅色變為黃色？",
     "options": [
-      "Intercostal muscles contract; diaphragm muscles contract and flatten",
-      "Intercostal muscles relax; diaphragm muscles contract and dome upwards",
-      "Intercostal muscles contract; diaphragm muscles relax and dome upwards",
-      "Intercostal muscles relax; diaphragm muscles relax and flatten"
+      "Hydrogencarbonate indicator / 碳酸氫鹽指示劑",
+      "Benedict's solution / 本立德試液",
+      "Iodine solution / 碘液",
+      "Biuret reagent / 雙縮脲試劑"
     ],
     "answer": 0
   },
   {
     "type": "multiple-choice",
-    "question": "During exhalation (呼氣), what causes air to flow out of the lungs into the atmosphere?",
+    "question": "Which substance in cigarette smoke binds irreversibly to haemoglobin and reduces the blood's oxygen-carrying capacity? / 香煙煙霧中的哪種物質與血紅蛋白不可逆地結合，降低血液的載氧能力？",
     "options": [
-      "The volume of the thoracic cavity increases, causing lung pressure to fall below atmospheric pressure",
-      "The volume of the thoracic cavity decreases, compressing the lungs so lung pressure becomes higher than atmospheric pressure",
-      "Cilia actively push air out through the bronchioles",
-      "The diaphragm contracts downwards and pulls air out"
+      "Carbon monoxide / 一氧化碳",
+      "Nicotine / 尼古丁",
+      "Tar / 焦油",
+      "Nitrogen / 氮氣"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "type": "true-false",
-    "question": "In the bell-jar lung model (鐘罩肺模型), pulling the rubber sheet downwards simulates contraction of the diaphragm, increasing the volume inside the bell jar and causing the balloons to inflate.",
+    "question": "Tar in cigarette smoke is carcinogenic (cancer-causing) and paralyzes cilia lining the respiratory tract. / 香煙煙霧中的焦油具有致癌性，並會使呼吸道內壁的纖毛麻痺。",
     "options": [
       "True / 正確",
       "False / 錯誤"
@@ -156,29 +187,29 @@
   },
   {
     "type": "multiple-choice",
-    "question": "What is one limitation of the bell-jar model when demonstrating human ventilation?",
+    "question": "Which lung disease involves the breakdown of alveolar walls, reducing the surface area for gas exchange? / 哪種肺部疾病涉及肺泡壁破裂，減少氣體交換的表面積？",
     "options": [
-      "The glass jar cannot expand or move upwards and outwards like the human rib cage",
-      "The balloons are elastic like human lungs",
-      "The Y-shaped tube represents the trachea and bronchi",
-      "The rubber sheet moves up and down like the diaphragm"
+      "Emphysema / 肺氣腫",
+      "Pneumonia / 肺炎",
+      "Tuberculosis / 肺結核",
+      "Asthma / 哮喘"
     ],
     "answer": 0
   },
   {
     "type": "multiple-choice",
-    "question": "Compared with inhaled air (吸入的空氣), exhaled air (呼出的空氣) contains:",
+    "question": "What is the function of the pleural fluid between the two pleural membranes? / 兩層胸膜之間的胸膜液有什麼功能？",
     "options": [
-      "Less oxygen, more carbon dioxide, and more water vapour",
-      "More oxygen, less carbon dioxide, and less water vapour",
-      "Less oxygen, less carbon dioxide, and the same amount of water vapour",
-      "More nitrogen, less oxygen, and less carbon dioxide"
+      "Reduces friction between the lungs and the thoracic wall during breathing movements / 在呼吸運動期間減少肺部與胸壁之間的摩擦",
+      "Digests trapped bacteria in the alveoli / 消化肺泡中被困的細菌",
+      "Carries oxygenated blood to the heart / 將含氧血輸送到心臟",
+      "Increases air pressure inside the trachea / 增加氣管內的氣壓"
     ],
     "answer": 0
   },
   {
     "type": "true-false",
-    "question": "Nitrogen makes up about 78% of both inhaled and exhaled air because nitrogen gas is neither used nor produced in human cellular metabolism.",
+    "question": "Nicotine in cigarette smoke causes addiction and constricts blood vessels, raising blood pressure. / 香煙煙霧中的尼古丁會引起成癮並收縮血管，導致血壓升高。",
     "options": [
       "True / 正確",
       "False / 錯誤"
@@ -187,29 +218,29 @@
   },
   {
     "type": "multiple-choice",
-    "question": "What colour change occurs when exhaled air is bubbled through hydrogencarbonate indicator solution (碳酸氫鹽指示劑)?",
+    "question": "How are red blood cells adapted to carry oxygen efficiently? / 紅血球如何適應有效地攜帶氧氣？",
     "options": [
-      "From red to purple",
-      "From red to yellow",
-      "From blue to brick-red",
-      "From brown to blue-black"
+      "Biconcave disc shape, lack of a nucleus when mature, and packed with haemoglobin / 雙凹圓盤狀、成熟時沒有細胞核，並充滿血紅蛋白",
+      "Spherical shape with a large nucleus and many mitochondria / 球形，具有大細胞核和許多線粒體",
+      "Presence of cilia and thick cellulose walls / 具有纖毛和厚纖維素壁",
+      "Ability to change shape and engulf pathogens / 能夠改變形狀並吞噬病原體"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "type": "multiple-choice",
-    "question": "How does tar (焦油) in cigarette smoke contribute to chronic bronchitis and smoker's cough?",
+    "question": "In a bell-jar lung model, what happens when the rubber sheet at the bottom is pulled downwards? / 在鐘罩肺模型中，當底部的橡皮膜向下拉時會發生什麼？",
     "options": [
-      "It binds irreversibly to haemoglobin in red blood cells",
-      "It paralyses cilia and stimulates goblet cells to secrete excessive mucus, which accumulates and blocks airways",
-      "It increases heart rate and constricts arterioles",
-      "It dissolves the cartilage rings of the trachea"
+      "Volume inside the bell jar increases, pressure decreases, and the balloons inflate / 鐘罩內體積增加，氣壓下降，氣球膨脹",
+      "Volume inside the bell jar decreases, pressure increases, and the balloons deflate / 鐘罩內體積減少，氣壓上升，氣球縮小",
+      "Air is forced out of the glass Y-tube / 空氣被迫排出玻璃 Y 形管",
+      "The balloons burst immediately / 氣球立即破裂"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "type": "true-false",
-    "question": "Carbon monoxide (一氧化碳) in cigarette smoke binds tightly and permanently to haemoglobin to form carboxyhaemoglobin, reducing the oxygen-carrying capacity of blood.",
+    "question": "In the bell-jar model, the glass wall cannot move upwards and outwards like the human rib cage during breathing. / 在鐘罩模型中，玻璃壁不能像人體肋骨籃在呼吸時那樣向上和向外移動。",
     "options": [
       "True / 正確",
       "False / 錯誤"
@@ -218,23 +249,8 @@
   },
   {
     "type": "multiple-choice",
-    "question": "In patients with emphysema (肺氣腫), walls of the air sacs break down and fuse into larger spaces. How does this directly affect gas exchange?",
+    "question": "Why does oxygen dissociate (release) from oxyhaemoglobin in respiring body tissues? / 為什麼氧氣在進行呼吸作用的身體組織中會從氧合血紅蛋白解離（釋放）？",
     "options": [
-      "It increases the surface area for oxygen diffusion",
-      "It drastically reduces the total surface area of the air sacs available for gas exchange, causing shortness of breath",
-      "It thickens the cartilage rings in the bronchi",
-      "It increases the rate of carbonic anhydrase activity"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "During vigorous exercise, both breathing rate and depth of breathing increase to supply more oxygen to skeletal muscles and remove excess carbon dioxide faster.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "structured",
+      "Oxygen concentration in respiring tissues is lower than in the blood / 進行呼吸作用的組織中的氧氣濃度低於血液中的氧氣濃度",
+      "Temperature in body tissues is close to 0 °C / 身體組織中的溫度接近 0 °C",
+      "Blood plasma has no water / 血漿中沒有水分",
