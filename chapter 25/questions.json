@@ -1,12 +1,12 @@
 [
   {
     "type": "multiple-choice",
-    "question": "According to Mendel’s Law of Segregation, when do the alleles of a gene pair separate from each other?",
+    "question": "According to Mendel’s Law of Segregation (分離定律), when do the alleles of a gene pair separate from each other?",
     "options": [
-      "During mitosis",
-      "During gamete formation in meiosis",
-      "During random combinations in fertilization",
-      "During DNA replication in somatic cells"
+      "During mitosis / 有絲分裂期間",
+      "During gamete formation in meiosis / 減數分裂形成配子期間",
+      "During random combinations in fertilization / 受精時的隨機組合期間",
+      "During DNA replication in somatic cells / 體細胞進行 DNA 複製期間"
     ],
     "answer": 1
   },
@@ -23,10 +23,10 @@
   },
   {
     "type": "true-false",
-    "question": "Mendel’s Law of Independent Assortment applies only to genes that are located on different pairs of homologous chromosomes.",
+    "question": "Mendel’s Law of Independent Assortment (獨立分配定律) applies only to genes that are located on different pairs of homologous chromosomes.",
     "options": [
-      "True",
-      "False"
+      "True / 正確",
+      "False / 錯誤"
     ],
     "answer": 0
   },
@@ -34,25 +34,25 @@
     "type": "multiple-choice",
     "question": "A man with blood group A (genotype IAi) and a woman with blood group B (genotype IBi) have a child. Which of the following blood groups could their child possibly inherit?",
     "options": [
-      "Only blood group AB",
-      "Only blood groups A and B",
-      "Only blood groups A, B, and AB",
-      "Blood groups A, B, AB, and O"
+      "Only blood group AB / 只有 AB 型血",
+      "Only blood groups A and B / 只有 A 型和 B 型血",
+      "Only blood groups A, B, and AB / 只有 A、B 和 AB 型血",
+      "Blood groups A, B, AB, and O / A、B、AB 和 O 型血皆有可能"
     ],
     "answer": 3
   },
   {
     "type": "true-false",
-    "question": "In the ABO blood group inheritance system, alleles IA and IB are co-dominant, while allele i is recessive.",
+    "question": "In the ABO blood group inheritance system, alleles IA and IB are co-dominant (共顯性), while allele i is recessive (隱性).",
     "options": [
-      "True",
-      "False"
+      "True / 正確",
+      "False / 錯誤"
     ],
     "answer": 0
   },
   {
     "type": "multiple-choice",
-    "question": "Why is red-green colour blindness, which is caused by a recessive allele on the X chromosome, significantly more common in males than in females?",
+    "question": "Why is red-green colour blindness (紅綠色盲), which is caused by a recessive allele on the X chromosome, significantly more common in males than in females?",
     "options": [
       "Males have two Y chromosomes that suppress the normal dominant allele.",
       "The Y chromosome carries a dominant modifier gene for colour blindness.",
@@ -65,34 +65,179 @@
     "type": "true-false",
     "question": "In humans, the sex of a baby is determined by the type of ovum produced by the female carrier during fertilization.",
     "options": [
-      "True",
-      "False"
+      "True / 正確",
+      "False / 錯誤"
     ],
     "answer": 1
   },
   {
     "type": "multiple-choice",
-    "question": "Which of the following biological characteristics is an example of continuous variation and is typically controlled by many genes?",
+    "question": "Which of the following biological characteristics is an example of continuous variation (連續變異) and is typically controlled by many genes?",
     "options": [
-      "ABO blood groups",
-      "Human height",
-      "Ability to roll the tongue",
-      "Shape of the hairline"
+      "ABO blood groups / ABO 血型",
+      "Human height / 人類身高",
+      "Ability to roll the tongue / 捲舌能力",
+      "Shape of the hairline / 髮際線形狀"
     ],
     "answer": 1
   },
   {
     "type": "true-false",
-    "question": "Discontinuous variations, such as hand span and foot length, are represented using a bar chart showing a normal distribution curve with a characteristic bell shape.",
+    "question": "Discontinuous variations (不連續變異), such as hand span and foot length, are represented using a bar chart showing a normal distribution curve with a characteristic bell shape.",
     "options": [
-      "True",
-      "False"
+      "True / 正確",
+      "False / 錯誤"
     ],
     "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What are alleles (等位基因)?",
+    "options": [
+      "Different chromosomes found inside the nucleus of a gamete",
+      "Alternative forms of the same gene occupying the same gene locus on homologous chromosomes",
+      "Identical copies of a chromosome joined at the centromere",
+      "Enzymes that control the rate of DNA replication"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which term describes the observable physical or biochemical characteristics of an organism resulting from the interaction between its genotype and the environment?",
+    "options": [
+      "Genotype / 基因型",
+      "Phenotype / 表現型",
+      "Homozygous / 純合子",
+      "Chromosome / 染色體"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "A test cross (測交) involves crossing an organism showing a dominant phenotype with a homozygous recessive individual to determine whether the dominant organism is homozygous or heterozygous.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "In garden peas, round seed (R) is dominant over wrinkled seed (r). A plant with round seeds is test-crossed with a wrinkled-seed plant, producing 52 round-seed offspring and 49 wrinkled-seed offspring. What is the genotype of the parent with round seeds?",
+    "options": [
+      "RR",
+      "Rr",
+      "rr",
+      "Rrr"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "In a dihybrid cross (雙基因雜交) between two pea plants heterozygous for both seed shape and seed colour (RrYy × RrYy), what is the expected phenotypic ratio in the F2 generation assuming independent assortment?",
+    "options": [
+      "3 : 1",
+      "1 : 2 : 1",
+      "9 : 3 : 3 : 1",
+      "1 : 1 : 1 : 1"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "true-false",
+    "question": "A normal human somatic cell contains 46 chromosomes, consisting of 22 pairs of autosomes (常染色體) and 1 pair of sex chromosomes (性染色體).",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "A woman who is a carrier for X-linked haemophilia (XHXh) marries a normal man (XHY). What is the probability that their son will inherit haemophilia?",
+    "options": [
+      "0%",
+      "25%",
+      "50%",
+      "100%"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which characteristic of a pedigree chart (譜系圖) confirms that a genetic disorder is caused by an autosomal RECESSIVE allele?",
+    "options": [
+      "Every affected child has at least one affected parent.",
+      "Two unaffected parents have an affected child (both male and female offspring can be affected).",
+      "Only males are ever affected across all generations.",
+      "An affected father passes the trait to 100% of his sons."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "In humans, a father always passes his single X chromosome to all of his daughters and his Y chromosome to all of his sons.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which statement correctly describes the causes of variation among individuals of the same species?",
+    "options": [
+      "Continuous variation is controlled only by a single gene and is unaffected by the environment.",
+      "Genetic variation arises from meiosis (crossing over and independent assortment), random fertilization, and mutation, while environmental factors also influence phenotype.",
+      "Discontinuous variation shows a continuous range of intermediate phenotypes between two extremes.",
+      "Identical twins raised apart show differences solely due to different mutations in every cell."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "In snapdragon flowers, red flower allele (CR) and white flower allele (CW) show incomplete dominance (不完全顯性), producing pink flowers (CRCW). What phenotypic ratio is expected when two pink-flowered plants are crossed?",
+    "options": [
+      "3 red : 1 white",
+      "1 red : 2 pink : 1 white",
+      "All pink",
+      "1 red : 1 white"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Multiple alleles (複等位基因) refer to a gene that has three or more alternative alleles in a population, although any single diploid individual can carry at most two alleles.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How many types of genetically different gametes can an individual with genotype AaBb produce if genes A and B are located on different pairs of homologous chromosomes?",
+    "options": [
+      "2 types (AB, ab)",
+      "4 types (AB, Ab, aB, ab)",
+      "8 types",
+      "1 type (AaBb)"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Environmental factors such as diet, sunlight exposure, and exercise can modify continuous traits like body weight and skin colour without changing an individual's DNA base sequence.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
   },
   {
     "type": "structured",
     "question": "[PEDIGREE & GENETIC ANALYSIS] In a family pedigree tracing hair patterns, two parents with curly hair have an offspring with straight hair. 1) Deduce which allele is dominant and explain your reasoning. 2) If these curly-haired parents have another child, calculate the theoretical probability that the child will have straight hair.",
     "rubric": "To score full points, the response must demonstrate structural mastery: 1) The allele for curly hair is dominant. Because both parents exhibit curly hair but produce a straight-haired child, the parents must be heterozygous. Under heterozygous conditions, only the dominant allele expresses itself physically, while the recessive allele is masked. 2) The theoretical probability of having a straight-haired child (homozygous recessive) from a standard heterozygous monohybrid cross (Aa x Aa) is 1/4 or 25%."
-  }
-]
+  },
+  {
+    "type": "structured",
