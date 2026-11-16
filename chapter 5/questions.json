@@ -1,0 +1,249 @@
+[
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following elements are found in all carbohydrates (碳水化合物) and lipids (脂質)?",
+    "options": [
+      "Carbon, hydrogen, and oxygen / 碳、氫、氧",
+      "Carbon, hydrogen, oxygen, and nitrogen / 碳、氫、氧、氮",
+      "Carbon, oxygen, nitrogen, and phosphorus / 碳、氧、氮、磷",
+      "Hydrogen, oxygen, nitrogen, and iron / 氫、氧、氮、鐵"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following is a disaccharide (雙糖) formed by the condensation of two glucose molecules?",
+    "options": [
+      "Sucrose / 蔗糖",
+      "Lactose / 乳糖",
+      "Maltose / 麥芽糖",
+      "Glycogen / 糖原"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "true-false",
+    "question": "Sucrose (蔗糖) is a non-reducing sugar and therefore gives a negative result (remains blue) when heated with Benedict's solution (本立德試液).",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "In what form do mammals store excess carbohydrates primarily in the liver and skeletal muscles?",
+    "options": [
+      "Starch / 澱粉",
+      "Cellulose / 纖維素",
+      "Glycogen / 糖原",
+      "Triglycerides / 甘油三酯"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "multiple-choice",
+    "question": "A triglyceride molecule (甘油三酯) is formed by the condensation of:",
+    "options": [
+      "One glycerol molecule and three fatty acid molecules",
+      "Three glycerol molecules and one fatty acid molecule",
+      "Numerous amino acid monomers joined by peptide bonds",
+      "Two monosaccharide units joined by a glycosidic bond"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "Subcutaneous fat (皮下脂肪) beneath the skin acts as a heat insulator to reduce heat loss from the body and as a shock absorber to protect internal organs.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which reagent is used to test for the presence of proteins (蛋白質) in a food sample, producing a purple/violet colour if positive?",
+    "options": [
+      "Iodine solution / 碘液",
+      "Benedict's solution / 本立德試液",
+      "Biuret reagent (or Albustix paper) / 雙縮脲試劑",
+      "DCPIP solution / 二氯酚靛酚溶液"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What are essential amino acids (必需氨基酸)?",
+    "options": [
+      "Amino acids that can be synthesized by the human liver from carbohydrates",
+      "Amino acids that cannot be synthesized by the human body and must be obtained from the diet",
+      "Amino acids found only in plant cell walls",
+      "Amino acids that provide twice as much energy as fats"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Deficiency of protein in young children can lead to kwashiorkor (蛋白質缺乏病), characterized by stunted growth and a swollen abdomen.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which vitamin is fat-soluble and is required for the formation of visual purple (視紫質) in rod cells for dim-light vision?",
+    "options": [
+      "Vitamin A / 維生素 A",
+      "Vitamin B1 / 維生素 B1",
+      "Vitamin C / 維生素 C",
+      "Vitamin D / 維生素 D"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "A deficiency of Vitamin C (維生素 C) causes bleeding gums and poor wound healing, a condition known as:",
+    "options": [
+      "Rickets / 佝僂病",
+      "Scurvy / 壞血病",
+      "Night blindness / 夜盲症",
+      "Anaemia / 貧血"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Vitamin C is water-soluble and easily destroyed by prolonged heating or exposure to oxygen during cooking.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which vitamin promotes the absorption of calcium and phosphate ions from the small intestine for strong bones and teeth?",
+    "options": [
+      "Vitamin A / 維生素 A",
+      "Vitamin C / 維生素 C",
+      "Vitamin D / 維生素 D",
+      "Vitamin K / 維生素 K"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Deficiency of iron (鐵) in the human diet reduces haemoglobin synthesis and leads to:",
+    "options": [
+      "Goitre / 甲狀腺腫",
+      "Anaemia / 貧血",
+      "Osteoporosis / 骨質疏鬆症",
+      "Constipation / 便秘"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Dietary fibre (食用纖維), mainly composed of cellulose, cannot be digested by human digestive enzymes but adds bulk to food to stimulate peristalsis (蠕動).",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "In the grease spot test (油漬試驗) for lipids, a translucent spot remains on filter paper after drying because:",
+    "options": [
+      "Lipids evaporate more slowly than water.",
+      "Lipids are non-volatile and do not evaporate at room temperature.",
+      "Lipids dissolve the cellulose fibres of the paper.",
+      "Lipids react chemically with oxygen to form a permanent dye."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which food test reagent is decolourized (changes from blue to colourless) when mixed with fresh lemon juice?",
+    "options": [
+      "Iodine solution / 碘液",
+      "DCPIP solution / DCPIP 溶液",
+      "Benedict's solution / 本立德試液",
+      "Biuret solution / 雙縮脲溶液"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Per gram, carbohydrates release approximately twice as much energy as lipids.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which individual typically requires the HIGHEST daily energy intake per kilogram of body mass?",
+    "options": [
+      "A sedentary elderly office worker",
+      "A rapidly growing teenage boy active in sports",
+      "An adult resting in bed all day",
+      "A retired adult with low physical activity"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why does a pregnant woman need an increased dietary intake of iron and protein?",
+    "options": [
+      "To prevent night blindness and scurvy",
+      "To support the growth of foetal tissues and the formation of foetal red blood cells",
+      "To increase peristalsis and prevent constipation",
+      "To dissolve fat-soluble vitamins in the stomach"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "A balanced diet (均衡膳食) must contain all seven food substances in the right proportions to meet an individual's energy and nutritional needs.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "When performing Benedict's test on a sample containing reducing sugar, what colour change is observed upon heating in a boiling water bath?",
+    "options": [
+      "Brown to blue-black",
+      "Blue to brick-red precipitate",
+      "Blue to purple",
+      "Colourless to milky white emulsion"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Consuming excess energy-rich foods (such as fats and sugars) over a long period without sufficient physical activity leads to obesity (肥胖) and increases the risk of heart disease.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "structured",
+    "question": "[FOOD TESTS & EXPERIMENTAL DESIGN] A student is given two unlabelled clear solutions: Solution A contains glucose and starch, while Solution B contains sucrose and egg white (protein). 1) Describe the food tests you would perform to confirm the presence of starch and glucose in Solution A. 2) Explain how you would confirm the presence of sucrose in Solution B after confirming it gives a negative result with Benedict's test.",
+    "rubric": "To score full points, the response must demonstrate structural mastery: 1) Add iodine solution to a sample of Solution A; a blue-black colour confirms starch. Add Benedict's solution to another sample and heat in a boiling water bath; a brick-red precipitate confirms glucose (reducing sugar). 2) Boil a fresh sample of Solution B with dilute hydrochloric acid to hydrolyse sucrose into glucose and fructose, neutralize with sodium hydrogencarbonate, and then heat with Benedict's solution; a brick-red precipitate confirms sucrose."
+  },
+  {
+    "type": "structured",
+    "question": "[BALANCED DIET & DEFICIENCY] A person whose diet consists mainly of polished white rice and salted meat, with very few fresh fruits, vegetables, or dairy products, develops bleeding gums and weak bones. 1) Identify the two vitamins deficient in this person's diet and link each to its corresponding symptom. 2) Suggest two specific dietary changes to correct these deficiencies.",
+    "rubric": "To score full points, the response must demonstrate structural mastery: 1) Vitamin C deficiency causes scurvy (bleeding gums), and Vitamin D deficiency impairs calcium/phosphate absorption, leading to weak/soft bones (osteomalacia). 2) Add fresh citrus fruits or green vegetables (for Vitamin C) and dairy products, fatty fish, or egg yolk (for Vitamin D and calcium)."
+  }
+]
