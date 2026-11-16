@@ -1,0 +1,241 @@
+[
+  {
+    "type": "multiple-choice",
+    "question": "What is homeostasis (體內平衡)?",
+    "options": [
+      "The maintenance of a relatively constant internal environment in an organism despite fluctuations in the external environment",
+      "The rapid breakdown of glycogen into glucose during vigorous exercise",
+      "The complete elimination of all water and mineral salts from the blood",
+      "The directional growth of plant shoots towards sunlight"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why is maintaining a stable internal environment (such as constant body temperature and blood pH) essential for human survival?",
+    "options": [
+      "To prevent red blood cells from carrying oxygen",
+      "To provide optimal conditions for enzymes to catalyse metabolic reactions efficiently inside cells",
+      "To allow bacteria to multiply rapidly in the bloodstream",
+      "To stop water from crossing cell membranes by osmosis"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Homeostatic control systems in humans operate mainly through negative feedback mechanisms (負反饋機制), where a change in a parameter triggers responses that reverse the change back towards the normal set point.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which components make up the internal environment (內環境) that directly bathes body cells in mammals?",
+    "options": [
+      "Blood plasma and tissue fluid / 血漿和組織液",
+      "Urine and sweat / 尿液和汗液",
+      "Gastric juice and bile / 胃液和膽汁",
+      "Saliva and synovial fluid / 唾液和滑液"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which organ detects changes in blood glucose concentration and secretes hormones to regulate it?",
+    "options": [
+      "Liver / 肝臟",
+      "Pancreas (islets of Langerhans) / 胰臟（胰島）",
+      "Kidney / 腎臟",
+      "Adrenal gland / 腎上腺"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "After a carbohydrate-rich meal, blood glucose levels rise, stimulating the pancreas to secrete more insulin (胰島素) and less glucagon (高血糖素).",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How does insulin (胰島素) lower a high blood glucose concentration back to the normal level?",
+    "options": [
+      "By stimulating liver and muscle cells to absorb more glucose from the blood and convert it into stored glycogen, and increasing cellular respiration of glucose",
+      "By stimulating the liver to break down glycogen into glucose and release it into the blood",
+      "By inhibiting glucose absorption in the small intestine",
+      "By causing the kidneys to excrete all blood glucose into urine"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "During prolonged fasting or vigorous exercise, blood glucose levels drop. Which hormone is secreted by the pancreas to restore normal blood glucose levels?",
+    "options": [
+      "Insulin / 胰島素",
+      "Glucagon / 高血糖素",
+      "Antidiuretic hormone (ADH) / 抗利尿激素",
+      "Thyroxine / 甲狀腺素"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Type 1 diabetes mellitus (一型糖尿病) is caused by the failure of the pancreas to produce sufficient insulin, resulting in persistently high blood glucose levels and glucose appearing in the urine.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why does a person with untreated diabetes mellitus often excrete glucose in their urine?",
+    "options": [
+      "Their glomeruli filter glucose faster than normal.",
+      "Their blood glucose concentration exceeds the maximum reabsorption capacity of the kidney tubules, so excess glucose remains in the filtrate.",
+      "Their bladder secretes glucose directly into urine.",
+      "Insulin breaks down glycogen inside the urinary bladder."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which part of the human brain contains the thermoregulatory centre (體溫調節中樞) that monitors blood temperature and receives impulses from skin thermoreceptors?",
+    "options": [
+      "Cerebellum / 小腦",
+      "Hypothalamus / 下丘腦",
+      "Medulla oblongata / 延髓",
+      "Cerebral cortex / 大腦皮層"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "When body temperature rises above normal in a hot environment, arterioles near the skin surface undergo vasodilation (血管舒張), increasing blood flow near the skin to promote heat loss by conduction, convection, and radiation.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How does sweating (出汗) help cool the human body on a hot day?",
+    "options": [
+      "Sweat glands absorb heat directly from the air.",
+      "Water in sweat absorbs latent heat of vaporization from the skin surface when it evaporates into water vapour.",
+      "Sweat forms a thick insulating layer over the epidermis.",
+      "Sweating constricts superficial blood capillaries."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why is sweating ineffective at cooling the body when the surrounding air has 100% relative humidity?",
+    "options": [
+      "Sweat glands stop secreting sweat completely.",
+      "Sweat cannot evaporate into air that is already saturated with water vapour, so no latent heat is removed from the skin.",
+      "High humidity causes vasoconstriction of skin arterioles.",
+      "High humidity increases metabolic heat production in skeletal muscles."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "In cold conditions, vasoconstriction (血管收縮) of superficial skin arterioles reduces blood flow near the skin surface, minimizing heat loss to the surroundings.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How does shivering (顫抖) help raise body temperature when a person feels cold?",
+    "options": [
+      "It traps a thick layer of warm air between skin hairs.",
+      "Rapid involuntary contractions of skeletal muscles increase the rate of cellular respiration, releasing extra heat energy.",
+      "It increases sweat evaporation from the skin.",
+      "It dilates blood vessels near the skin surface."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which hormone regulates the water potential of blood by controlling water reabsorption in the collecting ducts of the kidneys?",
+    "options": [
+      "Insulin / 胰島素",
+      "Antidiuretic hormone (ADH) / 抗利尿激素",
+      "Adrenaline / 腎上腺素",
+      "Testosterone / 睾酮"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "When a person drinks a large volume of water, the water potential of the blood increases, causing the pituitary gland to release LESS ADH so that a larger volume of dilute urine is produced.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What happens when a person sweats heavily without drinking water, causing blood water potential to drop?",
+    "options": [
+      "Osmoreceptors in the hypothalamus detect the drop, stimulating the pituitary gland to release MORE ADH, which increases the permeability of kidney collecting ducts to water so more water is reabsorbed.",
+      "Less ADH is secreted, producing a large volume of pale, dilute urine.",
+      "The liver converts glycogen into water to dilute the blood.",
+      "Sweat glands reabsorb water directly from the air."
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which structural layer of the human skin contains sweat glands, sebaceous glands, hair follicles, blood vessels, and sensory receptors?",
+    "options": [
+      "Cornified layer (stratum corneum) / 角質層",
+      "Malpighian layer / 生發層",
+      "Dermis / 真皮",
+      "Subcutaneous fat layer / 皮下脂肪層"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "true-false",
+    "question": "Hair erector muscles (豎毛肌) in humans contract in cold weather to pull hairs upright, though this provides minimal insulation in humans compared with furry mammals.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following is an example of long-term hormonal adjustment to seasonal cold weather in mammals?",
+    "options": [
+      "Immediate shivering of skeletal muscles",
+      "Increased secretion of thyroxine (甲狀腺素) by the thyroid gland to raise the basal metabolic rate and generate more heat",
+      "Sudden vasodilation of skin arterioles",
+      "Decreased secretion of adrenaline"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "The liver is the primary organ responsible for storing glycogen under the influence of insulin and breaking down glycogen into glucose under the influence of glucagon.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "structured",
+    "question": "[BLOOD GLUCOSE & NEGATIVE FEEDBACK] Explain how negative feedback restores normal blood glucose levels in a healthy person: 1) One hour after eating a meal rich in starch; 2) After skipping breakfast and lunch for 12 hours.",
