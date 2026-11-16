@@ -1,240 +1,27 @@
 [
-  {
-    "type": "multiple-choice",
-    "question": "Which level of ecological organization includes all the different populations of organisms living together and interacting in a particular habitat, together with their physical (abiotic) environment?",
-    "options": [
-      "Population / 種群",
-      "Community / 群落",
-      "Ecosystem / 生態系統",
-      "Niche / 生態位"
-    ],
-    "answer": 2
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is an ecological niche (生態位)?",
-    "options": [
-      "The physical place where an organism lives",
-      "The functional role an organism plays in an ecosystem, including its habitat, food sources, and interactions with other organisms",
-      "The total number of individuals of one species in a given area",
-      "The maximum temperature an organism can tolerate"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Abiotic factors (非生物因素) in an ecosystem include non-living physical and chemical conditions such as light intensity, temperature, water availability, wind speed, salinity, and soil pH.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which type of ecological relationship occurs when two different species live closely together and BOTH species benefit from the interaction, such as nitrogen-fixing bacteria (Rhizobium) in root nodules of leguminous plants?",
-    "options": [
-      "Predation / 捕食",
-      "Parasitism / 寄生",
-      "Mutualism / 互利共生",
-      "Commensalism / 偏利共生"
-    ],
-    "answer": 2
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Barnacles attaching to the skin of a whale gain transport to nutrient-rich waters while the whale is neither harmed nor benefited. This relationship is an example of:",
-    "options": [
-      "Mutualism / 互利共生",
-      "Commensalism / 偏利共生",
-      "Parasitism / 寄生",
-      "Interspecific competition / 種間競爭"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Intraspecific competition (種內競爭) occurs between individuals of the SAME species and is usually more intense than interspecific competition because individuals of the same species have identical resource requirements.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "In a predator-prey cycle (捕食者與獵物的週期性變化), how does an increase in the prey population affect the predator population?",
-    "options": [
-      "The predator population decreases immediately due to overcrowding.",
-      "The predator population increases after a short time lag because more food is available for survival and reproduction.",
-      "The predator population remains completely constant.",
-      "The predator switches permanently to photosynthesis."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is ecological succession (生態演替)?",
-    "options": [
-      "The seasonal migration of birds between breeding and wintering grounds",
-      "The gradual, directional change in the species composition and structure of a community in a given area over time until a stable climax community is reached",
-      "The daily movement of zooplankton up and down a water column",
-      "The sudden extinction of all species after a volcanic eruption"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Primary succession (原生演替) begins on bare, lifeless surfaces without soil (such as newly cooled lava or bare rock) and starts with pioneer species (先鋒物種) like lichens and mosses.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Why does secondary succession (次生演替), such as after a forest fire or on abandoned farmland, occur much faster than primary succession?",
-    "options": [
-      "Because climax trees grow directly from bare rock within one week",
-      "Because soil, humus, mineral nutrients, and dormant seeds or roots are already present in the area",
-      "Because no consumers or decomposers exist in secondary succession",
-      "Because sunlight is brighter after a forest fire"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is the ultimate source of energy for almost all ecosystems on Earth?",
-    "options": [
-      "Chemical energy stored in soil minerals",
-      "Solar (light) energy from the Sun, captured by producers during photosynthesis",
-      "Geothermal heat from the Earth's core",
-      "Kinetic energy of wind and ocean currents"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "In a food chain, only about 10% of the energy at one trophic level is transferred to the next trophic level, while roughly 90% is lost through respiration (as heat), uneaten parts, and unabsorbed egested waste.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Why do food chains rarely consist of more than four or five trophic levels (營養級)?",
-    "options": [
-      "Top predators cannot digest plant cellulose.",
-      "Because so much energy is lost at each transfer, there is insufficient energy remaining at higher trophic levels to support a viable population.",
-      "Decomposers stop breaking down dead organisms after the fourth level.",
-      "Sunlight cannot penetrate past the fourth trophic level."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which ecological pyramid can sometimes be inverted (wider at the top than at the bottom), such as when thousands of small insects feed on a single large oak tree?",
-    "options": [
-      "Pyramid of energy / 能量金字塔",
-      "Pyramid of numbers / 數量金字塔",
-      "Both pyramid of energy and pyramid of numbers",
-      "Neither pyramid can ever be inverted"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "A pyramid of energy (能量金字塔) is ALWAYS upright (broadest at the base) because energy decreases progressively at each successive trophic level.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is the primary ecological role of decomposers (分解者), such as saprophytic bacteria and fungi?",
-    "options": [
-      "To fix atmospheric nitrogen into nitrates inside root nodules",
-      "To break down dead organic matter and excretory wastes into simple inorganic nutrients (such as CO2, ammonium, and mineral ions) for reuse by producers",
-      "To convert solar energy into chemical energy in deep oceans",
-      "To prey on primary consumers and control herbivore populations"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "In the carbon cycle (碳循環), which process removes carbon dioxide from the atmosphere and incorporates carbon into organic compounds?",
-    "options": [
-      "Cellular respiration / 細胞呼吸",
-      "Photosynthesis / 光合作用",
-      "Combustion of fossil fuels / 化石燃料燃燒",
-      "Decomposition by saprophytes / 腐生生物分解"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Nitrifying bacteria (硝化細菌) in well-aerated soil oxidize ammonium compounds (NH4+) first into nitrites (NO2-) and then into nitrates (NO3-), which plants absorb to synthesize proteins.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Under anaerobic conditions in waterlogged, poorly aerated soil, which bacteria convert soil nitrates (NO3-) back into atmospheric nitrogen gas (N2), reducing soil fertility?",
-    "options": [
-      "Nitrogen-fixing bacteria / 固氮細菌",
-      "Nitrifying bacteria / 硝化細菌",
-      "Denitrifying bacteria / 反硝化細菌",
-      "Putrefying bacteria / 腐敗細菌"
-    ],
-    "answer": 2
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How is the line transect method (樣線法) best used in ecological fieldwork?",
-    "options": [
-      "To estimate the total mobile population of grasshoppers in a meadow",
-      "To investigate how the distribution and abundance of organisms change along an environmental gradient (such as from a rocky shore up to dry land)",
-      "To measure the exact rate of photosynthesis in a single leaf",
-      "To count bacteria in a drop of pond water"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "When using quadrats (樣方) to estimate the population density of a plant species in a uniform habitat, quadrats must be placed randomly (e.g., using random coordinates) to avoid sampling bias.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How do mangrove trees (紅樹) growing in coastal intertidal mudflats adapt to anaerobic, waterlogged mud?",
-    "options": [
-      "By losing all their roots during high tide",
-      "By developing specialized aerial breathing roots (pneumatophores / 呼吸根) with lenticels protruding above the mud to absorb oxygen",
-      "By carrying out alcoholic fermentation permanently without oxygen",
-      "By storing oxygen bubbles inside their waxy leaves"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Many mangrove species possess salt glands on their leaves that actively excrete excess absorbed salt onto the leaf surface, helping them survive in high-salinity brackish water.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "structured",
+  {"type":"multiple-choice","question":"What is an ecosystem (生態系統)?","options":["A group of organisms of the same species living in the same area","A self-sustaining biological community interacting with its non-living (abiotic) physical environment","The specific physical place where an organism lives","All the populations of different species living together without abiotic factors"],"answer":1},
+  {"type":"multiple-choice","question":"Which of the following is an abiotic factor (非生物因子) affecting organisms in an aquatic ecosystem?","options":["Predation by larger fish","Dissolved oxygen concentration, water temperature, and salinity","Competition for algae among snails","Parasitism by gill flukes"],"answer":1},
+  {"type":"true-false","question":"An ecological niche (生態位) refers to the specific role and position a species has in its ecosystem, including its habitat, food sources, and interactions with other organisms.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How does primary succession (初生演替) differ from secondary succession (次生演替)?","options":["Primary succession occurs faster than secondary succession because seeds are already present.","Primary succession begins on bare rock or newly formed land lacking soil, whereas secondary succession occurs in an area where an existing community was disturbed but soil remains intact.","Secondary succession never reaches a climax community.","Primary succession only occurs in marine environments."],"answer":1},
+  {"type":"multiple-choice","question":"What is the role of pioneer species (先鋒物種), such as lichens and mosses, during primary succession on bare rock?","options":["They shade out large forest trees.","They secrete acids to weather rock and trap dust and organic matter when they die, gradually forming a thin layer of soil.","They consume all herbivores in the habitat.","They prevent other plant species from germinating."],"answer":1},
+  {"type":"true-false","question":"A climax community (頂級群落) is a relatively stable, self-perpetuating community that represents the final stage of ecological succession under prevailing climatic conditions.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"In a mutualistic relationship (互利共生), such as nitrogen-fixing bacteria (Rhizobium) living in root nodules of leguminous plants, how do both organisms benefit?","options":["Bacteria harm the plant while gaining shelter.","Bacteria convert atmospheric nitrogen into ammonium compounds for the plant, while the plant supplies carbohydrates and shelter to the bacteria.","Both organisms compete for the same soil nitrates.","The plant digests the bacteria for amino acids."],"answer":1},
+  {"type":"multiple-choice","question":"What is the ultimate source of energy for almost all ecosystems on Earth?","options":["Chemical energy stored in soil minerals","Light energy from the Sun captured by photosynthetic producers","Heat energy radiating from the Earth's core","Kinetic energy from wind and ocean currents"],"answer":1},
+  {"type":"true-false","question":"Only about 10% of the energy at one trophic level is typically transferred to the next trophic level, because most energy is lost through respiration (as heat), uneaten parts, and egested/excreted waste.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Why do food chains rarely have more than four or five trophic levels?","options":["Decomposers stop breaking down dead matter after the fourth level.","So much energy is lost at each successive transfer that too little energy remains to support a viable population at higher trophic levels.","Top predators cannot digest tertiary consumers.","Producers stop photosynthesizing when food chains grow long."],"answer":1},
+  {"type":"multiple-choice","question":"Why is a pyramid of energy (能量金字塔) always upright (broadest at the base and narrowing upward), unlike a pyramid of numbers?","options":["Producers always have larger body sizes than consumers.","Energy decreases at every successive trophic level due to unavoidable metabolic heat loss and waste, so a higher trophic level can never contain more energy than the level below it.","Consumers never respire.","Decomposers store all energy at the top of the pyramid."],"answer":1},
+  {"type":"true-false","question":"In a food web, removing a key predator can cause an overpopulation of primary consumers, leading to overgrazing and a collapse of producer populations.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What is the essential role of decomposers (分解者), such as saprophytic bacteria and fungi, in an ecosystem?","options":["To fix atmospheric carbon dioxide into glucose","To break down dead organic matter and waste into simple inorganic minerals (e.g., ammonium and phosphate ions) that can be recycled by producers","To transfer energy back to the Sun","To prevent nitrification in soil"],"answer":1},
+  {"type":"multiple-choice","question":"In the carbon cycle, which process removes carbon dioxide from the atmosphere and incorporates it into organic compounds?","options":["Cellular respiration / 細胞呼吸","Photosynthesis / 光合作用","Combustion of fossil fuels / 化石燃料燃燒","Decomposition / 分解作用"],"answer":1},
+  {"type":"true-false","question":"Unlike matter (such as carbon and nitrogen), which is continuously recycled within ecosystems, energy flows in one direction only and must be constantly replenished by sunlight.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which group of soil bacteria converts ammonium ions (NH₄⁺) into nitrites (NO₂⁻) and then into nitrates (NO₃⁻) under aerobic conditions?","options":["Nitrogen-fixing bacteria / 固氮細菌","Nitrifying bacteria / 硝化細菌","Denitrifying bacteria / 反硝化細菌","Putrefying bacteria / 腐敗細菌"],"answer":1},
+  {"type":"multiple-choice","question":"Under which soil condition do denitrifying bacteria (反硝化細菌) thrive and convert soil nitrates back into atmospheric nitrogen gas (N₂)?","options":["Well-aerated, dry sandy soil","Anaerobic (oxygen-poor), waterlogged soil","Strongly alkaline rocky soil","Soil rich in earthworms and oxygen"],"answer":1},
+  {"type":"true-false","question":"Lightning provides high energy that causes atmospheric nitrogen and oxygen to combine into nitrogen oxides, which dissolve in rainwater and enter the soil as nitrates.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How is a belt transect (樣帶法) used in ecological field studies?","options":["To capture and tag mobile animals for population estimation","To investigate how the distribution and abundance of organisms change gradually across an environmental gradient (e.g., from a rocky shore from low tide to high tide)","To measure the exact biomass of flying insects","To test soil pH in a laboratory beaker"],"answer":1},
+  {"type":"multiple-choice","question":"Why must quadrats (樣方) be placed randomly when estimating the population density of a plant species in a uniform grassland?","options":["To ensure only the largest plants are counted","To avoid observer bias and obtain a representative sample of the whole habitat","To save time by sampling only near the path","To prevent insects from entering the quadrat"],"answer":1},
+  {"type":"true-false","question":"Eutrophication (富營養化) occurs when excess nitrates and phosphates from fertilizers or sewage enter waterways, triggering rapid algal blooms that later die and decompose, depleting dissolved oxygen and suffocating aquatic animals.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What is bioaccumulation / biomagnification (生物累積 / 生物放大) in a food chain?","options":["The rapid breakdown of biodegradable pesticides by decomposers","The progressive increase in concentration of non-biodegradable toxic substances (such as DDT or mercury) in the tissues of organisms at higher trophic levels","The increase in total biomass from producers to top predators","The absorption of carbon dioxide by ocean water"],"answer":1},
+  {"type":"multiple-choice","question":"How does excessive burning of fossil fuels contribute to global warming?","options":["It depletes the ozone layer completely.","It releases large amounts of greenhouse gases (especially carbon dioxide) that trap outgoing infrared radiation in the atmosphere, enhancing the greenhouse effect.","It blocks all incoming sunlight from reaching Earth.","It increases the rate of photosynthesis in oceans."],"answer":1},
+  {"type":"true-false","question":"In a predator-prey cycle, an increase in prey population is followed after a time lag by an increase in predator population, which then causes the prey population to decline.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which farming practice helps maintain soil fertility naturally without overusing chemical fertilizers?","options":["Continuous monoculture on steep slopes","Crop rotation including leguminous plants (such as clover or soybeans) to replenish soil nitrates via root-nodule bacteria","Flooding fields permanently to encourage denitrification","Burning all crop residues after every harvest"],"answer":1}
+]
