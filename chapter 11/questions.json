@@ -1,0 +1,246 @@
+[
+  {
+    "type": "multiple-choice",
+    "question": "During which stage of the cell cycle (細胞週期) does a cell spend most of its time growing, carrying out normal metabolic activities, and duplicating its DNA and organelles?",
+    "options": [
+      "Prophase / 前期",
+      "Interphase / 間期",
+      "Metaphase / 中期",
+      "Cytokinesis / 胞質分裂"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What happens to the amount of DNA in a diploid somatic cell during the S phase (synthesis phase) of interphase?",
+    "options": [
+      "It is halved from 2n to n",
+      "It doubles (DNA replication occurs) while the chromosome number remains unchanged",
+      "It stays constant throughout interphase",
+      "It is broken down into free nucleotides"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "During interphase, genetic material exists as long, thin, thread-like chromatin (染色質) rather than tightly coiled, visible chromosomes.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What holds two identical sister chromatids (姊妹染色單體) together after DNA replication?",
+    "options": [
+      "The nuclear membrane / 核膜",
+      "The centromere / 着絲點",
+      "The cell plate / 細胞板",
+      "The spindle pole / 紡錘極"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which sequence correctly represents the four stages of nuclear division in mitosis (有絲分裂)?",
+    "options": [
+      "Prophase → Metaphase → Anaphase → Telophase",
+      "Metaphase → Prophase → Telophase → Anaphase",
+      "Prophase → Anaphase → Metaphase → Telophase",
+      "Interphase → Prophase → Anaphase → Telophase"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "During prophase of mitosis, chromatin condenses into thick, visible chromosomes, the nucleolus disappears, and the nuclear membrane breaks down.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "During which stage of mitosis do chromosomes line up singly along the equator (metaphase plate) of the cell?",
+    "options": [
+      "Prophase / 前期",
+      "Metaphase / 中期",
+      "Anaphase / 後期",
+      "Telophase / 末期"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What occurs during anaphase (後期) of mitosis?",
+    "options": [
+      "Homologous chromosomes pair up to form bivalents",
+      "Centromeres split and sister chromatids separate, being pulled to opposite poles by shortening spindle fibres",
+      "New nuclear membranes form around each set of chromosomes",
+      "Crossing over occurs between non-sister chromatids"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "In plant cells, cytokinesis (胞質分裂) occurs by the formation of a cell plate (細胞板) across the middle of the cell, which develops into a new cell wall.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How does cytokinesis in animal cells differ from that in plant cells?",
+    "options": [
+      "Animal cells form a cleavage furrow (分裂溝) where the cell membrane pinches inwards to divide the cytoplasm",
+      "Animal cells build a cellulose cell wall across the equator",
+      "Animal cells do not undergo cytokinesis after mitosis",
+      "Animal cells divide their cytoplasm before nuclear division begins"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following is NOT a biological significance of mitotic cell division?",
+    "options": [
+      "Growth of multicellular organisms by increasing cell number",
+      "Repair and replacement of worn-out or damaged tissues",
+      "Asexual reproduction producing genetically identical offspring",
+      "Production of genetically varied haploid gametes"
+    ],
+    "answer": 3
+  },
+  {
+    "type": "true-false",
+    "question": "Mitosis produces two daughter cells that are genetically identical to each other and to the parent cell, maintaining the same diploid chromosome number.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Where does meiotic cell division (減數分裂) take place in flowering plants and mammals?",
+    "options": [
+      "In root tips and skin epidermal cells",
+      "In reproductive organs (anthers and ovules in plants; testes and ovaries in mammals) to produce gametes/spores",
+      "In red blood cells and xylem vessels",
+      "In liver cells during tissue regeneration"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What happens during Prophase I of meiosis that does NOT occur in mitosis?",
+    "options": [
+      "Spindle fibres form in the cytoplasm",
+      "Homologous chromosomes pair up (synapsis) and crossing over (互換) occurs between non-sister chromatids",
+      "The nuclear membrane disintegrates",
+      "Chromosomes condense and become visible"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Crossing over during Prophase I exchanges genetic material between non-sister chromatids of homologous chromosomes, creating new combinations of alleles.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How do chromosomes arrange themselves during Metaphase I of meiosis?",
+    "options": [
+      "Single chromosomes line up along the equator",
+      "Pairs of homologous chromosomes (bivalents) line up along the equator independently of other pairs",
+      "Sister chromatids separate and move to opposite poles",
+      "Four haploid nuclei form at the poles"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What separates during Anaphase I of meiosis?",
+    "options": [
+      "Sister chromatids of each chromosome",
+      "Homologous chromosomes of each pair (while sister chromatids remain joined at their centromeres)",
+      "Nucleoli and nuclear envelopes",
+      "Mitochondria and chloroplasts"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Independent assortment (獨立分配) of homologous chromosome pairs at Metaphase I and Anaphase I contributes to genetic variation among gametes.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "A diploid body cell of an organism has 16 chromosomes (2n = 16). How many chromosomes will each daughter cell have after completing meiosis?",
+    "options": [
+      "32 chromosomes",
+      "16 chromosomes",
+      "8 chromosomes (haploid, n = 8)",
+      "4 chromosomes"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How many daughter cells are produced from one diploid parent cell at the end of meiosis?",
+    "options": [
+      "Two genetically identical diploid cells",
+      "Two genetically different haploid cells",
+      "Four genetically different haploid cells",
+      "Four genetically identical diploid cells"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "true-false",
+    "question": "DNA replication occurs once before Meiosis I, and there is NO DNA replication between Meiosis I and Meiosis II.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why is meiosis essential for organisms that reproduce sexually?",
+    "options": [
+      "It doubles the chromosome number in every generation",
+      "It halves the chromosome number from diploid (2n) to haploid (n) in gametes so that the diploid number is restored upon fertilization",
+      "It ensures all offspring are clones of their parents",
+      "It repairs damaged skin cells rapidly"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Uncontrolled mitotic cell division caused by mutations in genes regulating the cell cycle can lead to the formation of tumours and cancer (癌症).",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "structured",
+    "question": "[MITOSIS VS. MEIOSIS] Compare mitotic cell division and meiotic cell division in terms of: 1) Number and ploidy (chromosome number) of daughter cells produced from one diploid parent cell; 2) Genetic composition of the daughter cells and its biological significance.",
+    "rubric": "To score full points, the response must demonstrate structural mastery: 1) Mitosis produces two diploid (2n) daughter cells with the same chromosome number as the parent cell, whereas meiosis produces four haploid (n) daughter cells with half the chromosome number of the parent cell. 2) Mitosis produces genetically identical daughter cells (essential for growth, tissue repair, and asexual reproduction), whereas meiosis produces genetically varied gametes (through crossing over and independent assortment), promoting genetic variation in offspring and maintaining a constant chromosome number across generations after fertilization."
+  },
+  {
+    "type": "structured",
+    "question": "[PRACTICAL MICROSCOPY OF MITOSIS] A student prepares a root tip squash (根尖壓片) stained with acetocarmine to observe stages of mitosis under a light microscope. 1) Explain why the root tip is chosen for observing mitosis. 2) Explain why most cells observed in the field of view appear to be in interphase rather than in active mitotic stages.",
