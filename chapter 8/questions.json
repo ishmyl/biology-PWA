@@ -209,7 +209,7 @@
   },
   {
     "type": "true-false",
-    "question": "Lymph nodes (淋巴結) contain numerous white blood cells (such as lymphocytes and phagocytes) that filter out and destroy bacteria and foreign particles from lymph.",
+    "question": "Lymph nodes (淋巴結) contain numerous white blood cells (such as lymphocytes and phagocytes) that filter out and destroy bacteria and foreign particles from the lymph.",
     "options": [
       "True / 正確",
       "False / 錯誤"
@@ -218,18 +218,29 @@
   },
   {
     "type": "multiple-choice",
-    "question": "If lymph vessels in a patient's leg become blocked by parasitic worms or surgery, what symptom is most likely to develop?",
+    "question": "Besides returning excess tissue fluid to the blood and defending against infection, what is another major function of the lymphatic system?",
     "options": [
-      "Severe dehydration of leg muscles",
-      "Swelling of the leg (oedema / 水腫) due to accumulation of excess tissue fluid",
-      "Immediate clotting of blood in the femoral artery",
-      "Increased red blood cell count in the toes"
+      "Transporting absorbed lipids (fatty acids and glycerol) from the lacteals of intestinal villi into the bloodstream",
+      "Transporting oxygen from the alveoli to body cells",
+      "Producing red blood cells in lymph nodes",
+      "Regulating blood glucose levels by secreting insulin"
     ],
-    "answer": 1
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which blood vessel carries deoxygenated blood rich in absorbed nutrients from the small intestine directly to the liver?",
+    "options": [
+      "Hepatic artery / 肝動脈",
+      "Hepatic vein / 肝靜脈",
+      "Hepatic portal vein / 肝門靜脈",
+      "Renal vein / 腎靜脈"
+    ],
+    "answer": 2
   },
   {
     "type": "true-false",
-    "question": "Double circulation (雙循環) in humans ensures that oxygenated blood leaving the heart to body organs is at high pressure for rapid delivery.",
+    "question": "Human beings have a double circulatory system (雙循環系統), meaning blood passes through the heart twice in one complete circuit around the body.",
     "options": [
       "True / 正確",
       "False / 錯誤"
@@ -237,9 +248,11 @@
     "answer": 0
   },
   {
-    "type": "structured",
-    "question": "[HEART STRUCTURE & DOUBLE CIRCULATION] A baby is born with a congenital heart defect known as a 'hole in the septum' (心房或心室間隔缺損) between the left and right ventricles. 1) Explain how this defect affects the oxygen content of blood pumped out through the aorta. 2) Explain why a baby with this untreated defect often appears tired and grows more slowly.",
-    "rubric": "To score full points, the response must demonstrate structural mastery: 1) Because pressure in the left ventricle is higher than in the right ventricle, oxygenated blood mixes with deoxygenated blood across the hole (or deoxygenated blood enters the left side), lowering the oxygen concentration of blood pumped into the aorta. 2) Less oxygen is delivered to body cells per unit volume of blood, reducing the rate of aerobic respiration and ATP production needed for growth and physical activity."
-  },
-  {
-    "type": "structured",
+    "type": "multiple-choice",
+    "question": "What is the main advantage of having a double circulatory system in mammals?",
+    "options": [
+      "It mixes oxygenated and deoxygenated blood to keep body temperature constant.",
+      "It allows blood to be re-pressurized by the left ventricle after passing through the lung capillaries, ensuring rapid delivery of oxygen to respiring tissues.",
+      "It eliminates the need for valves in the veins.",
+      "It slows down blood flow so red blood cells do not burst."
+    ],
