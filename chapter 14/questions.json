@@ -1,241 +1,28 @@
 [
-  {
-    "type": "multiple-choice",
-    "question": "How is biological growth (生長) defined in multicellular organisms?",
-    "options": [
-      "A temporary increase in body mass caused solely by water intake",
-      "An irreversible increase in the size and dry mass of an organism resulting from cell division and cell enlargement",
-      "The specialization of unspecialized cells into specific tissues",
-      "The movement of organisms from one habitat to another"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is cell differentiation (細胞分化) during development?",
-    "options": [
-      "The rapid mitotic division of a zygote without any increase in total volume",
-      "The process by which unspecialized cells become specialized in structure and function to perform specific roles",
-      "The breakdown of stored food reserves in cotyledons",
-      "The elongation of plant cells by absorbing water into vacuoles"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Dry mass (乾重) is the most accurate parameter for measuring true biological growth because it excludes fluctuations in water content inside the organism.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is a major disadvantage of using dry mass to measure the growth of a population of plants?",
-    "options": [
-      "Dry mass fluctuates wildly depending on when the plant was last watered.",
-      "Measuring dry mass requires heating organisms in an oven until all water evaporates, which kills the organisms and prevents repeated measurements on the same individual.",
-      "Dry mass cannot be measured in kilograms or grams.",
-      "Dry mass only measures inorganic mineral content."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which parameter is most practical and non-destructive for monitoring the growth of a human infant over several years?",
-    "options": [
-      "Dry mass / 乾重",
-      "Fresh mass (body weight) and height (length) / 鮮重和身高",
-      "Total surface area of skin / 皮膚總表面積",
-      "Volume of water displaced / 排水體積"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "In flowering plants, primary growth (初生生長) occurs at the apical meristems (頂端分生組織) located at the tips of shoots and roots, resulting in an increase in length.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which sequence correctly represents the three regions of growth behind a root tip, starting from the tip and moving backwards?",
-    "options": [
-      "Region of differentiation → Region of elongation → Region of cell division",
-      "Region of cell division → Region of elongation → Region of differentiation",
-      "Region of elongation → Region of cell division → Region of differentiation",
-      "Region of cell division → Region of differentiation → Region of elongation"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What protects the delicate apical meristem at the tip of a growing root as it pushes through the soil?",
-    "options": [
-      "Waxy cuticle / 角質層",
-      "Root cap / 根冠",
-      "Root hairs / 根毛",
-      "Casparian strip / 凱氏帶"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "In the region of elongation (伸長區) of a plant root or shoot, cells elongate primarily by absorbing water into numerous small vacuoles, which merge to form a large central vacuole.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "In a classic experiment where equally spaced ink marks are drawn along the radicle of a germinating bean seedling, which region shows the greatest increase in distance between marks after 2 days?",
-    "options": [
-      "The very tip covered by the root cap",
-      "The region just behind the root tip (region of elongation)",
-      "The upper region near the seed coat where root hairs are mature",
-      "All regions elongate equally"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is secondary growth (次生生長) in woody dicotyledonous stems and roots?",
-    "options": [
-      "Increase in length caused by apical meristems",
-      "Increase in thickness (girth) caused by lateral meristems such as the vascular cambium (維管形成層) producing secondary xylem and secondary phloem",
-      "Formation of adventitious roots from leaves",
-      "Growth of lateral buds into flowers"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Annual rings (年輪) visible in the cross-section of a woody tree trunk are formed by seasonal variations in the size of secondary xylem vessels produced by the vascular cambium.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which type of germination occurs when the cotyledons are carried above the soil surface by the elongation of the hypocotyl (下胚軸), as seen in French beans?",
-    "options": [
-      "Hypogeal germination / 留土萌發",
-      "Epigeal germination / 出土萌發",
-      "Vegetative propagation / 營養繁殖",
-      "Parthenocarpy / 單性結實"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "In hypogeal germination (留土萌發), such as in broad beans or maize, which part elongates to push the plumule out of the soil while the cotyledons remain underground?",
-    "options": [
-      "Hypocotyl / 下胚軸",
-      "Epicotyl / 上胚軸",
-      "Radicle / 胚根",
-      "Testa / 種皮"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "In annual flowering plants, a typical growth curve plotted using dry mass over time is S-shaped (sigmoid curve / S形曲線), ending with a slight drop in dry mass during senescence and seed dispersal.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which characteristic distinguishes growth in mammals (such as humans) from growth in woody perennial plants?",
-    "options": [
-      "Mammals grow only at apical meristems at the tips of limbs.",
-      "Growth in mammals occurs throughout the entire body (allometric growth) and stops upon reaching adulthood, whereas plants show localized meristematic growth throughout life.",
-      "Mammals grow in steps by moulting an external skeleton.",
-      "Different parts of a human body grow at the exact same rate from birth to adulthood."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "During which two periods of human life does the fastest rate of growth (growth spurts) occur?",
-    "options": [
-      "Early childhood (ages 4–7) and old age (ages 65–75)",
-      "Infancy (first 2 years after birth) and adolescence/puberty (roughly ages 11–16)",
-      "Middle adulthood (ages 30–45) and late adulthood (ages 50–60)",
-      "Only during the last month before birth"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "In humans, girls generally enter their adolescent growth spurt about 1 to 2 years earlier than boys, though boys usually continue growing longer and reach a greater average adult height.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which part of the human body grows very rapidly during infancy and early childhood, reaching nearly 90% of its adult size by age 6?",
-    "options": [
-      "Reproductive organs / 生殖器官",
-      "Head and brain / 頭部和腦",
-      "Legs and arms / 四肢",
-      "Skeletal muscles / 骨骼肌"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How do arthropods such as insects and crabs grow despite having a rigid, non-living chitinous exoskeleton (外骨骼)?",
-    "options": [
-      "Their exoskeleton stretches continuously like elastic rubber.",
-      "They exhibit intermittent growth by periodically shedding their old exoskeleton (moulting / 蛻皮) and expanding rapidly before the new cuticle hardens.",
-      "They dissolve their exoskeleton internally every night.",
-      "They only grow during the adult stage after wings form."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Immediately after moulting, an insect takes in air or water to expand its body volume while the new exoskeleton is still soft and pliable.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which characteristic of apical meristem cells (頂端分生組織細胞) enables them to divide rapidly?",
-    "options": [
-      "Large central vacuoles and thick lignified cell walls",
-      "Small size, thin cellulose cell walls, dense cytoplasm, and large prominent nuclei",
-      "Presence of numerous chloroplasts and thick waxy cuticles",
-      "Hollow dead lumens with perforated end walls"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Unlike most mature animal cells, many differentiated plant cells retain the ability to dedifferentiate and grow into a whole new plant under suitable tissue culture conditions.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "structured",
-    "question": "[REGIONS OF ROOT GROWTH] A longitudinal section of a young dicotyledonous root tip reveals three distinct zones behind the root cap. 1) Name these three zones in order from the root tip upwards and state the main cellular process occurring in each. 2) Explain how cells in the middle zone achieve rapid increase in length.",
+  {"type":"multiple-choice","question":"What is growth (生長) in living organisms?","options":["A temporary increase in body mass due to water uptake","An irreversible increase in size and dry mass of an organism resulting from cell division, cell enlargement, and cell differentiation","The breakdown of stored food during respiration","The movement of an organism from one habitat to another"],"answer":1},
+  {"type":"multiple-choice","question":"What is development (發育) in multicellular organisms?","options":["Only an increase in cell number by mitosis","The increase in complexity of an organism as cells differentiate into specialized tissues and organs","The shedding of outer skin or exoskeleton","A decrease in dry mass during germination"],"answer":1},
+  {"type":"true-false","question":"Fresh mass (鮮重) is often unreliable for measuring plant growth over short periods because it fluctuates easily with changes in water content.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What is the main advantage and disadvantage of using dry mass (乾重) to measure plant growth?","options":["It is quick and non-destructive, but affected by soil moisture.","It accurately reflects true organic matter synthesized, but kills the organisms so a large sample size is needed.","It measures height directly without heating.","It only works for adult mammals."],"answer":1},
+  {"type":"multiple-choice","question":"Where does primary growth (初生生長) in length occur in flowering plants?","options":["Throughout the entire mature leaf blade","At the apical meristems (頂端分生組織) located at the root tips and shoot tips","Inside the dead xylem vessels","In the waxy cuticle of the stem"],"answer":1},
+  {"type":"true-false","question":"In a longitudinal section of a root tip, the three regions from the tip upward are the region of cell division, region of elongation, and region of differentiation.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How do cells in the region of elongation (伸長區) of a root tip increase rapidly in length?","options":["By undergoing rapid meiotic division","By absorbing water by osmosis into small vacuoles that fuse into a large central vacuole, stretching the thin cellulose cell wall","By depositing thick layers of waterproof lignin","By losing water to surrounding soil particles"],"answer":1},
+  {"type":"multiple-choice","question":"What is the function of the root cap (根冠) at the very tip of a growing root?","options":["To carry out photosynthesis for the root","To protect the delicate apical meristem cells from mechanical damage as the root pushes through the soil","To absorb nitrate ions by active transport","To store large amounts of starch"],"answer":1},
+  {"type":"true-false","question":"In a root-marking experiment where ink marks are spaced equally at 1 mm intervals from the root tip, the widest spacing after 24 hours appears in the region of elongation just behind the tip.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which tissue in dicotyledonous stems and roots is responsible for secondary growth (次生生長), increasing girth (thickness)?","options":["Epidermis / 表皮","Vascular cambium / 維管形成層","Root cap / 根冠","Spongy mesophyll / 海綿葉肉"],"answer":1},
+  {"type":"multiple-choice","question":"How are annual rings (年輪) formed in the woody stem of a tree growing in a temperate climate?","options":["By annual shedding of the bark in winter","By seasonal variation in vascular cambium activity: large thin-walled xylem vessels form in spring/summer, while smaller thick-walled xylem vessels form in autumn/winter","By rings of phloem accumulating every month","By fungal infection inside the pith"],"answer":1},
+  {"type":"true-false","question":"In an annual plant growth curve (S-shaped / sigmoid curve), dry mass decreases initially during germination before rising steeply once green leaves carry out photosynthesis.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Why does the growth curve of an annual plant level off and slightly decline near the end of its life cycle?","options":["The plant runs out of carbon dioxide in the atmosphere.","The plant reaches maturity, disperses seeds/fruits, and undergoes senescence (aging) where respiration exceeds photosynthesis.","Its roots stop absorbing water completely.","Mitosis permanently reverses."],"answer":1},
+  {"type":"multiple-choice","question":"Which two phases in the human growth curve show the fastest rates of growth in height and body mass?","options":["Middle childhood and old age","Infancy (0–2 years) and adolescence/puberty (around 11–16 years)","Adulthood (25–40 years) and old age","Only during embryonic development before birth"],"answer":1},
+  {"type":"true-false","question":"Different parts of the human body grow at different rates (allometric growth); for example, the head grows rapidly in early life while reproductive organs grow rapidly during puberty.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Why do girls typically show an earlier pubertal growth spurt than boys on a human growth rate curve?","options":["Girls have higher testosterone levels than boys.","Girls usually enter puberty 1–2 years earlier (around age 10–12) than boys (around age 12–14).","Boys do not undergo a growth spurt during adolescence.","Girls stop growing completely by age 10."],"answer":1},
+  {"type":"multiple-choice","question":"How do arthropods such as insects and crabs grow despite having a rigid, non-living exoskeleton?","options":["Their exoskeleton stretches continuously like rubber.","They periodically shed their old exoskeleton (moulting / 蛻皮) and rapidly expand their soft body before the new exoskeleton hardens.","They only grow during the embryonic stage inside the egg.","Their muscles dissolve and reform outside the shell."],"answer":1},
+  {"type":"true-false","question":"The growth curve of an insect measuring body length over time shows a characteristic step-like (staircase) pattern due to periodic moulting.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"In the region of differentiation (分化區) of a root, what specialized structures develop from epidermal cells to increase water absorption?","options":["Guard cells / 保衛細胞","Root hairs / 根毛","Lenticels / 皮孔","Sieve plates / 篩板"],"answer":1},
+  {"type":"multiple-choice","question":"Which of the following is a valid non-destructive method to measure the growth of a potted plant over four weeks?","options":["Drying the plant in an oven at 100 °C every day","Measuring the height of the main shoot or total leaf surface area regularly","Boiling the roots to measure starch content","Weighing the dry soil only"],"answer":1},
+  {"type":"true-false","question":"Unlike most animals, plants exhibit unlimited (indeterminate) growth throughout their lives because meristematic tissues remain active.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What causes the stationary phase in a standard sigmoid growth curve of a population or organism?","options":["Unlimited food and space","Limiting factors (such as space, nutrients, or genetic maximum size) restrict further net increase in size or number","Complete absence of cell division","Sudden death of all cells"],"answer":1},
+  {"type":"multiple-choice","question":"During human adolescence, which hormone primarily stimulates the growth spurt and development of secondary sexual characteristics in males?","options":["Oestrogen / 雌激素","Testosterone / 睾酮","Progesterone / 孕酮","Insulin / 胰島素"],"answer":1},
+  {"type":"true-false","question":"In an insect, dry mass increases smoothly between moults as tissues grow, even though external body length remains constant until the next moult.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Why are young leaves at the shoot apex often folded tightly around the apical meristem in a bud?","options":["To prevent photosynthesis from occurring too early","To protect the delicate dividing cells of the apical meristem from mechanical injury, herbivores, and excessive water loss","To block sunlight from reaching the stem","To store water for the roots"],"answer":1}
+]
+
