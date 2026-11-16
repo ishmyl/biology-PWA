@@ -1,219 +1,27 @@
 [
-  {
-    "type": "multiple-choice",
-    "question": "How do non-infectious diseases (非傳染病) differ from infectious diseases?",
-    "options": [
-      "Non-infectious diseases are caused by viruses, whereas infectious diseases are caused by bacteria.",
-      "Non-infectious diseases are NOT caused by pathogens and cannot be transmitted from person to person, often resulting from genetic factors, lifestyle habits, or environmental factors.",
-      "Non-infectious diseases can always be cured with a short course of antibiotics.",
-      "Non-infectious diseases only affect elderly people over age 70."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is a malignant tumour (惡性腫瘤 / cancer) compared with a benign tumour (良性腫瘤)?",
-    "options": [
-      "A malignant tumour grows slowly inside a fibrous capsule and never spreads to other organs.",
-      "A malignant tumour consists of rapidly dividing cancer cells that invade surrounding tissues and can break off to spread via blood or lymph to form secondary tumours (metastasis / 轉移).",
-      "A malignant tumour is caused solely by bacterial infection.",
-      "A benign tumour always destroys vital organs within days."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Carcinogens (致癌物) such as tar in cigarette smoke, ionizing radiation (e.g. UV rays and X-rays), and certain chemicals increase the risk of cancer by causing mutations in genes that regulate the cell cycle.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is the underlying cause of coronary heart disease (冠心病)?",
-    "options": [
-      "A viral infection of the heart valves",
-      "Accumulation of fatty deposits (cholesterol plaques / 粥樣斑塊) on the inner walls of the coronary arteries, narrowing the lumen and reducing blood and oxygen supply to cardiac muscle",
-      "Excessive production of red blood cells in the bone marrow",
-      "Strengthening of the left ventricular wall from regular aerobic exercise"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which combination of lifestyle factors significantly INCREASES the risk of developing coronary heart disease?",
-    "options": [
-      "Regular aerobic exercise and a diet rich in fruits and vegetables",
-      "A diet high in saturated fats and cholesterol, cigarette smoking, lack of physical exercise, obesity, and chronic stress",
-      "Drinking adequate water and getting 8 hours of sleep",
-      "Eating whole grains and oily fish rich in omega-3 fatty acids"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "If a blood clot (thrombus / 血栓) blocks a narrowed coronary artery completely, cardiac muscle cells are deprived of oxygen and die, resulting in a heart attack (myocardial infarction / 心肌梗塞).",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How does Type 2 diabetes mellitus (二型糖尿病) differ from Type 1 diabetes mellitus (一型糖尿病)?",
-    "options": [
-      "Type 2 diabetes usually develops in childhood due to total destruction of insulin-producing pancreatic cells.",
-      "Type 2 diabetes typically develops later in life and is strongly associated with obesity and physical inactivity, where target body cells (such as liver and muscle cells) become resistant/less responsive to insulin.",
-      "Type 2 diabetes is caused by a mosquito-borne virus.",
-      "Type 2 diabetes causes persistently low blood glucose levels."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which body mass index (BMI / 體重指數) calculation is used to assess whether an adult is underweight, normal weight, overweight, or obese?",
-    "options": [
-      "Body mass (kg) ÷ Height (m)",
-      "Body mass (kg) ÷ [Height (m)]²",
-      "Height (cm) ÷ Body mass (kg)",
-      "Waist circumference (cm) × Body mass (kg)"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Non-specific defence mechanisms (非特異性防禦機制) form the body's first and second lines of defence and act against all types of pathogens in the same way regardless of previous exposure.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which of the following is an example of a chemical barrier in the body's non-specific first line of defence?",
-    "options": [
-      "Antibodies produced by plasma cells",
-      "Lysozyme (溶菌酶) in tears and saliva that digests bacterial cell walls, and hydrochloric acid in gastric juice that kills ingested bacteria",
-      "Memory B lymphocytes in lymph nodes",
-      "Phagocytosis by neutrophils"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How do phagocytes (吞噬細胞) destroy pathogens that breach the skin or mucous membranes?",
-    "options": [
-      "By secreting specific antibodies into blood plasma",
-      "By engulfing pathogens via phagocytosis into a phagosome and digesting them using hydrolytic enzymes from lysosomes",
-      "By forming a blood clot across the trachea",
-      "By stimulating red blood cells to divide rapidly"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "During the inflammatory response (炎症反應) at an infected wound, arterioles dilate and capillary permeability increases, bringing more blood, phagocytes, and plasma proteins to the site, causing redness, warmth, swelling, and pain.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What are antigens (抗原) in the specific immune response?",
-    "options": [
-      "Y-shaped protein molecules secreted by B lymphocytes",
-      "Foreign molecules (usually proteins or glycoproteins on the surface of pathogens) recognized by the immune system as non-self, triggering a specific immune response",
-      "Antibiotics injected into the bloodstream",
-      "Digestive enzymes found in lysosomes"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How do antibodies (抗體) produced by plasma cells help defend the body against pathogens?",
-    "options": [
-      "They digest bacterial cell walls directly like hydrochloric acid.",
-      "They bind specifically to complementary antigens on pathogens to neutralize toxins, clump pathogens together (agglutination) for easier phagocytosis, or lyse pathogen membranes.",
-      "They convert glucose into glycogen in liver cells.",
-      "They carry oxygen to infected tissues."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Killer T lymphocytes (cytotoxic T cells / 殺傷性 T 細胞) destroy virus-infected body cells and cancer cells directly by releasing proteins that puncture their cell membranes.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How does the secondary immune response (再次免疫反應) differ from the primary immune response when the same pathogen enters the body a second time?",
-    "options": [
-      "It takes much longer to start and produces fewer antibodies.",
-      "Because memory cells (記憶細胞) rapidly recognize the antigen and proliferate, the secondary response has a much shorter lag phase, produces a far higher concentration of antibodies rapidly, and lasts longer.",
-      "It relies solely on skin barriers without involving lymphocytes.",
-      "It produces antibodies against all unrelated pathogens simultaneously."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is the biological principle behind vaccination (接種疫苗)?",
-    "options": [
-      "Injecting pre-formed antibodies to cure an acute infection immediately",
-      "Introducing harmless antigens (such as weakened, killed, or subunit pathogens, or mRNA encoding viral antigens) to stimulate an active primary immune response and produce memory cells without causing the disease",
-      "Administering high doses of antibiotics before travel",
-      "Replacing white blood cells with donor bone marrow"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Vaccination induces active artificial immunity (主動人工免疫), which provides long-lasting protection because the recipient's own lymphocytes produce memory cells.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which situation is an example of passive natural immunity (被動天然免疫)?",
-    "options": [
-      "Recovering from chickenpox and developing memory cells",
-      "Receiving a hepatitis B vaccine injection",
-      "A foetus receiving maternal antibodies across the placenta or a newborn baby receiving antibodies through breast milk",
-      "Receiving an injection of antivenom serum after a snake bite"
-    ],
-    "answer": 2
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Why is passive artificial immunity (such as injecting purified antibodies against tetanus toxin or snake venom) used in medical emergencies?",
-    "options": [
-      "It stimulates memory cells to divide over 3 weeks.",
-      "It provides immediate, rapid protection against fast-acting toxins or pathogens when there is no time to wait for the patient's own primary immune response, though protection is temporary.",
-      "It permanently alters the patient's DNA.",
-      "It kills viruses inside host cell nuclei."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Passive immunity is short-lived (temporary) because the injected or transferred antibodies are gradually broken down in the body and no memory cells are produced by the recipient.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
+  {"type":"multiple-choice","question":"What is a non-infectious disease (非傳染病)?","options":["A disease transmitted by mosquito bites","A disease that is not caused by pathogens and cannot be spread from person to person, often resulting from genetic, physiological, environmental, or lifestyle factors","A bacterial infection cured by antibiotics","A viral illness spread through respiratory droplets"],"answer":1},
+  {"type":"multiple-choice","question":"What causes coronary heart disease (CHD / 冠心病)?","options":["Viral infection of the pulmonary vein","Build-up of fatty plaques (cholesterol and lipids) on the inner walls of the coronary arteries (atherosclerosis), narrowing the lumen and restricting blood flow to heart muscle","Overproduction of red blood cells in the bone marrow","Excessive intake of vitamin C and dietary fibre"],"answer":1},
+  {"type":"true-false","question":"If a blood clot (thrombus) blocks a narrowed coronary artery, cardiac muscle cells are deprived of oxygen and glucose for respiration and die, causing a heart attack (myocardial infarction).","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which combination of lifestyle factors significantly increases the risk of developing coronary heart disease?","options":["Regular aerobic exercise and a diet rich in fruits and vegetables","A diet high in saturated fats, cholesterol, and salt, smoking, lack of physical exercise, and chronic stress","Drinking plenty of plain water and getting adequate sleep","Eating whole grains and unsaturated vegetable oils"],"answer":1},
+  {"type":"multiple-choice","question":"How does cigarette smoking increase the risk of cardiovascular diseases such as stroke and coronary heart disease?","options":["Nicotine lowers heart rate and dilates arteries.","Nicotine raises blood pressure and heart rate, while carbon monoxide reduces oxygen transport and damages the inner lining of arteries, promoting plaque and clot formation.","Tar increases haemoglobin levels in red blood cells.","Smoking dissolves cholesterol plaques in the aorta."],"answer":1},
+  {"type":"true-false","question":"A stroke (中風) occurs when blood supply to part of the brain is interrupted either by a blocked cerebral artery (ischaemic stroke) or a burst blood vessel in the brain (haemorrhagic stroke).","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What is cancer (癌症) at the cellular level?","options":["A bacterial infection of the lymph nodes","Uncontrolled mitotic division of abnormal cells caused by mutations in genes regulating the cell cycle, forming a malignant tumour that can invade surrounding tissues","Premature aging and death of red blood cells","Accumulation of glycogen in liver cells"],"answer":1},
+  {"type":"multiple-choice","question":"How does a malignant tumour (惡性腫瘤) differ from a benign tumour (良性腫瘤)?","options":["A benign tumour spreads rapidly through the bloodstream; a malignant tumour stays in one place.","A malignant tumour invades nearby tissues and can spread to distant parts of the body via blood or lymph (metastasis / 轉移), whereas a benign tumour remains localized and enclosed in a capsule.","A benign tumour is caused by bacteria; a malignant tumour is caused by fungi.","Only benign tumours are made of living cells."],"answer":1},
+  {"type":"true-false","question":"Carcinogens (致癌物), such as tar in tobacco smoke, ultraviolet (UV) radiation, X-rays, and certain chemicals like asbestos, increase the risk of cancer by causing DNA mutations.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which virus infection is strongly linked to cervical cancer and can be prevented by vaccination?","options":["Influenza virus / 流感病毒","Human papillomavirus (HPV) / 人類乳頭瘤病毒","Dengue virus / 登革熱病毒","Norovirus / 諾如病毒"],"answer":1},
+  {"type":"multiple-choice","question":"Which type of cancer is strongly associated with chronic Hepatitis B virus (HBV) infection and aflatoxins from mouldy food?","options":["Lung cancer / 肺癌","Liver cancer / 肝癌","Skin cancer / 皮膚癌","Colorectal cancer / 大腸癌"],"answer":1},
+  {"type":"true-false","question":"Regular screening tests (such as mammograms, Pap smears, and faecal occult blood tests) help detect cancers at an early stage when treatment is much more successful.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How does radiotherapy (放射治療) treat localized cancerous tumours?","options":["By stimulating antibodies against tumour cells","By directing high-energy ionizing radiation at the tumour to damage the DNA of rapidly dividing cancer cells and kill them","By replacing malignant cells with stem cells","By lowering blood cholesterol levels"],"answer":1},
+  {"type":"multiple-choice","question":"Why does chemotherapy (化療) often cause temporary side effects such as hair loss and nausea?","options":["Chemotherapy drugs only target dead cells.","Chemotherapy drugs circulate throughout the body and affect not only cancer cells but also normal rapidly dividing cells (such as hair follicle cells and gut epithelial cells).","Chemotherapy permanently stops insulin secretion.","Chemotherapy destroys all red blood cells permanently."],"answer":1},
+  {"type":"true-false","question":"Obesity (肥胖) is a major risk factor for Type 2 diabetes, hypertension (high blood pressure), coronary heart disease, and osteoarthritis.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How is Body Mass Index (BMI / 身體質量指數) calculated to assess weight status in adults?","options":["Height (m) ÷ Body mass (kg)","Body mass (kg) ÷ [Height (m)]²","[Body mass (kg)]² ÷ Height (cm)","Waist circumference (cm) × Body mass (kg)"],"answer":1},
+  {"type":"multiple-choice","question":"Which dietary habit helps reduce the risk of colorectal cancer (大腸癌)?","options":["Eating large amounts of processed and red meats with very little water","Consuming plenty of dietary fibre (from fruits, vegetables, and whole grains) to stimulate peristalsis and speed up the passage of waste through the colon","Avoiding all plant foods","Taking daily doses of antibiotics"],"answer":1},
+  {"type":"true-false","question":"Alcohol abuse can cause liver cirrhosis (肝硬化), fatty liver, high blood pressure, and impaired nervous system coordination.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How does regular aerobic exercise help prevent cardiovascular disease?","options":["It increases saturated fat deposits in arteries.","It strengthens the heart muscle, improves blood circulation, helps maintain a healthy body weight, and lowers resting blood pressure and LDL cholesterol.","It eliminates the need for oxygen during respiration.","It stops the pancreas from producing glucagon."],"answer":1},
+  {"type":"multiple-choice","question":"What is hypertension (高血壓), and why is it often called a 'silent killer'?","options":["Low blood sugar that causes immediate fainting","Persistently elevated arterial blood pressure that often shows no obvious early symptoms while steadily damaging blood vessel walls and increasing the risk of stroke and heart failure","A bacterial infection of the lungs","Sudden drop in heart rate during sleep"],"answer":1},
+  {"type":"true-false","question":"Reducing dietary sodium (salt) intake helps prevent and manage high blood pressure by reducing excessive water retention in the bloodstream.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which preventive measure best protects against skin cancer (melanoma)?","options":["Avoiding all dietary fats","Limiting prolonged exposure to strong midday sunlight and applying broad-spectrum sunscreen to block UV radiation","Taking iron supplements daily","Drinking distilled water only"],"answer":1},
+  {"type":"multiple-choice","question":"What is the role of vaccination in preventing certain non-infectious diseases like liver cancer and cervical cancer?","options":["Vaccines directly destroy cancerous tumours after metastasis.","Vaccines prevent chronic infections by oncogenic viruses (Hepatitis B virus and HPV) that otherwise trigger malignant cell transformation over time.","Vaccines replace damaged chromosomes in liver cells.","Vaccines neutralize dietary carcinogens in the stomach."],"answer":1},
+  {"type":"true-false","question":"Passive smoking (second-hand smoke) also exposes non-smokers to carcinogens and toxic gases, increasing their risk of lung cancer and heart disease.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which lifestyle combination represents primary prevention (一級預防) of non-infectious diseases?","options":["Undergoing heart bypass surgery after a heart attack","Not smoking, eating a balanced low-fat/high-fibre diet, exercising regularly, and limiting alcohol consumption before disease develops","Taking chemotherapy after tumour metastasis","Using an insulin pump for Type 1 diabetes"],"answer":1}
+]
