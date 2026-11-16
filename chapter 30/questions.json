@@ -1,98 +1,219 @@
 [
   {
     "type": "multiple-choice",
-    "question": "Jean-Baptiste Lamarck's evolutionary theory (Lamarckism) was eventually disproved by scientists primarily because of which underlying limitation?",
+    "question": "Which human activity is the primary driver of the rapid increase in atmospheric carbon dioxide concentration since the Industrial Revolution?",
     "options": [
-      "Environmental changes do not exert any selection pressures on living autotrophs.",
-      "Acquired characteristics cannot be passed on genetically to subsequent offspring.",
-      "Variations already exist inside populations before the environment shifts.",
-      "Mutations in somatic cells are the only source of structural degeneration."
+      "Large-scale reforestation programmes / 大規模植樹造林",
+      "Burning of fossil fuels (coal, oil, and natural gas) and widespread deforestation / 燃燒化石燃料及大規模砍伐森林",
+      "Use of catalytic converters in motor vehicles / 汽車使用催化轉化器",
+      "Establishment of marine conservation parks / 設立海岸公園"
     ],
     "answer": 1
   },
   {
     "type": "multiple-choice",
-    "question": "According to Charles Darwin's theory of natural selection, what is the primary role of environmental changes in the process of evolution?",
+    "question": "How do greenhouse gases (溫室氣體), such as carbon dioxide and methane, contribute to global warming?",
     "options": [
-      "They force individual organisms to intentionally modify their body structures to meet new needs.",
-      "They act as selection pressures that select better-adapted individuals to survive and reproduce.",
-      "They trigger immediate, non-heritable mutations inside the gametes of a population.",
-      "They fully eliminate genetic variations to maintain a stable, uniform phenotype layout."
+      "They block incoming short-wave solar ultraviolet radiation from reaching the Earth's surface.",
+      "They allow short-wave solar radiation to pass through to warm the Earth, but trap and re-radiate outgoing long-wave infrared radiation emitted by the Earth's surface.",
+      "They destroy the stratospheric ozone layer directly.",
+      "They react with atmospheric nitrogen to release heat energy."
     ],
     "answer": 1
   },
   {
     "type": "true-false",
-    "question": "A fundamental difference between Lamarckism and Darwinism is that Lamarckism suggests evolution occurs in individuals, whereas Darwinism establishes that evolution occurs in populations.",
+    "question": "Global warming can lead to thermal expansion of seawater and melting of polar ice caps and glaciers, causing rising sea levels and flooding of low-lying coastal areas.",
     "options": [
-      "True",
-      "False"
+      "True / 正確",
+      "False / 錯誤"
     ],
     "answer": 0
   },
   {
     "type": "multiple-choice",
-    "question": "In areas where malaria is common, individuals who are heterozygous for the sickle-cell allele do not suffer from severe anemia symptoms and are less likely to contract malaria. This phenomenon is an example of:",
+    "question": "Which air pollutant, released mainly from burning coal and oil in power stations, dissolves in rainwater to form acid rain (酸雨)?",
     "options": [
-      "Speciation due to geographical isolation barriers",
-      "A selection advantage that maintains the mutant allele frequency",
-      "An acquired characteristic caused by an infectious pathogen lifestyle",
-      "Spontaneous chromosome non-disjunction during meiotic division"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "In the case of peppered moths and antibiotic-resistant bacteria, the selection pressure creates new favorable genetic variations that did not exist before.",
-    "options": [
-      "True",
-      "False"
+      "Carbon monoxide (CO) / 一氧化碳",
+      "Sulphur dioxide (SO2) and nitrogen oxides (NOx) / 二氧化硫及氮氧化物",
+      "Chlorofluorocarbons (CFCs) / 氯氟烴",
+      "Methane (CH4) / 甲烷"
     ],
     "answer": 1
   },
   {
     "type": "multiple-choice",
-    "question": "What is the critical first step required for the process of speciation to take place within a single interbreeding population?",
+    "question": "How does acid rain damage forest ecosystems and aquatic life in lakes?",
     "options": [
-      "The rapid accumulation of spontaneous non-functional structural mutations",
-      "Groups of a population become isolated from one another, stopping gene flow",
-      "A complete shift from heterotrophic nutrition to autotrophic photosynthesis",
-      "The sudden appearance of an extra copy of chromosome 21 in the gametes"
+      "It raises soil pH above 10 and turns lake water alkaline.",
+      "It leaches essential mineral ions (such as Mg2+ and Ca2+) from the soil, releases toxic aluminium ions that damage tree roots and fish gills, and lowers lake pH below the tolerance range of aquatic organisms.",
+      "It causes excessive algal blooms by adding phosphates.",
+      "It increases the thickness of waxy cuticles on tree leaves."
     ],
     "answer": 1
   },
   {
     "type": "true-false",
-    "question": "Two isolated populations are considered distinct species when their genetic compositions become so different that they can no longer interbreed to produce fertile offspring.",
+    "question": "Eutrophication (富營養化) occurs when excessive nitrates and phosphates from agricultural fertilizer run-off or untreated sewage enter water bodies, triggering rapid algal blooms (藻華).",
     "options": [
-      "True",
-      "False"
+      "True / 正確",
+      "False / 錯誤"
     ],
     "answer": 0
   },
   {
     "type": "multiple-choice",
-    "question": "How does the refinement of Darwinism into 'neo-Darwinism' enhance our modern understanding of how species evolve over time?",
+    "question": "Why do fish and aquatic invertebrates suffocate and die following a severe algal bloom caused by eutrophication?",
     "options": [
-      "It incorporates genetic principles, explaining that heritable traits are determined by genes and variation is driven by mutations.",
-      "It proves that environmental changes directly create chemical solutions inside cellular cytoplasm.",
-      "It supports the original concept that structures repeatedly used become progressively larger over generations.",
-      "It establishes that speciation only happens when identical twins isolate across macrohabitats."
+      "Algae consume all the nitrogen gas dissolved in the water.",
+      "Dense surface algae block sunlight from reaching submerged aquatic plants; when the algae and submerged plants die, aerobic saprophytic bacteria multiply rapidly to decompose them, depleting dissolved oxygen in the water.",
+      "Algae turn water into solid ice.",
+      "Algae secrete antibiotics that kill fish gills."
     ],
-    "answer": 0
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What does a high Biochemical Oxygen Demand (BOD / 生化需氧量) in a river water sample indicate?",
+    "options": [
+      "The river water is clean, well-oxygenated, and free of organic pollutants.",
+      "The river water is heavily polluted with biodegradable organic matter (such as untreated sewage), supporting a large population of aerobic bacteria that consume dissolved oxygen rapidly.",
+      "The river contains a high concentration of photosynthetic aquatic plants.",
+      "The water temperature is close to 0 °C."
+    ],
+    "answer": 1
   },
   {
     "type": "true-false",
-    "question": "Over-production of offspring within a population leads to a struggle for survival because environmental resources like food and space are typically limited.",
+    "question": "Heavy metals (such as mercury and lead) and persistent organic pesticides (such as DDT) are non-biodegradable and undergo biomagnification (生物放大), reaching toxic concentrations in top predators such as fish-eating birds and humans.",
     "options": [
-      "True",
-      "False"
+      "True / 正確",
+      "False / 錯誤"
     ],
     "answer": 0
   },
   {
-    "type": "structured",
-    "question": "[EVOLUTIONARY MECHANISM ANALYSIS] A population of insects is exposed to a chemical insecticide. Over several years, the insecticide becomes ineffective as the majority of the insect population develops resistance. 1) Contrast how a Lamarckian versus a Darwinian framework would explain the development of this resistance. 2) Explain how this resistance leads to microevolution within the population.",
-    "rubric": "To score full points, the comparative analysis must outline: 1) Lamarckism would argue that exposure to the insecticide created a need for the individual insects to change, causing them to develop resistance characters during their lifetime and pass them on. Darwinism argues that genetic variations for resistance already existed in the population before exposure; the insecticide acted as a selection pressure, killing non-resistant insects and selecting resistant ones to survive. 2) Because the better-adapted (resistant) individuals survive and reproduce, they pass on their favorable heritable alleles, increasing the proportion of resistant individuals in subsequent generations."
-  }
-]
+    "type": "multiple-choice",
+    "question": "Which of the following is a major ecological consequence of widespread deforestation (砍伐森林) in tropical rainforests?",
+    "options": [
+      "Increased soil fertility and reduced soil erosion",
+      "Loss of habitats leading to rapid decline in biodiversity, increased soil erosion, disruption of the water cycle, and reduced absorption of atmospheric CO2",
+      "Decreased atmospheric carbon dioxide levels",
+      "Increased population density of arboreal mammals"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why does monoculture (單一耕作 / growing a single crop species over a large area) increase the vulnerability of crops to pest outbreaks and soil nutrient depletion?",
+    "options": [
+      "Monoculture creates high biodiversity that attracts too many insect predators.",
+      "Uniform crops provide an abundant, continuous food supply for specific pests and diseases to spread rapidly, while repeatedly absorbing the exact same mineral ions from the soil.",
+      "Monoculture prevents photosynthesis from occurring in crop leaves.",
+      "Monoculture increases the rate of nitrogen fixation in the soil."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Biological control (生物防治) uses natural predators, parasites, or pathogens to keep agricultural pest populations below damaging levels without causing chemical pollution or biomagnification.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is a potential risk of introducing an exotic predator into a new habitat for biological control without thorough ecological testing?",
+    "options": [
+      "The introduced predator may immediately turn into a plant.",
+      "The introduced predator may become an invasive alien species (外來入侵物種), preying on native non-target species and disrupting local food webs.",
+      "The pest species will instantly become immune to sunlight.",
+      "The soil will become waterlogged."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How does setting a minimum mesh size (最小網眼尺寸) for fishing nets help achieve sustainable fisheries management (可持續漁業管理)?",
+    "options": [
+      "It traps all juvenile fish while allowing large adult fish to escape.",
+      "It allows young, immature fish to escape so they can grow to maturity and reproduce before being caught, replenishing the fish stock.",
+      "It prevents fishing boats from entering coral reefs.",
+      "It increases the amount of plastic waste in the ocean."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Enforcing a fishing moratorium (休漁期 / closed season) during the breeding season of marine fish allows fish populations to spawn and recover sustainably.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is the main purpose of primary treatment (初級處理) in a sewage treatment works?",
+    "options": [
+      "Using aerobic microorganisms to oxidize dissolved organic matter",
+      "Physical screening to remove large floating debris and sedimentation in settling tanks to remove suspended solid grit and sludge",
+      "Adding chlorine or UV light to kill pathogenic bacteria",
+      "Removing nitrates and phosphates using denitrifying bacteria"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "During secondary treatment (二級處理 / activated sludge process) of sewage, why is compressed air bubbled continuously through the aeration tank?",
+    "options": [
+      "To cool down the sewage water to freezing point",
+      "To supply dissolved oxygen for aerobic decomposers (bacteria and protists) to break down organic pollutants into harmless inorganic substances (CO2, H2O, nitrates) and keep sludge suspended",
+      "To kill all bacteria in the tank",
+      "To convert heavy metals into plastics"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "In an anaerobic sludge digester, anaerobic bacteria break down sewage sludge to produce biogas (mainly methane / 甲烷), which can be collected and burned as a renewable fuel to generate electricity.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is sustainable development (可持續發展)?",
+    "options": [
+      "Maximizing industrial extraction of fossil fuels and timber for immediate economic profit",
+      "Development that meets the needs of the present generation without compromising the ability of future generations to meet their own needs",
+      "Banning all forms of agriculture and fishing worldwide",
+      "Replacing all natural forests with concrete urban areas"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which practice in agriculture helps maintain soil fertility and reduce reliance on chemical fertilizers?",
+    "options": [
+      "Continuous monoculture without fallow periods",
+      "Crop rotation (輪作) with leguminous plants and applying composted organic manure",
+      "Flooding fields with saltwater every year",
+      "Burning all crop residues after every harvest"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Lichen species (地衣) vary in their sensitivity to sulphur dioxide air pollution and can therefore serve as biological indicators (生物指標) of air quality.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
