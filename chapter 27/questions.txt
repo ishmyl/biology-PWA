@@ -1,98 +1,224 @@
 [
   {
     "type": "multiple-choice",
-    "question": "Which of the following describes an advantage of producing human insulin using recombinant DNA technology over extracting it from the pancreas of cattle or sheep?",
+    "question": "What is recombinant DNA technology (重組 DNA 技術 / genetic engineering)?",
     "options": [
-      "The insulin produced can be easily stored at room temperature without denaturation.",
-      "The product yield is much lower but the chemical extraction process is faster.",
-      "The insulin is structurally identical to human insulin, minimizing immune system rejection.",
-      "It completely eliminates the need for using any host bacterial cells during synthesis."
-    ],
-    "answer": 2
-  },
-  {
-    "type": "multiple-choice",
-    "question": "During gel electrophoresis, DNA fragments migrate toward the positive terminal because of the negative charge present on which of their molecular components?",
-    "options": [
-      "Deoxyribose sugars",
-      "Nitrogenous bases",
-      "Phosphate groups",
-      "Hydrogen bonds"
-    ],
-    "answer": 2
-  },
-  {
-    "type": "true-false",
-    "question": "In gel electrophoresis, longer DNA fragments move faster than shorter ones through the gel slab because the pores provide less resistance to large structures.",
-    "options": [
-      "True",
-      "False"
+      "The selective breeding of farm animals over many generations",
+      "The isolation of a specific gene from one organism and its insertion into the DNA of another organism (host) to express a desired protein or trait",
+      "The fusion of two gametes during normal sexual reproduction",
+      "The use of antibiotics to kill pathogenic bacteria in hospitals"
     ],
     "answer": 1
   },
   {
     "type": "multiple-choice",
-    "question": "What is a major advantage of utilizing recombinant DNA technology over traditional selective breeding to obtain organisms with desirable characteristics?",
+    "question": "What is the specific role of restriction enzymes (restriction endonucleases / 限制酶) in genetic engineering?",
     "options": [
-      "It allows genes to be successfully transferred between completely unrelated biological species.",
-      "It requires breeding the target animals across many generations to lock down the traits.",
-      "It involves manipulating thousands of unknown genes at the same time to create variations.",
-      "The results are completely unpredictable, introducing highly diverse phenotypes."
-    ],
-    "answer": 0
-  },
-  {
-    "type": "true-false",
-    "question": "DNA fingerprinting is highly effective for identifying individuals because the number of repetitive base sequence repeats in highly variable regions is identical across all human populations.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which of the following is an explicit core goal outlined by the Human Genome Project (HGP)?",
-    "options": [
-      "To completely clone the first human being using somatic cell nuclear transfer.",
-      "To sequence the complete human genome and map all the individual genes within it.",
-      "To rewrite the genetic code of human cells to make them completely immune to viruses.",
-      "To replace all traditional Chinese medicines with synthetic pharmaceutical alternatives."
+      "To join DNA fragments together by forming phosphodiester bonds",
+      "To recognize specific short DNA base sequences (recognition sites) and cut both DNA strands, often leaving single-stranded 'sticky ends' (黏性末端)",
+      "To synthesize complementary DNA (cDNA) from an mRNA template",
+      "To amplify millions of copies of a DNA sample in a thermal cycler"
     ],
     "answer": 1
   },
   {
     "type": "true-false",
-    "question": "Recombinant DNA technology allows scientists to isolate a fragment of DNA from a donor cell and insert it into another organism to introduce a new characteristic.",
+    "question": "Using the SAME restriction enzyme to cut both the donor DNA containing the target gene and the bacterial plasmid vector produces complementary sticky ends that can pair up via hydrogen bonding.",
     "options": [
-      "True",
-      "False"
+      "True / 正確",
+      "False / 錯誤"
     ],
     "answer": 0
   },
   {
     "type": "multiple-choice",
-    "question": "Which application of DNA fingerprinting is specifically used in environmental conservation or supply chain verification?",
+    "question": "Which enzyme is used to seal the sugar-phosphate backbone and permanently join the target gene into the cut plasmid vector?",
     "options": [
-      "Performing parentage tests to establish family relationships in court.",
-      "Tracing the origin of ivory products to help conserve endangered species.",
-      "Diagnosing the base substitutions responsible for sickle-cell anaemia.",
-      "Storing full genomic data inside public international medical databases."
+      "DNA polymerase / DNA 聚合酶",
+      "DNA ligase / DNA 連接酶",
+      "RNA polymerase / RNA 聚合酶",
+      "Amylase / 澱粉酶"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is a plasmid (質粒) used as a vector (載體) in genetic engineering?",
+    "options": [
+      "A viral protein coat that digests bacterial cell walls",
+      "A small, circular double-stranded DNA molecule found naturally in bacteria that replicates independently of the main bacterial chromosome",
+      "A ribosome that translates human mRNA inside yeast cells",
+      "An enzyme that cuts DNA at palindromic sequences"
     ],
     "answer": 1
   },
   {
     "type": "true-false",
-    "question": "A current limitation of the Human Genome Project is that the biological functions of many identified genes are still unknown to scientists.",
+    "question": "Bacteria can accurately transcribe and translate a human gene (such as the human insulin gene) to produce functional human protein because the genetic code is universal across organisms.",
     "options": [
-      "True",
-      "False"
+      "True / 正確",
+      "False / 錯誤"
     ],
     "answer": 0
   },
   {
-    "type": "structured",
-    "question": "[BIOTECHNOLOGY COMPARISON] A research team wants to produce a strain of rice that contains high levels of beta-carotene. 1) Contrast how this would be achieved using selective breeding versus recombinant DNA technology. 2) Explain why the recombinant DNA approach yields more predictable results.",
-    "rubric": "To score full points, the comparative analysis must outline: 1) Selective breeding involves choosing parent rice plants with slightly higher nutrient levels and crossing them over many generations. Recombinant DNA technology isolates the specific gene for beta-carotene production from a donor organism and directly inserts it into the rice genome (creating Golden Rice). 2) The recombinant DNA approach is more predictable because only one or a few known genes are targeted and transferred at the same time, whereas selective breeding mixes thousands of maternal and paternal genes randomly."
-  }
-]
+    "type": "multiple-choice",
+    "question": "What is a major advantage of producing human insulin using genetically modified bacteria compared with extracting insulin from the pancreases of pigs or cattle?",
+    "options": [
+      "Bacterial insulin is identical in amino acid sequence to human insulin, so it does not trigger allergic or immune rejection responses, and can be produced rapidly in large quantities.",
+      "Bacterial insulin works inside the stomach without needing injection.",
+      "Bacterial insulin permanently cures Type 1 diabetes after a single dose.",
+      "Bacteria do not require any nutrients or fermenters to grow."
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why are antibiotic resistance genes (such as ampicillin resistance) often included as marker genes (標記基因) on plasmid vectors?",
+    "options": [
+      "To kill all transformed bacteria after fermentation",
+      "To identify and select transformed bacteria that have successfully taken up the plasmid when grown on agar medium containing that antibiotic",
+      "To make human patients immune to all bacterial infections",
+      "To increase the melting temperature of DNA"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Golden Rice (黃金米) is a genetically modified crop engineered to synthesize beta-carotene (provitamin A) in rice grains to help prevent Vitamin A deficiency and night blindness.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following is a potential ecological or health concern associated with genetically modified (GM) crops?",
+    "options": [
+      "GM crops require double the amount of chemical pesticides.",
+      "Possible transfer of herbicide-resistance genes via cross-pollination to wild weeds (creating 'superweeds'), reduction in biodiversity, or potential allergic reactions in humans",
+      "GM crops cannot carry out photosynthesis.",
+      "GM crops always grow slower than conventional varieties."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is the primary purpose of the Polymerase Chain Reaction (PCR / 聚合酶鏈反應)?",
+    "options": [
+      "To separate DNA fragments according to their size",
+      "To rapidly amplify (make millions of copies of) a specific target DNA sequence in vitro from a tiny initial sample",
+      "To cut circular plasmids into linear fragments",
+      "To insert human genes into sheep embryos"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "PCR uses a heat-stable DNA polymerase (such as Taq polymerase extracted from thermophilic bacteria) so the enzyme is not denatured during the high-temperature denaturation step (~95 °C).",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which sequence correctly lists the three repeating temperature steps of each cycle in PCR?",
+    "options": [
+      "Annealing (~55 °C) → Denaturation (~95 °C) → Extension (~72 °C)",
+      "Denaturation (~95 °C) → Annealing of primers (~55 °C) → Extension/synthesis (~72 °C)",
+      "Extension (~72 °C) → Denaturation (~95 °C) → Annealing (~55 °C)",
+      "Denaturation (~37 °C) → Annealing (~95 °C) → Extension (~55 °C)"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "In gel electrophoresis (凝膠電泳), why do DNA fragments migrate towards the positive electrode (anode) when an electric current is applied?",
+    "options": [
+      "DNA molecules carry an overall negative charge due to their phosphate groups.",
+      "DNA molecules carry a strong positive charge on their nitrogenous bases.",
+      "Restriction enzymes push DNA fragments towards the anode.",
+      "Agarose gel dissolves only near the positive electrode."
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "During gel electrophoresis, smaller DNA fragments encounter less resistance in the agarose gel matrix and therefore travel faster and farther from the wells than larger DNA fragments.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following is a major application of DNA fingerprinting (DNA 指紋分析)?",
+    "options": [
+      "Measuring the rate of transpiration in leaves",
+      "Forensic criminal investigations (matching crime-scene blood or hair samples to suspects) and paternity testing",
+      "Determining the blood group ABO antigens on red blood cells",
+      "Sterilizing surgical instruments"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "In a paternity test using DNA fingerprinting, how are the DNA bands of a child related to those of their biological parents?",
+    "options": [
+      "Every band in the child's DNA fingerprint must match the biological father only.",
+      "Every band in the child's DNA fingerprint must come from either the biological mother or the biological father (roughly half from each).",
+      "The child's DNA bands will be completely different from both parents.",
+      "The child will have twice as many bands as both parents combined."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Before gel electrophoresis in DNA fingerprinting, restriction enzymes are used to cut DNA at specific sequences, producing fragments of different lengths (RFLPs) due to variations in non-coding variable number tandem repeats (VNTRs) among individuals.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is somatic cell nuclear transfer (體細胞核轉移 / reproductive cloning), as used to produce Dolly the sheep?",
+    "options": [
+      "Fusing a sperm cell with an unfertilized ovum in a Petri dish",
+      "Transferring the diploid nucleus from an adult somatic cell into an enucleated ovum (an egg cell whose nucleus has been removed), stimulating it to divide into an embryo, and implanting it into a surrogate mother",
+      "Cutting a plant stem and planting it in moist soil",
+      "Injecting bacterial plasmids into sheep muscle cells"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which organism is genetically identical to a cloned mammal produced by somatic cell nuclear transfer?",
+    "options": [
+      "The donor of the enucleated ovum",
+      "The adult donor of the somatic cell nucleus",
+      "The surrogate mother that carried the embryo",
+      "A random sibling from the same flock"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Embryonic stem cells (胚胎幹細胞) are pluripotent, meaning they can divide repeatedly and differentiate into many different specialized cell types for potential use in regenerative medicine.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is gene therapy (基因治療)?",
+    "options": [
+      "Using X-rays to destroy malignant tumours in the lungs",
+      "Introducing a normal, functional copy of a gene into a patient's cells to compensate for a defective or mutated gene causing a genetic disorder",
