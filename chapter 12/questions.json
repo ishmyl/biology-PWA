@@ -1,245 +1,27 @@
 [
-  {
-    "type": "multiple-choice",
-    "question": "Which of the following is an example of artificial vegetative propagation (人工營養繁殖) widely used in agriculture and horticulture?",
-    "options": [
-      "Cross-pollination by honeybees / 蜜蜂異花傳粉",
-      "Cutting and grafting / 插枝和嫁接",
-      "Wind dispersal of winged fruits / 風力傳播帶翅果實",
-      "Double fertilization inside the ovule / 胚珠內的雙受精"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is a major advantage of asexual reproduction (無性生殖) such as vegetative propagation in crop plants?",
-    "options": [
-      "It produces high genetic variation among offspring to survive sudden environmental changes.",
-      "It preserves desirable parental traits because offspring are genetically identical clones, and allows rapid colonization without relying on pollinators.",
-      "It always produces seeds that remain dormant during winter.",
-      "It prevents infectious diseases from passing from parent to offspring."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "A disadvantage of vegetative propagation is overcrowding among offspring, leading to intense intraspecific competition for light, water, and mineral nutrients.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which type of underground storage organ is found in a potato plant (馬鈴薯) and contains 'eyes' (axillary buds) capable of growing into new aerial shoots?",
-    "options": [
-      "Bulb / 鱗莖",
-      "Stem tuber / 塊莖",
-      "Corm / 球莖",
-      "Rhizome / 根莖"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "In a typical bisexual flower, which structure produces pollen grains containing male gametes?",
-    "options": [
-      "Stigma / 柱頭",
-      "Style / 花柱",
-      "Anther / 花藥",
-      "Ovary / 子房"
-    ],
-    "answer": 2
-  },
-  {
-    "type": "true-false",
-    "question": "The carpel (心皮) is the female reproductive part of a flower and consists of the stigma, style, and ovary.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which combination of features is characteristic of an insect-pollinated flower (蟲媒花)?",
-    "options": [
-      "Small dull green petals, no nectar, large feathery stigmas hanging outside",
-      "Large brightly coloured petals, sweet scent, nectar glands, and sticky or spiky pollen grains",
-      "Long pendulous filaments producing huge quantities of light, smooth pollen grains",
-      "Absence of sepals and petals, with anthers exposed directly to wind currents"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How is the stigma of a wind-pollinated flower (風媒花), such as grass or maize, structurally adapted for pollination?",
-    "options": [
-      "It is small, compact, and enclosed deep inside the corolla tube.",
-      "It is large, feathery, and hangs outside the flower to provide a large surface area for catching airborne pollen grains.",
-      "It secretes thick sugary nectar to attract butterflies.",
-      "It is brightly coloured with nectar guides."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Cross-pollination (異花傳粉) increases genetic variation in offspring compared with self-pollination (自花傳粉), helping the species adapt to changing environments.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What happens immediately after a compatible pollen grain lands on a receptive stigma?",
-    "options": [
-      "The ovary wall turns directly into a hard seed coat.",
-      "Stimulated by sugary fluid on the stigma, the pollen grain germinates to grow a pollen tube (花粉管) down through the style towards the ovule.",
-      "The sepals fall off and the petals enlarge to trap insects.",
-      "The pollen grain undergoes meiosis to form four diploid spores."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How does the pollen tube obtain nutrients and penetrate the tissues of the style as it grows towards the ovule?",
-    "options": [
-      "By carrying out photosynthesis using chlorophyll in the pollen wall",
-      "By secreting digestive enzymes that digest tissues of the style and absorbing the soluble nutrients",
-      "By drawing water upwards through xylem vessels inside the style",
-      "By relying solely on wind pressure pushing it downwards"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "The pollen tube enters the ovule through a small opening in the integuments called the micropyle (珠孔).",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "During fertilization in flowering plants, what does the male gamete fuse with inside the ovule?",
-    "options": [
-      "The ovary wall / 子房壁",
-      "The female gamete (ovum / 卵細胞) to form a diploid zygote",
-      "The sepal / 萼片",
-      "The stigma surface / 柱頭表面"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "After fertilization in a flowering plant, what do the ovule (胚珠) and the ovary (子房) develop into respectively?",
-    "options": [
-      "Ovule → Fruit; Ovary → Seed",
-      "Ovule → Seed; Ovary → Fruit",
-      "Ovule → Seed coat; Ovary → Embryo",
-      "Ovule → Plumule; Ovary → Radicle"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Following fertilization, the integuments (珠被) of the ovule develop into the protective seed coat (testa / 種皮).",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which part of the seed embryo develops into the root system upon germination?",
-    "options": [
-      "Plumule / 胚芽",
-      "Radicle / 胚根",
-      "Cotyledon / 子葉",
-      "Testa / 種皮"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is the main function of the cotyledons (子葉) in a non-endospermic dicotyledonous seed such as a broad bean?",
-    "options": [
-      "To protect the seed from desiccation and fungal attack",
-      "To store food reserves (starch, proteins, and lipids) that nourish the growing embryo during germination",
-      "To absorb water directly from the soil after the root forms",
-      "To attract animals for seed dispersal"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Seed and fruit dispersal (種子及果實的散播) reduces overcrowding and competition between parent plants and seedlings, and enables the species to colonize new habitats.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "A fruit has a bright red colour, sweet juicy flesh, and small seeds with hard indigestible seed coats. By which agent is this fruit most likely dispersed?",
-    "options": [
-      "Wind dispersal / 風力散播",
-      "Water dispersal / 水力散播",
-      "Animal dispersal (by ingestion) / 動物散播",
-      "Explosive mechanical mechanism / 彈射散播"
-    ],
-    "answer": 2
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which three external environmental conditions are generally required for seed germination (種子萌發)?",
-    "options": [
-      "Light, soil minerals, and carbon dioxide",
-      "Water, oxygen, and a suitable temperature (warmth)",
-      "Nitrogen gas, darkness, and high salinity",
-      "Sunlight, chlorophyll, and high humidity"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "During the early stages of germination before green leaves emerge, the dry mass of a seedling decreases because stored food reserves are broken down in respiration to release energy.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Why is oxygen essential during seed germination?",
-    "options": [
-      "To carry out photosynthesis in the cotyledons",
-      "To carry out aerobic respiration, releasing ATP required for growth and synthesis of new cellular materials",
-      "To soften the testa so the radicle can emerge",
-      "To activate amylase enzymes directly"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Once a germinating seedling develops its first green foliage leaves above ground and carries out photosynthesis faster than respiration, its dry mass begins to increase.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "structured",
-    "question": "[INSECT VS. WIND POLLINATION] Compare insect-pollinated flowers and wind-pollinated flowers with respect to: 1) Appearance and structure of petals and nectar production; 2) Characteristics of pollen grains and position/structure of anthers and stigmas.",
-    "rubric": "To score full points, the response must demonstrate structural mastery: 1) Insect-pollinated flowers have large, brightly coloured petals (often with nectar guides), a sweet scent, and nectaries producing nectar to attract insects; wind-pollinated flowers have small, dull, green/reduced petals (or none) and lack scent and nectar. 2) Insect-pollinated flowers produce smaller quantities of large, heavy, sticky/spiky pollen grains with anthers and stigmas enclosed inside the flower so visiting insects brush against them; wind-pollinated flowers produce huge quantities of small, light, smooth pollen grains with long pendulous filaments hanging anthers outside and large feathery stigmas exposed to catch airborne pollen."
-  },
-  {
-    "type": "structured",
+  {"type":"multiple-choice","question":"What type of asexual reproduction occurs when new plants grow from specialized vegetative organs such as tubers, bulbs, or rhizomes?","options":["Binary fission / 二分裂","Vegetative propagation / 營養繁殖","Spore formation / 孢子繁殖","Double fertilization / 雙受精"],"answer":1},
+  {"type":"multiple-choice","question":"Which storage organ is a swollen underground stem tip with 'eyes' (axillary buds) used for vegetative propagation in potatoes?","options":["Bulb / 鱗莖","Stem tuber / 塊莖","Corm / 球莖","Rhizome / 根莖"],"answer":1},
+  {"type":"true-false","question":"Offspring produced by vegetative propagation are genetically identical to the parent plant, allowing desirable traits to be preserved rapidly.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What is a major disadvantage of vegetative propagation compared to sexual reproduction in flowering plants?","options":["It requires two parent plants and insect pollinators.","Lack of genetic variation makes the entire population vulnerable to the same diseases or sudden environmental changes.","It produces too few offspring to colonize nearby soil.","Offspring cannot carry out photosynthesis."],"answer":1},
+  {"type":"multiple-choice","question":"Which floral structure produces pollen grains containing male gametes?","options":["Stigma / 柱頭","Anther / 花藥","Ovary / 子房","Sepal / 萼片"],"answer":1},
+  {"type":"true-false","question":"In a typical flower, the carpel (心皮) is the female reproductive part consisting of the stigma, style, and ovary.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which combination of features is characteristic of an insect-pollinated flower (蟲媒花)?","options":["Small dull petals, feathery stigmas hanging outside, and huge amounts of light smooth pollen","Large brightly coloured petals, nectar guides, sweet scent, and sticky or spiky pollen grains","Absence of sepals, long dangling filaments, and no nectar","Green petals that open only at midnight in strong wind"],"answer":1},
+  {"type":"multiple-choice","question":"Why do wind-pollinated flowers (風媒花) typically possess large, feathery stigmas that protrude outside the flower?","options":["To store nectar for visiting bees","To provide a large surface area to trap pollen grains floating in the air","To protect the ovules from heavy rain","To carry out photosynthesis for the developing fruit"],"answer":1},
+  {"type":"true-false","question":"Cross-pollination (異花傳粉) transfers pollen from the anther of one flower to the stigma of a flower on another plant of the same species, promoting genetic variation.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What stimulates a pollen grain to germinate and grow a pollen tube down the style?","options":["Sunlight hitting the petals","Sugary solution secreted by the stigma","Water absorbed through the sepals","Hormones released by the anthers"],"answer":1},
+  {"type":"multiple-choice","question":"How does the male gamete reach the female gamete inside the ovule of a flowering plant?","options":["By swimming through moisture on the petals using flagella","By travelling down a pollen tube that grows through the style and enters the ovule via the micropyle (珠孔)","By being carried inside the vascular bundles of the stem","By wind blowing directly into the ovary"],"answer":1},
+  {"type":"true-false","question":"During fertilization in flowering plants, the male gamete fuses with the female gamete (ovum) inside the ovule to form a diploid zygote.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"After fertilization, which floral part develops into the seed, and which develops into the fruit?","options":["Ovary develops into the seed; ovule develops into the fruit.","Ovule develops into the seed; ovary wall develops into the fruit.","Anther develops into the seed; petal develops into the fruit.","Stigma develops into the seed; receptacle develops into the fruit."],"answer":1},
+  {"type":"multiple-choice","question":"What is the function of the cotyledons (子葉) in a dicotyledonous seed such as a broad bean?","options":["To protect the seed from fungal infection in the soil","To store food reserves (starch, proteins, lipids) that supply energy and nutrients to the growing embryo during germination","To absorb water from the soil like root hairs","To attract animals for seed dispersal"],"answer":1},
+  {"type":"true-false","question":"The micropyle (珠孔) remains as a tiny pore in the seed coat (testa) through which water enters the seed to trigger germination.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Why is seed dispersal (種子散播) important for the survival of plant species?","options":["It allows seeds to photosynthesize before reaching the soil.","It reduces overcrowding and competition for light, water, and minerals with the parent plant and colonizes new habitats.","It ensures all seeds germinate inside the parent fruit.","It increases the chromosome number of the embryo."],"answer":1},
+  {"type":"multiple-choice","question":"How are fruits or seeds dispersed by wind (e.g., dandelion) typically adapted?","options":["Fleshy, sweet, and brightly coloured pericarp","Light weight with parachute-like hairs or wing-like extensions to increase air resistance","Covered in stiff hooks and barbs","Hard, waterproof fibrous husk containing air spaces"],"answer":1},
+  {"type":"true-false","question":"Succulent, sweet, brightly coloured fruits (such as tomatoes and berries) rely on animals eating them and passing the indigestible seeds out in faeces far from the parent plant.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which three external environmental factors are essential for the germination of most seeds?","options":["Light, carbon dioxide, and mineral ions","Water, oxygen, and a suitable temperature (warmth)","Soil, fertilizer, and high humidity","Darkness, nitrogen gas, and low temperature"],"answer":1},
+  {"type":"multiple-choice","question":"Why is oxygen required during seed germination?","options":["For photosynthesis in the emerging plumule","For aerobic respiration to release ATP energy needed for cell division and growth of the embryo","To soften the hard seed coat (testa)","To activate chlorophyll in the cotyledons"],"answer":1},
+  {"type":"true-false","question":"During early germination, the dry mass of a seedling decreases because stored food reserves in the cotyledons are broken down by respiration before green leaves develop.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which enzyme hydrolyzes stored starch into maltose inside a germinating seed?","options":["Protease / 蛋白酶","Amylase / 澱粉酶","Lipase / 脂肪酶","Cellulase / 纖維素酶"],"answer":1},
+  {"type":"multiple-choice","question":"Which part of the plant embryo emerges first through the split seed coat during germination to anchor the seedling and absorb water?","options":["Plumule / 胚芽","Radicle / 胚根","Epicotyl / 上胚軸","Petal / 花瓣"],"answer":1},
+  {"type":"true-false","question":"Once the first green foliage leaves unfold above ground and begin photosynthesis, the dry mass of the seedling starts to increase.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"In an experiment investigating conditions for seed germination, why are seeds boiled in one control tube?","options":["To speed up enzyme activity inside the cotyledons","To kill the embryos and denature enzymes, showing that germination depends on living cells","To sterilize the water from bacteria","To remove oxygen dissolved in the water"],"answer":1}
+]
