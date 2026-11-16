@@ -1,0 +1,246 @@
+[
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following lists the five main processes of human nutrition in the correct chronological order?",
+    "options": [
+      "Ingestion → Digestion → Absorption → Assimilation → Egestion",
+      "Ingestion → Absorption → Digestion → Egestion → Assimilation",
+      "Digestion → Ingestion → Assimilation → Absorption → Egestion",
+      "Ingestion → Digestion → Assimilation → Absorption → Egestion"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is the main function of physical digestion (物理性消化), such as chewing by teeth and churning in the stomach?",
+    "options": [
+      "To chemically break covalent bonds in food molecules",
+      "To break large pieces of food into smaller pieces, increasing the surface area for digestive enzymes to act on",
+      "To absorb digested amino acids directly into the bloodstream",
+      "To kill all beneficial bacteria in the colon"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Human teeth are heterodont, consisting of incisors for biting/cutting, canines for tearing, and premolars and molars for crushing and grinding.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which enzyme in human saliva begins the chemical digestion of starch in the mouth cavity?",
+    "options": [
+      "Pepsin / 胃蛋白酶",
+      "Salivary amylase / 唾液澱粉酶",
+      "Pancreatic lipase / 胰脂肪酶",
+      "Maltase / 麥芽糖酶"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How is food moved along the oesophagus (食道) and small intestine?",
+    "options": [
+      "By ciliary beating of epithelial cells",
+      "By peristalsis (蠕動), the rhythmic wave-like contraction and relaxation of muscles in the alimentary canal wall",
+      "By gravity alone",
+      "By active transport across the lumen"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "During swallowing, the epiglottis (會厭) covers the opening of the trachea (windpipe) to prevent food from entering the respiratory tract.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following is NOT a function of hydrochloric acid (鹽酸) in gastric juice in the stomach?",
+    "options": [
+      "Providing an acidic medium (around pH 2) for pepsin to work optimally",
+      "Killing most bacteria ingested with food",
+      "Emulsifying lipids into tiny oil droplets",
+      "Denaturing proteins in food to expose peptide bonds"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why does gastric juice normally NOT digest the wall of the stomach itself?",
+    "options": [
+      "The stomach wall contains no proteins.",
+      "Goblet cells secrete a thick layer of alkaline mucus that coats and protects the stomach lining, and pepsin is secreted in an inactive form (pepsinogen).",
+      "Saliva neutralizes all stomach acid immediately.",
+      "The stomach temperature is too low for pepsin to act."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Bile (膽汁) is produced by the liver, stored in the gall bladder, and contains digestive enzymes that chemically break down fats into fatty acids and glycerol.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How do bile salts (膽鹽) assist in the digestion of lipids in the duodenum?",
+    "options": [
+      "They hydrolyse ester bonds in triglycerides.",
+      "They emulsify large lipid drops into tiny droplets, increasing the surface area for pancreatic lipase to act on.",
+      "They convert fatty acids into glucose.",
+      "They lower the pH of the duodenum to pH 2."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which digestive juice contains amylase, protease (trypsin), and lipase all together?",
+    "options": [
+      "Saliva / 唾液",
+      "Gastric juice / 胃液",
+      "Pancreatic juice / 胰液",
+      "Bile / 膽汁"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "true-false",
+    "question": "Sodium hydrogencarbonate (碳酸氫鈉) in pancreatic juice and bile neutralizes acidic chyme from the stomach and provides an alkaline medium for intestinal enzymes.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Where are disaccharidases (such as maltase, sucrase, and lactase) and peptidases located in the small intestine?",
+    "options": [
+      "Embedded in the cell membranes of the epithelial cells lining the villi",
+      "Secreted inside bile from the gall bladder",
+      "Produced by the salivary glands",
+      "Stored inside the lacteals of the villi"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following is a structural adaptation of a villus (絨毛) in the ileum for rapid absorption of digested food?",
+    "options": [
+      "A thick, multi-layered epithelium to prevent abrasion",
+      "A one-cell-thick epithelium that provides a short diffusion distance",
+      "Absence of blood capillaries so nutrients stay in the lumen",
+      "A waterproof cuticle covering the microvilli"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Fatty acids and glycerol enter the epithelial cells of the villi, recombine into triglycerides, and are absorbed primarily into the lacteal (乳糜管).",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which blood vessel transports absorbed glucose and amino acids directly from the small intestine to the liver?",
+    "options": [
+      "Hepatic artery / 肝動脈",
+      "Hepatic vein / 肝靜脈",
+      "Hepatic portal vein / 肝門靜脈",
+      "Pulmonary vein / 肺靜脈"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What happens to excess amino acids in the human liver (assimilation / 同化)?",
+    "options": [
+      "They are stored indefinitely as amino acid crystals in the liver.",
+      "They undergo deamination (脫氨作用), where the amino group is converted into urea for excretion and the remaining part is converted into carbohydrates or fats.",
+      "They are excreted unchanged in bile.",
+      "They are converted directly into cellulose."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Most water in the alimentary canal is absorbed in the small intestine by osmosis, while the colon absorbs most of the remaining water from undigested material.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following is NOT a function of the human liver?",
+    "options": [
+      "Regulation of blood glucose level by converting excess glucose into glycogen",
+      "Production of bile",
+      "Secretion of digestive enzymes into the duodenum",
+      "Detoxification of harmful substances such as alcohol"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is egestion (排遺)?",
+    "options": [
+      "Removal of metabolic waste products such as urea through the kidneys",
+      "Elimination of undigested and unabsorbed food material (faeces) through the anus",
+      "Breakdown of glycogen into glucose in liver cells",
+      "Secretion of digestive juices into the stomach"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "The brown colour of human faeces is mainly due to bile pigments (膽色素) formed from the breakdown of haemoglobin in old red blood cells.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "If a patient has their gall bladder surgically removed, which type of food should they avoid eating in large amounts at one time?",
+    "options": [
+      "Starchy foods such as rice and bread",
+      "Fatty and oily foods",
+      "Fresh fruits rich in vitamin C",
+      "Lean egg whites"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Glucose and amino acids are absorbed across the villus epithelium by both facilitated diffusion and active transport.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "structured",
+    "question": "[DIGESTION OF LIPIDS] A patient suffers from a blockage of the bile duct (膽管) caused by a gallstone, preventing bile from entering the duodenum. 1) Explain how this blockage affects the rate of lipid digestion in the small intestine. 2) Explain how the blockage affects the pH of the chyme entering the duodenum from the stomach.",
+    "rubric": "To score full points, the response must demonstrate structural mastery: 1) Without bile salts reaching the duodenum, lipids cannot be emulsified into tiny droplets; the surface area of lipids exposed to pancreatic lipase remains small, significantly slowing down lipid digestion. 2) Bile is alkaline and normally helps neutralize acidic chyme from the stomach; without bile, neutralization is less effective and the duodenal contents remain more acidic, reducing the activity of pancreatic enzymes."
+  },
+  {
+    "type": "structured",
+    "question": "[ADAPTATIONS OF THE ILEUM] Coeliac disease damages and flattens the villi lining the small intestine. 1) State two ways in which healthy villi are adapted for efficient absorption of nutrients. 2) Explain why a person with flattened villi often suffers from weight loss and fatigue even when eating a normal diet.",
