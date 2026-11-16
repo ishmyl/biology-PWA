@@ -46,7 +46,7 @@
             <label style="font-size:0.8rem; font-weight:700; color:var(--text-muted); display:block; margin-bottom:5px;">STUDENT FIRST NAME:</label>
             <input type="text" id="student-name-input" placeholder="Type your Name... (e.g. Tina)" autocomplete="off">
             
-            <button id="start-app-btn" type="button" class="btn btn-action" style="margin-top:10px;">Join Arena 🚀</button>
+            <button id="start-app-btn" type="button" onclick="handleStudentSignIn()" class="btn btn-action" style="margin-top:10px;">Join Arena 🚀</button>
         </section>
 
         <!-- STEP 2: 30-CHAPTER SELECTION HUB -->
@@ -88,8 +88,8 @@
                 <option value="chapter 29">Chapter 29</option>
                 <option value="chapter 30">Chapter 30</option>
             </select>
-
-            <button id="start-chapter-btn" type="button" class="btn btn-action" style="margin-bottom: 20px;">⚡ Start 25-Question Challenge</button>
+                
+            <button id="start-chapter-btn" type="button" onclick="handleChapterStart()" class="btn btn-action" style="margin-bottom: 20px;">⚡ Start 25-Question Challenge</button>
 
             <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 15px 0;">
             <p class="instruction" style="font-size: 0.85rem;">Or scan your own textbook page:</p>
