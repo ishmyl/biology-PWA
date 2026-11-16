@@ -1,0 +1,246 @@
+[
+  {
+    "type": "multiple-choice",
+    "question": "What is the chemical nature of most enzymes (酶) in living organisms?",
+    "options": [
+      "Carbohydrates / 碳水化合物",
+      "Lipids / 脂質",
+      "Proteins / 蛋白質",
+      "Nucleic acids / 核酸"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How do enzymes speed up biochemical reactions inside living cells?",
+    "options": [
+      "By raising the temperature of the cell",
+      "By lowering the activation energy (活化能) of the reaction",
+      "By increasing the total amount of product formed at equilibrium",
+      "By being consumed during the reaction"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Catabolic reactions (分解代謝) break down complex molecules into simpler ones and generally release energy.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following is an example of an anabolic reaction (合成代謝)?",
+    "options": [
+      "Digestion of starch into maltose by amylase",
+      "Breakdown of hydrogen peroxide into water and oxygen by catalase",
+      "Synthesis of proteins from amino acids at ribosomes",
+      "Oxidation of glucose during aerobic respiration"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "multiple-choice",
+    "question": "According to the lock-and-key hypothesis (鎖鑰假說), why is an enzyme specific in its action?",
+    "options": [
+      "Each enzyme can only function at pH 7.",
+      "The active site (活性部位) has a specific three-dimensional shape complementary only to a particular substrate.",
+      "Enzymes are permanently altered after binding to one substrate molecule.",
+      "Enzymes only bind to substrates of the exact same molecular mass."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Enzymes are reusable because they remain chemically unchanged at the end of a reaction, so they are required only in small amounts.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What happens to an enzyme when the temperature is lowered to 0 °C?",
+    "options": [
+      "The enzyme is permanently denatured.",
+      "The peptide bonds in the enzyme are broken.",
+      "The enzyme becomes inactive because molecules have very low kinetic energy, resulting in few enzyme-substrate collisions.",
+      "The active site changes shape permanently."
+    ],
+    "answer": 2
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why does the rate of an enzyme-catalysed reaction drop sharply above its optimum temperature (最適溫度)?",
+    "options": [
+      "All substrate molecules are used up instantly.",
+      "High heat breaks weak bonds maintaining the 3D conformation of the enzyme, denaturing (變性) the active site.",
+      "The enzyme turns into a competitive inhibitor.",
+      "The activation energy of the reaction increases."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Denaturation of an enzyme by extreme heat or extreme pH is usually irreversible because the conformation of the active site is permanently lost.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Pepsin (胃蛋白酶) in the human stomach has an optimum pH of approximately:",
+    "options": [
+      "pH 2",
+      "pH 7",
+      "pH 8.5",
+      "pH 11"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "If pancreatic amylase (optimum pH ~7.5) is placed in a solution at pH 2, what happens to its enzymatic activity?",
+    "options": [
+      "Activity reaches its maximum rate.",
+      "Activity drops to zero because extreme acidity denatures the enzyme.",
+      "Activity slows slightly but recovers when heated to 60 °C.",
+      "Activity doubles due to excess hydrogen ions."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "When substrate concentration is increased while enzyme concentration is kept constant, the reaction rate increases until all active sites are saturated (飽和).",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "At very high substrate concentrations, what becomes the limiting factor (限制因素) determining the maximum rate of an enzyme-catalysed reaction?",
+    "options": [
+      "Substrate concentration",
+      "Enzyme concentration",
+      "Product concentration",
+      "Light intensity"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How does a competitive inhibitor (競爭性抑制劑) reduce the rate of an enzyme-catalysed reaction?",
+    "options": [
+      "By binding permanently to an allosteric site away from the active site",
+      "By having a similar shape to the substrate and competing for the active site",
+      "By lowering the pH of the reaction mixture",
+      "By breaking down the substrate before the enzyme can bind"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "The effect of a competitive inhibitor can be reduced by increasing the concentration of the substrate.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Heavy metal ions such as mercury (Hg2+) and lead (Pb2+) act as non-competitive inhibitors because they:",
+    "options": [
+      "Have the exact same shape as glucose molecules",
+      "Bind to the enzyme away from the active site and alter the shape of the active site",
+      "Increase the optimum temperature of the enzyme",
+      "Act as cofactors that speed up side reactions"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What are cofactors (輔因子) such as certain vitamins and metal ions required for?",
+    "options": [
+      "To denature unwanted enzymes in the digestive tract",
+      "To assist certain enzymes in carrying out their catalytic activity",
+      "To act as structural proteins in the cell wall",
+      "To store excess chemical energy in adipose tissue"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Biological washing powders often contain proteases and lipases to break down insoluble protein and fat stains into soluble small molecules at lower washing temperatures.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why should biological washing powder NOT be used with boiling water (100 °C)?",
+    "options": [
+      "Boiling water precipitates the detergent salts.",
+      "High temperatures denature the enzymes in the washing powder, making them ineffective.",
+      "Enzymes work too quickly at 100 °C and damage cotton fibres.",
+      "Substrates evaporate at 100 °C."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "In fruit juice production, which enzyme is added to break down plant cell walls so that more juice can be extracted and clarified?",
+    "options": [
+      "Pepsin / 胃蛋白酶",
+      "Pectinase (and cellulase) / 果膠酶",
+      "Lipase / 脂肪酶",
+      "Catalase / 過氧化氫酶"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "In a reaction mixture with fixed enzyme and substrate amounts, the total amount of product formed eventually levels off because all substrate has been converted into product.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "A student investigates the effect of temperature on amylase activity using starch-agar plates. After incubating at 37 °C and flooding with iodine solution, clear zones appear around wells containing amylase because:",
+    "options": [
+      "Amylase turns iodine solution colourless directly.",
+      "Amylase digests starch into maltose, which does not give a blue-black colour with iodine.",
+      "Agar melts at 37 °C and washes the iodine away.",
+      "Amylase absorbs all the iodine molecules."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Meat tenderizers commonly contain papain (a protease extracted from papaya) to partially break down tough muscle proteins before cooking.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "structured",
+    "question": "[TEMPERATURE & ENZYME KINETICS] A student investigates the effect of temperature (10 °C to 70 °C) on the rate at which catalase breaks down hydrogen peroxide into water and oxygen. 1) Explain why the rate of oxygen production increases from 10 °C to 37 °C. 2) Explain why almost no oxygen is produced when the catalase solution is pre-heated to 70 °C before adding hydrogen peroxide.",
+    "rubric": "To score full points, the response must demonstrate structural mastery: 1) As temperature rises from 10 °C to 37 °C, enzyme and substrate molecules gain more kinetic energy and move faster, increasing the frequency of effective collisions to form enzyme-substrate complexes. 2) At 70 °C, excessive heat breaks the weak bonds maintaining the 3D shape of catalase, denaturing the enzyme and altering the conformation of its active site so hydrogen peroxide can no longer bind."
+  },
+  {
+    "type": "structured",
+    "question": "[ENZYME INHIBITION] Methanol poisoning in humans occurs when alcohol dehydrogenase converts methanol into toxic formaldehyde. Doctors treat methanol poisoning by administering controlled amounts of ethanol, which binds to the same active site on alcohol dehydrogenase. 1) Identify the type of enzyme inhibition demonstrated by ethanol and explain how it reduces formaldehyde production. 2) Explain why maintaining a high concentration of ethanol during treatment is necessary.",
