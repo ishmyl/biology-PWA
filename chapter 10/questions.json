@@ -1,0 +1,240 @@
+[
+  {
+    "type": "multiple-choice",
+    "question": "What is transpiration (蒸騰作用) in terrestrial plants?",
+    "options": [
+      "The loss of liquid water droplets from leaf margins through hydathodes",
+      "The loss of water vapour from the aerial parts of a plant, mainly through the stomata of leaves",
+      "The active pumping of water from root hairs into xylem vessels",
+      "The breakdown of glucose into carbon dioxide and water during respiration"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following is NOT a beneficial function of transpiration in flowering plants?",
+    "options": [
+      "Creating transpiration pull (蒸騰拉力) to draw water and dissolved mineral ions up from the roots to the leaves",
+      "Producing a cooling effect on the leaves to prevent overheating under bright sunlight",
+      "Assisting in the absorption of water by root hair cells",
+      "Providing glucose directly to non-photosynthetic root cells"
+    ],
+    "answer": 3
+  },
+  {
+    "type": "true-false",
+    "question": "More than 90% of water loss in a typical terrestrial dicotyledonous plant occurs through the stomata (stomatal transpiration), while a small amount occurs through the cuticle and lenticels.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How does an increase in relative humidity (相對濕度) of the surrounding air affect the rate of transpiration?",
+    "options": [
+      "It increases the rate because water vapour diffuses faster in humid air.",
+      "It decreases the rate because the water vapour concentration gradient between the intercellular air spaces and the outside air becomes less steep.",
+      "It has no effect on transpiration rate as long as stomata remain open.",
+      "It causes guard cells to lose water and close immediately."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why does windy condition (increased air movement) generally increase the rate of transpiration?",
+    "options": [
+      "Wind heats up the mesophyll cells directly.",
+      "Wind blows away the layer of water vapour accumulating outside the stomata, maintaining a steep water vapour concentration gradient.",
+      "Wind forces air into the xylem vessels.",
+      "Wind dissolves the waxy cuticle on the upper epidermis."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Increasing light intensity increases the rate of transpiration mainly because light stimulates stomata to open wider for photosynthesis and raises leaf temperature.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "When using a bubble potometer (氣泡蒸騰計) to measure the rate of transpiration of a leafy shoot, what does the movement of the air bubble actually measure directly?",
+    "options": [
+      "The exact volume of water evaporated from the leaves",
+      "The rate of water uptake by the leafy shoot (which is slightly greater than water loss because a small fraction of water is used in photosynthesis and cell growth)",
+      "The rate of carbon dioxide uptake during photosynthesis",
+      "The rate of translocation of sugars in the phloem"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why should the stem of a leafy shoot be cut under water before inserting it into a potometer?",
+    "options": [
+      "To wash away starch grains from the phloem",
+      "To prevent air bubbles from entering the xylem vessels and blocking the continuous water column",
+      "To stimulate root hair growth at the cut end",
+      "To sterilize the stem against fungal pathogens"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "In a weight potometer (重量蒸騰計), a thin layer of oil is poured onto the water surface in the flask to prevent direct evaporation of water from the flask into the air.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How are root hair cells (根毛細胞) structurally adapted for the absorption of water and mineral ions from the soil?",
+    "options": [
+      "They possess a thick waxy cuticle to prevent water leakage.",
+      "They have long, slender extensions that greatly increase surface area for absorption and lack a cuticle.",
+      "They contain numerous chloroplasts to generate ATP for osmosis.",
+      "They are dead hollow tubes with lignified walls."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "By what process does water enter root hair cells from the surrounding soil water?",
+    "options": [
+      "Active transport against a water potential gradient",
+      "Osmosis down a water potential gradient (since cell sap has a lower water potential than soil water)",
+      "Simple diffusion through carrier proteins",
+      "Phagocytosis of soil water droplets"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Mineral ions in the soil are absorbed by root hair cells mainly by active transport (requiring ATP) as well as diffusion when soil concentration is high.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following is a structural adaptation of xylem vessels (木質導管) for transporting water and minerals?",
+    "options": [
+      "They consist of living cells with companion cells alongside them.",
+      "They are dead, hollow, continuous tubes with no end walls or cytoplasm, offering minimal resistance to water flow.",
+      "Their cell walls are made entirely of unlignified cellulose so they can stretch easily.",
+      "They contain sieve plates that filter water molecules."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is the main driving force responsible for pulling water up through the xylem vessels from the roots to the tops of tall trees?",
+    "options": [
+      "Root pressure alone",
+      "Transpiration pull (蒸騰拉力) maintained by cohesion between water molecules and adhesion to xylem walls",
+      "Peristaltic contraction of xylem walls",
+      "Active pumping by companion cells"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "In a transverse section of a young dicotyledonous root, the xylem is located at the centre in a star-shaped (X-shaped) arrangement with phloem located between its arms.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How are vascular bundles arranged in the transverse section of a young dicotyledonous stem?",
+    "options": [
+      "Scattered randomly throughout the ground tissue",
+      "Arranged in a ring near the periphery, with xylem on the inner side and phloem on the outer side",
+      "Grouped together in a single solid core at the very centre",
+      "Located only inside the epidermal layer"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which vascular tissue transports organic food substances (mainly sucrose and amino acids) from leaves to growing regions and storage organs?",
+    "options": [
+      "Xylem vessels / 木質導管",
+      "Phloem (sieve tubes) / 韌皮部（篩管）",
+      "Cortex parenchyma / 皮層薄壁組織",
+      "Epidermis / 表皮"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Translocation (輸導) of organic nutrients in phloem is an active process that requires energy (ATP) supplied by mitochondria in companion cells (伴細胞).",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "In a ringing experiment (環割實驗), a ring of bark (including the phloem) is removed from a woody stem while leaving the xylem intact. What happens after a few weeks?",
+    "options": [
+      "The leaves above the ring wilt immediately due to lack of water.",
+      "The stem swells just above the cut ring due to the accumulation of organic food (sugars) moving downwards from the leaves.",
+      "The stem swells below the cut ring due to accumulation of mineral ions.",
+      "Water transport stops completely while sugar transport continues normally."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How is mechanical support provided in young herbaceous (non-woody) plants?",
+    "options": [
+      "Mainly by thick rings of dead woody xylem",
+      "Mainly by the turgidity (膨壓) of thin-walled parenchyma cells in the pith and cortex pressing against each other",
+      "By chitin exoskeletons in the epidermis",
+      "By air-filled vacuoles in guard cells"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "In woody plants, mechanical support is provided mainly by the rigid, thick, lignified cell walls (木質化細胞壁) of dead xylem vessels and fibres.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why does a herbaceous plant wilt (凋謝) on a hot, dry afternoon even if it remains upright in the morning?",
+    "options": [
+      "Lignin in its xylem melts at high temperatures.",
+      "The rate of water loss by transpiration exceeds the rate of water absorption by roots, causing parenchyma cells to lose water and become flaccid.",
+      "Phloem sieve tubes become blocked by starch.",
+      "Stomata open permanently in dry air."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Unlike xylem vessels, mature sieve tube elements in phloem contain cytoplasm and are living cells, though they lack a nucleus.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "structured",
