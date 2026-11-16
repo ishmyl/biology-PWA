@@ -1,98 +1,241 @@
 [
   {
     "type": "multiple-choice",
-    "question": "The genetic code is described as 'degenerate'. What does this feature mean during the process of gene expression?",
+    "question": "What are the basic building blocks (monomers) that join together to form a DNA molecule?",
     "options": [
-      "There are no gaps in the code and it is read in a overlapping frame layout.",
-      "The exact same triplet code specifies the same amino acid across all living organisms.",
-      "Some individual amino acids can be coded for by more than one distinct triplet code.",
-      "Each triplet code is capable of specifying multiple different types of amino acids."
+      "Amino acids / 氨基酸",
+      "Nucleotides / 核苷酸",
+      "Monosaccharides / 單糖",
+      "Fatty acids and glycerol / 脂肪酸和甘油"
     ],
-    "answer": 2
+    "answer": 1
   },
   {
     "type": "multiple-choice",
-    "question": "During transcription, if the base sequence on the DNA coding strand is ... A G T A G G ..., what will be the base sequence on the newly produced mRNA strand?",
+    "question": "Which three chemical components make up a single DNA nucleotide?",
     "options": [
-      "... T C A T C C ...",
-      "... A G U A G G ...",
-      "... U C A U C C ...",
-      "... A G T A G G ..."
+      "Ribose sugar, a phosphate group, and a nitrogenous base",
+      "Deoxyribose sugar, a phosphate group, and a nitrogenous base (A, T, C, or G)",
+      "Glucose sugar, a sulphate group, and an amino group",
+      "Glycerol, a phosphate group, and uracil"
     ],
     "answer": 1
   },
   {
     "type": "true-false",
-    "question": "Transcription takes place inside the nucleus using the template strand of DNA, whereas translation occurs in the cytoplasm mediated by ribosomes.",
+    "question": "In a DNA double helix, adenine (A) always pairs with thymine (T) via two hydrogen bonds, and cytosine (C) always pairs with guanine (G) via three hydrogen bonds.",
     "options": [
-      "True",
-      "False"
+      "True / 正確",
+      "False / 錯誤"
     ],
     "answer": 0
   },
   {
     "type": "multiple-choice",
-    "question": "Which type of RNA molecule is responsible for carrying a specific amino acid from the cytoplasm and pairing its anticodon with a codon on the mRNA strand?",
+    "question": "A double-stranded DNA molecule is analysed and found to contain 22% guanine (G). What percentage of adenine (A) does this DNA molecule contain?",
     "options": [
-      "Messenger RNA (mRNA)",
-      "Ribosomal RNA (rRNA)",
-      "Transfer RNA (tRNA)",
-      "RNA polymerase"
+      "22%",
+      "28%",
+      "44%",
+      "56%"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which statement correctly describes a structural difference between DNA and RNA?",
+    "options": [
+      "DNA is usually single-stranded and contains uracil, whereas RNA is double-stranded and contains thymine.",
+      "DNA contains deoxyribose sugar and the base thymine (T), whereas RNA contains ribose sugar and the base uracil (U).",
+      "DNA contains peptide bonds between bases, whereas RNA contains glycosidic bonds.",
+      "DNA is found only in ribosomes, whereas RNA is found only in the nucleus."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "DNA replication is described as semi-conservative (半保留複製) because each newly formed DNA double helix consists of one original parental strand and one newly synthesized complementary strand.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which enzyme catalyses the joining of free DNA nucleotides along each template strand during DNA replication?",
+    "options": [
+      "RNA polymerase / RNA 聚合酶",
+      "DNA polymerase / DNA 聚合酶",
+      "Restriction enzyme / 限制酶",
+      "DNA ligase / DNA 連接酶"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is a gene (基因) in molecular terms?",
+    "options": [
+      "An entire chromosome containing thousands of proteins",
+      "A specific sequence of DNA nucleotides (bases) that codes for a polypeptide (protein) or functional RNA molecule",
+      "A triplet of bases on a tRNA molecule",
+      "A type of enzyme that digests starch"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "The genetic code (遺傳密碼) is a triplet code in which a sequence of three consecutive bases (a codon) on mRNA specifies one amino acid.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why is the genetic code described as degenerate (簡併性)?",
+    "options": [
+      "One codon can code for several different amino acids at the same time.",
+      "Most amino acids are coded for by more than one triplet codon.",
+      "The genetic code changes from one species to another.",
+      "Codons overlap with one another along the mRNA strand."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which statement best explains why the genetic code is described as universal (通用性)?",
+    "options": [
+      "All organisms have the exact same number of chromosomes.",
+      "Almost all living organisms—from bacteria to plants and humans—use the same triplet codons to specify the same amino acids.",
+      "Every gene in an organism codes for the exact same protein.",
+      "DNA replication occurs at the exact same speed in all cells."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Transcription (轉錄) takes place inside the nucleus of eukaryotic cells, where RNA polymerase synthesizes a complementary messenger RNA (mRNA) strand using one strand of DNA as a template.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "A template strand of DNA has the base sequence 3'-T A C G G A-5'. What is the complementary mRNA base sequence transcribed from this DNA segment?",
+    "options": [
+      "5'-A T G C C T-3'",
+      "5'-A U G C C U-3'",
+      "5'-U A C G G A-3'",
+      "5'-C G T A A G-3'"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Where does translation (轉譯) take place in a eukaryotic cell, and what is the role of transfer RNA (tRNA)?",
+    "options": [
+      "In the nucleus; tRNA unwinds the DNA double helix",
+      "At ribosomes in the cytoplasm; tRNA carries specific amino acids to the ribosome and pairs its anticodon with the complementary mRNA codon",
+      "Inside the mitochondrion; tRNA synthesizes ATP from ADP",
+      "In the Golgi apparatus; tRNA packages proteins into vesicles"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "An anticodon (反密碼子) on a tRNA molecule consists of three bases that pair complementarily with a specific codon on an mRNA molecule during translation.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "If a polypeptide chain contains 120 amino acids, what is the minimum number of DNA nucleotides in the coding region of the gene (excluding stop codons and introns)?",
+    "options": [
+      "40 nucleotides",
+      "120 nucleotides",
+      "360 nucleotides",
+      "720 nucleotides"
     ],
     "answer": 2
   },
   {
-    "type": "true-false",
-    "question": "A gene mutation caused by a single base substitution always shifts the entire reading frame, completely altering the amino acid sequence after the mutation point.",
+    "type": "multiple-choice",
+    "question": "What is a gene mutation (基因突變)?",
     "options": [
-      "True",
-      "False"
+      "The normal crossing over of chromatids during Prophase I of meiosis",
+      "A spontaneous or mutagen-induced change in the base sequence of DNA within a gene, which may alter the amino acid sequence and function of the encoded protein",
+      "The temporary folding of a protein at low temperature",
+      "The separation of sister chromatids during anaphase"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Due to the degeneracy of the genetic code, a single base substitution (point mutation) does not always change the amino acid sequence of the resulting polypeptide (silent mutation).",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why are base insertion or deletion mutations (frameshift mutations / 移碼突變) usually much more harmful than single base substitutions?",
+    "options": [
+      "They always double the total number of chromosomes in the nucleus.",
+      "They shift the reading frame of all subsequent triplet codons downstream of the mutation, altering every amino acid after that point or creating a premature stop codon.",
+      "They prevent DNA polymerase from ever replicating the chromosome again.",
+      "They convert all DNA into RNA."
     ],
     "answer": 1
   },
   {
     "type": "multiple-choice",
-    "question": "Down syndrome is a human chromosomal disorder resulting from non-disjunction during meiotic cell division. What abnormality is present in the cells of affected individuals?",
+    "question": "In sickle-cell anaemia (鐮狀細胞貧血), a single base substitution in the beta-globin gene replaces glutamic acid with valine. How does this affect the patient?",
     "options": [
-      "A missing copy of an autosome chromosome",
-      "An extra copy of chromosome 21",
-      "A structural inversion error on chromosome 21",
-      "A structural translocation between non-homologous chromosomes"
+      "Red blood cells become abnormally sickle-shaped under low oxygen conditions, blocking small capillaries and reducing oxygen transport.",
+      "White blood cells divide uncontrollably to cause leukaemia.",
+      "The liver stops producing bile pigments.",
+      "Platelets fail to initiate blood clotting."
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "type": "true-false",
-    "question": "Mutations that occur inside somatic cells are passed on to the next generation and serve as a source of variation for natural selection.",
+    "question": "Chromosome mutations (染色體突變) involve changes in the structure or number of chromosomes, such as Down syndrome (trisomy 21), which is caused by non-disjunction during meiosis resulting in an extra copy of chromosome 21.",
     "options": [
-      "True",
-      "False"
+      "True / 正確",
+      "False / 錯誤"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "type": "multiple-choice",
-    "question": "Which of the following is classified as a physical radiation mutagen that creates free radicals capable of damaging the molecular structure of DNA?",
+    "question": "Which of the following is an example of a physical or chemical mutagen (誘變劑) that increases the rate of DNA mutation?",
     "options": [
-      "Nitrous acid",
-      "Asbestos fibres",
-      "Mustard gas",
-      "X-rays"
+      "Distilled water and sodium chloride",
+      "Ultraviolet (UV) radiation, X-rays, and tar chemicals in cigarette smoke",
+      "Visible green light and oxygen gas",
+      "Dietary fibre and vitamin C"
     ],
-    "answer": 3
+    "answer": 1
   },
   {
     "type": "true-false",
-    "question": "Many mutations have no physical effect on an organism because alleles exist in pairs in cells, and a recessive mutation can be masked by a normal dominant allele.",
+    "question": "Only mutations occurring in gametes (or gamete-producing cells) can be inherited by offspring, whereas somatic mutations affect only the individual in whom they occur.",
     "options": [
-      "True",
-      "False"
+      "True / 正確",
+      "False / 錯誤"
     ],
     "answer": 0
   },
   {
     "type": "structured",
-    "question": "[MUTATION ANALYSIS] A gene undergoes a single base deletion near the beginning of its coding sequence. 1) Predict the likely consequence of this deletion on the structure and function of the resulting protein. 2) Compare this outcome with a single base substitution mutation occurring at the exact same position.",
-    "rubric": "To score full points, the structural analysis must state: 1) The single base deletion causes a frame shift mutation. This shifts the reading frame of all subsequent triplet codes, completely altering the downstream amino acid sequence and usually resulting in a non-functional protein. 2) A base substitution only changes a single triplet code at that position. It might change just one amino acid, create an early stop signal, or have no effect at all due to the degenerate nature of the genetic code, making a substitution generally less disruptive to the overall protein structure than a deletion frame shift."
-  }
-]
+    "question": "[PROTEIN SYNTHESIS: TRANSCRIPTION & TRANSLATION] Insulin is a polypeptide hormone synthesized by beta cells in the human pancreas. 1) Describe how the genetic information stored in the insulin gene inside the nucleus is used to produce an mRNA molecule. 2) Explain the roles of ribosomes and tRNA molecules in assembling the insulin polypeptide in the cytoplasm.",
