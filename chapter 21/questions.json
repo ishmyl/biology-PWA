@@ -1,241 +1,27 @@
 [
-  {
-    "type": "multiple-choice",
-    "question": "Which overall chemical equation correctly summarizes photosynthesis (光合作用) in green plants?",
-    "options": [
-      "6CO2 + 6H2O → C6H12O6 + 6O2 (in the presence of light and chlorophyll)",
-      "C6H12O6 + 6O2 → 6CO2 + 6H2O + ATP",
-      "6CO2 + 12O2 → C6H12O6 + 6H2O",
-      "C6H12O6 → 2C2H5OH + 2CO2"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Where inside a chloroplast (葉綠體) do the photochemical reactions (light-dependent stage / 光反應) take place?",
-    "options": [
-      "In the stroma / 基質",
-      "On the thylakoid membranes (grana) / 類囊體膜（基粒）",
-      "In the outer chloroplast membrane / 葉綠體外膜",
-      "Inside starch grains / 澱粉粒內"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "The Calvin cycle (carbon fixation / 卡爾文循環) takes place in the stroma (基質) of the chloroplast, which contains soluble enzymes such as RuBisCO.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What happens during the photolysis of water (水的光解) in the photochemical reactions of photosynthesis?",
-    "options": [
-      "Light energy splits water molecules into hydrogen (which reduces NADP to NADPH) and oxygen gas (which is released as a by-product).",
-      "Carbon dioxide is split into carbon and oxygen atoms.",
-      "Glucose is broken down into pyruvate and ATP.",
-      "Chlorophyll molecules are permanently broken down into amino acids."
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which two high-energy products generated during the photochemical reactions are used to drive the Calvin cycle in the stroma?",
-    "options": [
-      "Glucose and oxygen / 葡萄糖和氧",
-      "ATP and NADPH / ATP 和 NADPH",
-      "Carbon dioxide and water / 二氧化碳和水",
-      "ADP and NADP+ / ADP 和 NADP+"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "During the Calvin cycle, carbon dioxide is accepted by a 5-carbon compound (RuBP) to form two molecules of a 3-carbon compound (glycerate 3-phosphate / 3-PGA), which is then reduced to triose phosphate (三碳糖磷酸) using ATP and NADPH.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How is most triose phosphate produced in the Calvin cycle used immediately inside the chloroplast?",
-    "options": [
-      "All of it is exported directly into the soil.",
-      "Most is used to regenerate the 5-carbon CO2 acceptor (RuBP) so the cycle can continue, while the rest is used to synthesize glucose, starch, lipids, and amino acids.",
-      "It is broken down into carbon dioxide and water during photolysis.",
-      "It is converted into chlorophyll pigments."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "In what form is carbohydrate transported from leaves through the phloem to other parts of the plant?",
-    "options": [
-      "Starch / 澱粉",
-      "Sucrose / 蔗糖",
-      "Cellulose / 纖維素",
-      "Glycogen / 糖原"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Glucose synthesized during photosynthesis is converted into insoluble starch (澱粉) for temporary storage in leaves so that it does not lower the water potential of mesophyll cells.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "When testing a green leaf for the presence of starch, why is the leaf first boiled in water for about 2 minutes?",
-    "options": [
-      "To dissolve chlorophyll out of the leaf",
-      "To kill the leaf cells, stop all enzymatic reactions, and destroy cell membranes so iodine solution can penetrate easily",
-      "To convert glucose into starch",
-      "To soften the leaf after soaking in ethanol"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Why must the Bunsen burner flame be turned OFF before placing a leaf into a boiling tube of ethanol (alcohol) to decolourize it?",
-    "options": [
-      "Ethanol freezes at high temperatures.",
-      "Ethanol is highly flammable and its vapour could catch fire if heated directly over a naked flame.",
-      "High heat destroys the starch grains inside the leaf.",
-      "Iodine solution evaporates if the Bunsen burner is left on."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Before testing a potted plant for the necessity of light or carbon dioxide in photosynthesis, the plant must first be destarched (脫澱粉) by keeping it in darkness for 24–48 hours.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "When a variegated leaf (斑葉, having green areas with chlorophyll and white/yellow areas without chlorophyll) is exposed to bright light and then tested with iodine solution, what result is obtained?",
-    "options": [
-      "Only the white/yellow areas turn blue-black.",
-      "Only the green areas turn blue-black, showing that chlorophyll is necessary for photosynthesis.",
-      "The entire leaf turns blue-black.",
-      "No part of the leaf turns blue-black."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What chemical is placed inside a conical flask enclosing a leaf to absorb carbon dioxide when investigating whether CO2 is necessary for photosynthesis?",
-    "options": [
-      "Sodium hydrogencarbonate solution (NaHCO3) / 碳酸氫鈉溶液",
-      "Potassium hydroxide (KOH) or soda lime / 氫氧化鉀或鹼石灰",
-      "Iodine solution / 碘液",
-      "Benedict's solution / 本立德試液"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Sodium hydrogencarbonate solution (NaHCO3) is often added to water containing aquatic plants such as Hydrilla to supply dissolved carbon dioxide for photosynthesis.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which wavelengths (colours) of visible light are most strongly absorbed by chlorophyll for photosynthesis?",
-    "options": [
-      "Green and yellow light",
-      "Blue-violet and red light",
-      "Infrared and ultraviolet radiation",
-      "Green light only"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "In a graph plotting rate of photosynthesis against light intensity, the curve rises linearly at low light intensities and then levels off (reaches a plateau) at high light intensities. Why does the rate level off?",
-    "options": [
-      "Chlorophyll molecules are completely destroyed at moderate light intensity.",
-      "Another factor, such as carbon dioxide concentration or temperature, has become the limiting factor (限制因素).",
-      "All water in the soil has evaporated.",
-      "Stomata close permanently at high light intensity."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "At high light intensity and high carbon dioxide concentration, increasing temperature from 15 °C to 30 °C increases the rate of photosynthesis because enzymes catalysing the Calvin cycle gain kinetic energy and work faster.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How is a chloroplast structurally adapted for carrying out photosynthesis efficiently?",
-    "options": [
-      "It has a thick lignified cell wall to prevent gas entry.",
-      "It contains stacks of thylakoids (grana) providing a large surface area for holding chlorophyll and electron carriers, surrounded by stroma containing enzymes for the Calvin cycle.",
-      "It lacks DNA and ribosomes so it relies entirely on the nucleus.",
-      "It has no inner membrane."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How can commercial greenhouse farmers increase crop yield during winter using knowledge of limiting factors of photosynthesis?",
-    "options": [
-      "By painting the greenhouse glass green and lowering the temperature to 5 °C",
-      "By installing artificial lighting, burning fuel or releasing CO2 gas to enrich CO2 levels, and using heaters to maintain optimal temperature",
-      "By covering plants with black plastic sheets during the day",
-      "By removing all potassium hydroxide from the soil"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Photosynthesis converts light energy into chemical energy stored in organic molecules, providing the primary energy source and oxygen for almost all living organisms on Earth.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which radioactive isotope was used by Calvin and his colleagues to trace the pathway of carbon fixation in photosynthesis?",
-    "options": [
-      "Carbon-14 (14C) / 碳-14",
-      "Oxygen-18 (18O) / 氧-18",
-      "Nitrogen-15 (15N) / 氮-15",
-      "Phosphorus-32 (32P) / 磷-32"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "true-false",
-    "question": "When temperature rises above 45 °C, the rate of photosynthesis drops sharply because enzymes involved in the Calvin cycle become denatured.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "structured",
-    "question": "[PHOTOCHEMICAL REACTIONS & CALVIN CYCLE] Photosynthesis consists of two interconnected stages inside the chloroplast. 1) Describe how light energy absorbed by chlorophyll leads to the formation of ATP, NADPH, and oxygen during the photochemical reactions. 2) Explain how the Calvin cycle would be affected if a plant is suddenly moved from bright light into complete darkness.",
+  {"type":"multiple-choice","question":"What is the overall balanced chemical equation for photosynthesis in green plants?","options":["C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O","6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ (in the presence of light and chlorophyll)","6CO₂ + 12O₂ → C₆H₁₂O₆ + 6H₂O","C₆H₁₂O₆ + 6H₂O → 6CO₂ + 12O₂"],"answer":1},
+  {"type":"multiple-choice","question":"Where inside a chloroplast do the photochemical reactions (light-dependent stage) take place?","options":["Stroma / 基質","Thylakoid membranes (grana) / 類囊體膜（基粒）","Outer chloroplast membrane / 葉綠體外膜","Starch grains / 澱粉粒"],"answer":1},
+  {"type":"true-false","question":"During the photochemical reactions of photosynthesis, light energy absorbed by chlorophyll excites electrons, leading to the photolysis of water and the synthesis of ATP and NADPH.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What is the source of the oxygen gas (O₂) released by green plants during photosynthesis?","options":["Carbon dioxide molecules split in the stroma","Photolysis (light-splitting) of water molecules on the thylakoid membranes","Breakdown of glucose during respiration","Reduction of nitrate ions in the roots"],"answer":1},
+  {"type":"multiple-choice","question":"Where does the Calvin cycle (carbon fixation / light-independent stage) occur inside a chloroplast?","options":["Thylakoid lumen / 類囊體腔","Stroma / 基質","Cell wall / 細胞壁","Mitochondrial matrix / 線粒體基質"],"answer":1},
+  {"type":"true-false","question":"Although the Calvin cycle does not require light directly, it stops soon in darkness because it depends on continuous supplies of ATP and NADPH generated by the photochemical reactions.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"In the Calvin cycle, what happens immediately after carbon dioxide combines with a 5-carbon compound (RuBP)?","options":["It forms a stable 6-carbon glucose molecule directly.","It forms an unstable 6-carbon compound that splits into two molecules of a 3-carbon compound (glycerate-3-phosphate / 3-PGA).","It releases oxygen gas into the air spaces.","It is converted directly into cellulose."],"answer":1},
+  {"type":"multiple-choice","question":"How are ATP and NADPH from the photochemical reactions used in the Calvin cycle?","options":["To split water molecules into hydrogen and oxygen","To reduce the 3-carbon compound (3-PGA) into triose phosphate (3-carbon sugar), some of which forms glucose while the rest regenerates the 5-carbon CO₂ acceptor","To pump potassium ions into guard cells","To break down starch into maltose"],"answer":1},
+  {"type":"true-false","question":"Triose phosphate (3-carbon sugar) produced in the Calvin cycle can be used to synthesize glucose, sucrose, starch, lipids, and amino acids (when combined with mineral ions such as nitrates).","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Why is glucose usually converted into starch for temporary storage inside leaf mesophyll cells during bright daylight?","options":["Starch is more soluble in water than glucose.","Starch is insoluble and osmotically inactive, so storing it does not lower the water potential of mesophyll cells or cause excess water uptake.","Starch diffuses faster through phloem sieve tubes than glucose.","Starch contains nitrogen atoms needed for growth."],"answer":1},
+  {"type":"multiple-choice","question":"In what carbohydrate form are photosynthetic products mainly translocated from leaves to other parts of the plant via the phloem?","options":["Starch / 澱粉","Sucrose / 蔗糖","Cellulose / 纖維素","Glycogen / 糖原"],"answer":1},
+  {"type":"true-false","question":"Before testing a leaf for starch with iodine solution, the leaf is boiled in ethanol (alcohol) in a hot water bath to decolorize it by dissolving chlorophyll so colour changes can be seen clearly.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Why must a potted plant be destarched in darkness for 24–48 hours before conducting experiments on factors required for photosynthesis?","options":["To kill all bacteria on the leaf surface","To ensure any starch detected at the end of the experiment was newly synthesized during the investigation rather than pre-existing starch","To increase the chlorophyll content of the leaves","To force all stomata to remain permanently open"],"answer":1},
+  {"type":"multiple-choice","question":"In an experiment testing whether carbon dioxide is needed for photosynthesis, what chemical is placed inside a sealed flask with a destarched leaf to absorb carbon dioxide?","options":["Sodium hydrogencarbonate solution / 碳酸氫鈉溶液","Potassium hydroxide (KOH) or soda lime / 氫氧化鉀或鹼石灰","Dilute hydrochloric acid / 稀鹽酸","Iodine solution / 碘液"],"answer":1},
+  {"type":"true-false","question":"When testing a variegated leaf (斑葉) exposed to bright light with iodine solution, only the green parts containing chlorophyll turn blue-black, proving chlorophyll is necessary for photosynthesis.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What is a limiting factor (限制因子) in photosynthesis?","options":["The factor present in the highest concentration","The factor in shortest supply that restricts the overall rate of photosynthesis even if other factors are increased","Any mineral ion absent from the soil","The maximum temperature a plant can survive"],"answer":1},
+  {"type":"multiple-choice","question":"On a graph of photosynthetic rate against light intensity, why does the curve level off into a plateau at high light intensities?","options":["Chlorophyll is completely destroyed at moderate light.","Light intensity is no longer the limiting factor; another factor such as carbon dioxide concentration or temperature has become limiting.","Stomata close completely whenever light is bright.","Respiration stops at high light intensities."],"answer":1},
+  {"type":"true-false","question":"Increasing temperature above the optimum (around 35–40 °C in many plants) causes the rate of photosynthesis to drop sharply because enzymes catalyzing the Calvin cycle become denatured.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Why does temperature have little effect on the rate of photosynthesis at very low light intensities?","options":["Enzymes do not work at low light.","At very low light intensity, light is the limiting factor restricting the photochemical reactions, so speeding up temperature-sensitive enzyme reactions in the Calvin cycle cannot increase the overall rate.","Stomata freeze shut in dim light.","Water stops moving up the xylem."],"answer":1},
+  {"type":"multiple-choice","question":"How does an increase in carbon dioxide concentration affect the rate of photosynthesis when light intensity and temperature are optimal?","options":["The rate decreases due to acid toxicity.","The rate increases proportionally until another factor (such as light intensity, temperature, or enzyme saturation) becomes limiting.","It has no effect because plants get carbon from soil.","It stops the photolysis of water."],"answer":1},
+  {"type":"true-false","question":"In a submerged water plant (such as Hydrilla) experiment, counting the number of oxygen bubbles released per minute provides an estimate of the apparent (net) rate of photosynthesis.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How can greenhouse growers artificially maximize crop yield during winter using knowledge of limiting factors?","options":["By painting the glass green and lowering CO₂ levels","By installing artificial lighting, heaters, and burning fuel or releasing CO₂ gas to raise carbon dioxide concentration","By keeping the greenhouse completely dark at night with zero ventilation","By removing all soil nitrates"],"answer":1},
+  {"type":"multiple-choice","question":"How are thylakoids arranged inside a chloroplast to maximize the efficiency of the photochemical reactions?","options":["Scattered randomly as single vesicles in the cytoplasm","Stacked into coin-like piles called grana (基粒) interconnected by lamellae, providing a large surface area to hold chlorophyll molecules and electron carriers","Coiled into a single spiral tube along the cell wall","Embedded inside the central vacuole"],"answer":1},
+  {"type":"true-false","question":"Chlorophyll absorbs mainly red and blue-violet wavelengths of visible light and reflects green light, which is why most leaves appear green.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Why is photosynthesis ecologically essential for almost all heterotrophic organisms on Earth?","options":["It converts thermal energy into nitrogen gas.","It converts light energy into chemical energy stored in organic food molecules and releases oxygen required for aerobic respiration.","It breaks down dead organic waste into soil minerals.","It increases atmospheric carbon dioxide levels."],"answer":1}
+]
