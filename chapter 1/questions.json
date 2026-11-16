@@ -1,0 +1,261 @@
+[
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following is NOT one of the seven common characteristics of living organisms? / 下列哪項不是生物的七種共同特徵之一？",
+    "options": [
+      "Photosynthesis / 光合作用",
+      "Respiration / 呼吸作用",
+      "Excretion / 排泄",
+      "Reproduction / 生殖"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "All living organisms obtain energy directly from sunlight. / 所有生物都直接從陽光中獲取能量。",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is the process by which living organisms remove metabolic waste products from their bodies? / 生物把體內的代謝廢物排出體外的過程稱為什麼？",
+    "options": [
+      "Nutrition / 營養",
+      "Excretion / 排泄",
+      "Egestion / 排遺",
+      "Secretion / 分泌"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which life process releases energy from food inside living cells? / 哪種生命過程在活細胞內從食物中釋放能量？",
+    "options": [
+      "Respiration / 呼吸作用",
+      "Irritability / 感應性",
+      "Growth / 生長",
+      "Movement / 運動"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "Plants show irritability by growing towards light. / 植物向光生長顯示了感應性。",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which organelle controls all cellular activities and contains genetic material (DNA)? / 哪種細胞器控制所有細胞活動並含有遺傳物質（DNA）？",
+    "options": [
+      "Mitochondrion / 線粒體",
+      "Ribosome / 核糖體",
+      "Nucleus / 細胞核",
+      "Vacuole / 液泡"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Where does aerobic respiration mainly take place in a eukaryotic cell? / 真核細胞的有氧呼吸主要在哪裡進行？",
+    "options": [
+      "Chloroplast / 葉綠體",
+      "Mitochondrion / 線粒體",
+      "Smooth endoplasmic reticulum / 光面內質網",
+      "Cell wall / 細胞壁"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Animal cells have a rigid cell wall made of cellulose. / 動物細胞具有由纖維素組成的堅硬細胞壁。",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which structure is found in plant cells but NOT in animal cells? / 下列哪種結構存在於植物細胞中，但不存在於動物細胞中？",
+    "options": [
+      "Cell membrane / 細胞膜",
+      "Cytoplasm / 細胞質",
+      "Chloroplast / 葉綠體",
+      "Mitochondrion / 線粒體"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is the main function of the cell membrane? / 細胞膜的主要功能是什麼？",
+    "options": [
+      "Provide mechanical support / 提供機械支持",
+      "Control the movement of substances into and out of the cell / 控制物質進出細胞",
+      "Synthesize proteins / 合成蛋白質",
+      "Carry out photosynthesis / 進行光合作用"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which organelle is responsible for protein synthesis? / 哪種細胞器負責合成蛋白質？",
+    "options": [
+      "Ribosome / 核糖體",
+      "Large central vacuole / 大液泡",
+      "Cell wall / 細胞壁",
+      "Chloroplast / 葉綠體"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "The plant cell wall is fully permeable to water and dissolved substances. / 植物細胞壁對水和溶解物質是全透性的。",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What pigment inside chloroplasts absorbs light energy for photosynthesis? / 葉綠體內的哪種色素吸收光能以進行光合作用？",
+    "options": [
+      "Haemoglobin / 血紅蛋白",
+      "Chlorophyll / 葉綠素",
+      "Melanin / 黑色素",
+      "Cellulose / 纖維素"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which type of endoplasmic reticulum has ribosomes attached to its surface? / 哪種類型的內質網表面附著有核糖體？",
+    "options": [
+      "Rough endoplasmic reticulum / 粗面內質網",
+      "Smooth endoplasmic reticulum / 光面內質網",
+      "Golgi apparatus / 高爾基體",
+      "Nuclear membrane / 核膜"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "Prokaryotic cells have a true nucleus surrounded by a nuclear membrane. / 原核細胞具有由核膜包圍的真細胞核。",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following is an example of a prokaryotic organism? / 下列哪項是原核生物的例子？",
+    "options": [
+      "Amoeba / 變形蟲",
+      "Yeast / 酵母菌",
+      "Bacterium / 細菌",
+      "Onion epidermal cell / 洋蔥表皮細胞"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "multiple-choice",
+    "question": "If a microscope has a 10× eyepiece and a 40× objective lens, what is the total magnification? / 如果顯微鏡的目鏡為 10×，物鏡為 40×，總放大率是多少？",
+    "options": [
+      "40×",
+      "50×",
+      "400×",
+      "4000×"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "true-false",
+    "question": "Compared with a light microscope, a transmission electron microscope produces images with higher magnification and higher resolution. / 與光學顯微鏡相比，透射電子顯微鏡產生的影像具有更高的放大率和更高的解像度。",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which microscope produces 3D images of the external surface of a specimen? / 哪種顯微鏡能產生標本外表面的三維（3D）影像？",
+    "options": [
+      "Light microscope / 光學顯微鏡",
+      "Scanning electron microscope (SEM) / 掃描電子顯微鏡",
+      "Transmission electron microscope (TEM) / 透射電子顯微鏡",
+      "Hand lens / 放大鏡"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is the correct order of levels of organization in a multicellular organism from simplest to most complex? / 多細胞生物由最簡單到最複雜的組織層次正確順序是什麼？",
+    "options": [
+      "Cell → Tissue → Organ → System → Organism / 細胞 → 組織 → 器官 → 系統 → 生物體",
+      "Tissue → Cell → Organ → System → Organism / 組織 → 細胞 → 器官 → 系統 → 生物體",
+      "Cell → Organ → Tissue → System → Organism / 細胞 → 器官 → 組織 → 系統 → 生物體",
+      "Organ → Tissue → Cell → System → Organism / 器官 → 組織 → 細胞 → 系統 → 生物體"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following is an example of a plant organ? / 下列哪項是植物器官的例子？",
+    "options": [
+      "Xylem vessel / 木質部導管",
+      "Leaf / 葉",
+      "Guard cell / 保衛細胞",
+      "Epidermis / 表皮"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "A group of similar cells working together to perform a specific function is called a tissue. / 一群相似的細胞共同合作執行特定功能稱為組織。",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which liquid inside a plant cell's large central vacuole helps keep the cell turgid? / 植物細胞大液泡內的哪種液體有助於保持細胞硬挺？",
+    "options": [
+      "Cytoplasm / 細胞質",
+      "Cell sap / 細胞液",
+      "Blood plasma / 血漿",
+      "Tissue fluid / 組織液"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why are animal cells usually irregular in shape compared with plant cells? / 與植物細胞相比，為什麼動物細胞通常形狀不規則？",
+    "options": [
+      "They lack chloroplasts / 它們缺乏葉綠體",
+      "They lack a cell wall / 它們缺乏細胞壁",
+      "They have a large central vacuole / 它們有大液泡",
+      "They lack a nucleus / 它們缺乏細胞核"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "New cells are always produced from pre-existing living cells. / 新細胞總是由已存在的活細胞產生的。",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  }
+]
