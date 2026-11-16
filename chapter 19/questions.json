@@ -1,241 +1,27 @@
 [
-  {
-    "type": "multiple-choice",
-    "question": "Which sequence lists the seven main taxonomic ranks in biological classification from the broadest (largest) group to the most specific group?",
-    "options": [
-      "Kingdom → Phylum → Class → Order → Family → Genus → Species",
-      "Kingdom → Class → Phylum → Order → Family → Genus → Species",
-      "Phylum → Kingdom → Order → Class → Genus → Family → Species",
-      "Kingdom → Phylum → Order → Class → Family → Species → Genus"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How is a biological species (物種) defined?",
-    "options": [
-      "A group of organisms that live in the exact same habitat and eat the same food",
-      "A group of organisms with similar characteristics that can interbreed freely under natural conditions to produce fertile offspring",
-      "Any two organisms that belong to the same genus",
-      "A group of organisms that share the exact same coat colour"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "A mule (produced by crossing a male donkey and a female horse) is sterile (infertile), which demonstrates that donkeys and horses belong to different species.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "In the binomial system of naming organisms (雙名法) introduced by Linnaeus, how is the scientific name of human beings written correctly?",
-    "options": [
-      "homo Sapiens",
-      "Homo sapiens (italicized or underlined, with Genus capitalized and species lowercase)",
-      "HOMO SAPIENS",
-      "Homo Sapiens"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which characteristic distinguishes organisms in the Kingdom Prokaryotae (原核生物界 / Eubacteria and Archaea) from all other kingdoms?",
-    "options": [
-      "They are all multicellular and heterotrophic.",
-      "Their cells lack a membrane-bound nucleus and membrane-bound organelles such as mitochondria.",
-      "Their cell walls are always made of cellulose.",
-      "They carry out photosynthesis using chloroplasts."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "In the six-kingdom classification system, prokaryotic organisms are divided into Kingdom Eubacteria (真細菌界) and Kingdom Archaebacteria (古細菌界) based on differences in cell wall composition, membrane lipids, and ribosomal RNA sequences.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which kingdom consists mainly of unicellular eukaryotic organisms (such as Amoeba, Paramecium, and Euglena) as well as simple multicellular algae?",
-    "options": [
-      "Kingdom Fungi / 真菌界",
-      "Kingdom Protista / 原生生物界",
-      "Kingdom Plantae / 植物界",
-      "Kingdom Eubacteria / 真細菌界"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How do organisms in Kingdom Fungi (真菌界), such as mushrooms and bread mould, obtain their nutrition?",
-    "options": [
-      "By photosynthesis using chlorophyll in their hyphae",
-      "By saprophytic or parasitic nutrition, secreting digestive enzymes onto external organic matter and absorbing the digested products",
-      "By ingesting solid food particles into a digestive tract",
-      "By chemosynthesis using inorganic sulphur compounds"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Fungal cell walls are composed mainly of chitin (幾丁質) rather than cellulose, and fungi store excess carbohydrates as glycogen rather than starch.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which group of plants lacks true roots, stems, leaves, and vascular tissues (xylem and phloem), and reproduces using spores produced inside capsules?",
-    "options": [
-      "Mosses (bryophytes) / 苔蘚植物",
-      "Ferns / 蕨類植物",
-      "Gymnosperms / 裸子植物",
-      "Angiosperms / 被子植物"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How do ferns (蕨類植物) differ from mosses?",
-    "options": [
-      "Ferns produce flowers and seeds inside fruits.",
-      "Ferns possess true roots, stems, leaves, and vascular tissues (xylem and phloem), though they still reproduce by spores rather than seeds.",
-      "Ferns lack chlorophyll and are parasitic.",
-      "Ferns have no cuticle on their leaves."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Gymnosperms (裸子植物 / conifers) produce naked seeds inside cones (毬果) rather than enclosed inside fruits, and typically have needle-shaped leaves to reduce water loss.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which combination of features is characteristic of dicotyledons (雙子葉植物) compared with monocotyledons (單子葉植物)?",
-    "options": [
-      "One cotyledon, parallel leaf venation, and fibrous root system",
-      "Two cotyledons, net-like (reticulate) leaf venation, and a taproot system",
-      "One cotyledon, net-like leaf venation, and floral parts in multiples of four or five",
-      "Two cotyledons, parallel leaf venation, and scattered vascular bundles in the stem"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which phylum of invertebrates has jointed legs, a segmented body, and a hard chitinous exoskeleton (外骨骼)?",
-    "options": [
-      "Phylum Cnidaria / 刺胞動物門",
-      "Phylum Annelida / 環節動物門",
-      "Phylum Mollusca / 軟體動物門",
-      "Phylum Arthropoda / 節肢動物門"
-    ],
-    "answer": 3
-  },
-  {
-    "type": "true-false",
-    "question": "Earthworms belong to Phylum Annelida (環節動物門) and have soft, cylindrical bodies divided into many similar ring-like segments.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which class of vertebrates has moist, scaleless skin used for gas exchange, lays jelly-coated eggs in water, and undergoes metamorphosis from aquatic larvae with gills to air-breathing adults?",
-    "options": [
-      "Fish / 魚類",
-      "Amphibians / 兩棲類",
-      "Reptiles / 爬行類",
-      "Birds / 鳥類"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which two classes of vertebrates are homoiothermic (endothermic / 恆溫動物), maintaining a constant body temperature independent of the external environment?",
-    "options": [
-      "Fish and Amphibians",
-      "Amphibians and Reptiles",
-      "Birds and Mammals / 鳥類和哺乳類",
-      "Reptiles and Birds"
-    ],
-    "answer": 2
-  },
-  {
-    "type": "true-false",
-    "question": "Reptiles (爬行類) have dry, scaly skin to prevent water loss and lay eggs with tough leathery shells on land, allowing them to live completely independent of water for reproduction.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which feature is unique to Mammals (哺乳類) and absent in all other vertebrate classes?",
-    "options": [
-      "Presence of a vertebral column and internal skeleton",
-      "Presence of hair/fur on the skin and mammary glands (乳腺) that produce milk to nourish young",
-      "Internal fertilization and lungs for breathing air",
-      "A four-chambered heart"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Why are viruses (病毒) NOT classified into any of the six kingdoms of living organisms?",
-    "options": [
-      "They are too small to be seen under a light microscope.",
-      "They are non-cellular particles consisting only of a protein coat surrounding genetic material (DNA or RNA), and show no characteristics of life outside a host cell.",
-      "They cause infectious diseases in humans and plants.",
-      "They lack ribosomes and cell walls."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "A dichotomous key (二叉式檢索表) identifies unknown organisms by presenting a series of paired, contrasting choices based on observable structural features.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Two organisms share the same Order and Family, while a third organism shares only the same Phylum and Class with them. Which two organisms are more closely related evolutionarily?",
-    "options": [
-      "The two organisms in the same Family, because Family is a lower (more specific) taxonomic rank than Class",
-      "The organism in the same Phylum, because Phylum is a larger group",
-      "All three organisms are equally related",
-      "Evolutionary relatedness cannot be inferred from taxonomic ranks"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "true-false",
-    "question": "Modern phylogenetic classification uses molecular evidence, such as comparing DNA base sequences and amino acid sequences of shared proteins, to determine evolutionary relationships more accurately.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "structured",
-    "question": "[PLANT KINGDOM CLASSIFICATION] A biology student collects four plant specimens during a field trip: Specimen W has no vascular tissues and produces spores in capsules; Specimen X has vascular tissues and fronds with sori (spore-bearing structures) on the underside; Specimen Y produces cones with naked seeds; Specimen Z produces flowers and seeds enclosed in fruits. 1) Identify the major plant group to which each specimen (W, X, Y, and Z) belongs. 2) Explain why Specimens Y and Z are better adapted to dry terrestrial environments than Specimens W and X.",
+  {"type":"multiple-choice","question":"What are the three main levels of biodiversity (生物多樣性) on Earth?","options":["Cell diversity, tissue diversity, and organ diversity","Genetic diversity, species diversity, and ecosystem diversity","Kingdom diversity, phylum diversity, and class diversity","Aquatic diversity, terrestrial diversity, and aerial diversity"],"answer":1},
+  {"type":"multiple-choice","question":"What is the correct descending order of the seven major taxonomic ranks in Linnaean classification?","options":["Kingdom → Class → Phylum → Order → Family → Genus → Species","Kingdom → Phylum → Class → Order → Family → Genus → Species","Phylum → Kingdom → Order → Class → Genus → Family → Species","Kingdom → Order → Family → Phylum → Class → Genus → Species"],"answer":1},
+  {"type":"true-false","question":"A species (物種) is defined as a group of organisms with similar characteristics that can interbreed under natural conditions to produce fertile offspring.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"In the binomial naming system (雙名法), how is the scientific name of an organism correctly written?","options":["Both genus and species names capitalized and underlined","Genus name starting with a capital letter followed by the species name in all lowercase letters, both italicized (or underlined when handwritten)","Species name first in uppercase, followed by genus name in lowercase","Only the family name written in bold letters"],"answer":1},
+  {"type":"multiple-choice","question":"Which two organisms share the closest evolutionary relationship based on their scientific names?","options":["Panthera leo and Felis catus","Panthera leo and Panthera tigris","Canis lupus and Vulpes vulpes","Homo sapiens and Pan troglodytes"],"answer":1},
+  {"type":"true-false","question":"In the six-kingdom classification system, Eubacteria (真細菌) and Archaebacteria (古細菌) are prokaryotes that lack a true membrane-bound nucleus and membrane-bound organelles.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which feature distinguishes Archaebacteria (古細菌) from Eubacteria (真細菌)?","options":["Archaebacteria possess a membrane-bound nucleus.","Archaebacteria have unique cell wall and membrane lipid compositions and often inhabit extreme environments (such as hot springs and salt lakes).","Archaebacteria carry out photosynthesis using chloroplasts.","Archaebacteria are multicellular eukaryotes."],"answer":1},
+  {"type":"multiple-choice","question":"Which kingdom consists mainly of unicellular or simple multicellular eukaryotic organisms that do not fit into fungi, plants, or animals (e.g., Amoeba, Paramecium, algae)?","options":["Fungi / 真菌界","Protista / 原生生物界","Eubacteria / 真細菌界","Plantae / 植物界"],"answer":1},
+  {"type":"true-false","question":"Fungi (真菌) are eukaryotic organisms with cell walls made of chitin (幾丁質) that lack chlorophyll and feed saprophytically or parasitically by external digestion.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How do flowering plants (angiosperms / 被子植物) differ from gymnosperms (裸子植物) such as pine trees?","options":["Angiosperms lack vascular tissues (xylem and phloem).","Angiosperms produce flowers and enclose their seeds inside fruits, whereas gymnosperms bear naked seeds in cones.","Gymnosperms reproduce solely by spores.","Angiosperms do not possess true roots, stems, or leaves."],"answer":1},
+  {"type":"multiple-choice","question":"Which plant group lacks vascular tissues and true roots, relying on rhizoids for anchorage and moist habitats for reproduction?","options":["Ferns / 蕨類植物","Mosses (bryophytes) / 苔蘚植物","Gymnosperms / 裸子植物","Dicotyledons / 雙子葉植物"],"answer":1},
+  {"type":"true-false","question":"Ferns (蕨類植物) possess true roots, stems, and leaves with vascular tissues, and reproduce by producing spores on the underside of their fronds rather than seeds.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which combination of features characterizes monocotyledons (單子葉植物) compared to dicotyledons (雙子葉植物)?","options":["Two cotyledons, net-veined leaves, and flower parts in multiples of 4 or 5","One cotyledon, parallel-veined leaves, scattered vascular bundles in the stem, and flower parts in multiples of 3","Tap root system, ring of vascular bundles, and broad net-veined leaves","Absence of seeds and presence of cones"],"answer":1},
+  {"type":"multiple-choice","question":"Which group of invertebrates has a segmented body, jointed appendages, and a hard chitinous exoskeleton?","options":["Annelids / 環節動物","Arthropods / 節肢動物","Molluscs / 軟體動物","Cnidarians / 刺胞動物"],"answer":1},
+  {"type":"true-false","question":"Vertebrates (脊椎動物) are animals that possess a vertebral column (backbone) made of vertebrae protecting the spinal cord.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which vertebrate class has dry, scaly skin, lays shelled eggs on land, and is poikilothermic (ectothermic)?","options":["Amphibians / 兩棲類","Reptiles / 爬行類","Birds / 鳥類","Mammals / 哺乳類"],"answer":1},
+  {"type":"multiple-choice","question":"Which unique characteristics distinguish mammals (哺乳類) from all other vertebrate classes?","options":["Laying hard-shelled eggs and having feathers","Possessing hair or fur, mammary glands that secrete milk to nourish young, and a muscular diaphragm","Breathing exclusively through moist skin and gills","Having slimy scales and fins"],"answer":1},
+  {"type":"true-false","question":"Birds and mammals are homoiothermic (endothermic / 恆溫動物), meaning they can maintain a relatively constant body temperature independent of environmental temperature.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Why are viruses (病毒) not classified into any of the six biological kingdoms?","options":["They are too small to be seen with an electron microscope.","They are non-cellular particles consisting only of genetic material (DNA or RNA) inside a protein coat and cannot reproduce or metabolize outside a living host cell.","They belong to the kingdom Protista.","They contain both chloroplasts and mitochondria."],"answer":1},
+  {"type":"multiple-choice","question":"How does a dichotomous key (二叉式檢索表) help biologists identify unknown organisms?","options":["By measuring the exact DNA sequence of every gene","By presenting a series of paired, contrasting observable characteristics that progressively narrow down the identity of an organism","By grouping organisms strictly according to their geographical habitat","By estimating the age of fossils in sedimentary rock"],"answer":1},
+  {"type":"true-false","question":"Modern phylogenetic classification systems increasingly use DNA and amino acid sequence comparisons to determine evolutionary relationships among species.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Why is conserving biodiversity important for human survival and ecosystem stability?","options":["It reduces the number of decomposers in soil.","It maintains ecosystem stability, provides food, medicines, and raw materials, and preserves genetic resources for future crop and medical breakthroughs.","It prevents natural selection from occurring.","It eliminates all predators from food webs."],"answer":1},
+  {"type":"multiple-choice","question":"Which human activity is the single greatest threat to global species diversity?","options":["Establishing national parks and nature reserves","Habitat destruction and fragmentation (such as deforestation and wetland reclamation)","Captive breeding programmes in zoos","Using dichotomous keys in field studies"],"answer":1},
+  {"type":"true-false","question":"Introducing invasive alien species (外來入侵物種) into a new ecosystem can threaten native biodiversity by outcompeting, preying on, or spreading diseases to indigenous species.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which vertebrate group undergoes metamorphosis from an aquatic gill-breathing larva (tadpole) to a terrestrial adult breathing via lungs and moist skin?","options":["Fish / 魚類","Amphibians / 兩棲類","Reptiles / 爬行類","Birds / 鳥類"],"answer":1}
+]
