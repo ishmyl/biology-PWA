@@ -1,243 +1,27 @@
 [
-  {
-    "type": "multiple-choice",
-    "question": "According to Mendel’s Law of Segregation (分離定律), when do the alleles of a gene pair separate from each other?",
-    "options": [
-      "During mitosis / 有絲分裂期間",
-      "During gamete formation in meiosis / 減數分裂形成配子期間",
-      "During random combinations in fertilization / 受精時的隨機組合期間",
-      "During DNA replication in somatic cells / 體細胞進行 DNA 複製期間"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "A student crosses two pea plants that are heterozygous for tallness (Tt x Tt). What is the expected phenotypic ratio of tall to short plants in the F2 generation?",
-    "options": [
-      "1 : 1",
-      "1 : 2 : 1",
-      "3 : 1",
-      "9 : 3 : 3 : 1"
-    ],
-    "answer": 2
-  },
-  {
-    "type": "true-false",
-    "question": "Mendel’s Law of Independent Assortment (獨立分配定律) applies only to genes that are located on different pairs of homologous chromosomes.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "A man with blood group A (genotype IAi) and a woman with blood group B (genotype IBi) have a child. Which of the following blood groups could their child possibly inherit?",
-    "options": [
-      "Only blood group AB / 只有 AB 型血",
-      "Only blood groups A and B / 只有 A 型和 B 型血",
-      "Only blood groups A, B, and AB / 只有 A、B 和 AB 型血",
-      "Blood groups A, B, AB, and O / A、B、AB 和 O 型血皆有可能"
-    ],
-    "answer": 3
-  },
-  {
-    "type": "true-false",
-    "question": "In the ABO blood group inheritance system, alleles IA and IB are co-dominant (共顯性), while allele i is recessive (隱性).",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Why is red-green colour blindness (紅綠色盲), which is caused by a recessive allele on the X chromosome, significantly more common in males than in females?",
-    "options": [
-      "Males have two Y chromosomes that suppress the normal dominant allele.",
-      "The Y chromosome carries a dominant modifier gene for colour blindness.",
-      "Males have only one X chromosome, so a single recessive allele will express the characteristic.",
-      "Females produce specialized anti-B antibodies in plasma that neutralize the allele."
-    ],
-    "answer": 2
-  },
-  {
-    "type": "true-false",
-    "question": "In humans, the sex of a baby is determined by the type of ovum produced by the female carrier during fertilization.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which of the following biological characteristics is an example of continuous variation (連續變異) and is typically controlled by many genes?",
-    "options": [
-      "ABO blood groups / ABO 血型",
-      "Human height / 人類身高",
-      "Ability to roll the tongue / 捲舌能力",
-      "Shape of the hairline / 髮際線形狀"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Discontinuous variations (不連續變異), such as hand span and foot length, are represented using a bar chart showing a normal distribution curve with a characteristic bell shape.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What are alleles (等位基因)?",
-    "options": [
-      "Different chromosomes found inside the nucleus of a gamete",
-      "Alternative forms of the same gene occupying the same gene locus on homologous chromosomes",
-      "Identical copies of a chromosome joined at the centromere",
-      "Enzymes that control the rate of DNA replication"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which term describes the observable physical or biochemical characteristics of an organism resulting from the interaction between its genotype and the environment?",
-    "options": [
-      "Genotype / 基因型",
-      "Phenotype / 表現型",
-      "Homozygous / 純合子",
-      "Chromosome / 染色體"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "A test cross (測交) involves crossing an organism showing a dominant phenotype with a homozygous recessive individual to determine whether the dominant organism is homozygous or heterozygous.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "In garden peas, round seed (R) is dominant over wrinkled seed (r). A plant with round seeds is test-crossed with a wrinkled-seed plant, producing 52 round-seed offspring and 49 wrinkled-seed offspring. What is the genotype of the parent with round seeds?",
-    "options": [
-      "RR",
-      "Rr",
-      "rr",
-      "Rrr"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "In a dihybrid cross (雙基因雜交) between two pea plants heterozygous for both seed shape and seed colour (RrYy × RrYy), what is the expected phenotypic ratio in the F2 generation assuming independent assortment?",
-    "options": [
-      "3 : 1",
-      "1 : 2 : 1",
-      "9 : 3 : 3 : 1",
-      "1 : 1 : 1 : 1"
-    ],
-    "answer": 2
-  },
-  {
-    "type": "true-false",
-    "question": "A normal human somatic cell contains 46 chromosomes, consisting of 22 pairs of autosomes (常染色體) and 1 pair of sex chromosomes (性染色體).",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "A woman who is a carrier for X-linked haemophilia (XHXh) marries a normal man (XHY). What is the probability that their son will inherit haemophilia?",
-    "options": [
-      "0%",
-      "25%",
-      "50%",
-      "100%"
-    ],
-    "answer": 2
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which characteristic of a pedigree chart (譜系圖) confirms that a genetic disorder is caused by an autosomal RECESSIVE allele?",
-    "options": [
-      "Every affected child has at least one affected parent.",
-      "Two unaffected parents have an affected child (both male and female offspring can be affected).",
-      "Only males are ever affected across all generations.",
-      "An affected father passes the trait to 100% of his sons."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "In humans, a father always passes his single X chromosome to all of his daughters and his Y chromosome to all of his sons.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which statement correctly describes the causes of variation among individuals of the same species?",
-    "options": [
-      "Continuous variation is controlled only by a single gene and is unaffected by the environment.",
-      "Genetic variation arises from meiosis (crossing over and independent assortment), random fertilization, and mutation, while environmental factors also influence phenotype.",
-      "Discontinuous variation shows a continuous range of intermediate phenotypes between two extremes.",
-      "Identical twins raised apart show differences solely due to different mutations in every cell."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "In snapdragon flowers, red flower allele (CR) and white flower allele (CW) show incomplete dominance (不完全顯性), producing pink flowers (CRCW). What phenotypic ratio is expected when two pink-flowered plants are crossed?",
-    "options": [
-      "3 red : 1 white",
-      "1 red : 2 pink : 1 white",
-      "All pink",
-      "1 red : 1 white"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Multiple alleles (複等位基因) refer to a gene that has three or more alternative alleles in a population, although any single diploid individual can carry at most two alleles.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How many types of genetically different gametes can an individual with genotype AaBb produce if genes A and B are located on different pairs of homologous chromosomes?",
-    "options": [
-      "2 types (AB, ab)",
-      "4 types (AB, Ab, aB, ab)",
-      "8 types",
-      "1 type (AaBb)"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Environmental factors such as diet, sunlight exposure, and exercise can modify continuous traits like body weight and skin colour without changing an individual's DNA base sequence.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "structured",
-    "question": "[PEDIGREE & GENETIC ANALYSIS] In a family pedigree tracing hair patterns, two parents with curly hair have an offspring with straight hair. 1) Deduce which allele is dominant and explain your reasoning. 2) If these curly-haired parents have another child, calculate the theoretical probability that the child will have straight hair.",
-    "rubric": "To score full points, the response must demonstrate structural mastery: 1) The allele for curly hair is dominant. Because both parents exhibit curly hair but produce a straight-haired child, the parents must be heterozygous. Under heterozygous conditions, only the dominant allele expresses itself physically, while the recessive allele is masked. 2) The theoretical probability of having a straight-haired child (homozygous recessive) from a standard heterozygous monohybrid cross (Aa x Aa) is 1/4 or 25%."
-  },
-  {
-    "type": "structured",
+  {"type":"multiple-choice","question":"Which of the following is a physical barrier in the body's first line of non-specific defence against pathogens?","options":["Antibodies in blood plasma","Intact skin (皮膚) and mucous membranes lining the respiratory and alimentary tracts","Memory B cells in lymph nodes","Cytotoxic T lymphocytes"],"answer":1},
+  {"type":"multiple-choice","question":"How does mucus and cilia lining the trachea and bronchi protect the respiratory system from infection?","options":["Mucus digests bacteria with hydrochloric acid, while cilia absorb oxygen.","Mucus traps inhaled dust particles and pathogens, while the beating of cilia sweeps the mucus upward to the pharynx to be swallowed or coughed out.","Cilia secrete antibodies directly into the alveoli.","Mucus dissolves viral DNA before it reaches the lungs."],"answer":1},
+  {"type":"true-false","question":"Lysozyme (溶菌酶) present in tears, saliva, and nasal secretions acts as a chemical barrier by breaking down bacterial cell walls.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How does hydrochloric acid (HCl) in gastric juice defend the body against pathogens?","options":["It stimulates white blood cells to divide in the stomach.","Its very low pH (around 1.5–2) kills most bacteria and pathogens swallowed with food and drink.","It coats the stomach lining with platelets.","It converts antigens into harmless amino acids."],"answer":1},
+  {"type":"multiple-choice","question":"What is the role of blood clotting at a skin wound in body defence?","options":["To produce memory lymphocytes against future cuts","To seal the wound quickly with a fibrin clot, preventing excessive blood loss and blocking pathogens from entering the bloodstream","To digest dead skin cells by phagocytosis","To increase body temperature during fever"],"answer":1},
+  {"type":"true-false","question":"Non-specific defence mechanisms (第一及第二道防線) act immediately against all types of pathogens in the same way, without recognizing specific antigens.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How do phagocytes (吞噬細胞) destroy invading bacteria during phagocytosis?","options":["By secreting specific antibodies into blood plasma","By engulfing the bacteria into a phagosome (vacuole), fusing it with lysosomes, and digesting the bacteria using hydrolytic enzymes","By bursting red blood cells around the infection site","By blocking capillary blood flow permanently"],"answer":1},
+  {"type":"multiple-choice","question":"Which signs characterize the inflammatory response (炎症反應) at a localized tissue injury or infection site?","options":["Pale, cold skin with decreased blood flow","Redness, swelling, heat, and pain caused by vasodilation and increased permeability of capillaries, bringing more phagocytes and plasma proteins to the area","Immediate drop in white blood cell count","Complete clotting of all arteries in the limb"],"answer":1},
+  {"type":"true-false","question":"An antigen (抗原) is a foreign molecule (usually a protein or glycoprotein on the surface of a pathogen) that stimulates a specific immune response.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which type of white blood cell mediates the specific immune response (third line of defence)?","options":["Red blood cells / 紅血球","Lymphocytes (B cells and T cells) / 淋巴細胞（B 細胞和 T 細胞）","Platelets / 血小板","Erythrocytes / 紅血球"],"answer":1},
+  {"type":"multiple-choice","question":"How do B lymphocytes (B 淋巴細胞) respond when activated by a specific antigen and helper T cells?","options":["They engulf bacteria directly by phagocytosis.","They divide rapidly by mitosis and differentiate into plasma cells (漿細胞) that secrete specific antibodies and memory B cells.","They produce red blood cells in the thymus.","They secrete hydrochloric acid into tissue fluid."],"answer":1},
+  {"type":"true-false","question":"Antibodies (抗體) are Y-shaped protein molecules (immunoglobulins) with specific antigen-binding sites complementary in shape to a particular antigen.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How do antibodies help eliminate pathogens from the body?","options":["By digesting bacterial DNA directly","By binding to specific antigens to neutralize toxins, agglutinate (clump) pathogens together, and enhance phagocytosis by phagocytes","By raising core body temperature to 42 °C","By converting viruses into harmless bacteria"],"answer":1},
+  {"type":"multiple-choice","question":"What is the role of killer (cytotoxic) T lymphocytes (殺傷性 T 淋巴細胞) in cell-mediated immunity?","options":["Secreting large quantities of antibodies into blood plasma","Recognizing and directly destroying virus-infected body cells or cancer cells by puncturing their cell membranes","Producing platelets at wound sites","Filtering lymph inside lymph nodes"],"answer":1},
+  {"type":"true-false","question":"Helper T lymphocytes (輔助 T 淋巴細胞) coordinate the specific immune response by releasing chemical signals (cytokines) that activate B cells, killer T cells, and phagocytes.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Why is the secondary immune response (二次免疫反應) much faster and stronger than the primary immune response upon re-exposure to the same pathogen?","options":["Phagocytes multiply twice as fast after the first infection.","Memory B cells and memory T cells produced during the primary response recognize the antigen immediately and proliferate rapidly to produce large amounts of antibodies before symptoms develop.","The pathogen becomes weaker the second time it enters the body.","Antibodies from the first infection remain in the blood for 80 years."],"answer":1},
+  {"type":"multiple-choice","question":"What is contained in a vaccine (疫苗) used for active immunization?","options":["Ready-made antibodies extracted from animal blood","Weakened (attenuated) pathogens, dead pathogens, inactivated toxins (toxoids), or purified pathogen antigens that stimulate an immune response without causing the disease","High doses of broad-spectrum antibiotics","Live phagocytes from a healthy donor"],"answer":1},
+  {"type":"true-false","question":"Vaccination induces artificial active immunity because the recipient's own lymphocytes produce antibodies and memory cells in response to the antigens in the vaccine.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How does natural passive immunity (天然被動免疫) protect a newborn baby during the first few months of life?","options":["The baby receives vaccines immediately at birth.","Maternal antibodies pass across the placenta into foetal blood during pregnancy and are supplied through breast milk (colostrum) after birth.","The baby's thymus produces millions of memory cells before birth.","The baby's skin is completely impermeable to all microbes."],"answer":1},
+  {"type":"multiple-choice","question":"When is artificial passive immunity (人工被動免疫)—such as injecting ready-made antibodies or antivenom—used clinically?","options":["To provide lifelong protection against childhood measles","When immediate, short-term protection is needed after exposure to a fast-acting toxin or pathogen (such as snake venom, rabies, or tetanus) before the patient's own immune system can respond","To cure non-infectious genetic disorders","To replace regular childhood vaccinations"],"answer":1},
+  {"type":"true-false","question":"Passive immunity provides immediate protection, but it is temporary because the injected or maternal antibodies are eventually broken down and no memory cells are formed.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What is herd immunity (群體免疫) in a population?","options":["Immunity inherited genetically by every member of a species","When a high proportion of a population is vaccinated against a contagious disease, reducing transmission and indirectly protecting unvaccinated or immunocompromised individuals","Immunity gained by taking daily antibiotics","Complete eradication of all bacteria from soil and water"],"answer":1},
+  {"type":"multiple-choice","question":"Why do people need an annual influenza (flu) vaccination even if they were vaccinated the previous year?","options":["Memory B cells die completely after 6 months.","Influenza viruses have a high mutation rate and frequently change their surface antigens (antigenic drift/shift), so previous antibodies no longer recognize new strains.","Flu vaccines contain passive antibodies only.","The human liver destroys all memory T cells every winter."],"answer":1},
+  {"type":"true-false","question":"In an organ transplant, immunosuppressive drugs are often given to the recipient to prevent their T lymphocytes from recognizing the donor organ's foreign antigens and rejecting it.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What is an allergic reaction (過敏反應)?","options":["A complete lack of white blood cells in the bloodstream","An exaggerated, hypersensitive immune response to a normally harmless environmental substance (allergen, such as pollen or peanuts)","A bacterial infection of the lymph nodes","The destruction of red blood cells by antibiotics"],"answer":1}
+]
