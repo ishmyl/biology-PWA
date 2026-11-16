@@ -1,0 +1,231 @@
+[
+  {
+    "type": "multiple-choice",
+    "question": "What is cellular respiration (細胞呼吸) in living organisms?",
+    "options": [
+      "The physical inhalation and exhalation of air through the lungs",
+      "The controlled enzymatic breakdown of organic food molecules (such as glucose) inside living cells to release chemical energy in the form of ATP",
+      "The synthesis of glucose from carbon dioxide and water using light energy",
+      "The passive diffusion of oxygen across alveolar walls"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why is ATP (adenosine triphosphate / 三磷酸腺苷) often called the universal 'energy currency' of the cell?",
+    "options": [
+      "It can be stored indefinitely in large crystals inside the cell nucleus.",
+      "It transfers small, manageable packets of chemical energy directly to energy-requiring cellular processes (such as active transport and muscle contraction) upon hydrolysis to ADP and Pi.",
+      "It is absorbed directly from food in the small intestine without digestion.",
+      "It carries oxygen from the lungs to respiring tissues."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "During cellular respiration, a significant portion of the chemical energy released from glucose is lost as heat energy, which helps birds and mammals maintain a constant body temperature.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which overall chemical equation correctly summarizes aerobic respiration (需氧呼吸)?",
+    "options": [
+      "C6H12O6 + 6O2 → 6CO2 + 6H2O + energy (ATP and heat)",
+      "6CO2 + 6H2O → C6H12O6 + 6O2",
+      "C6H12O6 → 2C2H5OH + 2CO2 + energy",
+      "C6H12O6 → 2CH3CH(OH)COOH + energy"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Where inside a eukaryotic cell does glycolysis (糖酵解) take place?",
+    "options": [
+      "In the mitochondrial matrix / 線粒體基質",
+      "On the inner mitochondrial membrane (cristae) / 線粒體內膜（嵴）",
+      "In the cytoplasm (cytosol) / 細胞質",
+      "Inside the chloroplast stroma / 葉綠體基質"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "true-false",
+    "question": "Glycolysis does NOT require oxygen and splits one 6-carbon glucose molecule into two 3-carbon pyruvate (丙酮酸) molecules, yielding a net gain of 2 ATP and 2 NADH.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "In the presence of oxygen, where do the link reaction and the Krebs cycle (克雷伯氏循環) occur inside a eukaryotic cell?",
+    "options": [
+      "In the cytoplasm / 細胞質",
+      "In the mitochondrial matrix / 線粒體基質",
+      "In the nucleus / 細胞核",
+      "On the rough endoplasmic reticulum / 粗糙內質網"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What happens to pyruvate during the link reaction (連接反應) before entering the Krebs cycle?",
+    "options": [
+      "It is converted directly into lactic acid.",
+      "It is decarboxylated (loses CO2) and oxidized to form a 2-carbon acetyl group combined with coenzyme A (acetyl-CoA), producing NADH.",
+      "It is polymerized into glycogen.",
+      "It is reduced to ethanol and carbon dioxide."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "During the Krebs cycle, acetyl-CoA is completely oxidized to carbon dioxide, generating small amounts of ATP along with reduced coenzymes (NADH and FADH2).",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is the specific role of oxygen (O2) in aerobic respiration during oxidative phosphorylation (氧化磷酸化) on the inner mitochondrial membrane?",
+    "options": [
+      "It reacts directly with glucose in the cytoplasm.",
+      "It acts as the final electron and hydrogen acceptor at the end of the electron transport chain, combining with H+ and electrons to form water.",
+      "It breaks down carbon dioxide into carbon and oxygen.",
+      "It converts lactic acid into ethanol."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How is a mitochondrion (線粒體) structurally adapted for producing large amounts of ATP during aerobic respiration?",
+    "options": [
+      "Its inner membrane is extensively folded into cristae (嵴) to provide a large surface area for holding electron carriers and ATP synthase enzymes.",
+      "It has a thick cellulose cell wall to prevent oxygen from escaping.",
+      "It contains chlorophyll molecules to trap light energy.",
+      "It lacks ribosomes and DNA so it divides faster."
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "Complete oxidation of one glucose molecule in aerobic respiration yields far more ATP (about 30–32 ATP) than anaerobic respiration (only 2 ATP) because glucose is completely broken down into CO2 and H2O.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What are the end products of alcoholic fermentation (酒精發酵) in yeast cells under anaerobic conditions?",
+    "options": [
+      "Lactic acid only / 只有乳酸",
+      "Ethanol and carbon dioxide / 乙醇和二氧化碳",
+      "Carbon dioxide and water / 二氧化碳和水",
+      "Pyruvate and oxygen / 丙酮酸和氧"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why does yeast produce carbon dioxide during bread-making (baking)?",
+    "options": [
+      "Carbon dioxide kills harmful bacteria in the flour.",
+      "Trapped carbon dioxide gas bubbles expand when heated, causing the dough to rise and giving bread a light, spongy texture.",
+      "Carbon dioxide turns starch directly into sucrose.",
+      "Carbon dioxide prevents yeast from respiring aerobically."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "In brewing beer or wine, fermentation eventually stops when the ethanol concentration rises to about 12–15% because high concentrations of ethanol become toxic and kill the yeast cells.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What happens in human skeletal muscle cells during vigorous sprinting when oxygen supply cannot meet the high energy demand?",
+    "options": [
+      "Muscle cells carry out lactic acid fermentation (乳酸發酵), converting pyruvate into lactic acid to regenerate NAD+ so glycolysis can continue producing small amounts of ATP.",
+      "Muscle cells produce ethanol and carbon dioxide.",
+      "Muscle cells stop producing ATP completely.",
+      "Muscle cells absorb carbon dioxide to make glucose."
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is oxygen debt (氧債) after vigorous exercise?",
+    "options": [
+      "The total volume of oxygen stored in the lungs at rest",
+      "The extra amount of oxygen required after exercise to oxidize accumulated lactic acid (or convert it back into glucose/glycogen in the liver) and restore normal ATP/creatine phosphate levels",
+      "The carbon dioxide trapped inside red blood cells",
+      "The decrease in heart rate immediately after stopping exercise"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "A person continues to breathe heavily and maintain an elevated heart rate for several minutes after stopping a 400-metre sprint in order to supply extra oxygen to repay the oxygen debt.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "In a respirometer (呼吸計) containing germinating seeds and potassium hydroxide (KOH) pellets, why does the coloured liquid drop in the capillary tube move towards the boiling tube?",
+    "options": [
+      "The seeds release oxygen gas during respiration.",
+      "The seeds consume oxygen for aerobic respiration, while KOH absorbs the carbon dioxide released, causing a net decrease in gas volume and pressure inside the tube.",
+      "The seeds absorb nitrogen gas from the air.",
+      "Water evaporates rapidly from the KOH pellets."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "In an experiment investigating anaerobic respiration in yeast, why is a thin layer of liquid paraffin (oil) poured over the surface of the yeast-glucose suspension?",
+    "options": [
+      "To supply extra nutrients to the yeast cells",
+      "To prevent atmospheric oxygen from dissolving into the glucose solution, ensuring anaerobic conditions",
+      "To absorb carbon dioxide bubbles produced by yeast",
+      "To keep the yeast cells warm"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Boiled and cooled germinating seeds are often used as a control setup in respiration experiments to show that oxygen uptake or heat release is due to living metabolic activity rather than physical changes.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which comparison between aerobic respiration and lactic acid fermentation in human muscle cells is CORRECT?",
+    "options": [
+      "Aerobic respiration occurs only in the cytoplasm, whereas lactic acid fermentation occurs inside mitochondria.",
+      "Aerobic respiration completely oxidizes glucose to CO2 and H2O, whereas lactic acid fermentation partially breaks down glucose into lactic acid without producing CO2.",
+      "Lactic acid fermentation produces 32 ATP per glucose molecule, whereas aerobic respiration produces 2 ATP.",
+      "Both processes require oxygen as the final electron acceptor."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
