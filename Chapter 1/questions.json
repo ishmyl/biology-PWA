@@ -49,5 +49,193 @@
       "False / 錯誤"
     ],
     "answer": 0
-  }
-]
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which of the following is NOT one of the seven common characteristics of living organisms?",
+    "options": [
+      "Nutrition and respiration / 營養和呼吸作用",
+      "Irritability and movement / 感應性和運動",
+      "Photosynthesis and locomotion / 光合作用和移動",
+      "Excretion, growth, and reproduction / 排泄、生長和生殖"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "multiple-choice",
+    "question": "How does biological excretion (排泄) differ from egestion (排遺)?",
+    "options": [
+      "Excretion removes undigested food from the gut, whereas egestion removes metabolic wastes.",
+      "Excretion removes metabolic waste products produced by chemical reactions inside body cells (such as CO2 and urea), whereas egestion eliminates undigested food.",
+      "Excretion occurs only in plants, whereas egestion occurs only in animals.",
+      "Excretion requires ATP, whereas egestion is purely passive diffusion."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "In a fair test (公平測試), only ONE independent variable is changed at a time while all other variables are kept constant.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "In a scientific investigation, what is the independent variable (自變量)?",
+    "options": [
+      "The variable that is measured or recorded as the result of the experiment",
+      "The single factor that the investigator deliberately changes to test its effect",
+      "All environmental factors kept identical between set-ups",
+      "The final conclusion drawn from the data table"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is the dependent variable (因變量) in an experiment investigating how temperature affects the rate of seed germination?",
+    "options": [
+      "The temperature of the incubators",
+      "The percentage or rate of seeds that germinate",
+      "The volume of water added to each Petri dish",
+      "The species of seeds used"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "Controlled variables (控制變量) are factors other than the independent variable that might affect the experimental results and must therefore be kept constant across all set-ups.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "What is the main purpose of setting up a control (對照實驗) alongside an experimental set-up?",
+    "options": [
+      "To double the sample size of the experimental group",
+      "To serve as a baseline for comparison, confirming that any observed change in the experimental set-up is caused solely by the independent variable",
+      "To save time when recording measurements",
+      "To prove that a hypothesis is permanently true"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "A student wants to test whether light is necessary for the germination of lettuce seeds. The experimental set-up contains moist cotton wool and 50 lettuce seeds placed under a bright lamp at 25 °C. What should the control set-up be?",
+    "options": [
+      "Dry cotton wool and 50 lettuce seeds placed in complete darkness at 25 °C",
+      "Moist cotton wool and 50 lettuce seeds placed in complete darkness at 25 °C",
+      "Moist cotton wool and 50 boiled lettuce seeds placed under a bright lamp at 25 °C",
+      "Moist cotton wool and 50 lettuce seeds placed in a refrigerator at 4 °C"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "If experimental results do NOT support a hypothesis, the scientist should modify or reject the hypothesis and propose a new testable hypothesis rather than altering the data.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why do biologists use large sample sizes and repeat measurements in experiments?",
+    "options": [
+      "To eliminate the need for a control set-up",
+      "To reduce the effect of individual biological variation and random errors, making the results more reliable",
+      "To change multiple independent variables simultaneously",
+      "To prove that scientific theories can never change"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which statement best describes the tentative nature of scientific knowledge (科學知識的暫時性)?",
+    "options": [
+      "Scientific facts are mere guesses with no experimental support.",
+      "Scientific knowledge is based on empirical evidence and is subject to revision or refinement when new evidence or better explanations emerge.",
+      "Once a scientific theory is published, it can never be questioned.",
+      "Scientific theories only apply inside a laboratory."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "In biological investigations, a prediction (預測) is a logical statement derived from a hypothesis that specifies the expected outcome if the hypothesis is valid.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Which characteristic of living organisms involves breaking down food molecules inside cells to release energy for vital activities?",
+    "options": [
+      "Nutrition / 營養",
+      "Respiration / 呼吸作用",
+      "Irritability / 感應性",
+      "Excretion / 排泄"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "A Mimosa pudica (sensitive plant / 含羞草) folds its leaflets rapidly when touched. Which characteristic of living organisms does this best illustrate?",
+    "options": [
+      "Nutrition / 營養",
+      "Irritability / 感應性",
+      "Excretion / 排泄",
+      "Reproduction / 生殖"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "true-false",
+    "question": "All living organisms are made up of one or more cells, which are the basic structural and functional units of life.",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "multiple-choice",
+    "question": "Why are crystals (such as salt crystals growing in a saturated solution) NOT considered living organisms even though they increase in size?",
+    "options": [
+      "They grow too slowly to be measured.",
+      "They are not composed of cells and do not carry out metabolism, respiration, reproduction, or irritability.",
+      "They lack water molecules in their structure.",
+      "They cannot move from place to place."
+    ],
+    "answer": 1
+  },
+  {
+    "type": "multiple-choice",
+    "question": "During a biology experiment, a student notices that a conclusion states more than what the collected data actually shows. What scientific error has the student made?",
+    "options": [
+      "Over-generalization / 過度推論",
+      "Using a control set-up / 設置對照實驗",
+      "Keeping controlled variables constant / 保持控制變量不變",
+      "Making accurate observations / 作出準確觀察"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "true-false",
+    "question": "Observations in biology can be both qualitative (descriptive, such as colour changes) and quantitative (numerical measurements, such as mass, length, or temperature).",
+    "options": [
+      "True / 正確",
+      "False / 錯誤"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "structured",
+    "question": "[EXPERIMENTAL DESIGN & VARIABLES] A student observes that bread stored in a warm kitchen develops mould faster than bread stored in a refrigerator, and proposes the hypothesis that higher temperatures increase the rate of bread mould growth. 1) Identify the independent variable, the dependent variable, and two controlled variables needed for a fair test. 2) Explain why using 10 pieces of bread at each temperature rather than 1 piece improves the investigation.",
