@@ -1,240 +1,28 @@
 [
-  {
-    "type": "multiple-choice",
-    "question": "Which two systems work together to coordinate body activities in humans?",
-    "options": [
-      "The nervous system and the endocrine system / 神經系統和內分泌系統",
-      "The digestive system and the respiratory system / 消化系統和呼吸系統",
-      "The circulatory system and the excretory system / 循環系統和排泄系統",
-      "The skeletal system and the lymphatic system / 骨骼系統和淋巴系統"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which type of neurone (神經元) transmits nerve impulses from sensory receptors to the central nervous system (CNS)?",
-    "options": [
-      "Motor neurone / 運動神經元",
-      "Sensory neurone / 感覺神經元",
-      "Interneurone / 中間神經元",
-      "Effector neurone / 效應神經元"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "The myelin sheath (髓鞘) surrounding many nerve fibres insulates the axon and greatly speeds up the transmission of nerve impulses.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How are nerve impulses transmitted across a synapse (突觸) from one neurone to the next?",
-    "options": [
-      "By direct flow of electrical current across a fused membrane",
-      "By diffusion of chemical neurotransmitters (神經遞質) across the synaptic cleft, which bind to receptors on the postsynaptic membrane",
-      "By active pumping of red blood cells through the synaptic cleft",
-      "By mechanical vibration of the axon terminals"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Why do nerve impulses travel in only ONE direction across a chemical synapse?",
-    "options": [
-      "Neurotransmitter vesicles are located only in the axon endings of the presynaptic neurone, and specific receptors are present only on the postsynaptic membrane.",
-      "The myelin sheath blocks impulses from moving backwards along the dendron.",
-      "Mitochondria are absent in the cell body of the presynaptic neurone.",
-      "The synaptic cleft contains valves that close against reverse flow."
-    ],
-    "answer": 0
-  },
-  {
-    "type": "true-false",
-    "question": "The central nervous system (CNS / 中樞神經系統) consists of the brain and the spinal cord, while the peripheral nervous system (PNS) consists of cranial nerves and spinal nerves.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which part of the human brain is responsible for conscious thought, memory, intelligence, voluntary muscle control, and interpretation of sensory impulses?",
-    "options": [
-      "Cerebrum (cerebral cortex) / 大腦（大腦皮層）",
-      "Cerebellum / 小腦",
-      "Medulla oblongata / 延髓",
-      "Hypothalamus / 下丘腦"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is the primary function of the cerebellum (小腦)?",
-    "options": [
-      "Controlling involuntary breathing rate and heartbeat",
-      "Coordinating skeletal muscle contractions to maintain body balance and smooth, precise movements",
-      "Secreting growth hormone and thyroid-stimulating hormone",
-      "Interpreting visual impulses from the retina"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "The medulla oblongata (延髓) controls vital involuntary reflex actions such as breathing, heart rate, swallowing, and coughing.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How are grey matter (灰質) and white matter (白質) arranged in the human spinal cord compared with the cerebrum?",
-    "options": [
-      "Both have grey matter on the outside and white matter on the inside.",
-      "The spinal cord has H-shaped grey matter on the inside surrounded by white matter on the outside, whereas the cerebrum has grey matter on the outside.",
-      "Both have white matter on the outside and grey matter on the inside.",
-      "The spinal cord consists entirely of white matter."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which sequence correctly shows the pathway of nerve impulses in a typical spinal reflex arc (反射弧), such as withdrawing a hand from a hot object?",
-    "options": [
-      "Receptor → Sensory neurone → Interneurone in spinal cord → Motor neurone → Effector",
-      "Receptor → Motor neurone → Interneurone → Sensory neurone → Effector",
-      "Effector → Sensory neurone → Cerebrum → Motor neurone → Receptor",
-      "Receptor → Interneurone → Sensory neurone → Motor neurone → Effector"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "true-false",
-    "question": "A reflex action (反射動作) is an automatic, rapid, stereotyped response to a stimulus that does not require conscious thought from the cerebrum, helping protect the body from harm.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "In the knee-jerk reflex (膝跳反射), how many synapses are involved inside the grey matter of the spinal cord?",
-    "options": [
-      "Zero synapses",
-      "One synapse directly between the sensory neurone and the motor neurone (no interneurone)",
-      "Two synapses involving one interneurone",
-      "Three synapses involving the cerebellum"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What are hormones (激素) in the human endocrine system?",
-    "options": [
-      "Electrical impulses conducted rapidly along myelinated axons",
-      "Chemical messengers secreted directly into the bloodstream by ductless endocrine glands to act on specific target organs",
-      "Digestive enzymes secreted through ducts into the small intestine",
-      "Antibodies produced by lymphocytes to neutralize pathogens"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Endocrine glands (內分泌腺) are ductless glands that release hormones directly into blood capillaries, whereas exocrine glands (such as salivary glands) release secretions through ducts.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which hormone is secreted by the adrenal glands during stress or danger ('fight-or-flight' response), increasing heart rate, breathing rate, and blood glucose level?",
-    "options": [
-      "Insulin / 胰島素",
-      "Adrenaline / 腎上腺素",
-      "Antidiuretic hormone (ADH) / 抗利尿激素",
-      "Oestrogen / 雌激素"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How do insulin (胰島素) and glucagon (高血糖素) regulate blood glucose concentration?",
-    "options": [
-      "Both hormones increase blood glucose level when a person is fasting.",
-      "Insulin lowers blood glucose by promoting glucose uptake and conversion to glycogen in the liver, whereas glucagon raises blood glucose by promoting glycogen breakdown into glucose.",
-      "Insulin breaks down glycogen into glucose, whereas glucagon converts glucose into fat.",
-      "Both hormones are secreted by the pituitary gland."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "The pituitary gland (垂體) is often called the 'master gland' because it secretes hormones (such as TSH, FSH, and LH) that regulate the activity of other endocrine glands.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which comparison between nervous coordination and hormonal (endocrine) coordination is CORRECT?",
-    "options": [
-      "Nervous responses are slow and long-lasting, whereas hormonal responses are rapid and brief.",
-      "Nervous signals travel as electrical impulses along neurones to localized effectors, whereas hormones travel via the bloodstream and can affect widespread target organs.",
-      "Nervous coordination controls growth and puberty, whereas hormonal coordination controls rapid reflex actions.",
-      "Hormonal messages travel faster than nerve impulses."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Why does a person feel pain slightly AFTER pulling their hand away from a sharp pin in a spinal reflex?",
-    "options": [
-      "Pain receptors take 5 minutes to generate an impulse.",
-      "The reflex impulse travels along a short spinal reflex arc directly to arm muscles first, while a separate nerve impulse travels up the spinal cord to the cerebrum where pain is consciously perceived.",
-      "Hormones must reach the brain before pain is felt.",
-      "The motor neurone carries impulses back to the skin."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "If the ventral root (腹根) of a spinal nerve is cut, nerve impulses from the spinal cord cannot reach the skeletal muscles, causing paralysis, though sensation from skin receptors still reaches the brain.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which hormone stimulates the development of male secondary sexual characteristics (such as facial hair and deepening of the voice) during puberty?",
-    "options": [
-      "Progesterone / 孕酮",
-      "Testosterone / 睾酮",
-      "Thyroxine / 甲狀腺素",
-      "Glucagon / 高血糖素"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Hormones act only on specific target cells because only those target cells possess complementary receptor proteins on their cell membranes or inside the cytoplasm.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "structured",
+  {"type":"multiple-choice","question":"Which two systems work together to coordinate body activities and maintain homeostasis in humans?","options":["Digestive system and respiratory system","Nervous system (神經系統) and endocrine system (內分泌系統)","Circulatory system and lymphatic system","Skeletal system and excretory system"],"answer":1},
+  {"type":"multiple-choice","question":"What is the structural and functional unit of the human nervous system?","options":["Nephron / 腎單位","Neurone / 神經元","Alveolus / 肺泡","Sarcomere / 肌節"],"answer":1},
+  {"type":"true-false","question":"Sensory neurones (感覺神經元) transmit nerve impulses from receptors to the central nervous system (CNS), whereas motor neurones (運動神經元) transmit impulses from the CNS to effectors.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What is the function of the myelin sheath (髓鞘) surrounding the axon of many neurones?","options":["To produce neurotransmitters at the synapse","To electrically insulate the nerve fibre and greatly speed up the transmission of nerve impulses","To connect the cell body directly to muscle fibres","To absorb glucose from blood capillaries"],"answer":1},
+  {"type":"multiple-choice","question":"How are nerve impulses transmitted across a synapse (突觸) from one neurone to the next?","options":["By direct electrical current jumping across the synaptic cleft","By the release of chemical neurotransmitters (神經遞質) from synaptic vesicles that diffuse across the synaptic cleft and bind to receptors on the next neurone","By red blood cells carrying impulses across the gap","By osmosis of water molecules across the membrane"],"answer":1},
+  {"type":"true-false","question":"Synapses ensure that nerve impulses travel in one direction only, because neurotransmitter vesicles are present only in the axon ending of the presynaptic neurone and receptors only on the postsynaptic membrane.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What is a reflex action (反射動作)?","options":["A slow, conscious response planned by the cerebrum","An automatic, rapid, stereotyped response to a stimulus that does not require conscious thought","A hormonal response triggered by the pituitary gland","A voluntary movement learned through practice"],"answer":1},
+  {"type":"multiple-choice","question":"What is the correct sequence of structures in a spinal reflex arc (反射弧)?","options":["Effector → Motor neurone → Interneurone → Sensory neurone → Receptor","Receptor → Sensory neurone → Interneurone (in spinal cord) → Motor neurone → Effector","Receptor → Motor neurone → Brain → Sensory neurone → Effector","Sensory neurone → Receptor → Interneurone → Effector → Motor neurone"],"answer":1},
+  {"type":"true-false","question":"In a knee-jerk reflex (膝跳反射), the sensory neurone synapses directly with the motor neurone in the spinal cord without an interneurone.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How are grey matter and white matter arranged in the human spinal cord (脊髓)?","options":["Grey matter forms the outer layer; white matter forms the inner H-shaped core.","Grey matter (containing cell bodies) forms the inner H-shaped core; white matter (containing myelinated nerve fibres) forms the outer region.","Both grey and white matter are arranged in alternating concentric rings.","The spinal cord contains only grey matter."],"answer":1},
+  {"type":"multiple-choice","question":"Which part of the human brain is the largest and is responsible for intelligence, memory, conscious thought, and voluntary actions?","options":["Cerebellum / 小腦","Cerebrum / 大腦","Medulla oblongata / 延腦","Hypothalamus / 下丘腦"],"answer":1},
+  {"type":"true-false","question":"The highly folded cerebral cortex (大腦皮層) greatly increases the surface area to accommodate a huge number of neurones.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What is the primary role of the cerebellum (小腦)?","options":["Controlling heartbeat and breathing rate","Coordinating muscular contractions to maintain body balance and smooth, precise movements","Producing antidiuretic hormone (ADH)","Interpreting visual impulses from the optic nerve"],"answer":1},
+  {"type":"multiple-choice","question":"Which part of the brain controls involuntary vital reflexes such as heartbeat rate, breathing rate, swallowing, and coughing?","options":["Cerebrum / 大腦","Cerebellum / 小腦","Medulla oblongata / 延腦","Corpus callosum / 胼胝體"],"answer":2},
+  {"type":"true-false","question":"Voluntary actions (隨意動作) originate from nerve impulses generated in the cerebral cortex and can be modified by conscious decision and learning.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How do endocrine glands (內分泌腺) transport their secretions to target organs?","options":["Through specialized ducts directly to body cavities","By secreting hormones directly into the bloodstream","Along myelinated axons as electrical impulses","Through lymph nodes exclusively"],"answer":1},
+  {"type":"multiple-choice","question":"Which endocrine gland is known as the 'master gland' because it secretes tropic hormones that regulate other endocrine glands?","options":["Thyroid gland / 甲狀腺","Pituitary gland / 垂體","Adrenal gland / 腎上腺","Pancreas / 胰臟"],"answer":1},
+  {"type":"true-false","question":"Compared to nervous coordination, hormonal coordination generally acts more slowly, produces longer-lasting effects, and can affect multiple target organs simultaneously.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What is the main function of thyroxine (甲狀腺素) secreted by the thyroid gland?","options":["To lower blood glucose levels after a meal","To regulate the basal metabolic rate (BMR) and promote normal physical and mental growth and development","To stimulate uterine contractions during childbirth","To increase water reabsorption in kidney collecting ducts"],"answer":1},
+  {"type":"multiple-choice","question":"How does adrenaline (腎上腺素) prepare the body for 'fight or flight' during stress or danger?","options":["By decreasing heart rate and diverting blood to the digestive tract","By increasing heart rate, breathing rate, blood pressure, and blood glucose level (stimulating glycogen breakdown in the liver)","By stimulating insulin secretion to store glucose as glycogen","By constricting pupils and slowing nerve conduction"],"answer":1},
+  {"type":"true-false","question":"During a withdrawal reflex (e.g., pulling your hand away from a hot object), impulses are also sent up the spinal cord to the cerebrum so you feel pain slightly after pulling away.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which structure protects the central nervous system (brain and spinal cord) against mechanical shock alongside the cranium and vertebral column?","options":["Pleural membranes and pleural fluid","Meninges (腦脊膜) and cerebrospinal fluid (腦脊液)","Synovial membrane and synovial fluid","Pericardium and pericardial fluid"],"answer":1},
+  {"type":"multiple-choice","question":"Where are the cell bodies of sensory neurones located in relation to the spinal cord?","options":["Inside the ventral root","In the dorsal root ganglion (背根節) just outside the spinal cord","Inside the grey matter of the ventral horn","Inside the effector muscle"],"answer":1},
+  {"type":"true-false","question":"In the human cerebrum, the left cerebral hemisphere receives sensory impulses from and controls voluntary movements on the right side of the body.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Why are hormones eventually broken down in the liver and excreted by the kidneys after acting on target cells?","options":["To provide energy for muscle contraction","To prevent hormones from accumulating and causing prolonged, excessive stimulation once the stimulus has ended","To convert them into digestive enzymes","To recycle them into neurotransmitters"],"answer":1}
+]
+
