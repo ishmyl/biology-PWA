@@ -1,9 +1,9 @@
-const CACHE_NAME = 'bioarena-v3';
+const CACHE_NAME = 'bioarena-v4';
 const CORE_ASSETS = [
   './',
   './index.html',
   './style.css',
-  './app.js?v=3',
+  './app.js?v=4',
   './manifest.json'
 ];
 
@@ -25,6 +25,11 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
+  // Never intercept POST requests or Google Apps Script API calls
+  if (event.request.method !== 'GET' || event.request.url.includes('://google.com')) {
+    return;
+  }
+
   event.respondWith(
     fetch(event.request)
       .then((response) => {
