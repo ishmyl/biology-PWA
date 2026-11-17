@@ -1,241 +1,27 @@
 [
-  {
-    "type": "multiple-choice",
-    "question": "What are the basic building blocks (monomers) that join together to form a DNA molecule?",
-    "options": [
-      "Amino acids / 氨基酸",
-      "Nucleotides / 核苷酸",
-      "Monosaccharides / 單糖",
-      "Fatty acids and glycerol / 脂肪酸和甘油"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which three chemical components make up a single DNA nucleotide?",
-    "options": [
-      "Ribose sugar, a phosphate group, and a nitrogenous base",
-      "Deoxyribose sugar, a phosphate group, and a nitrogenous base (A, T, C, or G)",
-      "Glucose sugar, a sulphate group, and an amino group",
-      "Glycerol, a phosphate group, and uracil"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "In a DNA double helix, adenine (A) always pairs with thymine (T) via two hydrogen bonds, and cytosine (C) always pairs with guanine (G) via three hydrogen bonds.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "A double-stranded DNA molecule is analysed and found to contain 22% guanine (G). What percentage of adenine (A) does this DNA molecule contain?",
-    "options": [
-      "22%",
-      "28%",
-      "44%",
-      "56%"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which statement correctly describes a structural difference between DNA and RNA?",
-    "options": [
-      "DNA is usually single-stranded and contains uracil, whereas RNA is double-stranded and contains thymine.",
-      "DNA contains deoxyribose sugar and the base thymine (T), whereas RNA contains ribose sugar and the base uracil (U).",
-      "DNA contains peptide bonds between bases, whereas RNA contains glycosidic bonds.",
-      "DNA is found only in ribosomes, whereas RNA is found only in the nucleus."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "DNA replication is described as semi-conservative (半保留複製) because each newly formed DNA double helix consists of one original parental strand and one newly synthesized complementary strand.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which enzyme catalyses the joining of free DNA nucleotides along each template strand during DNA replication?",
-    "options": [
-      "RNA polymerase / RNA 聚合酶",
-      "DNA polymerase / DNA 聚合酶",
-      "Restriction enzyme / 限制酶",
-      "DNA ligase / DNA 連接酶"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is a gene (基因) in molecular terms?",
-    "options": [
-      "An entire chromosome containing thousands of proteins",
-      "A specific sequence of DNA nucleotides (bases) that codes for a polypeptide (protein) or functional RNA molecule",
-      "A triplet of bases on a tRNA molecule",
-      "A type of enzyme that digests starch"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "The genetic code (遺傳密碼) is a triplet code in which a sequence of three consecutive bases (a codon) on mRNA specifies one amino acid.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Why is the genetic code described as degenerate (簡併性)?",
-    "options": [
-      "One codon can code for several different amino acids at the same time.",
-      "Most amino acids are coded for by more than one triplet codon.",
-      "The genetic code changes from one species to another.",
-      "Codons overlap with one another along the mRNA strand."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which statement best explains why the genetic code is described as universal (通用性)?",
-    "options": [
-      "All organisms have the exact same number of chromosomes.",
-      "Almost all living organisms—from bacteria to plants and humans—use the same triplet codons to specify the same amino acids.",
-      "Every gene in an organism codes for the exact same protein.",
-      "DNA replication occurs at the exact same speed in all cells."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Transcription (轉錄) takes place inside the nucleus of eukaryotic cells, where RNA polymerase synthesizes a complementary messenger RNA (mRNA) strand using one strand of DNA as a template.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "A template strand of DNA has the base sequence 3'-T A C G G A-5'. What is the complementary mRNA base sequence transcribed from this DNA segment?",
-    "options": [
-      "5'-A T G C C T-3'",
-      "5'-A U G C C U-3'",
-      "5'-U A C G G A-3'",
-      "5'-C G T A A G-3'"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Where does translation (轉譯) take place in a eukaryotic cell, and what is the role of transfer RNA (tRNA)?",
-    "options": [
-      "In the nucleus; tRNA unwinds the DNA double helix",
-      "At ribosomes in the cytoplasm; tRNA carries specific amino acids to the ribosome and pairs its anticodon with the complementary mRNA codon",
-      "Inside the mitochondrion; tRNA synthesizes ATP from ADP",
-      "In the Golgi apparatus; tRNA packages proteins into vesicles"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "An anticodon (反密碼子) on a tRNA molecule consists of three bases that pair complementarily with a specific codon on an mRNA molecule during translation.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "If a polypeptide chain contains 120 amino acids, what is the minimum number of DNA nucleotides in the coding region of the gene (excluding stop codons and introns)?",
-    "options": [
-      "40 nucleotides",
-      "120 nucleotides",
-      "360 nucleotides",
-      "720 nucleotides"
-    ],
-    "answer": 2
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is a gene mutation (基因突變)?",
-    "options": [
-      "The normal crossing over of chromatids during Prophase I of meiosis",
-      "A spontaneous or mutagen-induced change in the base sequence of DNA within a gene, which may alter the amino acid sequence and function of the encoded protein",
-      "The temporary folding of a protein at low temperature",
-      "The separation of sister chromatids during anaphase"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Due to the degeneracy of the genetic code, a single base substitution (point mutation) does not always change the amino acid sequence of the resulting polypeptide (silent mutation).",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Why are base insertion or deletion mutations (frameshift mutations / 移碼突變) usually much more harmful than single base substitutions?",
-    "options": [
-      "They always double the total number of chromosomes in the nucleus.",
-      "They shift the reading frame of all subsequent triplet codons downstream of the mutation, altering every amino acid after that point or creating a premature stop codon.",
-      "They prevent DNA polymerase from ever replicating the chromosome again.",
-      "They convert all DNA into RNA."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "In sickle-cell anaemia (鐮狀細胞貧血), a single base substitution in the beta-globin gene replaces glutamic acid with valine. How does this affect the patient?",
-    "options": [
-      "Red blood cells become abnormally sickle-shaped under low oxygen conditions, blocking small capillaries and reducing oxygen transport.",
-      "White blood cells divide uncontrollably to cause leukaemia.",
-      "The liver stops producing bile pigments.",
-      "Platelets fail to initiate blood clotting."
-    ],
-    "answer": 0
-  },
-  {
-    "type": "true-false",
-    "question": "Chromosome mutations (染色體突變) involve changes in the structure or number of chromosomes, such as Down syndrome (trisomy 21), which is caused by non-disjunction during meiosis resulting in an extra copy of chromosome 21.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which of the following is an example of a physical or chemical mutagen (誘變劑) that increases the rate of DNA mutation?",
-    "options": [
-      "Distilled water and sodium chloride",
-      "Ultraviolet (UV) radiation, X-rays, and tar chemicals in cigarette smoke",
-      "Visible green light and oxygen gas",
-      "Dietary fibre and vitamin C"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Only mutations occurring in gametes (or gamete-producing cells) can be inherited by offspring, whereas somatic mutations affect only the individual in whom they occur.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "structured",
-    "question": "[PROTEIN SYNTHESIS: TRANSCRIPTION & TRANSLATION] Insulin is a polypeptide hormone synthesized by beta cells in the human pancreas. 1) Describe how the genetic information stored in the insulin gene inside the nucleus is used to produce an mRNA molecule. 2) Explain the roles of ribosomes and tRNA molecules in assembling the insulin polypeptide in the cytoplasm.",
+  {"type":"multiple-choice","question":"What are alleles (等位基因)?","options":["Different chromosomes found in prokaryotic cells","Alternative forms of the same gene occupying the same gene locus on homologous chromosomes","Pairs of sex chromosomes that determine gender","Proteins synthesized during translation"],"answer":1},
+  {"type":"multiple-choice","question":"How does an organism's genotype (基因型) differ from its phenotype (表現型)?","options":["Genotype is influenced by diet; phenotype is fixed at birth.","Genotype refers to the genetic makeup (combination of alleles) of an organism, whereas phenotype refers to its observable physical or biochemical characteristics resulting from genotype and environment.","Phenotype is passed directly in gametes; genotype is not.","Genotype applies only to plants; phenotype applies only to animals."],"answer":1},
+  {"type":"true-false","question":"A recessive allele (隱性等位基因) is expressed in the phenotype only when an individual is homozygous recessive (has two copies of the recessive allele).","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"According to Mendel's Law of Segregation (分離定律), what happens to a pair of alleles during gamete formation?","options":["Both alleles enter the same gamete together.","The two alleles separate from each other during meiosis so that each gamete receives only one allele from each pair.","Dominant alleles destroy recessive alleles before meiosis.","Alleles duplicate to form four copies per gamete."],"answer":1},
+  {"type":"multiple-choice","question":"In a monohybrid cross between two heterozygous tall pea plants (Tt × Tt), what is the expected phenotypic ratio of tall to dwarf offspring?","options":["1 : 1","3 : 1","2 : 1","9 : 3 : 3 : 1"],"answer":1},
+  {"type":"true-false","question":"A test cross (測交) involves crossing an organism showing a dominant phenotype with a homozygous recessive individual to determine whether the dominant individual is homozygous or heterozygous.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What does Mendel's Law of Independent Assortment (獨立分配定律) state about two genes located on different pairs of homologous chromosomes?","options":["They are always inherited together in the same gamete.","The alleles of different genes assort independently of one another during gamete formation in meiosis.","One gene completely masks the expression of the other gene.","They swap positions on the same chromosome every generation."],"answer":1},
+  {"type":"multiple-choice","question":"In a dihybrid cross between two doubly heterozygous individuals (RrYy × RrYy) where both traits show complete dominance and independent assortment, what is the expected F₂ phenotypic ratio?","options":["3 : 1","1 : 2 : 1","9 : 3 : 3 : 1","1 : 1 : 1 : 1"],"answer":2},
+  {"type":"true-false","question":"In codominance (共顯性), both alleles in a heterozygous genotype are fully expressed in the phenotype, such as in human blood group AB (IᴬIᴮ).","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"If a mother with blood group A (genotype Iᴬi) and a father with blood group B (genotype Iᴮi) have a child, which blood groups are possible among their children?","options":["Only blood group AB","Blood groups A, B, AB, or O","Only blood groups A and B","Only blood group O"],"answer":1},
+  {"type":"multiple-choice","question":"Why are X-linked recessive disorders (such as red-green colour blindness and haemophilia) much more common in males than in females?","options":["The Y chromosome carries dominant disease-causing alleles.","Males have only one X chromosome (XY), so a single recessive allele on their X chromosome is expressed, whereas females (XX) must inherit two recessive alleles to be affected.","Females never inherit an X chromosome from their father.","X-linked genes are mutated only in male embryos."],"answer":1},
+  {"type":"true-false","question":"A human father passes his X chromosome to all of his daughters and his Y chromosome to all of his sons.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"If a woman is a carrier for red-green colour blindness (XᴮXᵇ) and marries a man with normal colour vision (XᴮY), what is the probability that their son will be colour-blind?","options":["0%","50% (1 in 2)","25% (1 in 4)","100%"],"answer":1},
+  {"type":"multiple-choice","question":"In a pedigree chart (譜系圖), if two unaffected parents have a child affected by an inherited condition, what can you deduce with certainty about the allele causing the condition?","options":["It is dominant.","It is recessive (and both parents are heterozygous carriers).","It is located on the Y chromosome.","It is codominant."],"answer":1},
+  {"type":"true-false","question":"Continuous variation (連續變異), such as human height and body mass, shows a complete range of intermediate phenotypes controlled by multiple genes (polygenic inheritance) and strongly influenced by environmental factors.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which trait is an example of discontinuous variation (不連續變異) in humans?","options":["Skin colour / 膚色","ABO blood group / ABO 血型","Adult height / 成人身高","Heart rate at rest / 靜息心率"],"answer":1},
+  {"type":"multiple-choice","question":"What is a gene mutation (基因突變)?","options":["The gain or loss of an entire chromosome during meiosis","A sudden, random change in the base sequence of DNA within a gene, which may alter the amino acid sequence and function of the encoded protein","The exchange of segments between homologous chromosomes","A temporary change in hair colour caused by sunlight"],"answer":1},
+  {"type":"multiple-choice","question":"How does sickle-cell anaemia (鐮狀紅血球貧血症) arise from a gene mutation?","options":["Deletion of the entire X chromosome","A single base substitution in the beta-globin gene replaces glutamic acid with valine in haemoglobin, causing red blood cells to become sickle-shaped under low oxygen","Excessive intake of iron in the diet","Viral infection of red bone marrow"],"answer":1},
+  {"type":"true-false","question":"Down syndrome (唐氏綜合症) is a chromosome mutation caused by non-disjunction during meiosis, resulting in an extra copy of chromosome 21 (trisomy 21, 47 chromosomes in total).","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which agents are known as mutagens (誘變劑) because they increase the rate of DNA mutations?","options":["Water and dietary fibre","Ionizing radiation (X-rays, gamma rays), ultraviolet (UV) light, and certain chemicals (such as tar and nitrous acid)","Oxygen and nitrogen gases in normal air","Vitamin C and calcium ions"],"answer":1},
+  {"type":"multiple-choice","question":"Why do identical twins (monozygotic twins) reared apart provide valuable evidence in genetics studies?","options":["They have completely different genotypes.","Since they share 100% identical genotypes, any phenotypic differences between them must be caused by environmental factors.","They never experience mutations.","They always have different blood types."],"answer":1},
+  {"type":"true-false","question":"Mutations occurring in somatic (body) cells cannot be passed on to offspring, whereas mutations in gametes (or gamete-producing cells) can be inherited by future generations.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"In a normal human somatic cell, how many chromosomes are present?","options":["23 chromosomes (22 autosomes + 1 sex chromosome)","46 chromosomes (22 pairs of autosomes + 1 pair of sex chromosomes)","44 chromosomes (22 pairs)","48 chromosomes (24 pairs)"],"answer":1},
+  {"type":"multiple-choice","question":"If two unaffected parents have a daughter affected by an autosomal recessive disorder, what is the probability that their next child will also be affected?","options":["0%","25% (1/4)","50% (1/2)","75% (3/4)"],"answer":1},
+  {"type":"true-false","question":"Genetic variation in a population arises from meiosis (crossing over and independent assortment), random fertilization, and mutations.","options":["True / 正確","False / 錯誤"],"answer":0}
+]
