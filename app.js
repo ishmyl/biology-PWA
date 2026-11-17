@@ -1,3 +1,5 @@
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbySjrUTeN_5ZKVtxSkV1ypWxaKbe-5GB73lnJVxqR9PjqF0d4UucsoQbe0Lupmv7VC3EQ/exec";
+
 /* ==========================================================================
    1. FIREBASE & APP STATE
    ========================================================================== */
