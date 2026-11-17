@@ -1,240 +1,27 @@
 [
-  {
-    "type": "multiple-choice",
-    "question": "Which structure is the functional unit of the human kidney (腎臟) responsible for filtering blood and forming urine?",
-    "options": [
-      "Alveolus / 氣囊",
-      "Nephron / 腎單位",
-      "Villus / 絨毛",
-      "Glomerulus only / 僅腎小球"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What drives ultrafiltration (超濾) of blood from the glomerulus into Bowman's capsule (鮑曼氏囊)?",
-    "options": [
-      "Active transport of water molecules across podocytes using ATP",
-      "High hydrostatic blood pressure inside the glomerulus created because the afferent arteriole has a wider diameter than the efferent arteriole",
-      "Osmotic pull exerted by urea molecules inside the collecting duct",
-      "Ciliary beating of cells lining the proximal convoluted tubule"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "During ultrafiltration in a healthy human kidney, red blood cells and large plasma proteins cannot pass through the filtration membrane and remain in the blood leaving the glomerulus.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Where does selective reabsorption (選擇性重吸收) of 100% of glucose and amino acids from the glomerular filtrate normally occur?",
-    "options": [
-      "Collecting duct / 集合管",
-      "Proximal convoluted tubule (PCT) / 近曲小管",
-      "Distal convoluted tubule (DCT) / 遠曲小管",
-      "Urinary bladder / 膀胱"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How are epithelial cells lining the proximal convoluted tubule adapted for rapid selective reabsorption?",
-    "options": [
-      "They have a thick waterproof cuticle to prevent water leakage.",
-      "They possess numerous microvilli (brush border) to increase surface area and abundant mitochondria to supply ATP for active transport.",
-      "They lack cell membranes so filtrate flows straight into capillaries.",
-      "They contain numerous chloroplasts to generate glucose."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "The loop of Henle (亨利氏套) establishes a high salt concentration (low water potential) gradient in the kidney medulla, enabling water to be reabsorbed by osmosis from the collecting duct.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How does antidiuretic hormone (ADH / 抗利尿激素) regulate osmoregulation (滲透調節) when a person is dehydrated?",
-    "options": [
-      "ADH decreases the permeability of the collecting duct wall to water, producing a large volume of dilute urine.",
-      "ADH increases the permeability of the collecting duct wall to water, allowing more water to be reabsorbed by osmosis into the blood and producing a small volume of concentrated urine.",
-      "ADH stimulates the glomerulus to stop filtering blood completely.",
-      "ADH converts urea back into amino acids in the liver."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "In a kidney dialysis machine (洗腎機 / haemodialysis), why is the dialysis fluid (透析液) formulated to contain the exact same concentration of glucose and essential mineral ions as normal blood plasma, but zero urea?",
-    "options": [
-      "To force glucose out of the patient's blood into the dialysis fluid",
-      "To prevent net loss of useful glucose and mineral ions from the blood while maintaining a steep concentration gradient for urea and excess salts to diffuse out of the blood",
-      "To clot the patient's blood inside the dialysis tubing",
-      "To stimulate the pancreas to secrete insulin"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "In a haemodialysis machine, blood and dialysis fluid flow in opposite directions (counter-current flow / 逆流) to maintain a concentration gradient along the entire length of the selectively permeable membrane.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which structure in the human heart acts as the natural pacemaker (起搏點), initiating rhythmic electrical impulses that set the heart rate?",
-    "options": [
-      "Atrioventricular node (AV node) / 房室結",
-      "Sinoatrial node (SA node) / 竇房結",
-      "Bundle of His / 希氏束",
-      "Bicuspid valve / 二尖瓣"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Why is there a brief ~0.1-second delay when electrical impulses pass from the sinoatrial node (SA node) through the atrioventricular node (AV node) before spreading to the ventricles?",
-    "options": [
-      "To allow the ventricles to contract before the atria",
-      "To allow the atria to complete their contraction and empty blood fully into the ventricles before ventricular contraction begins",
-      "To prevent the semilunar valves from ever opening",
-      "To give red blood cells time to absorb oxygen in the atria"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "The sympathetic nerve (交感神經) releases noradrenaline to speed up the firing rate of the SA node and increase heart rate during exercise or stress, whereas the parasympathetic nerve (vagus nerve / 副交感神經) slows heart rate down at rest.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How is cardiac output (心輸出量) calculated?",
-    "options": [
-      "Heart rate × Stroke volume (心跳率 × 心搏量)",
-      "Heart rate ÷ Stroke volume",
-      "Blood pressure × Breathing rate",
-      "Stroke volume − Heart rate"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which factor directly stimulates the respiratory centre (呼吸中樞) in the medulla oblongata to increase the rate and depth of breathing during vigorous exercise?",
-    "options": [
-      "A slight increase in blood oxygen concentration",
-      "An increase in blood carbon dioxide concentration (which lowers blood pH), detected by chemoreceptors in the medulla and carotid/aortic bodies",
-      "A decrease in body temperature",
-      "An increase in blood glucose concentration"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Stretch receptors in the walls of the bronchioles and alveoli send inhibitory nerve impulses to the respiratory centre when the lungs are fully inflated, preventing over-inflation of the lungs.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How does progesterone (孕酮) exert negative feedback on the hypothalamus and anterior pituitary gland during the luteal phase of the menstrual cycle and during pregnancy?",
-    "options": [
-      "It stimulates massive secretion of FSH and LH to trigger daily ovulation.",
-      "It inhibits the secretion of GnRH, FSH, and LH, preventing the maturation and release of new follicles.",
-      "It causes the uterine lining to shed immediately.",
-      "It stimulates milk ejection from the mammary glands."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which hormone surge around Day 13–14 of the human menstrual cycle directly triggers ovulation (排卵)?",
-    "options": [
-      "A sharp surge in luteinizing hormone (LH / 促黃體生成素)",
-      "A sharp drop in oestrogen",
-      "A surge in antidiuretic hormone (ADH)",
-      "A surge in glucagon"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "true-false",
-    "question": "During pregnancy, the placenta secretes human chorionic gonadotrophin (hCG / 人絨毛膜促性腺激素) early on to maintain the corpus luteum so that progesterone and oestrogen continue to be produced.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How do combined oral contraceptive pills prevent ovulation?",
-    "options": [
-      "Synthetic oestrogen and progesterone inhibit the hypothalamus and pituitary gland from secreting FSH and LH via negative feedback, so ovarian follicles do not mature or ovulate.",
-      "They stimulate the ovary to release all eggs at once.",
-      "They dissolve the uterine endometrium permanently.",
-      "They block the urethra."
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is the principle behind in vitro fertilization (IVF / 體外受精)?",
-    "options": [
-      "Inserting a sperm directly into the mother's bloodstream",
-      "Stimulating multiple follicle development with FSH/LH, harvesting mature ova, fertilizing them with sperms in a laboratory dish, and transferring healthy embryos into the mother's uterus",
-      "Cloning somatic cells from the father's skin",
-      "Using antibiotics to unblock scarred oviducts"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Home pregnancy test kits detect the presence of human chorionic gonadotrophin (hCG) in a woman's urine using monoclonal antibodies.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which hormone stimulates uterine smooth muscle contractions during labour (childbirth) through a positive feedback mechanism?",
-    "options": [
-      "Progesterone / 孕酮",
-      "Oxytocin / 催產素",
-      "FSH / 促卵泡激素",
-      "Insulin / 胰島素"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Compared with blood entering the kidney via the renal artery, blood leaving via the renal vein has a lower concentration of urea, oxygen, and excess mineral salts, and a higher concentration of carbon dioxide.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "structured",
+  {"type":"multiple-choice","question":"What is sustainable development (可持續發展)?","options":["Maximizing industrial output regardless of environmental damage","Development that meets the needs of the present generation without compromising the ability of future generations to meet their own needs","Banning all agricultural and fishing activities worldwide","Converting all natural forests into urban housing"],"answer":1},
+  {"type":"multiple-choice","question":"Why does deforestation (濫伐林木) increase atmospheric carbon dioxide levels and accelerate global warming?","options":["Trees release large amounts of methane when cut down.","Fewer trees remain to absorb CO₂ via photosynthesis, while burning or decomposing felled timber releases stored carbon back into the atmosphere as CO₂.","Deforestation increases ocean salinity.","Cut tree stumps absorb oxygen rapidly."],"answer":1},
+  {"type":"true-false","question":"Deforestation on steep slopes often leads to severe soil erosion, landslides, and flooding because tree roots are no longer present to bind soil particles together and intercept rainfall.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How does excessive use of chemical nitrogen and phosphate fertilizers on farmland cause algal blooms (紅潮 / 藻華) in nearby rivers and coastal waters?","options":["Fertilizers directly kill all predatory fish.","Rainwater leaches excess nitrates and phosphates into waterways (eutrophication), stimulating rapid growth and multiplication of microscopic algae.","Fertilizers lower water temperature to freezing point.","Fertilizers convert dissolved oxygen into nitrogen gas."],"answer":1},
+  {"type":"multiple-choice","question":"Why do severe algal blooms (red tides) often result in massive fish kills?","options":["Algae eat adult fish directly.","When dense algae die and sink, aerobic decomposer bacteria multiply rapidly and consume vast amounts of dissolved oxygen during respiration, suffocating fish and other aquatic animals.","Algae turn river water into pure alcohol.","Algae block all river currents permanently."],"answer":1},
+  {"type":"true-false","question":"Biological control (生物防治) uses natural predators, parasites, or pathogens to keep agricultural pest populations under control without polluting ecosystems with chemical pesticides.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What is a major risk when introducing an exotic predator for biological control without thorough ecological testing?","options":["The predator will immediately turn into a plant.","The introduced predator may attack native non-target species and become an invasive pest itself.","The predator will completely eliminate all soil bacteria.","The predator will increase soil erosion."],"answer":1},
+  {"type":"multiple-choice","question":"Why can overuse of broad-spectrum chemical insecticides actually worsen pest outbreaks over time?","options":["Insecticides act as fertilizers for crop weeds.","Insecticides kill beneficial natural predators of the pests and select for insecticide-resistant pest individuals that rapidly rebound.","Insecticides turn harmless earthworms into locusts.","Insecticides increase rainfall in dry regions."],"answer":1},
+  {"type":"true-false","question":"Overfishing (過度捕撈) depletes fish stocks faster than they can reproduce, disrupting marine food webs and risking the collapse of commercial fisheries.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which fisheries management measure helps prevent the capture of immature juvenile fish so they can grow and reproduce at least once?","options":["Using fine-mesh drift nets across estuaries","Enforcing a minimum mesh size limit for fishing nets so young, small fish can escape","Fishing intensively during the spawning season","Dumping untreated sewage into coastal waters"],"answer":1},
+  {"type":"multiple-choice","question":"What is the purpose of imposing fishing moratoria (休漁期, closed seasons) during breeding months?","options":["To allow fishermen to repair boats while increasing water pollution","To protect spawning adult fish and developing fry during peak reproductive periods so fish populations can replenish","To encourage invasive species to colonize reefs","To reduce ocean water temperature"],"answer":1},
+  {"type":"true-false","question":"In biological sewage treatment (activated sludge process), aerobic microorganisms break down organic matter in sewage into harmless inorganic substances such as carbon dioxide, water, and mineral ions.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Why is compressed air continuously bubbled into the aeration tank during secondary sewage treatment?","options":["To freeze pathogenic bacteria","To supply oxygen for aerobic decomposers to respire rapidly and keep microorganisms well-mixed with organic waste","To evaporate all sewage water into the atmosphere","To neutralize heavy metals chemically"],"answer":1},
+  {"type":"multiple-choice","question":"What is Biochemical Oxygen Demand (BOD / 生化需氧量) a measure of in water quality testing?","options":["The total concentration of dissolved carbon dioxide in water","The amount of dissolved oxygen consumed by aerobic microorganisms to decompose organic matter in a water sample over a set period (usually 5 days at 20 °C)","The rate of photosynthesis by underwater seaweeds","The concentration of heavy metals in fish tissue"],"answer":1},
+  {"type":"true-false","question":"Water heavily polluted with untreated organic sewage has a very high BOD and a low level of dissolved oxygen.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How does sulphur dioxide (SO₂) and nitrogen oxides (NOₓ) released from burning fossil fuels cause acid rain (酸雨)?","options":["They react with ozone to produce methane.","They dissolve in atmospheric water droplets to form sulphurous/sulphuric acid and nitric acid, lowering rainwater pH below 5.6.","They block sunlight from reaching clouds.","They increase the calcium carbonate content of rain."],"answer":1},
+  {"type":"multiple-choice","question":"How does acid rain harm freshwater ecosystems and forest trees?","options":["It makes lake water too alkaline for fish.","It lowers lake pH (killing fish eggs and amphibians), leaches toxic aluminium ions from soil into water, and damages leaf cuticles and soil mineral availability for trees.","It stimulates excessive growth of coral reefs.","It increases nitrogen fixation in tree leaves."],"answer":1},
+  {"type":"true-false","question":"In-situ conservation (就地保育) protects endangered species within their natural habitats—such as establishing country parks, marine reserves, and wetland parks (e.g., Mai Po Nature Reserve).","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which of the following is an example of ex-situ conservation (遷地保育)?","options":["Designating a coastal bay as a protected marine park","Maintaining endangered animals in captive breeding programmes at zoos or preserving plant seeds in seed banks and botanical gardens","Banning logging in a native tropical rainforest","Restoring a natural mangrove wetland"],"answer":1},
+  {"type":"multiple-choice","question":"Why is maintaining genetic diversity crucial in captive breeding programmes for endangered species?","options":["To ensure all offspring are exact clones","To prevent inbreeding depression (accumulation of harmful homozygous recessive alleles) and preserve adaptability to changing environments or diseases","To stop animals from reaching sexual maturity","To eliminate the need for natural habitats"],"answer":1},
+  {"type":"true-false","question":"Mangrove ecosystems (紅樹林) provide vital ecological services including coastal protection against wave erosion, nursery grounds for juvenile fish, and feeding habitats for migratory birds.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What is afforestation / reforestation (植樹造林)?","options":["Clearing forests for cattle grazing","Planting native trees on barren or deforested land to restore habitats, prevent soil erosion, and act as a carbon sink","Harvesting timber without replanting","Draining wetlands for urban development"],"answer":1},
+  {"type":"multiple-choice","question":"How do catalytic converters fitted to motor vehicles reduce air pollution?","options":["They filter out carbon dioxide into solid dry ice.","They convert harmful exhaust gases—such as carbon monoxide, nitrogen oxides, and unburnt hydrocarbons—into less harmful carbon dioxide, nitrogen, and water vapour.","They add sulphur to petrol for cleaner combustion.","They cool down exhaust pipes with liquid nitrogen."],"answer":1},
+  {"type":"true-false","question":"Indicator species (指示物種), such as lichens for air quality or freshwater invertebrates (e.g., mayfly nymphs vs. bloodworms) for water quality, help monitor environmental pollution levels.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which action at the individual level best reduces an ecological footprint?","options":["Using disposable plastic tableware daily","Practising the 4Rs (Reduce, Reuse, Recycle, Replace), conserving electricity and water, and choosing sustainably sourced products","Leaving air conditioners running in empty rooms","Pouring waste cooking oil down storm drains"],"answer":1}
+]
