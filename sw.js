@@ -26,7 +26,7 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   // Never intercept POST requests or Google Apps Script API calls
-  if (event.request.method !== 'GET' || event.request.url.includes('://google.com')) {
+  if (event.request.method !== 'GET' || event.request.url.includes('://script.goog')) {
     return;
   }
 
