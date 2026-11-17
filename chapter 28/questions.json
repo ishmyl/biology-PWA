@@ -1,220 +1,27 @@
 [
-  {
-    "type": "multiple-choice",
-    "question": "What are the three main levels of biodiversity (生物多樣性) studied by biologists?",
-    "options": [
-      "Genetic diversity, species diversity, and ecosystem diversity / 遺傳多樣性、物種多樣性和生態系多樣性",
-      "Population diversity, trophic diversity, and climatic diversity / 種群多樣性、營養多樣性和氣候多樣性",
-      "Cellular diversity, organ diversity, and kingdom diversity / 細胞多樣性、器官多樣性和界別多樣性",
-      "Fossil diversity, anatomical diversity, and molecular diversity / 化石多樣性、解剖多樣性和分子多樣性"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How do fossils (化石) provide evidence for biological evolution?",
-    "options": [
-      "Fossils prove that all modern species have remained completely unchanged for billions of years.",
-      "Fossils preserved in sedimentary rock strata show a chronological progression from simpler, ancient organisms to more complex modern forms, including transitional forms.",
-      "Fossils show that organisms only ever lived in deep oceans.",
-      "Fossils contain living cells that can be cloned into dinosaurs."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "The fossil record is incomplete because most dead organisms decompose rapidly or are eaten by scavengers, and soft-bodied organisms rarely fossilize.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What are homologous structures (同源構造), such as the pentadactyl limb (五趾肢) in humans, whales, bats, and birds?",
-    "options": [
-      "Structures with completely different internal bone arrangements that perform the exact same function",
-      "Structures sharing a similar basic anatomical plan inherited from a common ancestor, which have become modified through evolution to perform different functions",
-      "Structures that appear only in embryonic stages and disappear before birth",
-      "Structures formed by convergent evolution in unrelated kingdoms"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which type of evidence for evolution compares the base sequences of DNA or amino acid sequences of shared proteins (such as cytochrome c or haemoglobin) across different species?",
-    "options": [
-      "Fossil evidence / 化石證據",
-      "Comparative biochemistry / 比較生物化學",
-      "Comparative embryology / 比較胚胎學",
-      "Biogeographical distribution / 生物地理分佈"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Two species that show fewer differences in their DNA base sequences and protein amino acid sequences share a more recent common ancestor and are more closely related evolutionarily.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "According to Charles Darwin and Alfred Wallace's theory of evolution by natural selection (自然選擇), what is the primary driving force behind evolutionary change?",
-    "options": [
-      "Use and disuse of organs during an organism's lifetime, with acquired traits passed to offspring",
-      "Differential survival and reproduction of individuals with advantageous heritable variations in a given environment ('survival of the fittest')",
-      "Intentional mutations created by organisms when they need to adapt to a new climate",
-      "Random mating without any environmental selection pressure"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which factor is the ultimate source of new alleles and heritable genetic variation within a population?",
-    "options": [
-      "Mitosis / 有絲分裂",
-      "Mutation / 突變",
-      "Asexual vegetative propagation / 無性營養繁殖",
-      "Selective predation / 選擇性捕食"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Natural selection acts directly on the phenotypes (表型) of individuals in a population, thereby changing the allele frequencies (等位基因頻率) of the population over generations.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "During the Industrial Revolution in Britain, the frequency of dark-coloured (melanic) peppered moths (Biston betularia) increased dramatically in polluted woodlands. Why did this occur?",
-    "options": [
-      "Soot stained the wings of light-coloured moths black during their lifetime.",
-      "Dark moths were better camouflaged against soot-blackened tree trunks, suffered less predation by birds, and survived to pass on the dark allele to more offspring.",
-      "Polluted air caused light moths to mutate intentionally into dark moths.",
-      "Birds stopped eating moths altogether during the Industrial Revolution."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "How does Lamarck's theory of evolution (inheritance of acquired characteristics / 用進廢退說) differ from Darwin's theory of natural selection?",
-    "options": [
-      "Lamarck proposed that traits acquired during an organism's lifetime through use or disuse are inherited by offspring, whereas Darwin emphasized selection of pre-existing heritable variations.",
-      "Lamarck proposed that species never change over time, whereas Darwin proposed sudden creation.",
-      "Lamarck discovered DNA mutations, whereas Darwin studied only bacteria.",
-      "Lamarck believed environmental changes kill all individuals in every species."
-    ],
-    "answer": 0
-  },
-  {
-    "type": "true-false",
-    "question": "In a population of bacteria exposed to an antibiotic, antibiotic-resistant individuals already existed due to random mutations before the antibiotic was applied; the antibiotic acts as a selective agent rather than causing the mutation.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is speciation (物種形成)?",
-    "options": [
-      "The seasonal migration of birds between breeding and wintering grounds",
-      "The evolutionary process by which one ancestral species splits into two or more reproductively isolated species over time",
-      "The selective breeding of dogs by humans to create different breeds",
-      "The extinction of all organisms in an ecosystem"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which sequence correctly describes how allopatric speciation (異域物種形成) occurs?",
-    "options": [
-      "Geographical isolation → Different selection pressures and independent mutations/natural selection in each subpopulation → Accumulation of genetic differences → Reproductive isolation",
-      "Reproductive isolation → Geographical isolation → Identical environments → Interbreeding",
-      "Random mating → Decreased genetic variation → Immediate formation of a new kingdom",
-      "Artificial selection → Cloning → Loss of all chromosomes"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "true-false",
-    "question": "Reproductive isolation (生殖隔離) exists when two populations can no longer interbreed to produce fertile offspring even if a physical barrier between them is removed.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Darwin's finches on the Galápagos Islands have beaks of different shapes and sizes adapted to feeding on different foods (such as hard seeds, insects, or nectar). This is a classic example of:",
-    "options": [
-      "Adaptive radiation (適應輻射) from a common ancestral finch species",
-      "Artificial selection by island farmers",
-      "Asexual cloning",
-      "Genetic drift in a single uniform habitat"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Why is high genetic diversity (遺傳多樣性) important for the long-term survival of a wild species?",
-    "options": [
-      "It ensures every individual in the species is an identical clone.",
-      "It increases the chance that some individuals possess advantageous alleles enabling them to survive and reproduce if the environment changes or a new disease emerges.",
-      "It prevents natural selection from ever occurring.",
-      "It reduces the rate of sexual reproduction."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Habitat destruction and fragmentation, overexploitation, pollution, and introduction of invasive alien species are major human-driven causes of biodiversity loss.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is in-situ conservation (就地保育)?",
-    "options": [
-      "Keeping endangered animals in zoos and preserving plant seeds in seed banks",
-      "Protecting endangered species within their natural habitats, such as establishing country parks, nature reserves, and marine parks",
-      "Cloning extinct animals in biotechnology laboratories",
-      "Importing exotic predators to control native herbivores"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which of the following is an example of ex-situ conservation (遷地保育)?",
-    "options": [
-      "Designating Mai Po Nature Reserve as a protected wetland habitat",
-      "Maintaining captive breeding programmes in zoos, botanical gardens, and seed banks",
-      "Banning bottom trawling in local marine waters",
-      "Reforesting barren hillsides with native tree species"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Seed banks (種子庫) conserve plant genetic diversity by storing seeds at low temperature and low humidity to keep them dormant and viable for long periods.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
+  {"type":"multiple-choice","question":"What is biotechnology (生物技術)?","options":["The study of fossils and ancient rock layers","The use of living organisms, cells, or biological molecules (such as enzymes) to develop useful products and processes for human benefit","The surgical removal of diseased organs","The classification of wild plants using dichotomous keys"],"answer":1},
+  {"type":"multiple-choice","question":"Why are immobilized enzymes (固定化酶) widely used in industrial processes (such as producing lactose-free milk)?","options":["They can work at boiling temperatures without ever denaturing.","They can be easily separated from the product, reused multiple times, and show increased stability against pH and temperature changes.","They produce their own ATP continuously.","They do not require any specific substrate."],"answer":1},
+  {"type":"true-false","question":"Biological washing powders contain proteases and lipases to break down insoluble protein and fat stains into soluble molecules that can be washed away at lower temperatures.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which enzyme is used in fruit juice production to break down pectin in plant cell walls, increasing juice yield and making the juice clearer?","options":["Amylase / 澱粉酶","Pectinase / 果膠酶","Cellulase / 纖維素酶","Catalase / 過氧化氫酶"],"answer":1},
+  {"type":"multiple-choice","question":"What is the function of a water jacket surrounding an industrial fermenter (發酵罐) used to culture microorganisms such as Penicillium or genetically engineered bacteria?","options":["To supply oxygen to aerobic microbes","To remove excess metabolic heat generated by microbial respiration and maintain an optimal, constant temperature for enzyme activity","To sterilize the nutrient broth with boiling steam during growth","To filter out dead bacterial cells"],"answer":1},
+  {"type":"true-false","question":"In cheese-making, the enzyme rennin (chymosin) is used to coagulate soluble milk proteins (casein) into solid curds.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How are monoclonal antibodies (單克隆抗體) produced in biotechnology?","options":["By extracting plasma directly from healthy blood donors","By fusing an antibody-producing B lymphocyte with a fast-dividing myeloma (tumour) cell to form a hybridoma (雜交瘤細胞) that proliferates indefinitely and secretes identical antibodies","By inserting human antibody genes into plant roots","By culturing red blood cells in nutrient agar"],"answer":1},
+  {"type":"multiple-choice","question":"How do monoclonal antibodies help diagnose pregnancy in a standard home pregnancy test kit?","options":["They measure the mother's blood glucose level.","They bind specifically to the hormone hCG (human chorionic gonadotropin) present in the urine of a pregnant woman, triggering a visible colour band.","They detect foetal red blood cells in urine.","They neutralize progesterone in the bloodstream."],"answer":1},
+  {"type":"true-false","question":"Monoclonal antibodies can be linked to chemotherapy drugs or radioactive isotopes to target specific antigens on cancer cells, minimizing damage to healthy body cells.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What is plant tissue culture / micropropagation (植物組織培養 / 微體繁殖)?","options":["Cross-pollinating two different species of flowering plants","Growing large numbers of genetically identical plants (clones) from small pieces of plant tissue (explants) on a sterile nutrient agar medium containing plant growth regulators (such as auxins and cytokinins)","Grafting a rose stem onto an apple rootstock","Germinating seeds in hydroponic water tanks"],"answer":1},
+  {"type":"multiple-choice","question":"Why must all nutrient media and tools be strictly sterilized during plant micropropagation?","options":["To speed up photosynthesis in the explants","To prevent faster-growing bacteria and fungi from contaminating the medium and outcompeting or killing the delicate plant tissues","To break down agar into glucose","To stimulate mutations in the explants"],"answer":1},
+  {"type":"true-false","question":"Embryonic stem cells (胚胎幹細胞) are pluripotent, meaning they have the potential to differentiate into almost any specialized cell type in the human body.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How do adult stem cells (成體幹細胞, such as those in bone marrow) differ from embryonic stem cells?","options":["Adult stem cells can form an entire human embryo.","Adult stem cells are multipotent, meaning they can differentiate into only a limited range of related cell types (e.g., blood cells).","Adult stem cells divide by meiosis rather than mitosis.","Adult stem cells contain no DNA."],"answer":1},
+  {"type":"multiple-choice","question":"What is the main ethical objection raised against using human embryonic stem cells in medical research?","options":["Embryonic stem cells cannot divide in laboratory culture.","Harvesting embryonic stem cells typically requires the destruction of an early human embryo (blastocyst), which some people consider a potential human life.","Embryonic stem cells always transmit bacterial infections.","Embryonic stem cells cause immediate blood clotting."],"answer":1},
+  {"type":"true-false","question":"Induced pluripotent stem cells (iPSCs / 誘導性多能幹細胞) are created by reprogramming specialized adult somatic cells back into a pluripotent state, avoiding the ethical issues of destroying embryos and reducing transplant rejection.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How was Dolly the sheep cloned using somatic cell nuclear transfer (SCNT / 體細胞核轉移)?","options":["By splitting a fertilized sheep embryo into two halves","By transferring the diploid nucleus from an adult mammary gland cell into an enucleated egg cell (ovum with its nucleus removed), stimulating it to divide into an embryo, and implanting it into a surrogate mother","By fusing two sperm cells together in vitro","By culturing sheep skin cells in plant hormones"],"answer":1},
+  {"type":"multiple-choice","question":"Why was Dolly the sheep genetically identical to the sheep that donated the udder (mammary) cell rather than the surrogate mother?","options":["The surrogate mother supplied only mitochondrial DNA.","Almost all genetic information (nuclear DNA) determining traits came from the diploid nucleus of the donor udder cell.","The enucleated egg cell contained all chromosomes.","Dolly was formed by natural sexual reproduction."],"answer":1},
+  {"type":"true-false","question":"Reproductive cloning of mammals often suffers from a very low success rate and a higher incidence of developmental abnormalities and premature aging.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How was Golden Rice (黃金米) genetically engineered to combat vitamin A deficiency in developing regions?","options":["By inserting human insulin genes into rice roots","By introducing genes from daffodils (or maize) and soil bacteria into rice so its endosperm synthesizes beta-carotene (a precursor of vitamin A)","By spraying rice grains with liquid vitamin A after harvest","By doubling the chromosome number of wild rice"],"answer":1},
+  {"type":"multiple-choice","question":"What is 'pharming' in agricultural biotechnology?","options":["Using pesticides to kill crop insects","Genetically modifying livestock (such as sheep or goats) or crops to produce valuable human therapeutic proteins (such as blood clotting factors or antithrombin) in their milk or seeds","Organic farming without chemical fertilizers","Breeding fish in closed indoor tanks"],"answer":1},
+  {"type":"true-false","question":"Bt crops (such as Bt maize and Bt cotton) contain a gene from the bacterium Bacillus thuringiensis that produces a protein toxic to specific insect pests, reducing the need for chemical insecticide sprays.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How can biotechnology be applied in environmental bioremediation (生物修復)?","options":["By burning plastic waste in open landfills","By using naturally occurring or genetically engineered microorganisms to break down oil spills, toxic heavy metals, or sewage pollutants into harmless substances","By dumping antibiotics into polluted rivers","By covering wetlands with concrete"],"answer":1},
+  {"type":"multiple-choice","question":"What is bioinformatics (生物信息學)?","options":["The study of animal behaviour in natural forests","The use of computer software, databases, and mathematical algorithms to store, retrieve, and analyze large biological datasets such as DNA and protein sequences","The manufacture of artificial heart valves","The preservation of dried plant specimens in museums"],"answer":1},
+  {"type":"true-false","question":"The Human Genome Project (人類基因組計劃) determined the complete nucleotide base sequence of human DNA and mapped the locations of human genes.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which precaution is commonly used in laboratories when working with genetically modified bacteria to prevent them from surviving if they accidentally escape into the outside environment?","options":["Adding extra antibiotics to the sewage system","Engineering the bacteria to be auxotrophic (dependent on a specific synthetic nutrient supplied only in the lab fermenter) so they die outside the laboratory","Heating all laboratory rooms to 60 °C","Using viruses to infect all lab workers"],"answer":1}
+]
