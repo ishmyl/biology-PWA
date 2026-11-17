@@ -1,4 +1,4 @@
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbySjrUTeN_5ZKVtxSkV1ypWxaKbe-5GB73lnJVxqR9PjqF0d4UucsoQbe0Lupmv7VC3EQ/exec";
+const GOOGLE_SCRIPT_URL = "https://google.com";
 
 /* ==========================================================================
    1. FIREBASE & APP STATE
@@ -25,8 +25,10 @@ let userScore = 0;
 let answerStreak = 0;
 let currentPlayerName = "Player";
 let currentSessionId = "";
+let currentClassTab = "F5A";
 let currentTopicTitle = "General Biology";
 let questionAnswered = false;
+let scoreSentForSession = false;
 
 const fallbackBank = [
     { type: "multiple-choice", question: "[Macao BAA] Which organelle is the site for the Krebs cycle and aerobic ATP production?", options: ["Endoplasmic Reticulum", "Mitochondria", "Lysosome", "Ribosome"], answer: 1 },
@@ -75,6 +77,36 @@ if (fileInput) fileInput.addEventListener('change', (e) => triggerFileLoad(e.tar
 if (nextButton) nextButton.addEventListener('click', advanceArenaChallenge);
 if (restartButton) restartButton.addEventListener('click', resetArenaSession);
 
+// Automatically logs score to Google Sheets the moment the results screen appears
+if (resultsSection) {
+    const scoreObserver = new MutationObserver(() => {
+        if (!resultsSection.classList.contains('hidden') && !scoreSentForSession) {
+            scoreSentForSession = true;
+            sendScoreToGoogleSheets();
+        } else if (resultsSection.classList.contains('hidden')) {
+            scoreSentForSession = false;
+        }
+    });
+    scoreObserver.observe(resultsSection, { attributes: true, attributeFilter: ['class'] });
+}
+
+function sendScoreToGoogleSheets() {
+    if (!GOOGLE_SCRIPT_URL) return;
+    fetch(GOOGLE_SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            classTab: currentClassTab,
+            studentName: currentPlayerName,
+            classId: currentSessionId,
+            chapter: currentTopicTitle,
+            score: userScore,
+            total: quizQuestions.length
+        })
+    }).catch(err => console.log("Sheet log skipped:", err));
+}
+
 function broadcastStudentData(statusMessage) {
     try {
         if (typeof firebase !== 'undefined' && firebase.apps.length && currentSessionId) {
@@ -88,9 +120,9 @@ function broadcastStudentData(statusMessage) {
 }
 
 /* ==========================================================================
-   3. SIGN-IN & 25-QUESTION CHAPTER LOADER
+   3. SIGN-IN (WITH OPEN/CLOSED CHECK) & 25-QUESTION CHAPTER LOADER
    ========================================================================== */
-function handleStudentSignIn() {
+async function handleStudentSignIn() {
     const formVal = formSelect ? formSelect.value : "F5";
     const letterVal = classLetterInput ? (classLetterInput.value.trim().toUpperCase() || "X") : "X";
     const numVal = classNumInput ? (classNumInput.value.trim() || "00") : "00";
@@ -98,6 +130,22 @@ function handleStudentSignIn() {
 
     if (!nameVal) { alert("Please type your name to enter the arena!"); return; }
 
+    // Check if the teacher has set App_Status to OPEN in the Settings tab
+    if (startAppBtn) startAppBtn.disabled = true;
+    try {
+        const res = await fetch(`${GOOGLE_SCRIPT_URL}?t=${Date.now()}`);
+        const settings = await res.json();
+        if (settings.status !== "OPEN") {
+            alert("The BioArena session is currently closed by your teacher.");
+            if (startAppBtn) startAppBtn.disabled = false;
+            return;
+        }
+    } catch (err) {
+        console.warn("Could not verify session status:", err);
+    }
+    if (startAppBtn) startAppBtn.disabled = false;
+
+    currentClassTab = `${formVal}${letterVal}`;
     const classTag = `${formVal}${letterVal}_${numVal}`;
     currentPlayerName = nameVal;
     if (displayStudentName) displayStudentName.textContent = `${classTag}, ${currentPlayerName}`;
@@ -108,6 +156,8 @@ function handleStudentSignIn() {
 
     broadcastStudentData("Joined Arena");
 }
+
+
 
 async function handleChapterStart() {
     const selectedFolder = (chapterSelect ? chapterSelect.value : "chapter 1").trim().toLowerCase();
