@@ -1,224 +1,27 @@
 [
-  {
-    "type": "multiple-choice",
-    "question": "What is recombinant DNA technology (重組 DNA 技術 / genetic engineering)?",
-    "options": [
-      "The selective breeding of farm animals over many generations",
-      "The isolation of a specific gene from one organism and its insertion into the DNA of another organism (host) to express a desired protein or trait",
-      "The fusion of two gametes during normal sexual reproduction",
-      "The use of antibiotics to kill pathogenic bacteria in hospitals"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is the specific role of restriction enzymes (restriction endonucleases / 限制酶) in genetic engineering?",
-    "options": [
-      "To join DNA fragments together by forming phosphodiester bonds",
-      "To recognize specific short DNA base sequences (recognition sites) and cut both DNA strands, often leaving single-stranded 'sticky ends' (黏性末端)",
-      "To synthesize complementary DNA (cDNA) from an mRNA template",
-      "To amplify millions of copies of a DNA sample in a thermal cycler"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Using the SAME restriction enzyme to cut both the donor DNA containing the target gene and the bacterial plasmid vector produces complementary sticky ends that can pair up via hydrogen bonding.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which enzyme is used to seal the sugar-phosphate backbone and permanently join the target gene into the cut plasmid vector?",
-    "options": [
-      "DNA polymerase / DNA 聚合酶",
-      "DNA ligase / DNA 連接酶",
-      "RNA polymerase / RNA 聚合酶",
-      "Amylase / 澱粉酶"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is a plasmid (質粒) used as a vector (載體) in genetic engineering?",
-    "options": [
-      "A viral protein coat that digests bacterial cell walls",
-      "A small, circular double-stranded DNA molecule found naturally in bacteria that replicates independently of the main bacterial chromosome",
-      "A ribosome that translates human mRNA inside yeast cells",
-      "An enzyme that cuts DNA at palindromic sequences"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Bacteria can accurately transcribe and translate a human gene (such as the human insulin gene) to produce functional human protein because the genetic code is universal across organisms.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is a major advantage of producing human insulin using genetically modified bacteria compared with extracting insulin from the pancreases of pigs or cattle?",
-    "options": [
-      "Bacterial insulin is identical in amino acid sequence to human insulin, so it does not trigger allergic or immune rejection responses, and can be produced rapidly in large quantities.",
-      "Bacterial insulin works inside the stomach without needing injection.",
-      "Bacterial insulin permanently cures Type 1 diabetes after a single dose.",
-      "Bacteria do not require any nutrients or fermenters to grow."
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Why are antibiotic resistance genes (such as ampicillin resistance) often included as marker genes (標記基因) on plasmid vectors?",
-    "options": [
-      "To kill all transformed bacteria after fermentation",
-      "To identify and select transformed bacteria that have successfully taken up the plasmid when grown on agar medium containing that antibiotic",
-      "To make human patients immune to all bacterial infections",
-      "To increase the melting temperature of DNA"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Golden Rice (黃金米) is a genetically modified crop engineered to synthesize beta-carotene (provitamin A) in rice grains to help prevent Vitamin A deficiency and night blindness.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which of the following is a potential ecological or health concern associated with genetically modified (GM) crops?",
-    "options": [
-      "GM crops require double the amount of chemical pesticides.",
-      "Possible transfer of herbicide-resistance genes via cross-pollination to wild weeds (creating 'superweeds'), reduction in biodiversity, or potential allergic reactions in humans",
-      "GM crops cannot carry out photosynthesis.",
-      "GM crops always grow slower than conventional varieties."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is the primary purpose of the Polymerase Chain Reaction (PCR / 聚合酶鏈反應)?",
-    "options": [
-      "To separate DNA fragments according to their size",
-      "To rapidly amplify (make millions of copies of) a specific target DNA sequence in vitro from a tiny initial sample",
-      "To cut circular plasmids into linear fragments",
-      "To insert human genes into sheep embryos"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "PCR uses a heat-stable DNA polymerase (such as Taq polymerase extracted from thermophilic bacteria) so the enzyme is not denatured during the high-temperature denaturation step (~95 °C).",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which sequence correctly lists the three repeating temperature steps of each cycle in PCR?",
-    "options": [
-      "Annealing (~55 °C) → Denaturation (~95 °C) → Extension (~72 °C)",
-      "Denaturation (~95 °C) → Annealing of primers (~55 °C) → Extension/synthesis (~72 °C)",
-      "Extension (~72 °C) → Denaturation (~95 °C) → Annealing (~55 °C)",
-      "Denaturation (~37 °C) → Annealing (~95 °C) → Extension (~55 °C)"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "In gel electrophoresis (凝膠電泳), why do DNA fragments migrate towards the positive electrode (anode) when an electric current is applied?",
-    "options": [
-      "DNA molecules carry an overall negative charge due to their phosphate groups.",
-      "DNA molecules carry a strong positive charge on their nitrogenous bases.",
-      "Restriction enzymes push DNA fragments towards the anode.",
-      "Agarose gel dissolves only near the positive electrode."
-    ],
-    "answer": 0
-  },
-  {
-    "type": "true-false",
-    "question": "During gel electrophoresis, smaller DNA fragments encounter less resistance in the agarose gel matrix and therefore travel faster and farther from the wells than larger DNA fragments.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which of the following is a major application of DNA fingerprinting (DNA 指紋分析)?",
-    "options": [
-      "Measuring the rate of transpiration in leaves",
-      "Forensic criminal investigations (matching crime-scene blood or hair samples to suspects) and paternity testing",
-      "Determining the blood group ABO antigens on red blood cells",
-      "Sterilizing surgical instruments"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "In a paternity test using DNA fingerprinting, how are the DNA bands of a child related to those of their biological parents?",
-    "options": [
-      "Every band in the child's DNA fingerprint must match the biological father only.",
-      "Every band in the child's DNA fingerprint must come from either the biological mother or the biological father (roughly half from each).",
-      "The child's DNA bands will be completely different from both parents.",
-      "The child will have twice as many bands as both parents combined."
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Before gel electrophoresis in DNA fingerprinting, restriction enzymes are used to cut DNA at specific sequences, producing fragments of different lengths (RFLPs) due to variations in non-coding variable number tandem repeats (VNTRs) among individuals.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is somatic cell nuclear transfer (體細胞核轉移 / reproductive cloning), as used to produce Dolly the sheep?",
-    "options": [
-      "Fusing a sperm cell with an unfertilized ovum in a Petri dish",
-      "Transferring the diploid nucleus from an adult somatic cell into an enucleated ovum (an egg cell whose nucleus has been removed), stimulating it to divide into an embryo, and implanting it into a surrogate mother",
-      "Cutting a plant stem and planting it in moist soil",
-      "Injecting bacterial plasmids into sheep muscle cells"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "multiple-choice",
-    "question": "Which organism is genetically identical to a cloned mammal produced by somatic cell nuclear transfer?",
-    "options": [
-      "The donor of the enucleated ovum",
-      "The adult donor of the somatic cell nucleus",
-      "The surrogate mother that carried the embryo",
-      "A random sibling from the same flock"
-    ],
-    "answer": 1
-  },
-  {
-    "type": "true-false",
-    "question": "Embryonic stem cells (胚胎幹細胞) are pluripotent, meaning they can divide repeatedly and differentiate into many different specialized cell types for potential use in regenerative medicine.",
-    "options": [
-      "True / 正確",
-      "False / 錯誤"
-    ],
-    "answer": 0
-  },
-  {
-    "type": "multiple-choice",
-    "question": "What is gene therapy (基因治療)?",
-    "options": [
-      "Using X-rays to destroy malignant tumours in the lungs",
-      "Introducing a normal, functional copy of a gene into a patient's cells to compensate for a defective or mutated gene causing a genetic disorder",
+  {"type":"multiple-choice","question":"What are the three components of a DNA nucleotide (脫氧核糖核苷酸)?","options":["Ribose sugar, phosphate group, and uracil","Deoxyribose sugar, phosphate group, and a nitrogenous base (A, T, C, or G)","Glucose, amino acid, and fatty acid","Deoxyribose sugar, sulphate group, and glycerol"],"answer":1},
+  {"type":"multiple-choice","question":"According to complementary base pairing in a DNA double helix, how do the nitrogenous bases pair together?","options":["A pairs with G; C pairs with T","Adenine (A) pairs with Thymine (T) via 2 hydrogen bonds, and Cytosine (C) pairs with Guanine (G) via 3 hydrogen bonds","A pairs with U; C pairs with G","A pairs with C; T pairs with G"],"answer":1},
+  {"type":"true-false","question":"The two polynucleotide strands of a DNA molecule run antiparallel to each other, with sugar-phosphate backbones on the outside and complementary base pairs held by hydrogen bonds on the inside.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Why is DNA replication described as semi-conservative (半保留複製)?","options":["Only half of the cell's chromosomes are copied before mitosis.","Each newly formed DNA double helix consists of one original parental template strand and one newly synthesized complementary strand.","Half of the nucleotides are destroyed during copying.","DNA is replicated only in reproductive cells."],"answer":1},
+  {"type":"multiple-choice","question":"Which enzyme catalyzes the joining of free DNA nucleotides along each template strand to form new complementary strands during DNA replication?","options":["RNA polymerase / RNA 聚合酶","DNA polymerase / DNA 聚合酶","DNA ligase / DNA 連接酶","Restriction endonuclease / 限制酶"],"answer":1},
+  {"type":"true-false","question":"Unlike DNA, RNA is typically single-stranded, contains ribose sugar instead of deoxyribose, and has the base uracil (U) in place of thymine (T).","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What is a codon (密碼子)?","options":["A sequence of three amino acids in a polypeptide","A triplet of three consecutive bases on an mRNA molecule that specifies a particular amino acid (or a start/stop signal)","A region of DNA where spindle fibres attach","A transfer RNA molecule carrying a ribosome"],"answer":1},
+  {"type":"multiple-choice","question":"What happens during transcription (轉錄) in eukaryotic cells?","options":["Ribosomes assemble amino acids into a polypeptide in the cytoplasm.","RNA polymerase synthesizes a complementary single-stranded mRNA molecule using one strand of DNA as a template inside the nucleus.","tRNA molecules bind to DNA directly in the nucleus.","DNA helicase breaks down mRNA into free nucleotides."],"answer":1},
+  {"type":"true-false","question":"The genetic code is universal (shared by almost all living organisms) and degenerate (most amino acids are coded for by more than one triplet codon).","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What is the role of transfer RNA (tRNA / 轉運 RNA) during translation (翻譯)?","options":["To carry genetic instructions from the nucleus to the ribosome","To carry a specific amino acid to the ribosome and match its three-base anticodon (反密碼子) to the complementary mRNA codon","To unzip the DNA double helix during replication","To catalyze peptide bond formation inside the nucleus"],"answer":1},
+  {"type":"multiple-choice","question":"Where does translation (polypeptide synthesis) take place in both prokaryotic and eukaryotic cells?","options":["Inside the nucleolus","On ribosomes (核糖體) in the cytoplasm (or on rough endoplasmic reticulum)","Inside the Golgi apparatus","Inside mitochondria only"],"answer":1},
+  {"type":"true-false","question":"If a DNA template strand has the base sequence 3'-TAC-GGA-5', the transcribed mRNA codon sequence is 5'-AUG-CCU-3'.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Why do insertion or deletion mutations of a single nucleotide usually have a much more severe effect on a protein than a single-base substitution?","options":["Substitutions never change any amino acid.","Insertions or deletions cause a frameshift mutation (移碼突變), altering the reading frame of every subsequent triplet codon downstream of the mutation.","Insertions double the length of the chromosome.","Deletions only occur in non-coding introns."],"answer":1},
+  {"type":"multiple-choice","question":"Why might a single-base substitution in a DNA coding sequence result in no change to the amino acid sequence of the polypeptide (a silent mutation)?","options":["DNA polymerase immediately repairs all base substitutions.","Because the genetic code is degenerate, the mutated codon may still code for the exact same amino acid.","The ribosome skips over mutated codons.","tRNA ignores the third base of every codon."],"answer":1},
+  {"type":"true-false","question":"In recombinant DNA technology, restriction enzymes (限制酶) cut DNA at specific recognition sequences, often producing staggered 'sticky ends' (黏性末端) with exposed unpaired bases.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"Which enzyme is used to covalently join the sugar-phosphate backbones of a human gene and a bacterial plasmid vector to form recombinant DNA?","options":["DNA helicase / DNA 解旋酶","DNA ligase / DNA 連接酶","Amylase / 澱粉酶","Reverse transcriptase / 逆轉錄酶"],"answer":1},
+  {"type":"multiple-choice","question":"Why are bacterial plasmids (質粒) commonly used as vectors in genetic engineering?","options":["They are large linear chromosomes that cannot replicate.","They are small circular DNA molecules that replicate independently inside bacterial cells and often carry antibiotic resistance marker genes for screening.","They naturally contain human insulin genes.","They destroy bacterial cell walls upon entry."],"answer":1},
+  {"type":"true-false","question":"Transgenic bacteria containing the human insulin gene can be cultured in large fermenters to produce pure human insulin cheaply, avoiding allergic reactions caused by animal insulin.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"What is the purpose of the Polymerase Chain Reaction (PCR / 聚合酶鏈反應)?","options":["To separate DNA fragments according to size","To rapidly amplify (make millions of copies of) a specific target DNA sequence in vitro using heat-stable Taq DNA polymerase","To insert recombinant plasmids into plant leaves","To sequence the entire human genome manually"],"answer":1},
+  {"type":"multiple-choice","question":"Why is heat-stable DNA polymerase (such as Taq polymerase from thermophilic bacteria) essential for PCR?","options":["It works best at 4 °C without primers.","It does not denature during the high-temperature (~95 °C) denaturation step needed to separate double-stranded DNA in each cycle.","It cuts DNA at specific palindromic sites.","It converts RNA directly into protein."],"answer":1},
+  {"type":"true-false","question":"During gel electrophoresis (凝膠電泳), negatively charged DNA fragments migrate toward the positive electrode (anode), with smaller fragments moving faster through the gel pores than larger fragments.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"How is DNA fingerprinting (DNA 指紋分析) applied in forensic science and paternity testing?","options":["By comparing blood types under a light microscope","By comparing the banding patterns of variable tandem repeat DNA fragments separated by gel electrophoresis, which are unique to every individual (except identical twins)","By measuring the total mass of DNA in a hair follicle","By counting the number of chromosomes in red blood cells"],"answer":1},
+  {"type":"multiple-choice","question":"What is a potential ethical or ecological concern regarding genetically modified (GM) crops?","options":["GM crops cannot carry out photosynthesis.","Transgenes (such as herbicide-resistance genes) might spread via cross-pollination to wild weeds, creating 'superweeds' and reducing biodiversity.","GM crops always produce toxic proteins harmful to all humans.","GM crops stop nitrogen fixation in all soils worldwide."],"answer":1},
+  {"type":"true-false","question":"Gene therapy (基因治療) aims to treat genetic disorders by introducing functional copies of a normal gene into a patient's target cells to compensate for a defective allele.","options":["True / 正確","False / 錯誤"],"answer":0},
+  {"type":"multiple-choice","question":"In a double-stranded DNA sample where 22% of the bases are adenine (A), what percentage of the bases are guanine (G)?","options":["22%","28%","44%","56%"],"answer":1}
+]
