@@ -342,13 +342,16 @@ function advanceArenaChallenge() {
     currentQuestionIndex += 1;
     if (currentQuestionIndex < quizQuestions.length) {
         renderActiveChallenge();
-    } else {
+    
+   } else {
         if (progressBar) progressBar.style.width = '100%';
         if (quizSection) quizSection.classList.add('hidden');
         if (resultsSection) resultsSection.classList.remove('hidden');
         if (finalScoreElement) finalScoreElement.textContent = `${userScore} pts`;
         broadcastStudentData("Completed Arena Challenge");
+        sendScoreToGoogleSheets();
     }
+
 }
 
 function resetArenaSession() {
